@@ -125,21 +125,43 @@ Return JSON ONLY matching this 6-slide schema:
   ]
 }}"""
 
+        models_to_try = [
+            settings.GEMINI_MODEL,
+            "gemini-3.7-flash",
+            "gemini-2.5-flash",
+            settings.GEMMA_FALLBACK_MODEL,
+            "gemma-4-26b-a4b-it",
+        ]
+
         if self.client:
-            try:
-                response = self.client.models.generate_content(
-                    model=settings.GEMINI_MODEL,
-                    contents=prompt,
-                    config={"response_mime_type": "application/json", "temperature": 0.4}
-                )
-                if response.text:
-                    clean_text = response.text.strip()
-                    if clean_text.startswith("```json"):
-                        clean_text = clean_text[7:]
-                    if clean_text.endswith("```"):
-                        clean_text = clean_text[:-3]
-                    data = json.loads(clean_text.strip())
-                    if len(data.get("slides", [])) == 6:
+            data = None
+            for model_name in models_to_try:
+                try:
+                    logger.info("Attempting Tanglish drafting with model %s...", model_name)
+                    config = {"temperature": 0.4}
+                    if not model_name.startswith("gemma"):
+                        config["response_mime_type"] = "application/json"
+
+                    response = self.client.models.generate_content(
+                        model=model_name,
+                        contents=prompt,
+                        config=config
+                    )
+                    if response.text:
+                        clean_text = response.text.strip()
+                        if clean_text.startswith("```json"):
+                            clean_text = clean_text[7:]
+                        if clean_text.endswith("```"):
+                            clean_text = clean_text[:-3]
+                        parsed = json.loads(clean_text.strip())
+                        if len(parsed.get("slides", [])) == 6:
+                            data = parsed
+                            logger.info("✓ Model %s successfully generated 6-slide Tanglish draft.", model_name)
+                            break
+                except Exception as e:
+                    logger.warning("Model %s Tanglish draft failed: %s", model_name, e)
+
+            if data and len(data.get("slides", [])) == 6:
                         # Pass 2: Tanglish Numeric Fact-Checking Gate
                         is_valid, report = self._verify_numeric_facts(data, topic)
                         if not is_valid:
@@ -192,7 +214,7 @@ Return JSON ONLY matching this 6-slide schema:
 
                             # FINAL Circuit Breaker on persistent failure -> pre-reserved topic templates
                             logger.error("🚨 GEMMA FALLBACK FAILED. Engaging Circuit Breaker -> Moving to pre-reserved Tanglish topic templates.")
-                            fb_deck = self._generate_fallback_tanglish_deck(topic)
+                            fb_deck = self._generate_fallback_tanglish_deck(topic, plan=plan)
                             fb_deck["fact_check_status"] = "circuit_breaker_evergreen_fallback"
                             return fb_deck
                         else:
@@ -209,7 +231,7 @@ Return JSON ONLY matching this 6-slide schema:
                     return gemma_deck
                 self.thinker.diagnose_pipeline_crash("EDITORIAL_SCRIPTING", e, {"topic": topic, "plan": plan})
 
-        return self._generate_fallback_tanglish_deck(topic)
+        return self._generate_fallback_tanglish_deck(topic, plan=plan)
 
     def _script_tanglish_gemma(self, topic: dict, plan: dict) -> Optional[dict]:
         """
@@ -418,7 +440,87 @@ Return JSON ONLY with keys "caption" and "slides" (array of 6 objects). Do NOT i
 
         return f"<div class='slide-body-paragraphs'><p class='body-para'>{slide.get('text', '')}</p></div>"
 
-    def _generate_fallback_tanglish_deck(self, topic_data: dict) -> dict:
+    def _generate_fallback_tanglish_deck(self, topic_data: dict, plan: Optional[dict] = None) -> dict:
+        news_analysis = topic_data.get("news_analysis")
+        title = topic_data.get("title", "Market Debunk")
+        plan_data = plan or {}
+
+        if news_analysis or plan_data:
+            hook = (news_analysis.get("headline_hook") if news_analysis else None) or plan_data.get("hook_headline") or title
+            illusion = (news_analysis.get("retail_illusion") if news_analysis else None) or plan_data.get("core_illusion", "Retail முதலீட்டாளர்கள் sentiment-ஐ நம்பி ஏமாறுகிறார்கள்.")
+            reality = (news_analysis.get("institutional_reality") if news_analysis else None) or plan_data.get("hidden_reality", "Institutions எப்போதும் risk-adjusted math-ஐ மட்டுமே நம்புகிறார்கள்.")
+            actionable_rule = (news_analysis.get("actionable_retail_rule") if news_analysis else None) or plan_data.get("actionable_rule", "Unverified news அல்லது GMP-ஐ நம்பி முதலீடு செய்யாதீர்கள்.")
+            lead_magnet = (news_analysis.get("lead_magnet") if news_analysis else None) or plan_data.get("lead_magnet") or {"trigger_word": "AUDIT", "resource_name": "Tamil Risk Checklist"}
+            trigger = lead_magnet.get("trigger_word", "AUDIT")
+            resource = lead_magnet.get("resource_name", "Tamil Risk Checklist")
+
+            words = hook.split()
+            clean_hook = " ".join(words[:5]) if len(words) > 5 else hook
+            hook_title = f"{clean_hook} <span class='highlight-box'>Retail Trap-ஆ?!</span>"
+
+            return {
+                "caption": f"🚨 {hook}\n\nRetail முதலீட்டாளர்கள் ஏமாறும் முக்கிய Market உண்மை!\n\nமுழு 6-slide Tanglish breakdown-ஐ பாருங்க. 👉\n\n💬 '{trigger}'-னு comment பண்ணுங்க, free '{resource}'-ஐ உங்க DM-க்கு அனுப்புறோம்!\n\n#TamilFinance #StockMarketTamil #InvestingTamil #NSE #SEBI #PersonalFinance",
+                "slides": [
+                    {
+                        "role": "hook",
+                        "title": hook_title,
+                        "deliverable": "📖 Inside: 5-Point Institutional Breakdown",
+                        "tag": "#TAMILFINANCE"
+                    },
+                    {
+                        "role": "friction",
+                        "title": "Retail மாயை vs Institutional உண்மை",
+                        "card_a_text": f"Retail Belief: {illusion}",
+                        "card_b_text": f"Real Math: {reality}",
+                        "takeaway": "Retail sentiment-ஐ துரத்துகிறது. Smart institutions verified math-ஐ நம்புகிறது.",
+                        "tag": "#MYTHVSREALITY"
+                    },
+                    {
+                        "role": "breakdown",
+                        "title": "3 Institutional உண்மைகள்",
+                        "points": [
+                            {"num": "1", "title": "Information Asymmetry", "desc": "Retail முதலீட்டாளர்கள் hype-ஐ பார்க்கும் போது, பெரிய institutions risk-ஐ hedge செய்கிறார்கள்."},
+                            {"num": "2", "title": "Valuation Reality", "desc": "P/E multiples மற்றும் official filings மட்டுமே உண்மையான intrinsic value-வை நிர்ணயிக்கும்."},
+                            {"num": "3", "title": "Exit Liquidity Trap", "desc": "Unregulated market sentiment பெரும்பாலும் retail-ஐ exit liquidity-ஆக பயன்படுத்த உருவாக்கப்படுகிறது."}
+                        ],
+                        "tag": "#HIDDENMATH"
+                    },
+                    {
+                        "role": "playbook",
+                        "layout": "step_diagram",
+                        "steps": [
+                            {"number": 1, "icon_concept": "search", "color": "#A8D5BA", "label": "AUDIT", "sublabel": "Official DRHP & Filings-ஐ பாருங்க"},
+                            {"number": 2, "icon_concept": "calculator", "color": "#F5D782", "label": "VALUATE", "sublabel": "Peer multiples-ஐ கணக்கிடுங்க"},
+                            {"number": 3, "icon_concept": "shield", "color": "#A8C8E8", "label": "PROTECT", "sublabel": "Hype-ஐ தவிர்த்து capital-ஐ காக்குங்க"}
+                        ],
+                        "headline": "3-Step Capital Recovery Framework",
+                        "body_lines": [
+                            "Hype cycles uninformed retail முதலீட்டாளர்களுக்கு நஷ்டத்தை தரும்.",
+                            "Systematic valuation உங்க capital-ஐ பாதுகாக்கும்."
+                        ],
+                        "closing_line": "Mathematical edge இல்லாத இடத்தில் ஒரு ரூபாயும் முதலீடு செய்யாதீர்கள்.",
+                        "tag": "#PLAYBOOK"
+                    },
+                    {
+                        "role": "playbook",
+                        "tag": "#STRATEGY",
+                        "title": "Retail முதலீட்டாளர்களுக்கான விதிகள்",
+                        "rules": [
+                            {"title": "Verify Before Allocation", "desc": actionable_rule},
+                            {"title": "Disregard Unregulated Rumors", "desc": "GMP அல்லது social media hype-ஐ நம்பி ஒருபோதும் ஆர்டர் போடாதீர்கள்."},
+                            {"title": "Protect Capital First", "desc": "உங்களால் independently value செய்ய முடியாத எதிலும் நுழையாதீர்கள்."}
+                        ],
+                        "takeaway": "உங்க பணத்தை பாதுகாக்க math மட்டுமே ஒரே வழி."
+                    },
+                    {
+                        "role": "cta",
+                        "tag": "#SAVETHIS",
+                        "title": "இந்த post-ஐ <span class='highlight-box'>மறக்காம</span> Save <span class='highlight-box'>பண்ணுங்க!</span>",
+                        "text": f"இந்த post-ஐ Save பண்ணி வச்சுக்கோங்க! முழு {resource} வேணும்னா கீழ '{trigger}'-னு comment பண்ணுங்க."
+                    }
+                ]
+            }
+
         return {
             "caption": "🚨 1% Mutual Fund Fee-ல ₹34 Lakhs போகுதா?! 😱\n\nரொம்ப சின்ன fee-னு நினைக்கிற 1% commission, 25 வருஷத்துல உங்க compounding wealth-ல மிகப்பெரிய துளைய போடுது!\n\nமுழு breakdown-ஐ slide-ல பாருங்க. 👉\n\n💬 'GUIDE'-னு comment பண்ணுங்க, complete Risk Checklist-ஐ உங்க DM-க்கு அனுப்புறோம்!\n\n#TamilFinance #MutualFunds #StockMarketTamil #InvestingTamil #TamilBusiness",
             "slides": [
