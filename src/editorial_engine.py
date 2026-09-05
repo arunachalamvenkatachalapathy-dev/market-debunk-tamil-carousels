@@ -177,8 +177,21 @@ Return JSON ONLY matching this 6-slide schema:
                                 th_deck["fact_check_status"] = "thinker_auto_repaired"
                                 return th_deck
 
-                            # Circuit Breaker on persistent failure
-                            logger.error("🚨 CONSECUTIVE TANGLISH FACT-CHECK FAILURE. Engaging Circuit Breaker -> Falling back to pre-vetted Tanglish deck.")
+                            # Pass 4: Fallback to Gemma Model
+                            logger.warning("🤖 Tanglish drafting/repair unverified; falling back to Gemma model (%s)...", settings.GEMMA_FALLBACK_MODEL)
+                            gemma_deck = self._script_tanglish_gemma(topic, plan)
+                            if gemma_deck and len(gemma_deck.get("slides", [])) == 6:
+                                is_gm_valid, gm_report = self._verify_numeric_facts(gemma_deck, topic)
+                                if is_gm_valid:
+                                    logger.info("✅ Gemma Tanglish fallback deck passed Fact-Checking Gate!")
+                                    gemma_deck["slides"] = self._normalize_slides(gemma_deck["slides"], topic)
+                                    gemma_deck["fact_check_status"] = "gemma_fallback_verified"
+                                    return gemma_deck
+                                else:
+                                    logger.warning("Gemma Tanglish deck failed fact check (%s). Moving to pre-reserved templates...", gm_report)
+
+                            # FINAL Circuit Breaker on persistent failure -> pre-reserved topic templates
+                            logger.error("🚨 GEMMA FALLBACK FAILED. Engaging Circuit Breaker -> Moving to pre-reserved Tanglish topic templates.")
                             fb_deck = self._generate_fallback_tanglish_deck(topic)
                             fb_deck["fact_check_status"] = "circuit_breaker_evergreen_fallback"
                             return fb_deck
@@ -188,10 +201,72 @@ Return JSON ONLY matching this 6-slide schema:
                             data["fact_check_status"] = "verified_pass"
                             return data
             except Exception as e:
-                logger.warning("Tanglish autonomous scripting failed (%s); invoking Thinker Layer.", e)
+                logger.warning("Tanglish autonomous scripting failed (%s); attempting Gemma fallback.", e)
+                gemma_deck = self._script_tanglish_gemma(topic, plan)
+                if gemma_deck and len(gemma_deck.get("slides", [])) == 6:
+                    gemma_deck["slides"] = self._normalize_slides(gemma_deck["slides"], topic)
+                    gemma_deck["fact_check_status"] = "gemma_fallback_verified"
+                    return gemma_deck
                 self.thinker.diagnose_pipeline_crash("EDITORIAL_SCRIPTING", e, {"topic": topic, "plan": plan})
 
         return self._generate_fallback_tanglish_deck(topic)
+
+    def _script_tanglish_gemma(self, topic: dict, plan: dict) -> Optional[dict]:
+        """
+        First fallback model: Gemma (gemma-4-31b-it / gemma-4-26b-a4b-it).
+        Autonomously scripts Tanglish slides from concept and plan if Gemini fails.
+        """
+        if not self.client:
+            return None
+
+        title = topic.get("title", "Market Debunk")
+        raw_text = topic.get("raw_text", "")
+        numbers = topic.get("numbers_detected", [])
+        core_thesis = plan.get("hidden_reality") or plan.get("core_thesis", "")
+        retail_trap = plan.get("core_illusion") or plan.get("retail_trap", "")
+        citable_metric = plan.get("citable_metric") or (numbers[0] if numbers else "₹34 Lakhs")
+        actionable_rule = plan.get("actionable_rule", "")
+
+        prompt = f"""You are a Tamil finance content creator writing Tanglish (spoken Tamil-English mix).
+Create an ORIGINAL 6-slide financial carousel for Tamil retail investors debunking: {title}.
+Context: {raw_text}
+Myth: {retail_trap}
+Reality: {core_thesis}
+Preserve exact metric: {citable_metric}
+Rule: {actionable_rule}
+
+SLIDES SPEC:
+Slide 1 (hook): Tanglish question with shocking words in <span class='highlight-box'>...</span>
+Slide 2 (friction): card_a_text (myth), card_b_text (reality with {citable_metric}), takeaway
+Slide 3 (breakdown): 3 numbered points
+Slide 4 (playbook): steps 1 & 2
+Slide 5 (strategy): golden rules
+Slide 6 (cta): save this post, comment 'GUIDE'
+
+Return JSON ONLY with keys "caption" and "slides" (array of 6 objects). Do NOT include markdown."""
+
+        gemma_models = [settings.GEMMA_FALLBACK_MODEL, "gemma-4-26b-a4b-it"]
+        for gm in gemma_models:
+            try:
+                logger.info("🤖 Attempting Tanglish scripting with Gemma model: %s...", gm)
+                response = self.client.models.generate_content(
+                    model=gm,
+                    contents=prompt
+                )
+                if response.text:
+                    clean_text = response.text.strip()
+                    if "```json" in clean_text:
+                        clean_text = clean_text.split("```json")[1].split("```")[0].strip()
+                    elif "```" in clean_text:
+                        clean_text = clean_text.split("```")[1].split("```")[0].strip()
+                    data = json.loads(clean_text)
+                    if len(data.get("slides", [])) == 6:
+                        logger.info("✓ Gemma model %s successfully scripted 6-slide Tanglish deck.", gm)
+                        return data
+            except Exception as e:
+                logger.warning("Gemma model %s Tanglish scripting failed: %s", gm, e)
+
+        return None
 
     def _verify_numeric_facts(self, deck: dict, topic_data: dict) -> Tuple[bool, str]:
         source_text = f"{topic_data.get('raw_text', '')} {topic_data.get('title', '')} {topic_data.get('source_snippet', '')}"
