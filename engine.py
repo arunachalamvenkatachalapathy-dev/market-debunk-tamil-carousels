@@ -53,17 +53,28 @@ def run_pipeline(dry_run: bool = False, master_pkg_path: str = None, override_qu
                 thinker.diagnose_master_pkg_failure(master_pkg_path, e)
 
         if not deck:
-            logger.info("═══ Phase 1: Standalone Research Sourcing ═══")
+            logger.info("═══ Phase 1: Standalone 48h Market News Sourcing ═══")
             research_engine = ResearchEngine()
-            topic_data = research_engine.fetch_market_topic(override_query=override_query)
-            mock_master = {"topic": topic_data, "plan": {"hidden_reality": topic_data.get("title")}}
+            topic_data = research_engine.fetch_fresh_market_news(max_age_hours=48, override_query=override_query)
+            try:
+                from src.news_comprehension_agent import NewsComprehensionAgent
+                from src.workflow_agents import PlannerAgent
+                nca = NewsComprehensionAgent()
+                topic_data["news_analysis"] = nca.analyze_news_item(topic_data)
+                planner = PlannerAgent(llm_client=editorial_engine.client)
+                plan = planner.plan(topic_data)
+            except Exception as pe:
+                logger.warning("News analysis error in Tamil standalone: %s", pe)
+                plan = {"hidden_reality": topic_data.get("title")}
+
+            mock_master = {"topic": topic_data, "plan": plan}
             deck = editorial_engine.compose_from_master(mock_master)
 
         slides = deck.get("slides", [])
         logger.info("✓ Prepared %d Tanglish slides.", len(slides))
 
         # ── Phase 2: Playwright Visual Rendering & PDF Compilation ─────────────
-        logger.info("═══ Phase 2: Playwright 1080x1080 Retina Rendering (Tamil) ═══")
+        logger.info("═══ Phase 2: Playwright 1080x1350 (4:5) Retina Rendering (Tamil) ═══")
         image_director = ImageDirector()
         run_id = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
         visual_pkg = image_director.render_carousel(deck, run_id=run_id)

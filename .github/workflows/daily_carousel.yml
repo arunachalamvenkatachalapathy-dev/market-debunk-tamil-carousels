@@ -67,11 +67,15 @@ jobs:
           ENABLE_FACEBOOK: ${{ secrets.ENABLE_FACEBOOK || 'true' }}
           ENABLE_TELEGRAM: ${{ secrets.ENABLE_TELEGRAM || 'true' }}
         run: |
+          mkdir -p state
+          echo "Fetching latest English master package from market-debunk-carousels..."
+          curl -sSL "https://raw.githubusercontent.com/arunachalamvenkatachalapathy-dev/market-debunk-carousels/master/state/market_debunk_carousel_master.json" -o state/market_debunk_carousel_master.json || echo "Remote package fetch skipped."
+          
           EXTRA_ARGS=""
           if [ "${{ inputs.dry_run }}" = "true" ]; then
             EXTRA_ARGS="$EXTRA_ARGS --dry-run"
           fi
-          if [ -f "state/market_debunk_carousel_master.json" ]; then
+          if [ -s "state/market_debunk_carousel_master.json" ]; then
             EXTRA_ARGS="$EXTRA_ARGS --master-pkg state/market_debunk_carousel_master.json"
           fi
           python engine.py $EXTRA_ARGS
