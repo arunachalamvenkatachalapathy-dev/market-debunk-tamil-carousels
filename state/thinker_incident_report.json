@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-09-05T16:21:44.057282+00:00",
+  "phase": "PUBLISHING",
+  "platform": "Facebook",
+  "severity": "CRITICAL",
+  "error_code": "ERR_META_API",
+  "root_cause_analysis": "OAuthException Code 200: Unpublished photo upload failed because the request was authenticated with a User Access Token or an unauthorized identity instead of the Page Access Token for the target Facebook Page.",
+  "reproducibility": "BAD_CREDENTIALS",
+  "automated_remediation": {
+    "action": "ABORT",
+    "retry_delay_seconds": 0
+  },
+  "operator_action_required": true,
+  "actionable_instructions": [
+    "Verify that the access token used is a Page Access Token with 'pages_manage_posts' and 'pages_read_engagement' permissions.",
+    "Ensure the API request is posting to the Page endpoint (/me/photos or /{page-id}/photos) explicitly acting as the Page itself.",
+    "Regenerate and update the Facebook Page Access Token in the credentials store."
+  ]
+}
