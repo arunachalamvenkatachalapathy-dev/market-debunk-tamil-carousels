@@ -80,8 +80,8 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add data/used_carousel_topics.json state/carousel_slides/ state/latest_carousel.pdf
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update Tamil carousel slides and topic history [skip ci]" && git push)
+          git add data/used_carousel_topics.json state/carousel_slides/ state/latest_carousel.pdf state/thinker_incident_report.json || true
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update Tamil carousel slides, topic history, and thinker logs [skip ci]" && git push)
 
       - name: Prune Slide Images Older Than 48 Hours
         run: |
@@ -95,3 +95,11 @@ jobs:
           name: market-debunk-tamil-carousel-pdf
           path: state/latest_carousel.pdf
           if-no-files-found: warn
+
+      - name: Upload Thinker Incident Report (if exists)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: thinker-incident-report
+          path: state/thinker_incident_report.json
+          if-no-files-found: ignore

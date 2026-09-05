@@ -9,10 +9,22 @@
       "title": "The Credit Card Minimum Due Trap: ₹50,000 Ballooning to ₹1.8 Lakhs",
       "archetype": "hidden_fee_audit",
       "timestamp": "2026-09-05T03:58:37.413077+00:00"
+    },
+    {
+      "title": "SEBI's New Rules for Small & Mid-Cap Mutual",
+      "archetype": "institutional_playbook",
+      "timestamp": "2026-09-05T04:29:05.702126+00:00"
+    },
+    {
+      "title": "The 1% Expense Ratio Illusion: How Direct Plans Save ₹34 Lakhs",
+      "archetype": "myth_vs_reality_math",
+      "timestamp": "2026-09-05T04:45:08.868663+00:00"
     }
   ],
   "used_archetypes": [
     "myth_vs_reality_math",
-    "hidden_fee_audit"
+    "hidden_fee_audit",
+    "institutional_playbook",
+    "myth_vs_reality_math"
   ]
 }

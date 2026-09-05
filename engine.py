@@ -17,6 +17,7 @@ from src.research_engine import ResearchEngine
 from src.editorial_engine import EditorialEngine
 from src.image_director import ImageDirector
 from src.publisher import Publisher
+from src.thinker_engine import ThinkerEngine
 
 logging.basicConfig(
     level=logging.INFO,
@@ -31,65 +32,89 @@ def run_pipeline(dry_run: bool = False, master_pkg_path: str = None, override_qu
     logger.info("   Mode: %s", "DRY RUN (No live publishing)" if dry_run else "LIVE PRODUCTION")
     logger.info("=" * 60)
 
-    editorial_engine = EditorialEngine()
-    topic_data = None
-    deck = None
+    thinker = ThinkerEngine()
 
-    # ── Phase 1: Load English Master Package or Sourced Topic ─────────────
-    if master_pkg_path and os.path.isfile(master_pkg_path):
-        logger.info("═══ Phase 1: Consuming English Master Carousel Package ═══")
-        try:
-            with open(master_pkg_path, "r", encoding="utf-8") as f:
-                master_pkg = json.load(f)
-            topic_data = master_pkg.get("topic", {})
-            deck = editorial_engine.compose_from_master(master_pkg)
-            logger.info("✓ Adapted English Master topic: '%s' to Tanglish!", topic_data.get("title"))
-        except Exception as e:
-            logger.warning("Failed to parse master package (%s); falling back to research.", e)
+    try:
+        editorial_engine = EditorialEngine()
+        topic_data = None
+        deck = None
 
-    if not deck:
-        logger.info("═══ Phase 1: Standalone Research Sourcing ═══")
-        research_engine = ResearchEngine()
-        topic_data = research_engine.fetch_market_topic(override_query=override_query)
-        mock_master = {"topic": topic_data, "deck": {"slides": []}}
-        deck = editorial_engine.compose_from_master(mock_master)
+        # ── Phase 1: Load English Master Package or Sourced Topic ─────────────
+        if master_pkg_path and os.path.isfile(master_pkg_path):
+            logger.info("═══ Phase 1: Consuming English Master Carousel Package ═══")
+            try:
+                with open(master_pkg_path, "r", encoding="utf-8") as f:
+                    master_pkg = json.load(f)
+                topic_data = master_pkg.get("topic", {})
+                deck = editorial_engine.compose_from_master(master_pkg)
+                logger.info("✓ Independently scripted Tanglish deck from English concept: '%s'!", topic_data.get("title"))
+            except Exception as e:
+                logger.warning("Failed to parse master package (%s); invoking Thinker Layer.", e)
+                thinker.diagnose_master_pkg_failure(master_pkg_path, e)
 
-    slides = deck.get("slides", [])
-    logger.info("✓ Prepared %d Tanglish slides.", len(slides))
+        if not deck:
+            logger.info("═══ Phase 1: Standalone Research Sourcing ═══")
+            research_engine = ResearchEngine()
+            topic_data = research_engine.fetch_market_topic(override_query=override_query)
+            mock_master = {"topic": topic_data, "plan": {"hidden_reality": topic_data.get("title")}}
+            deck = editorial_engine.compose_from_master(mock_master)
 
-    # ── Phase 2: Playwright Visual Rendering & PDF Compilation ─────────────
-    logger.info("═══ Phase 2: Playwright 1080x1080 Retina Rendering (Tamil) ═══")
-    image_director = ImageDirector()
-    run_id = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
-    visual_pkg = image_director.render_carousel(deck, run_id=run_id)
-    slide_paths = visual_pkg["slide_paths"]
-    pdf_path = visual_pkg["pdf_path"]
+        slides = deck.get("slides", [])
+        logger.info("✓ Prepared %d Tanglish slides.", len(slides))
 
-    # ── Phase 3: Prepare Direct Raw Image URLs for Instagram ───────────────
-    repo_owner = "arunachalamvenkatachalapathy-dev"
-    repo_name = "market-debunk-tamil-carousels"
-    image_urls = [
-        f"https://raw.githubusercontent.com/{repo_owner}/{repo_name}/master/state/carousel_slides/slide_{i+1}_{run_id}.png"
-        for i in range(len(slide_paths))
-    ]
+        # ── Phase 2: Playwright Visual Rendering & PDF Compilation ─────────────
+        logger.info("═══ Phase 2: Playwright 1080x1080 Retina Rendering (Tamil) ═══")
+        image_director = ImageDirector()
+        run_id = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+        visual_pkg = image_director.render_carousel(deck, run_id=run_id)
+        slide_paths = visual_pkg["slide_paths"]
+        pdf_path = visual_pkg["pdf_path"]
 
-    # ── Phase 4: Multi-Platform Publishing ────────────────────────────────
-    logger.info("═══ Phase 4: Multi-Platform Distribution (Tamil) ═══")
-    publisher = Publisher()
-    results = publisher.publish_all(
-        image_urls=image_urls,
-        slide_paths=slide_paths,
-        pdf_path=pdf_path,
-        caption=deck.get("caption", ""),
-        title=topic_data.get("title", "Market Debunk Tamil"),
-        dry_run=dry_run
-    )
+        # ── Phase 3: Prepare Direct Raw Image URLs for Instagram ───────────────
+        repo_owner = "arunachalamvenkatachalapathy-dev"
+        repo_name = "market-debunk-tamil-carousels"
+        image_urls = [
+            f"https://raw.githubusercontent.com/{repo_owner}/{repo_name}/master/state/carousel_slides/slide_{i+1}_{run_id}.png"
+            for i in range(len(slide_paths))
+        ]
 
-    logger.info("📢 Publishing Results: %s", json.dumps(results, indent=2))
-    logger.info("=" * 60)
-    logger.info("🎉 TAMIL CAROUSEL WORKFLOW COMPLETED SUCCESSFULLY")
-    logger.info("=" * 60)
-    return True
+        # In CI, if live production run, pre-push slides so raw GitHub URLs are accessible
+        if not dry_run and os.getenv("GITHUB_ACTIONS") == "true":
+            logger.info("🚀 Pre-pushing Tamil slides to GitHub master before live publishing...")
+            os.system("git config --global user.name 'github-actions[bot]'")
+            os.system("git config --global user.email 'github-actions[bot]@users.noreply.github.com'")
+            os.system("git add state/carousel_slides/ state/latest_carousel.pdf")
+            os.system('git commit -m "chore: pre-push tamil slides for live publishing [skip ci]" || true')
+            os.system("git push origin master || true")
+            import time
+            time.sleep(3)
+
+        # ── Phase 4: Multi-Platform Publishing ────────────────────────────────
+        logger.info("═══ Phase 4: Multi-Platform Distribution (Tamil) ═══")
+        publisher = Publisher()
+        results = publisher.publish_all(
+            image_urls=image_urls,
+            slide_paths=slide_paths,
+            pdf_path=pdf_path,
+            caption=deck.get("caption", ""),
+            title=topic_data.get("title", "Market Debunk Tamil"),
+            dry_run=dry_run
+        )
+
+        logger.info("📢 Publishing Results: %s", json.dumps(results, indent=2))
+        logger.info("=" * 60)
+        logger.info("🎉 TAMIL CAROUSEL WORKFLOW COMPLETED SUCCESSFULLY")
+        logger.info("=" * 60)
+        return True
+
+    except Exception as e:
+        logger.critical("💥 Tamil pipeline halted by unhandled exception: %s", e, exc_info=True)
+        thinker.diagnose_pipeline_crash(
+            phase="TAMIL_PIPELINE_ORCHESTRATION",
+            error=e,
+            context={"dry_run": dry_run, "master_pkg_path": master_pkg_path, "override_query": override_query}
+        )
+        return False
 
 
 if __name__ == "__main__":

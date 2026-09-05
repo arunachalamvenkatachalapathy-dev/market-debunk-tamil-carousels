@@ -5,50 +5,124 @@ from typing import Optional, List, Dict, Tuple
 from google import genai
 
 from src.config import settings
+from src.thinker_engine import ThinkerEngine
 
 logger = logging.getLogger(__name__)
 
 
 class EditorialEngine:
     """
-    Tanglish Content Strategist for Market Debunk Tamil carousels.
-    Adapts financial debunks into natural spoken Tamil-English mix.
+    Independent Tanglish Scripting & Editorial Engine for Market Debunk Tamil carousels.
+    Autonomously crafts native spoken Tamil-English breakdowns from core market concepts.
     """
 
     def __init__(self, api_key: Optional[str] = None):
         self.api_key = api_key or settings.GEMINI_API_KEY
         self.client = genai.Client(api_key=self.api_key) if self.api_key else None
+        self.thinker = ThinkerEngine(api_key=self.api_key)
 
     def compose_from_master(self, master_pkg: dict) -> dict:
         """
-        Translates and adapts the English master carousel package into natural Tanglish.
-        Preserves all numerical anchors and facts.
+        Independently scripts and structures a complete 6-slide Tanglish carousel
+        from the underlying market topic and financial plan (NOT by translating English slides).
+        Preserves verified citable numerical metrics.
         """
-        english_deck = master_pkg.get("deck", {})
         topic = master_pkg.get("topic", {})
-        english_slides = english_deck.get("slides", [])
+        plan = master_pkg.get("plan", {})
 
-        logger.info("═══ Translating English Master Deck to Tanglish ═══")
-        prompt = f"""You are the content strategist for "Market Debunk Tamil" — a finance myth-busting Instagram/Facebook carousel series for Tamil-speaking Indian retail investors.
+        title = topic.get("title", "Market Debunk")
+        source = topic.get("source", "")
+        raw_text = topic.get("raw_text", "")
+        numbers = topic.get("numbers_detected", [])
+        core_thesis = plan.get("hidden_reality") or plan.get("core_thesis", "")
+        retail_trap = plan.get("core_illusion") or plan.get("retail_trap", "")
+        citable_metric = plan.get("citable_metric") or (numbers[0] if numbers else "₹34 Lakhs")
+        actionable_rule = plan.get("actionable_rule", "")
+        lead_magnet = plan.get("lead_magnet", {})
+        trigger = lead_magnet.get("trigger_word", "GUIDE")
+        resource = lead_magnet.get("resource_name", "The Risk Checklist")
 
-Adapt this English 6-slide financial carousel into Tanglish (natural spoken Tamil-English mix, the way Tamil finance creators actually write and speak):
+        logger.info("═══ Autonomous Tanglish Scripting Agent: Sourcing Concept '%s' ═══", title)
+        prompt = f"""You are the Lead Financial Scripting Agent for "Market Debunk Tamil" — an educational Instagram/Facebook carousel series for Tamil-speaking Indian retail investors.
 
-ENGLISH SLIDES DATA:
-{json.dumps(english_slides, indent=2)}
+Do NOT translate any existing English slides. You are crafting an ORIGINAL 6-slide sequential breakdown in natural conversational Tanglish (the way smart Tamil finance creators explain concepts on YouTube/Instagram).
 
-STRICT RULES:
-1. Keep all financial terms in English exactly as investors search/read them: SIP, Nifty, P/E ratio, mutual fund, stop-loss, portfolio, expense ratio, Direct plan, Regular plan — do NOT translate these into Tamil.
-2. Write connecting sentences, explanations, and hooks in colloquial Tanglish (mixing Tamil sentence structure with English words naturally, e.g. "NIFTY market-ல இவ்ளோ பெரிய Risk-ஆ?!", "1% fee-ல ₹34 Lakhs loss-ஆ?!").
-3. Do NOT produce pure literary/formal written Tamil (like news channels) — write the way a smart Tamil YouTuber explains it out loud.
-4. Keep every slide short — under 30 words per slide.
-5. Preserve all concrete numbers (e.g. ₹34 Lakhs, 93%, 1%, ₹15,000).
-6. Slide 1: Hook in Tanglish with canary yellow highlight <span class="highlight-box">...</span> around the most shocking words.
-7. Slide 6 CTA: "இந்த post-ஐ மறக்காம Save பண்ணுங்க! முழு breakdown வேணும்னா கீழ 'GUIDE'-னு comment பண்ணுங்க."
+FINANCIAL CONCEPT & EVIDENCE:
+- Topic: {title}
+- Source: {source}
+- Context: {raw_text}
+- The Retail Illusion / Trap: {retail_trap}
+- The Institutional Reality / Thesis: {core_thesis}
+- Mandatory Verified Metric: {citable_metric}
+- Golden Actionable Rule: {actionable_rule}
 
-Return JSON ONLY matching the exact 6-slide schema:
+STRICT CONTENT & LANGUAGE RULES:
+1. Write in natural spoken Tanglish (Tamil sentence structure seamlessly mixed with everyday English finance vocabulary: SIP, Nifty, mutual fund, stop-loss, portfolio, expense ratio, Direct plan, Regular plan). Never use archaic literary Tamil.
+2. Short, high-velocity reading: Under 30 words per slide.
+3. PRESERVE THE EXACT NUMERIC METRIC: {citable_metric} (and any percentages/rupee amounts like {numbers}).
+4. Slide 1 (Hook): Contrarian question or alert with the most shocking number inside <span class="highlight-box">...</span> (canary yellow marker).
+5. Slide 2 (Friction): Myth vs Reality. card_a_text = what Tamil retail investors assume; card_b_text = what actually happens mathematically; takeaway = core contrast.
+6. Slide 3 (Breakdown): 3 clear numbered points dissecting the mechanism.
+7. Slide 4 (Playbook Steps 1 & 2): Two concrete sequential steps (step 1 & step 2) for retail protection.
+8. Slide 5 (Strategy & Rule): Step 3 + The non-negotiable rule.
+9. Slide 6 (CTA): Urge them to save the post, and comment '{trigger}' to receive '{resource}' in DM.
+
+Return JSON ONLY matching this 6-slide schema:
 {{
   "caption": "High-converting Tanglish caption with hook, bullet points, CTA, and hashtags",
-  "slides": [ ... 6 slide objects ... ]
+  "slides": [
+    {{
+      "role": "hook",
+      "tag": "#TAMILFINANCE",
+      "title": "Short Tanglish Hook with <span class='highlight-box'>...</span>"
+    }},
+    {{
+      "role": "friction",
+      "tag": "#MYTHVSREALITY",
+      "title": "Short title",
+      "card_a_text": "Myth in Tanglish",
+      "card_b_text": "Reality in Tanglish with {citable_metric}",
+      "takeaway": "Contrast takeaway in Tanglish"
+    }},
+    {{
+      "role": "breakdown",
+      "tag": "#HIDDENMATH",
+      "title": "How the math works",
+      "points": [
+        {{"num": "1", "title": "Point 1", "desc": "Desc in Tanglish"}},
+        {{"num": "2", "title": "Point 2", "desc": "Desc in Tanglish"}},
+        {{"num": "3", "title": "Point 3", "desc": "Desc in Tanglish"}}
+      ]
+    }},
+    {{
+      "role": "playbook",
+      "layout": "step_diagram",
+      "tag": "#PLAYBOOK",
+      "title": "Action Playbook",
+      "steps": [
+        {{"number": 1, "label": "Step 1 Title", "sublabel": "Tanglish summary", "color": "#A8D5BA"}},
+        {{"number": 2, "label": "Step 2 Title", "sublabel": "Tanglish summary", "color": "#A8D5BA"}}
+      ],
+      "body_lines": ["Explanation sentence in Tanglish"],
+      "closing_line": "Key takeaway"
+    }},
+    {{
+      "role": "playbook",
+      "tag": "#STRATEGY",
+      "title": "The Golden Rule",
+      "rules": [
+        {{"title": "Rule 1", "desc": "Tanglish explanation"}},
+        {{"title": "Rule 2", "desc": "Tanglish explanation"}}
+      ],
+      "takeaway": "Golden rule in Tanglish"
+    }},
+    {{
+      "role": "cta",
+      "tag": "#SAVETHIS",
+      "title": "Save & Share",
+      "text": "இந்த post-ஐ Save பண்ணி வச்சுக்கோங்க! முழு {resource} வேணும்னா கீழ '{trigger}'-னு comment பண்ணுங்க."
+    }}
+  ]
 }}"""
 
         if self.client:
@@ -59,28 +133,51 @@ Return JSON ONLY matching the exact 6-slide schema:
                     config={"response_mime_type": "application/json", "temperature": 0.4}
                 )
                 if response.text:
-                    data = json.loads(response.text)
+                    clean_text = response.text.strip()
+                    if clean_text.startswith("```json"):
+                        clean_text = clean_text[7:]
+                    if clean_text.endswith("```"):
+                        clean_text = clean_text[:-3]
+                    data = json.loads(clean_text.strip())
                     if len(data.get("slides", [])) == 6:
                         # Pass 2: Tanglish Numeric Fact-Checking Gate
                         is_valid, report = self._verify_numeric_facts(data, topic)
                         if not is_valid:
                             logger.warning("❌ Tanglish Fact-Checking Gate failed (Attempt 1): %s. Repairing...", report)
-                            repair_prompt = f"{prompt}\n\nSTRICT FACT-CHECK REPAIR: {report}. Make sure all numbers from the English slides are strictly preserved in Tamil!"
+                            repair_prompt = f"{prompt}\n\nSTRICT FACT-CHECK REPAIR: {report}. Make sure the numbers {numbers} or {citable_metric} are strictly preserved in Tamil slides!"
                             rep_resp = self.client.models.generate_content(
                                 model=settings.GEMINI_MODEL,
                                 contents=repair_prompt,
                                 config={"response_mime_type": "application/json", "temperature": 0.3}
                             )
                             if rep_resp.text:
-                                rep_data = json.loads(rep_resp.text)
+                                rep_clean = rep_resp.text.strip()
+                                if rep_clean.startswith("```json"):
+                                    rep_clean = rep_clean[7:]
+                                if rep_clean.endswith("```"):
+                                    rep_clean = rep_clean[:-3]
+                                rep_data = json.loads(rep_clean.strip())
                                 is_rep_valid, rep_report = self._verify_numeric_facts(rep_data, topic)
                                 if is_rep_valid and len(rep_data.get("slides", [])) == 6:
                                     logger.info("✅ Repaired Tanglish deck passed Fact-Checking Gate.")
                                     rep_data["slides"] = self._normalize_slides(rep_data["slides"], topic)
                                     rep_data["fact_check_status"] = "verified_after_repair"
                                     return rep_data
-                            
-                            # Circuit Breaker on 2nd failure
+
+                            # Pass 3: Invoke ThinkerEngine to auto-repair numeric mismatch
+                            logger.warning("🧠 Invoking Schematic Thinker Layer for Tanglish numeric auto-repair...")
+                            is_th_repaired, th_deck, diag = self.thinker.diagnose_and_repair_tanglish_failure(
+                                topic_data=topic,
+                                failing_deck=rep_data if 'rep_data' in locals() else data,
+                                validation_report=rep_report if 'rep_report' in locals() else report
+                            )
+                            if is_th_repaired and th_deck:
+                                logger.info("✅ ThinkerEngine auto-repaired Tanglish deck successfully!")
+                                th_deck["slides"] = self._normalize_slides(th_deck["slides"], topic)
+                                th_deck["fact_check_status"] = "thinker_auto_repaired"
+                                return th_deck
+
+                            # Circuit Breaker on persistent failure
                             logger.error("🚨 CONSECUTIVE TANGLISH FACT-CHECK FAILURE. Engaging Circuit Breaker -> Falling back to pre-vetted Tanglish deck.")
                             fb_deck = self._generate_fallback_tanglish_deck(topic)
                             fb_deck["fact_check_status"] = "circuit_breaker_evergreen_fallback"
@@ -91,7 +188,8 @@ Return JSON ONLY matching the exact 6-slide schema:
                             data["fact_check_status"] = "verified_pass"
                             return data
             except Exception as e:
-                logger.warning("Tanglish adaptation failed (%s); using curated Tanglish deck.", e)
+                logger.warning("Tanglish autonomous scripting failed (%s); invoking Thinker Layer.", e)
+                self.thinker.diagnose_pipeline_crash("EDITORIAL_SCRIPTING", e, {"topic": topic, "plan": plan})
 
         return self._generate_fallback_tanglish_deck(topic)
 
