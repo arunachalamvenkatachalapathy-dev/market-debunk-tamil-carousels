@@ -1,4 +1,5 @@
 name: Daily Tamil Financial Carousel Pipeline (7:15 PM IST)
+# Scheduled daily at 7:15 PM IST (13:45 UTC)
 
 on:
   schedule:
