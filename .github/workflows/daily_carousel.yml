@@ -87,8 +87,8 @@ jobs:
       - name: Prune Slide Images Older Than 48 Hours
         run: |
           find state/carousel_slides/ -name "*.png" -mtime +2 -delete || true
-          git add -u state/carousel_slides/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: prune older Tamil carousel slides [skip ci]" && git push origin master)
+          git add -u state/carousel_slides/ || true
+          git diff --staged --quiet || (git commit -m "chore: prune older Tamil carousel slides [skip ci]" && git push origin master)
 
       - name: Upload Tamil Carousel PDF Artifact
         uses: actions/upload-artifact@v4
