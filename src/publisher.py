@@ -234,13 +234,17 @@ class Publisher:
             logger.debug("Facebook Page token resolution skipped: %s", e)
 
         try:
-            # Upload each slide as unpublished photo
+            # Upload each slide as unpublished temporary photo
             attached_fbids = []
             for i, p in enumerate(slide_paths):
                 with open(p, "rb") as img_f:
                     up_res = requests.post(
                         f"{self.base_url}/{page_id}/photos",
-                        params={"access_token": token, "published": "false"},
+                        data={
+                            "access_token": token,
+                            "published": "false",
+                            "temporary": "true",
+                        },
                         files={"source": img_f},
                         timeout=45
                     ).json()
@@ -250,12 +254,13 @@ class Publisher:
                     attached_fbids.append({"media_fbid": photo_id})
                     logger.info("  ✓ Uploaded FB photo %d/%d (ID: %s)", i + 1, len(slide_paths), photo_id)
 
-            # Publish feed post with attached media
+            # Publish feed post with attached media as a single combined multi-photo post
             post_res = requests.post(
                 f"{self.base_url}/{page_id}/feed",
                 data={
                     "message": caption[:2000],
                     "attached_media": json.dumps(attached_fbids),
+                    "published": "true",
                     "access_token": token,
                 },
                 timeout=30
