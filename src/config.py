@@ -22,11 +22,11 @@ class Settings:
     SERPAPI_KEY: str = os.getenv("SERPAPI_KEY", "b8906f93f638b596fb6ef15e4086e0eebcfc3372a0d293b2977224b92a7d4ecf")
 
     # ── Meta (Instagram & Facebook) ─────────────────────────────────────────
-    INSTAGRAM_USER_ID: str = os.getenv("INSTAGRAM_USER_ID", "17841476402324907")
+    INSTAGRAM_USER_ID: str = os.getenv("INSTAGRAM_USER_ID", "17841436821575762")
     INSTAGRAM_ACCESS_TOKEN: str = os.getenv("INSTAGRAM_ACCESS_TOKEN", "")
     INSTAGRAM_GRAPH_VERSION: str = os.getenv("INSTAGRAM_GRAPH_VERSION", "v21.0")
 
-    FACEBOOK_PAGE_ID: str = os.getenv("FACEBOOK_PAGE_ID", "106828592534579")
+    FACEBOOK_PAGE_ID: str = os.getenv("FACEBOOK_PAGE_ID", "1297757220087165")
     FACEBOOK_ACCESS_TOKEN: str = os.getenv("FACEBOOK_ACCESS_TOKEN", "")
 
     # ── Telegram ────────────────────────────────────────────────────────────
@@ -44,8 +44,8 @@ class Settings:
     ENABLE_LINKEDIN: bool = os.getenv("ENABLE_LINKEDIN", "false").lower() == "true"
 
     # ── Branding ────────────────────────────────────────────────────────────
-    BRAND_NAME: str = "Market Debunk"
-    BRAND_SUBTITLE: str = "Exposing Retail Traps & Institutional Math"
-    BRAND_HANDLE: str = "@marketdebunk"
+    BRAND_NAME: str = "Market Debunk Tamil"
+    BRAND_SUBTITLE: str = "பங்குச் சந்தை உண்மைகள் & நிதி விழிப்புணர்வு"
+    BRAND_HANDLE: str = "@marketdebunk_tamil"
 
 settings = Settings()

@@ -1,5 +1,5 @@
 """
-Market Debunk 7:00 PM Financial Carousel Engine
+Market Debunk Tamil 7:15 PM Financial Carousel Engine
 Main Orchestrator
 """
 import argparse
@@ -10,12 +10,10 @@ import sys
 from pathlib import Path
 from datetime import datetime, timezone
 
-# Ensure project root is in python path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from src.config import settings, STATE_DIR
 from src.research_engine import ResearchEngine
-from src.workflow_agents import PlannerAgent, PromptEngineer
 from src.editorial_engine import EditorialEngine
 from src.image_director import ImageDirector
 from src.publisher import Publisher
@@ -24,90 +22,82 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s"
 )
-logger = logging.getLogger("market_debunk_carousel")
+logger = logging.getLogger("market_debunk_tamil_carousel")
 
 
-def run_pipeline(dry_run: bool = False, override_query: str = None) -> bool:
+def run_pipeline(dry_run: bool = False, master_pkg_path: str = None, override_query: str = None) -> bool:
     logger.info("=" * 60)
-    logger.info("🚀 MARKET DEBUNK FINANCIAL CAROUSEL ENGINE (7:00 PM DAILY)")
+    logger.info("🚀 MARKET DEBUNK TAMIL FINANCIAL CAROUSEL ENGINE (7:15 PM DAILY)")
     logger.info("   Mode: %s", "DRY RUN (No live publishing)" if dry_run else "LIVE PRODUCTION")
     logger.info("=" * 60)
 
-    # ── Phase 1: Research & Archetype Sourcing ─────────────────────────────
-    logger.info("═══ Phase 1: Market & Regulatory Research Sourcing ═══")
-    research_engine = ResearchEngine()
-    topic_data = research_engine.fetch_market_topic(override_query=override_query)
-    logger.info("📌 Topic: '%s' | Archetype: [%s]", topic_data.get("title"), topic_data.get("archetype_name"))
-
-    # ── Phase 2: Financial Planning & Brief ────────────────────────────────
-    logger.info("═══ Phase 2: Financial Planning & Creative Brief ═══")
-    planner = PlannerAgent(llm_client=EditorialEngine().client)
-    plan = planner.plan(topic_data)
-    prompt_eng = PromptEngineer()
-    brief = prompt_eng.build_brief(plan)
-
-    # ── Phase 3: Two-Pass Composition & Fact-Checking Gate ─────────────────
-    logger.info("═══ Phase 3: Two-Pass Slide Composition & Numeric Fact-Check ═══")
     editorial_engine = EditorialEngine()
-    deck = editorial_engine.compose_carousel(topic_data, brief)
-    slides = deck.get("slides", [])
-    logger.info("✓ Composed %d slides with verified anchor metrics.", len(slides))
+    topic_data = None
+    deck = None
 
-    # ── Phase 4: Playwright Visual Rendering & PDF Compilation ─────────────
-    logger.info("═══ Phase 4: Playwright 1080x1080 Retina Rendering ═══")
+    # ── Phase 1: Load English Master Package or Sourced Topic ─────────────
+    if master_pkg_path and os.path.isfile(master_pkg_path):
+        logger.info("═══ Phase 1: Consuming English Master Carousel Package ═══")
+        try:
+            with open(master_pkg_path, "r", encoding="utf-8") as f:
+                master_pkg = json.load(f)
+            topic_data = master_pkg.get("topic", {})
+            deck = editorial_engine.compose_from_master(master_pkg)
+            logger.info("✓ Adapted English Master topic: '%s' to Tanglish!", topic_data.get("title"))
+        except Exception as e:
+            logger.warning("Failed to parse master package (%s); falling back to research.", e)
+
+    if not deck:
+        logger.info("═══ Phase 1: Standalone Research Sourcing ═══")
+        research_engine = ResearchEngine()
+        topic_data = research_engine.fetch_market_topic(override_query=override_query)
+        mock_master = {"topic": topic_data, "deck": {"slides": []}}
+        deck = editorial_engine.compose_from_master(mock_master)
+
+    slides = deck.get("slides", [])
+    logger.info("✓ Prepared %d Tanglish slides.", len(slides))
+
+    # ── Phase 2: Playwright Visual Rendering & PDF Compilation ─────────────
+    logger.info("═══ Phase 2: Playwright 1080x1080 Retina Rendering (Tamil) ═══")
     image_director = ImageDirector()
     run_id = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
     visual_pkg = image_director.render_carousel(deck, run_id=run_id)
     slide_paths = visual_pkg["slide_paths"]
     pdf_path = visual_pkg["pdf_path"]
 
-    # ── Phase 5: Export Master Package for Tamil Companion ────────────────
-    master_pkg_path = STATE_DIR / "market_debunk_carousel_master.json"
-    master_package = {
-        "topic": topic_data,
-        "plan": plan,
-        "deck": deck,
-        "run_id": run_id,
-        "slide_count": len(slide_paths),
-        "exported_at": datetime.now(timezone.utc).isoformat()
-    }
-    with open(master_pkg_path, "w", encoding="utf-8") as f:
-        json.dump(master_package, f, indent=2, ensure_ascii=False)
-    logger.info("✓ Exported Tamil Master Package to: %s", master_pkg_path)
-
-    # ── Phase 6: Prepare Direct Raw Image URLs for Instagram ───────────────
-    # Uses raw.githubusercontent.com URLs for the unique run_id slides
+    # ── Phase 3: Prepare Direct Raw Image URLs for Instagram ───────────────
     repo_owner = "arunachalamvenkatachalapathy-dev"
-    repo_name = "market-debunk-carousels"
+    repo_name = "market-debunk-tamil-carousels"
     image_urls = [
         f"https://raw.githubusercontent.com/{repo_owner}/{repo_name}/master/state/carousel_slides/slide_{i+1}_{run_id}.png"
         for i in range(len(slide_paths))
     ]
 
-    # ── Phase 7: Multi-Platform Publishing ────────────────────────────────
-    logger.info("═══ Phase 7: Multi-Platform Distribution ═══")
+    # ── Phase 4: Multi-Platform Publishing ────────────────────────────────
+    logger.info("═══ Phase 4: Multi-Platform Distribution (Tamil) ═══")
     publisher = Publisher()
     results = publisher.publish_all(
         image_urls=image_urls,
         slide_paths=slide_paths,
         pdf_path=pdf_path,
         caption=deck.get("caption", ""),
-        title=topic_data.get("title", "Market Debunk"),
+        title=topic_data.get("title", "Market Debunk Tamil"),
         dry_run=dry_run
     )
 
     logger.info("📢 Publishing Results: %s", json.dumps(results, indent=2))
     logger.info("=" * 60)
-    logger.info("🎉 CAROUSEL WORKFLOW COMPLETED SUCCESSFULLY")
+    logger.info("🎉 TAMIL CAROUSEL WORKFLOW COMPLETED SUCCESSFULLY")
     logger.info("=" * 60)
     return True
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Market Debunk Carousel Engine")
+    parser = argparse.ArgumentParser(description="Market Debunk Tamil Carousel Engine")
     parser.add_argument("--dry-run", action="store_true", help="Generate visuals and PDF without publishing")
+    parser.add_argument("--master-pkg", type=str, default=None, help="Path to English master carousel package")
     parser.add_argument("--query", type=str, default=None, help="Override search query for market topic")
     args = parser.parse_args()
 
-    success = run_pipeline(dry_run=args.dry_run, override_query=args.query)
+    success = run_pipeline(dry_run=args.dry_run, master_pkg_path=args.master_pkg, override_query=args.query)
     sys.exit(0 if success else 1)

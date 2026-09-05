@@ -11,91 +11,43 @@ logger = logging.getLogger(__name__)
 
 class EditorialEngine:
     """
-    Two-pass financial carousel composer with an explicit Numeric Fact-Checking Gate.
+    Tanglish Content Strategist for Market Debunk Tamil carousels.
+    Adapts financial debunks into natural spoken Tamil-English mix.
     """
 
     def __init__(self, api_key: Optional[str] = None):
         self.api_key = api_key or settings.GEMINI_API_KEY
         self.client = genai.Client(api_key=self.api_key) if self.api_key else None
 
-    def compose_carousel(self, topic_data: dict, brief: str) -> dict:
+    def compose_from_master(self, master_pkg: dict) -> dict:
         """
-        Pass 1: Draft the 6-slide carousel deck and caption.
-        Pass 2: Run the Numeric Fact-Checking Gate to verify all numbers against source context.
+        Translates and adapts the English master carousel package into natural Tanglish.
+        Preserves all numerical anchors and facts.
         """
-        # ── Pass 1: Generation ──────────────────────────────────────────────
-        logger.info("═══ Editorial Pass 1: Drafting 6-Slide Carousel Deck ═══")
-        deck = self._generate_draft(topic_data, brief)
+        english_deck = master_pkg.get("deck", {})
+        topic = master_pkg.get("topic", {})
+        english_slides = english_deck.get("slides", [])
 
-        # ── Pass 2: Numeric Fact-Checking Gate ──────────────────────────────
-        logger.info("═══ Editorial Pass 2: Running Numeric Fact-Checking Gate ═══")
-        is_valid, report = self._verify_numeric_facts(deck, topic_data)
-        
-        if not is_valid:
-            logger.warning("❌ Numeric Fact-Checking Gate failed: %s. Retrying with repair prompt...", report)
-            deck = self._generate_draft(topic_data, f"{brief}\n\nSTRICT FACT-CHECK REPAIR INSTRUCTION: {report}")
-            is_valid_retry, report_retry = self._verify_numeric_facts(deck, topic_data)
-            if is_valid_retry:
-                logger.info("✅ Repaired deck passed Numeric Fact-Checking Gate.")
-            else:
-                logger.warning("⚠️ Deck still has numeric discrepancies (%s); normalizing cautiously.", report_retry)
-        else:
-            logger.info("✅ %s", report)
+        logger.info("═══ Translating English Master Deck to Tanglish ═══")
+        prompt = f"""You are the content strategist for "Market Debunk Tamil" — a finance myth-busting Instagram/Facebook carousel series for Tamil-speaking Indian retail investors.
 
-        # Normalize and ensure visual consistency
-        deck["slides"] = self._normalize_slides(deck.get("slides", []), topic_data)
-        return deck
+Adapt this English 6-slide financial carousel into Tanglish (natural spoken Tamil-English mix, the way Tamil finance creators actually write and speak):
 
-    def _generate_draft(self, topic_data: dict, brief: str) -> dict:
-        title = topic_data.get("title", "")
-        raw_text = topic_data.get("raw_text", "")
-        archetype = topic_data.get("archetype", "")
+ENGLISH SLIDES DATA:
+{json.dumps(english_slides, indent=2)}
 
-        prompt = f"""You are a master financial content strategist for 'Market Debunk'.
-Create an agency-grade, high-density 6-slide Instagram/LinkedIn carousel debunking a retail investing trap.
+STRICT RULES:
+1. Keep all financial terms in English exactly as investors search/read them: SIP, Nifty, P/E ratio, mutual fund, stop-loss, portfolio, expense ratio, Direct plan, Regular plan — do NOT translate these into Tamil.
+2. Write connecting sentences, explanations, and hooks in colloquial Tanglish (mixing Tamil sentence structure with English words naturally, e.g. "NIFTY market-ல இவ்ளோ பெரிய Risk-ஆ?!", "1% fee-ல ₹34 Lakhs loss-ஆ?!").
+3. Do NOT produce pure literary/formal written Tamil (like news channels) — write the way a smart Tamil YouTuber explains it out loud.
+4. Keep every slide short — under 30 words per slide.
+5. Preserve all concrete numbers (e.g. ₹34 Lakhs, 93%, 1%, ₹15,000).
+6. Slide 1: Hook in Tanglish with canary yellow highlight <span class="highlight-box">...</span> around the most shocking words.
+7. Slide 6 CTA: "இந்த post-ஐ மறக்காம Save பண்ணுங்க! முழு breakdown வேணும்னா கீழ 'GUIDE'-னு comment பண்ணுங்க."
 
-TOPIC: {title}
-SOURCE CONTEXT: {raw_text}
-CREATIVE BRIEF:
-{brief}
-
-DESIGN SPECIFICATIONS (EXACTLY 6 SLIDES):
-- Slide 1 (role: "hook"):
-  - title: 2-3 short lines. Put the most shocking 1-3 words inside <span class="highlight-box">...</span> (canary yellow marker).
-  - deliverable: e.g. "Inside: 5-Point Mathematical Breakdown"
-  - tag: e.g. "#MUTUALFUNDS", "#SEBIRULES", "#CREDITCARDS", "#INVESTING"
-
-- Slide 2 (role: "friction"):
-  - title: e.g. "The Illusion of Safe 12% SIPs"
-  - card_a_text: What retail investors are told or believe (1-2 sentences).
-  - card_b_text: The operational reality or hidden cost (1-2 sentences).
-  - takeaway: Core rule stated as contrast: "X creates familiarity. Y creates wealth."
-
-- Slide 3 (role: "breakdown"):
-  - title: e.g. "3 Silent Leakages in Your Returns"
-  - points: Exactly 3 numbered items. Each item: {{"num": "1", "title": "2-3 word title", "desc": "Concrete explanation with real mechanism"}}
-
-- Slide 4 (role: "architecture" OR "step_diagram"):
-  - If the concept has a 3-4 step framework, use layout "step_diagram":
-    {{"layout": "step_diagram", "steps": [
-      {{"number": 1, "icon_concept": "calculator", "color": "#A8D5BA", "label": "AUDIT", "sublabel": "Check expense ratio"}},
-      {{"number": 2, "icon_concept": "bar chart", "color": "#F5D782", "label": "COMPARE", "sublabel": "Run direct vs regular"}},
-      {{"number": 3, "icon_concept": "shield", "color": "#A8C8E8", "label": "SWITCH", "sublabel": "Move to zero-commission"}}
-    ], "headline": "The 3-Step Clean Capital Loop", "body_lines": ["Distributors sell convenience.", "Direct plans preserve compounding."], "closing_line": "Audit your expense ratio before adding fresh capital."}}
-  - Otherwise, provide 3-4 structured process steps with a strict execution rule.
-
-- Slide 5 (role: "concept"):
-  - title: e.g. "3 Rules Before Making Your Next Move"
-  - rules: Exactly 3 actionable rules for retail investors with bold titles.
-
-- Slide 6 (role: "cta"):
-  - title_lines: ["Don't <span class=\\"highlight-box\\">forget to</span>", "save this <span class=\\"highlight-box\\">post</span>"]
-  - discussion_question: A thoughtful prompt for the comments.
-  - lead_magnet: {{"trigger_word": "GUIDE", "resource_name": "The Retail Risk Checklist"}}
-
-Return JSON ONLY:
+Return JSON ONLY matching the exact 6-slide schema:
 {{
-  "caption": "High-converting Instagram/LinkedIn caption (hook, bullet points, CTA, hashtags)",
+  "caption": "High-converting Tanglish caption with hook, bullet points, CTA, and hashtags",
   "slides": [ ... 6 slide objects ... ]
 }}"""
 
@@ -109,69 +61,26 @@ Return JSON ONLY:
                 if response.text:
                     data = json.loads(response.text)
                     if len(data.get("slides", [])) == 6:
+                        data["slides"] = self._normalize_slides(data["slides"], topic)
                         return data
             except Exception as e:
-                logger.warning("Gemini carousel drafting failed (%s); building deterministic deck.", e)
+                logger.warning("Tanglish adaptation failed (%s); using curated Tanglish deck.", e)
 
-        return self._generate_fallback_deck(topic_data)
-
-    # ── Numeric Fact-Checking Gate ──────────────────────────────────────────
-
-    def _verify_numeric_facts(self, deck: dict, topic_data: dict) -> Tuple[bool, str]:
-        """
-        Extracts all numeric and financial claims across the 6 slides and verifies
-        whether they are consistent with the source text.
-        """
-        source_text = topic_data.get("raw_text", "") + " " + topic_data.get("title", "")
-        slides = deck.get("slides", [])
-        
-        # Collect all text from all slides
-        all_slide_text = ""
-        for s in slides:
-            all_slide_text += f" {s.get('title', '')} {s.get('card_a_text', '')} {s.get('card_b_text', '')} {s.get('takeaway', '')} "
-            for p in s.get("points", []):
-                all_slide_text += f" {p.get('title', '')} {p.get('desc', '')} "
-            for r in s.get("rules", []):
-                all_slide_text += f" {r.get('title', '')} {r.get('desc', '')} "
-            for b in s.get("body_lines", []):
-                all_slide_text += f" {b} "
-            all_slide_text += f" {s.get('headline', '')} {s.get('closing_line', '')} "
-
-        # Extract specific figures: e.g. ₹X, X%, X Lakh, X Crore, X years
-        slide_numbers = re.findall(r"(?:₹|\$)?\b\d+(?:[\.,]\d+)?\s?(?:%|Cr|Lakh|Lakhs|Crore|Crores|years|months|bps)?\b", all_slide_text)
-        clean_slide_nums = set(n.strip() for n in slide_numbers if len(n.strip()) > 1 and not n.strip().isdigit())
-
-        source_numbers = re.findall(r"(?:₹|\$)?\b\d+(?:[\.,]\d+)?\s?(?:%|Cr|Lakh|Lakhs|Crore|Crores|years|months|bps)?\b", source_text)
-        clean_source_nums = set(n.strip() for n in source_numbers if len(n.strip()) > 1 and not n.strip().isdigit())
-
-        # If source has no numbers detected, pass gracefully
-        if not clean_source_nums:
-            return True, "Source context has no specific numbers; qualitative validation passed."
-
-        # Check if at least one anchor metric from source is preserved in slides
-        anchor_match = clean_slide_nums.intersection(clean_source_nums)
-        if not anchor_match and clean_source_nums:
-            return False, f"Missing source anchor metric! Expected at least one of {clean_source_nums} in slide deck."
-
-        return True, f"FACT CHECK PASSED: Verified anchor metric(s) {list(anchor_match)} preserved across slide deck."
-
-    # ── Slide Normalization & Formatting ────────────────────────────────────
+        return self._generate_fallback_tanglish_deck(topic)
 
     def _normalize_slides(self, slides: list, topic_data: dict) -> list:
         normalized = []
-        default_tags = ["#INVESTING", "#MARKETTRUTH", "#HIDDENMATH", "#PLAYBOOK", "#STRATEGY", "#SAVETHIS"]
+        default_tags = ["#INVESTING", "#TAMILFINANCE", "#HIDDENMATH", "#PLAYBOOK", "#STRATEGY", "#SAVETHIS"]
 
         for idx, slide in enumerate(slides[:6]):
             s = dict(slide)
             s["slide_index"] = idx + 1
             s["tag"] = s.get("tag") or default_tags[idx]
 
-            # Ensure title_lines with yellow highlight box
             raw_title = s.get("title") or s.get("headline") or ""
             if not s.get("title_lines"):
                 s["title_lines"] = self._format_title_lines(raw_title, is_hook=(idx == 0))
 
-            # Build HTML body representation
             s["body_html"] = self._build_slide_body_html(s, idx)
             normalized.append(s)
 
@@ -181,20 +90,18 @@ Return JSON ONLY:
         clean = re.sub(r"<[^>]+>", "", raw_title).strip()
         words = clean.split()
         if not words:
-            return ["Market Debunk"]
+            return ["Market Debunk Tamil"]
 
         if len(words) <= 4:
             if is_hook:
                 return [f"<span class='highlight-box'>{clean}</span>"]
             return [clean]
 
-        # Break into 2-3 lines
         mid = len(words) // 2
         line1 = " ".join(words[:mid])
         line2 = " ".join(words[mid:])
 
         if is_hook:
-            # Highlight the second half or punchy words
             return [line1, f"<span class='highlight-box'>{line2}</span>"]
         return [line1, line2]
 
@@ -228,13 +135,13 @@ Return JSON ONLY:
 
         # Role: Friction (Slide 2)
         if index == 1 or role == "friction":
-            card_a = slide.get("card_a_text", "Retail belief: Small recurring fees don't impact wealth.")
-            card_b = slide.get("card_b_text", "Operational reality: Compounding fees extract up to 30% of total wealth.")
-            takeaway = slide.get("takeaway", "Never confuse percentage points with absolute rupee compounding.")
+            card_a = slide.get("card_a_text", "Retail நம்பிக்கை: 1% fee ரொம்ப சின்ன விஷயம்.")
+            card_b = slide.get("card_b_text", "உண்மை: Compounding-ல இது ₹34 Lakhs-ஐ பறிக்குது.")
+            takeaway = slide.get("takeaway", "Percentage-ஐ பாக்காதீங்க, absolute rupee loss-ஐ பாருங்க.")
             return f"""
             <div class="slide-body-paragraphs">
-              <p class="body-para"><strong>The Myth:</strong> {card_a}</p>
-              <p class="body-para"><strong>The Reality:</strong> {card_b}</p>
+              <p class="body-para"><strong>Myth:</strong> {card_a}</p>
+              <p class="body-para"><strong>Reality:</strong> {card_b}</p>
               <p class="takeaway-para"><strong>Core Rule:</strong> {takeaway}</p>
             </div>"""
 
@@ -261,32 +168,31 @@ Return JSON ONLY:
 
         return f"<div class='slide-body-paragraphs'><p class='body-para'>{slide.get('text', '')}</p></div>"
 
-    def _generate_fallback_deck(self, topic_data: dict) -> dict:
-        title = topic_data.get("title", "The 1% Expense Ratio Illusion")
+    def _generate_fallback_tanglish_deck(self, topic_data: dict) -> dict:
         return {
-            "caption": f"🚨 {title}\n\nMost retail investors believe small fees don't matter, but compound math tells a completely different story.\n\nSwipe through the 6-slide breakdown to audit your capital.\n\n💬 Comment 'GUIDE' below to receive our complete Retail Risk Checklist!\n\n#StockMarket #Investing #MutualFunds #Nifty50 #PersonalFinance",
+            "caption": "🚨 1% Mutual Fund Fee-ல ₹34 Lakhs போகுதா?! 😱\n\nரொம்ப சின்ன fee-னு நினைக்கிற 1% commission, 25 வருஷத்துல உங்க compounding wealth-ல மிகப்பெரிய துளைய போடுது!\n\nமுழு breakdown-ஐ slide-ல பாருங்க. 👉\n\n💬 'GUIDE'-னு comment பண்ணுங்க, complete Risk Checklist-ஐ உங்க DM-க்கு அனுப்புறோம்!\n\n#TamilFinance #MutualFunds #StockMarketTamil #InvestingTamil #TamilBusiness",
             "slides": [
                 {
                     "role": "hook",
-                    "title": f"The Hidden Math <span class='highlight-box'>Behind {title[:30]}</span>",
-                    "deliverable": "📖 Inside: 5-Point Mathematical Breakdown",
+                    "title": "Mutual Fund-ல <span class='highlight-box'>₹34 Lakhs Loss-ஆ?!</span>",
+                    "deliverable": "📖 Inside: 1% Expense Ratio-வின் அதிர்ச்சி உண்மை",
                     "tag": "#MUTUALFUNDS"
                 },
                 {
                     "role": "friction",
-                    "title": "The Illusion of Negligible Fees",
-                    "card_a_text": "Retail investors assume a 1% distributor commission is negligible over time.",
-                    "card_b_text": "On a ₹15,000 monthly SIP over 25 years, that 1% fee quietly extracts ₹34 Lakhs from your wealth.",
-                    "takeaway": "Never confuse percentage fees with absolute rupee compounding.",
+                    "title": "1% Fee-யின் மாயை",
+                    "card_a_text": "Retail investors: 1% distributor commission ரொம்ப சின்னது.",
+                    "card_b_text": "Reality: ₹15,000 monthly SIP-ல 25 வருஷத்துல ₹34 Lakhs commission போகுது!",
+                    "takeaway": "Percentage-ஐ மட்டும் பாக்காதீங்க, absolute rupee compounding-ஐ பாருங்க.",
                     "tag": "#MARKETTRUTH"
                 },
                 {
                     "role": "breakdown",
-                    "title": "3 Silent Wealth Leakages",
+                    "title": "3 ரகசிய பண இழப்புகள்",
                     "points": [
-                        {"num": "1", "title": "Distributor Trailing Commissions", "desc": "Paid every single month out of your net asset value whether the fund gains or loses."},
-                        {"num": "2", "title": "Opportunity Cost Compounding", "desc": "Money paid as fees cannot compound for your retirement over the next decade."},
-                        {"num": "3", "title": "Zero Extra Alpha", "desc": "Regular plans hold the exact same stocks as direct plans with zero added performance."}
+                        {"num": "1", "title": "Monthly Trailing Commission", "desc": "Market லாபம் வந்தாலும் நஷ்டம் வந்தாலும் உங்க NAV-ல இருந்து கட் ஆகும்."},
+                        {"num": "2", "title": "Opportunity Cost", "desc": "கட்டணமா போன ₹34 Lakhs உங்க retirement-க்கு compound ஆகாம போயிடும்."},
+                        {"num": "3", "title": "Zero Extra Performance", "desc": "Regular plan-ல அதே stocks தான், எந்த extra returns-உம் கெடையாது."}
                     ],
                     "tag": "#HIDDENMATH"
                 },
@@ -294,35 +200,35 @@ Return JSON ONLY:
                     "role": "architecture",
                     "layout": "step_diagram",
                     "steps": [
-                        {"number": 1, "icon_concept": "search", "color": "#A8D5BA", "label": "AUDIT", "sublabel": "Check portfolio for Regular"},
-                        {"number": 2, "icon_concept": "calculator", "color": "#F5D782", "label": "CALCULATE", "sublabel": "Run Direct vs Regular cost"},
-                        {"number": 3, "icon_concept": "shield", "color": "#A8C8E8", "label": "SWITCH", "sublabel": "Switch SIP to Direct Zero-Fee"}
+                        {"number": 1, "icon_concept": "search", "color": "#A8D5BA", "label": "AUDIT", "sublabel": "Portfolio-ல Regular இருக்கானு பாருங்க"},
+                        {"number": 2, "icon_concept": "calculator", "color": "#F5D782", "label": "CALCULATE", "sublabel": "Direct vs Regular cost-ஐ கணக்கு போடுங்க"},
+                        {"number": 3, "icon_concept": "shield", "color": "#A8C8E8", "label": "SWITCH", "sublabel": "Direct Zero-Fee plan-க்கு மாறுங்க"}
                     ],
-                    "headline": "The 3-Step Capital Recovery Loop",
+                    "headline": "3-Step Capital Recovery Loop",
                     "body_lines": [
-                        "Distributors sell convenience to retail investors.",
-                        "Direct mutual fund platforms preserve compounding capital."
+                        "Distributors உங்களுக்கு convenience விற்கிறாங்க.",
+                        "Direct mutual fund platforms உங்க பணத்தை காப்பாத்துது."
                     ],
-                    "closing_line": "Audit your expense ratio before adding fresh capital.",
+                    "closing_line": "புதிய முதலீடு பண்றதுக்கு முன்னாடி Expense Ratio-வை செக் பண்ணுங்க.",
                     "tag": "#PLAYBOOK"
                 },
                 {
                     "role": "concept",
-                    "title": "3 Rules for Retail Investors",
+                    "title": "Retail முதலீட்டாளர்களுக்கான 3 விதிகள்",
                     "rules": [
-                        {"title": "Audit Nav Direct vs Regular", "desc": "Always verify that every fund scheme in your portfolio explicitly has 'Direct' in its name."},
-                        {"title": "Automate STP Where Applicable", "desc": "Do not leave idle cash in distributor savings accounts when switching schemes."},
-                        {"title": "Verify Total Expense Ratio", "desc": "Cap equity fund TER under 0.8% and passive index fund TER under 0.2%."}
+                        {"title": "Check 'Direct' in Scheme Name", "desc": "உங்க fund பெயர்ல 'Direct' என்ற வார்த்தை கண்டிப்பா இருக்கணும்."},
+                        {"title": "Avoid Unnecessary Regular Plans", "desc": "Brokerage apps மூலமா வாங்காம direct AMC அல்லது zero-comm platform பயன்படுத்துங்க."},
+                        {"title": "Cap Total Expense Ratio", "desc": "Active fund-க்கு TER 0.8%-க்கு உள்ளயும், Index fund-க்கு 0.2%-க்கு உள்ளயும் இருக்கணும்."}
                     ],
                     "tag": "#STRATEGY"
                 },
                 {
                     "role": "cta",
-                    "title": "Don't <span class='highlight-box'>forget to</span> save this <span class='highlight-box'>post</span>",
-                    "discussion_question": "Have you audited your mutual fund portfolio for regular plans? Drop your thoughts below 👇",
+                    "title": "இந்த post-ஐ <span class='highlight-box'>மறக்காம</span> Save <span class='highlight-box'>பண்ணுங்க!</span>",
+                    "discussion_question": "உங்க portfolio-வை Direct plan-க்கு மாத்திட்டீங்களா? உங்க அனுபவத்தை comment பண்ணுங்க 👇",
                     "lead_magnet": {
                         "trigger_word": "GUIDE",
-                        "resource_name": "The Mutual Fund Risk Checklist"
+                        "resource_name": "The Tamil Mutual Fund Checklist"
                     },
                     "tag": "#SAVETHIS"
                 }
