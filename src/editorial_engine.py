@@ -134,94 +134,95 @@ Return JSON ONLY matching this 6-slide schema:
         ]
 
         if self.client:
-            data = None
-            for model_name in models_to_try:
-                try:
-                    logger.info("Attempting Tanglish drafting with model %s...", model_name)
-                    config = {"temperature": 0.4}
-                    if not model_name.startswith("gemma"):
-                        config["response_mime_type"] = "application/json"
+            try:
+                data = None
+                for model_name in models_to_try:
+                    try:
+                        logger.info("Attempting Tanglish drafting with model %s...", model_name)
+                        config = {"temperature": 0.4}
+                        if not model_name.startswith("gemma"):
+                            config["response_mime_type"] = "application/json"
 
-                    response = self.client.models.generate_content(
-                        model=model_name,
-                        contents=prompt,
-                        config=config
-                    )
-                    if response.text:
-                        clean_text = response.text.strip()
-                        if clean_text.startswith("```json"):
-                            clean_text = clean_text[7:]
-                        if clean_text.endswith("```"):
-                            clean_text = clean_text[:-3]
-                        parsed = json.loads(clean_text.strip())
-                        if len(parsed.get("slides", [])) == 6:
-                            data = parsed
-                            logger.info("✓ Model %s successfully generated 6-slide Tanglish draft.", model_name)
-                            break
-                except Exception as e:
-                    logger.warning("Model %s Tanglish draft failed: %s", model_name, e)
+                        response = self.client.models.generate_content(
+                            model=model_name,
+                            contents=prompt,
+                            config=config
+                        )
+                        if response.text:
+                            clean_text = response.text.strip()
+                            if clean_text.startswith("```json"):
+                                clean_text = clean_text[7:]
+                            if clean_text.endswith("```"):
+                                clean_text = clean_text[:-3]
+                            parsed = json.loads(clean_text.strip())
+                            if len(parsed.get("slides", [])) == 6:
+                                data = parsed
+                                logger.info("✓ Model %s successfully generated 6-slide Tanglish draft.", model_name)
+                                break
+                    except Exception as e:
+                        logger.warning("Model %s Tanglish draft failed: %s", model_name, e)
 
-            if data and len(data.get("slides", [])) == 6:
-                        # Pass 2: Tanglish Numeric Fact-Checking Gate
-                        is_valid, report = self._verify_numeric_facts(data, topic)
-                        if not is_valid:
-                            logger.warning("❌ Tanglish Fact-Checking Gate failed (Attempt 1): %s. Repairing...", report)
-                            repair_prompt = f"{prompt}\n\nSTRICT FACT-CHECK REPAIR: {report}. Make sure the numbers {numbers} or {citable_metric} are strictly preserved in Tamil slides!"
-                            rep_resp = self.client.models.generate_content(
-                                model=settings.GEMINI_MODEL,
-                                contents=repair_prompt,
-                                config={"response_mime_type": "application/json", "temperature": 0.3}
-                            )
-                            if rep_resp.text:
-                                rep_clean = rep_resp.text.strip()
-                                if rep_clean.startswith("```json"):
-                                    rep_clean = rep_clean[7:]
-                                if rep_clean.endswith("```"):
-                                    rep_clean = rep_clean[:-3]
-                                rep_data = json.loads(rep_clean.strip())
-                                is_rep_valid, rep_report = self._verify_numeric_facts(rep_data, topic)
-                                if is_rep_valid and len(rep_data.get("slides", [])) == 6:
-                                    logger.info("✅ Repaired Tanglish deck passed Fact-Checking Gate.")
-                                    rep_data["slides"] = self._normalize_slides(rep_data["slides"], topic)
-                                    rep_data["fact_check_status"] = "verified_after_repair"
-                                    return rep_data
+                if data and len(data.get("slides", [])) == 6:
+                    # Pass 2: Tanglish Numeric Fact-Checking Gate
+                    is_valid, report = self._verify_numeric_facts(data, topic)
+                    if not is_valid:
+                        logger.warning("❌ Tanglish Fact-Checking Gate failed (Attempt 1): %s. Repairing...", report)
+                        repair_prompt = f"{prompt}\n\nSTRICT FACT-CHECK REPAIR: {report}. Make sure the numbers {numbers} or {citable_metric} are strictly preserved in Tamil slides!"
+                        rep_resp = self.client.models.generate_content(
+                            model=settings.GEMINI_MODEL,
+                            contents=repair_prompt,
+                            config={"response_mime_type": "application/json", "temperature": 0.3}
+                        )
+                        if rep_resp.text:
+                            rep_clean = rep_resp.text.strip()
+                            if rep_clean.startswith("```json"):
+                                rep_clean = rep_clean[7:]
+                            if rep_clean.endswith("```"):
+                                rep_clean = rep_clean[:-3]
+                            rep_data = json.loads(rep_clean.strip())
+                            is_rep_valid, rep_report = self._verify_numeric_facts(rep_data, topic)
+                            if is_rep_valid and len(rep_data.get("slides", [])) == 6:
+                                logger.info("✅ Repaired Tanglish deck passed Fact-Checking Gate.")
+                                rep_data["slides"] = self._normalize_slides(rep_data["slides"], topic)
+                                rep_data["fact_check_status"] = "verified_after_repair"
+                                return rep_data
 
-                            # Pass 3: Invoke ThinkerEngine to auto-repair numeric mismatch
-                            logger.warning("🧠 Invoking Schematic Thinker Layer for Tanglish numeric auto-repair...")
-                            is_th_repaired, th_deck, diag = self.thinker.diagnose_and_repair_tanglish_failure(
-                                topic_data=topic,
-                                failing_deck=rep_data if 'rep_data' in locals() else data,
-                                validation_report=rep_report if 'rep_report' in locals() else report
-                            )
-                            if is_th_repaired and th_deck:
-                                logger.info("✅ ThinkerEngine auto-repaired Tanglish deck successfully!")
-                                th_deck["slides"] = self._normalize_slides(th_deck["slides"], topic)
-                                th_deck["fact_check_status"] = "thinker_auto_repaired"
-                                return th_deck
+                        # Pass 3: Invoke ThinkerEngine to auto-repair numeric mismatch
+                        logger.warning("🧠 Invoking Schematic Thinker Layer for Tanglish numeric auto-repair...")
+                        is_th_repaired, th_deck, diag = self.thinker.diagnose_and_repair_tanglish_failure(
+                            topic_data=topic,
+                            failing_deck=rep_data if 'rep_data' in locals() else data,
+                            validation_report=rep_report if 'rep_report' in locals() else report
+                        )
+                        if is_th_repaired and th_deck:
+                            logger.info("✅ ThinkerEngine auto-repaired Tanglish deck successfully!")
+                            th_deck["slides"] = self._normalize_slides(th_deck["slides"], topic)
+                            th_deck["fact_check_status"] = "thinker_auto_repaired"
+                            return th_deck
 
-                            # Pass 4: Fallback to Gemma Model
-                            logger.warning("🤖 Tanglish drafting/repair unverified; falling back to Gemma model (%s)...", settings.GEMMA_FALLBACK_MODEL)
-                            gemma_deck = self._script_tanglish_gemma(topic, plan)
-                            if gemma_deck and len(gemma_deck.get("slides", [])) == 6:
-                                is_gm_valid, gm_report = self._verify_numeric_facts(gemma_deck, topic)
-                                if is_gm_valid:
-                                    logger.info("✅ Gemma Tanglish fallback deck passed Fact-Checking Gate!")
-                                    gemma_deck["slides"] = self._normalize_slides(gemma_deck["slides"], topic)
-                                    gemma_deck["fact_check_status"] = "gemma_fallback_verified"
-                                    return gemma_deck
-                                else:
-                                    logger.warning("Gemma Tanglish deck failed fact check (%s). Moving to pre-reserved templates...", gm_report)
+                        # Pass 4: Fallback to Gemma Model
+                        logger.warning("🤖 Tanglish drafting/repair unverified; falling back to Gemma model (%s)...", settings.GEMMA_FALLBACK_MODEL)
+                        gemma_deck = self._script_tanglish_gemma(topic, plan)
+                        if gemma_deck and len(gemma_deck.get("slides", [])) == 6:
+                            is_gm_valid, gm_report = self._verify_numeric_facts(gemma_deck, topic)
+                            if is_gm_valid:
+                                logger.info("✅ Gemma Tanglish fallback deck passed Fact-Checking Gate!")
+                                gemma_deck["slides"] = self._normalize_slides(gemma_deck["slides"], topic)
+                                gemma_deck["fact_check_status"] = "gemma_fallback_verified"
+                                return gemma_deck
+                            else:
+                                logger.warning("Gemma Tanglish deck failed fact check (%s). Moving to pre-reserved templates...", gm_report)
 
-                            # FINAL Circuit Breaker on persistent failure -> pre-reserved topic templates
-                            logger.error("🚨 GEMMA FALLBACK FAILED. Engaging Circuit Breaker -> Moving to pre-reserved Tanglish topic templates.")
-                            fb_deck = self._generate_fallback_tanglish_deck(topic, plan=plan)
-                            fb_deck["fact_check_status"] = "circuit_breaker_evergreen_fallback"
-                            return fb_deck
-                        else:
-                            logger.info("✅ Tanglish Fact-Checking Gate passed: %s", report)
-                            data["slides"] = self._normalize_slides(data["slides"], topic)
-                            data["fact_check_status"] = "verified_pass"
-                            return data
+                        # FINAL Circuit Breaker on persistent failure -> pre-reserved topic templates
+                        logger.error("🚨 GEMMA FALLBACK FAILED. Engaging Circuit Breaker -> Moving to pre-reserved Tanglish topic templates.")
+                        fb_deck = self._generate_fallback_tanglish_deck(topic, plan=plan)
+                        fb_deck["fact_check_status"] = "circuit_breaker_evergreen_fallback"
+                        return fb_deck
+                    else:
+                        logger.info("✅ Tanglish Fact-Checking Gate passed: %s", report)
+                        data["slides"] = self._normalize_slides(data["slides"], topic)
+                        data["fact_check_status"] = "verified_pass"
+                        return data
             except Exception as e:
                 logger.warning("Tanglish autonomous scripting failed (%s); attempting Gemma fallback.", e)
                 gemma_deck = self._script_tanglish_gemma(topic, plan)
