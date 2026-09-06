@@ -1,18 +1,19 @@
 {
-  "timestamp": "2026-09-06T19:11:50.468378+00:00",
+  "timestamp": "2026-09-06T19:37:55.013055+00:00",
   "phase": "PUBLISHING",
   "platform": "Instagram",
-  "severity": "RECOVERABLE",
+  "severity": "CRITICAL",
   "error_code": "ERR_META_API",
-  "root_cause_analysis": "Meta Graph API subcode 2207027 indicates that the media container has not finished processing or downloading the provided image assets before the publish endpoint was called.",
-  "reproducibility": "URL_UNAVAILABLE",
+  "root_cause_analysis": "Meta Graph API returned code 4 with subcode 2207051 ('Application request limit reached / Action is blocked'). The account or application has triggered Meta's automated rate limiting or community activity block policy.",
+  "reproducibility": "RATE_LIMIT",
   "automated_remediation": {
-    "action": "RETRY_AFTER_DELAY",
-    "retry_delay_seconds": 30
+    "action": "ISOLATE_AND_CONTINUE_SECONDARY",
+    "retry_delay_seconds": 86400
   },
-  "operator_action_required": false,
+  "operator_action_required": true,
   "actionable_instructions": [
-    "Implement asynchronous polling on the media container status_code before issuing the media_publish call",
-    "Verify that GitHub raw CDN URLs are returning a 200 OK status immediately without headers that block Meta's media crawler"
+    "Check the Instagram Business / Facebook Page dashboard for any account action blocks or policy warnings.",
+    "Cease automated publishing calls to Instagram for 24 hours to allow the application request limit/spam block to clear.",
+    "Verify Meta Developer App request volume and status in the App Dashboard under App Review & Rate Limits."
   ]
 }
