@@ -11,6 +11,10 @@ on:
         description: "Run in Dry-Run mode (no live publishing)"
         type: boolean
         default: false
+      draft_music:
+        description: "Draft Music Option (Stage carousel to add Instagram trending music)"
+        type: boolean
+        default: false
       master_pkg_path:
         description: "Path to English master carousel package if available"
         type: string
@@ -78,6 +82,9 @@ jobs:
           EXTRA_ARGS=""
           if [ "${{ inputs.dry_run }}" = "true" ]; then
             EXTRA_ARGS="$EXTRA_ARGS --dry-run"
+          fi
+          if [ "${{ inputs.draft_music }}" = "true" ]; then
+            EXTRA_ARGS="$EXTRA_ARGS --draft-music"
           fi
           if [ -s "state/market_debunk_carousel_master.json" ]; then
             EXTRA_ARGS="$EXTRA_ARGS --master-pkg state/market_debunk_carousel_master.json"

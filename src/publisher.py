@@ -3,7 +3,7 @@ import logging
 import os
 import time
 from pathlib import Path
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Any
 import requests
 
 from src.config import settings
@@ -33,6 +33,8 @@ class Publisher:
         pdf_path: str,
         caption: str,
         title: str,
+        audio_track: Optional[Dict[str, Any]] = None,
+        draft_music: bool = False,
         dry_run: bool = False
     ) -> Dict[str, any]:
         results = {
@@ -44,14 +46,21 @@ class Publisher:
 
         if dry_run:
             logger.info("🧪 [DRY RUN ACTIVE] Skipping all live platform uploads.")
-            results["instagram"] = {"success": True, "status": "dry_run_simulated"}
+            results["instagram"] = {"success": True, "status": "dry_run_simulated" if not draft_music else "draft_music_staged_simulated"}
             results["facebook"] = {"success": True, "status": "dry_run_simulated"}
             results["telegram"] = {"success": True, "status": "dry_run_simulated"}
             return results
 
-        # ── 1. Instagram Carousel (Primary Anchor) ──────────────────────────
+        # ── 1. Instagram Carousel (Primary Anchor or Draft Staging) ──────────
         ig_permalink = None
-        if settings.ENABLE_INSTAGRAM and settings.INSTAGRAM_ACCESS_TOKEN and settings.INSTAGRAM_USER_ID:
+        if draft_music:
+            logger.info("🎵 [DRAFT MUSIC MODE] Staging Tamil carousel so trending music can be attached on Instagram before publishing.")
+            results["instagram"] = {
+                "success": True,
+                "status": "staged_for_music",
+                "message": "Carousel staged for manual music attachment. Dispatched to Telegram with all 8 slides."
+            }
+        elif settings.ENABLE_INSTAGRAM and settings.INSTAGRAM_ACCESS_TOKEN and settings.INSTAGRAM_USER_ID:
             logger.info("Publishing Instagram Carousel for '%s'...", title[:40])
             try:
                 ig_res = self.publish_instagram_carousel(image_urls, caption)
@@ -68,7 +77,6 @@ class Publisher:
             logger.info("Instagram publishing disabled or missing credentials.")
 
         # ── 2. Facebook Page Multi-Photo Post (Secondary - Non-blocking) ─────
-        # Runs sequentially after Instagram. If Facebook fails, it logs a warning and DOES NOT halt Telegram.
         if settings.ENABLE_FACEBOOK and (settings.FACEBOOK_ACCESS_TOKEN or settings.INSTAGRAM_ACCESS_TOKEN) and settings.FACEBOOK_PAGE_ID:
             logger.info("Publishing Facebook Page Multi-Photo Post...")
             try:
@@ -84,20 +92,28 @@ class Publisher:
         else:
             logger.info("Facebook publishing disabled or missing credentials.")
 
-        # ── 3. Telegram Notification (Save-Velocity Push - Non-blocking) ─────
-        # Fires with the Instagram permalink regardless of Facebook's success or failure!
+        # ── 3. Telegram Notification (Direct Link OR Draft Music Staging) ───
         if settings.ENABLE_TELEGRAM and settings.TELEGRAM_BOT_TOKEN and settings.TELEGRAM_CHAT_ID:
-            logger.info("Sending Telegram update (Save-Velocity funnel to Instagram: %s)...", ig_permalink or "N/A")
-            try:
-                tg_res = self.send_telegram_notification(title, caption, ig_permalink, pdf_path)
-                results["telegram"] = tg_res
-                if tg_res.get("success"):
-                    logger.info("✓ Telegram notification dispatched successfully.")
-                else:
-                    logger.warning("⚠️ Telegram notification failed non-fatally: %s", tg_res.get("error"))
-            except Exception as tg_err:
-                logger.warning("⚠️ Telegram notification threw non-fatal exception: %s", tg_err)
-                results["telegram"] = {"success": False, "status": "failed", "error": str(tg_err)}
+            if draft_music:
+                logger.info("Dispatching Telegram Draft Music Staging album with %d slides & audio guide (Tamil)...", len(slide_paths))
+                try:
+                    tg_res = self.send_telegram_draft_music_staging(slide_paths, title, caption, audio_track)
+                    results["telegram"] = tg_res
+                except Exception as tg_err:
+                    logger.warning("⚠️ Telegram draft music staging failed non-fatally: %s", tg_err)
+                    results["telegram"] = {"success": False, "status": "failed", "error": str(tg_err)}
+            else:
+                logger.info("Sending Telegram update (Save-Velocity funnel to Instagram: %s)...", ig_permalink or "N/A")
+                try:
+                    tg_res = self.send_telegram_notification(title, caption, ig_permalink, pdf_path)
+                    results["telegram"] = tg_res
+                    if tg_res.get("success"):
+                        logger.info("✓ Telegram notification dispatched successfully.")
+                    else:
+                        logger.warning("⚠️ Telegram notification failed non-fatally: %s", tg_res.get("error"))
+                except Exception as tg_err:
+                    logger.warning("⚠️ Telegram notification threw non-fatal exception: %s", tg_err)
+                    results["telegram"] = {"success": False, "status": "failed", "error": str(tg_err)}
         else:
             logger.info("Telegram notification disabled or missing credentials.")
 
@@ -348,6 +364,110 @@ class Publisher:
                 error_details=str(e),
                 payload_meta={"title": title, "has_pdf": bool(pdf_path)}
             )
+            return {"success": False, "error": str(e)}
+
+    # ── Telegram Draft Music Staging (Photo Album + Audio Guide) ────────────
+
+    def send_telegram_draft_music_staging(
+        self,
+        slide_paths: List[str],
+        title: str,
+        caption: str,
+        audio_track: Optional[Dict[str, Any]] = None
+    ) -> dict:
+        """
+        Dispatches all 8 slides as a Telegram photo album along with trending audio guidance
+        and copy-ready caption, allowing 15-second native music attachment on Instagram.
+        """
+        bot_token = settings.TELEGRAM_BOT_TOKEN.strip()
+        chat_id = settings.TELEGRAM_CHAT_ID.strip()
+
+        if not bot_token or not chat_id:
+            return {"success": False, "reason": "missing_credentials"}
+
+        if not chat_id.startswith("-") and not chat_id.startswith("@"):
+            chat_id = f"-100{chat_id}"
+
+        try:
+            import html
+
+            # Step 1: Send the 8 slides as a Media Group (photo album)
+            logger.info("Dispatching %d carousel slides to Telegram as a media group (Tamil)...", len(slide_paths))
+            media = []
+            files = {}
+            opened_files = []
+
+            for idx, sp in enumerate(slide_paths):
+                attach_name = f"slide_{idx}"
+                media.append({"type": "photo", "media": f"attach://{attach_name}"})
+                f = open(sp, "rb")
+                opened_files.append(f)
+                files[attach_name] = (Path(sp).name, f, "image/png")
+
+            try:
+                group_res = requests.post(
+                    f"https://api.telegram.org/bot{bot_token}/sendMediaGroup",
+                    data={"chat_id": chat_id, "media": json.dumps(media)},
+                    files=files,
+                    timeout=60
+                ).json()
+
+                if not group_res.get("ok"):
+                    logger.warning("Telegram sendMediaGroup failed: %s. Continuing with text guidance...", group_res)
+            finally:
+                for f in opened_files:
+                    f.close()
+
+            # Step 2: Send Music Guidance & Copy-Ready Caption
+            track_title = audio_track.get("title", "Trending Tamil Finance Track") if audio_track else "Hans Zimmer - Time"
+            track_artist = audio_track.get("artist", "") if audio_track else ""
+            track_search = audio_track.get("search_query", track_title) if audio_track else track_title
+            bpm = audio_track.get("bpm", "") if audio_track else ""
+
+            safe_title = html.escape(title.strip())
+            safe_caption = html.escape(caption.strip())
+
+            msg_text = (
+                f"🎵 <b>DRAFT MUSIC MODE: POST STAGED FOR MUSIC ATTACHMENT (TAMIL)</b>\n"
+                f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+                f"📊 <b>{safe_title}</b>\n\n"
+                f"🎶 <b>பரிந்துரைக்கப்படும் ஆடியோ ட்ராக் (Recommended Audio Track):</b>\n"
+                f"• <b>{html.escape(track_title)}</b>"
+                + (f" by <i>{html.escape(track_artist)}</i>" if track_artist else "")
+                + (f" ({bpm} BPM)" if bpm else "") + "\n"
+                f"• Instagram-ல் தேட வேண்டியது (Search): <code>{html.escape(track_search)}</code>\n\n"
+                f"📲 <b>15-Second Posting Instructions (பதிவிடும் முறை):</b>\n"
+                f"1️⃣ மேலே உள்ள ஆல்பத்தை தட்டி {len(slide_paths)} படங்களையும் கேலரியில் சேமிக்கவும் (Save Photos).\n"
+                f"2️⃣ Instagram திறந்து ➔ <b>+ (New Post)</b> ➔ வரிசைப்படி {len(slide_paths)} ஸ்லைடுகளையும் தேர்வு செய்யவும்.\n"
+                f"3️⃣ <b>🎵 Add Music</b> தட்டவும் ➔ <code>{html.escape(track_search)}</code> என்று தேடி பாடலை சேர்க்கவும்.\n"
+                f"4️⃣ கீழே உள்ள தலைப்பு & ஹேஷ்டேக்குகளை (Caption) நகலெடுத்து பேஸ்ட் செய்து ➔ <b>Share</b> செய்யவும்!\n\n"
+                f"📋 <b>நகலெடுக்க வேண்டிய தலைப்பு & ஹேஷ்டேக்குகள் (Copy-Ready Caption):</b>\n"
+                f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+                f"{safe_caption}"
+            )
+
+            if len(msg_text) > 4000:
+                msg_text = msg_text[:3950] + "\n..."
+
+            msg_res = requests.post(
+                f"https://api.telegram.org/bot{bot_token}/sendMessage",
+                data={
+                    "chat_id": chat_id,
+                    "text": msg_text,
+                    "parse_mode": "HTML",
+                    "disable_web_page_preview": "true"
+                },
+                timeout=20
+            ).json()
+
+            if not msg_res.get("ok"):
+                raise RuntimeError(f"Telegram sendMessage failed: {msg_res}")
+
+            logger.info("✅ Telegram Draft Music Staging notification dispatched successfully (Tamil)!")
+            return {"success": True, "status": "staged_to_telegram"}
+
+        except Exception as e:
+            logger.error("Telegram draft music staging failed (Tamil): %s", e)
             return {"success": False, "error": str(e)}
 
     # ── LinkedIn Document Carousel ──────────────────────────────────────────
