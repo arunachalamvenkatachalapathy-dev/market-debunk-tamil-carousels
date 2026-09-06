@@ -16,6 +16,10 @@ on:
         type: string
         default: ""
 
+concurrency:
+  group: tamil-carousel-pipeline
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -84,9 +88,13 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git pull origin master --rebase || true
           git add data/used_carousel_topics.json state/
-          git diff --staged --quiet || (git commit -m "chore: update Tamil carousel slides, topic history, and master package [skip ci]" && git push origin master)
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: update Tamil carousel slides, topic history, and master package [skip ci]"
+            for i in {1..3}; do
+              git pull origin master --rebase -X ours && git push origin master && break || sleep 3
+            done
+          fi
 
       - name: Prune Slide Images Older Than 48 Hours
         run: |
