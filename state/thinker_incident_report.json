@@ -1,19 +1,18 @@
 {
-  "timestamp": "2026-09-05T16:21:44.057282+00:00",
+  "timestamp": "2026-09-06T19:09:33.953110+00:00",
   "phase": "PUBLISHING",
-  "platform": "Facebook",
-  "severity": "CRITICAL",
+  "platform": "Instagram",
+  "severity": "RECOVERABLE",
   "error_code": "ERR_META_API",
-  "root_cause_analysis": "OAuthException Code 200: Unpublished photo upload failed because the request was authenticated with a User Access Token or an unauthorized identity instead of the Page Access Token for the target Facebook Page.",
-  "reproducibility": "BAD_CREDENTIALS",
+  "root_cause_analysis": "Instagram Graph API media container creation was initiated, but the publish call was made before Meta finished processing/downloading the media containers asynchronously (error subcode 2207027: media container not ready).",
+  "reproducibility": "URL_UNAVAILABLE",
   "automated_remediation": {
-    "action": "ABORT",
-    "retry_delay_seconds": 0
+    "action": "RETRY_AFTER_DELAY",
+    "retry_delay_seconds": 30
   },
-  "operator_action_required": true,
+  "operator_action_required": false,
   "actionable_instructions": [
-    "Verify that the access token used is a Page Access Token with 'pages_manage_posts' and 'pages_read_engagement' permissions.",
-    "Ensure the API request is posting to the Page endpoint (/me/photos or /{page-id}/photos) explicitly acting as the Page itself.",
-    "Regenerate and update the Facebook Page Access Token in the credentials store."
+    "Implement polling mechanism to check container status (FINISH state) via Instagram API before invoking the publish endpoint.",
+    "Add an automated retry delay of 30-60 seconds for publishing carousel containers."
   ]
 }
