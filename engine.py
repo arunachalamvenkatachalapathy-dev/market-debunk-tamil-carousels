@@ -26,9 +26,8 @@ logging.basicConfig(
 logger = logging.getLogger("market_debunk_tamil_carousel")
 
 
-def run_pipeline(dry_run: bool = False, draft_music: bool = False, master_pkg_path: str = None, override_query: str = None, edition: str = "daily") -> bool:
-    is_draft_music = draft_music or getattr(settings, "DRAFT_MUSIC_MODE", False)
-    mode_str = "DRY RUN (No live publishing)" if dry_run else ("DRAFT MUSIC (Staging for Instagram music attachment)" if is_draft_music else "LIVE PRODUCTION")
+def run_pipeline(dry_run: bool = False, master_pkg_path: str = None, override_query: str = None, edition: str = "daily") -> bool:
+    mode_str = "DRY RUN (No live publishing)" if dry_run else "LIVE DIRECT PRODUCTION"
     edition_label = f" ({edition.upper()} EDITION)" if edition != "daily" else ""
     logger.info("=" * 60)
     logger.info("🚀 MARKET DEBUNK TAMIL FINANCIAL CAROUSEL ENGINE%s", edition_label)
@@ -158,8 +157,6 @@ def run_pipeline(dry_run: bool = False, draft_music: bool = False, master_pkg_pa
             pdf_path=pdf_path,
             caption=deck.get("caption", ""),
             title=topic_data.get("title", "Market Debunk Tamil"),
-            audio_track=audio_track,
-            draft_music=is_draft_music,
             dry_run=dry_run
         )
 
@@ -174,7 +171,7 @@ def run_pipeline(dry_run: bool = False, draft_music: bool = False, master_pkg_pa
         thinker.diagnose_pipeline_crash(
             phase="TAMIL_PIPELINE_ORCHESTRATION",
             error=e,
-            context={"dry_run": dry_run, "draft_music": draft_music, "master_pkg_path": master_pkg_path, "override_query": override_query}
+            context={"dry_run": dry_run, "master_pkg_path": master_pkg_path, "override_query": override_query}
         )
         return False
 
@@ -182,7 +179,6 @@ def run_pipeline(dry_run: bool = False, draft_music: bool = False, master_pkg_pa
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Market Debunk Tamil Carousel Engine")
     parser.add_argument("--dry-run", action="store_true", help="Generate visuals and PDF without publishing")
-    parser.add_argument("--draft-music", action="store_true", help="Stage carousel and dispatch to Telegram with trending audio guidance to add music on Instagram")
     parser.add_argument("--edition", type=str, default="daily", choices=["morning", "evening", "daily"], help="Edition identifier (morning or evening)")
     parser.add_argument("--master-pkg", type=str, default=None, help="Path to English master carousel package")
     parser.add_argument("--query", type=str, default=None, help="Override search query for market topic")
@@ -190,7 +186,6 @@ if __name__ == "__main__":
 
     success = run_pipeline(
         dry_run=args.dry_run,
-        draft_music=args.draft_music,
         master_pkg_path=args.master_pkg,
         override_query=args.query,
         edition=args.edition
