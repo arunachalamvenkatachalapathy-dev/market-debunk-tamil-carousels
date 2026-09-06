@@ -252,17 +252,12 @@ Return JSON ONLY:
                 "📌 உங்கள் முதலீட்டை பாதுகாக்கும் முக்கிய விதி"
             ]
 
-        audio_str = ""
-        if audio_track:
-            audio_str = f"\n🎵 Recommended Audio: {audio_track.get('title')} ({audio_track.get('artist')})\n"
-
         caption = (
             f"🚨 {clean_hook}\n\n"
             f"Retail முதலீட்டாளர்கள் தவிர்க்க வேண்டிய மிகப்பெரிய நிதி அபாயங்கள் மற்றும் கணக்கீடுகள்:\n\n"
             f"{chr(10).join(bullets)}\n\n"
             f"முழு 8-slide breakdown-ஐ படிக்க swipe செய்யுங்கள். 👉\n\n"
-            f"💬 Follow @marketdebunk_tamil மற்றும் 'GUIDE'-னு கீழே comment பண்ணுங்க — complete detailed Investor Playbook & Risk Checklist PDF-ஐ உங்க DM-க்கு உடனே அனுப்புறோம்!\n"
-            f"{audio_str}\n"
+            f"💬 Follow @marketdebunk_tamil மற்றும் 'GUIDE'-னு கீழே comment பண்ணுங்க — complete detailed Investor Playbook & Risk Checklist PDF-ஐ உங்க DM-க்கு உடனே அனுப்புறோம்!\n\n"
             f"#TamilFinance #MarketDebunk #MutualFundsTamil #StockMarketTamil #InvestingTamil #PersonalFinance"
         )
         return caption

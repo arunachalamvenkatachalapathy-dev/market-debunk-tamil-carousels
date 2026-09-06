@@ -320,7 +320,7 @@ class Publisher:
             link_callout = ""
             if instagram_url:
                 safe_url = html.escape(instagram_url.strip())
-                link_callout = f"\n\n🔗 <b>முழு விளக்கத்தையும் Instagram-ல் பார்க்க:</b>\n{safe_url}"
+                link_callout = f"\n\n🔗 <b>முழு 8-Slide விளக்கத்தையும் Instagram-ல் பார்க்க:</b>\n{safe_url}"
 
             tg_text = f"📊 <b>{safe_title}</b>\n\n{safe_desc}{link_callout}"
 
