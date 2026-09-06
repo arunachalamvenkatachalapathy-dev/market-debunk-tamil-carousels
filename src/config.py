@@ -36,6 +36,8 @@ class Settings:
 
     # ── News / Market Sourcing ──────────────────────────────────────────────
     SERPAPI_KEY: str = os.getenv("SERPAPI_KEY", "")
+    MARKETAUX_API_TOKEN: str = os.getenv("MARKETAUX_API_TOKEN", "bZ1PVR803PweIGinKuMa1r6Zk4kPn4v8xikQvUkC")
+    INDIAN_API_KEY: str = os.getenv("INDIAN_API_KEY", "sk-live-Ca1EJj4XFo61nRpchb93tlGrs0IyVEC5cl4A6iF5")
 
     # ── Meta (Instagram & Facebook) ─────────────────────────────────────────
     INSTAGRAM_USER_ID: str = os.getenv("INSTAGRAM_USER_ID", "17841436821575762")
@@ -49,15 +51,15 @@ class Settings:
     TELEGRAM_BOT_TOKEN: str = os.getenv("TELEGRAM_BOT_TOKEN", "")
     TELEGRAM_CHAT_ID: str = os.getenv("TELEGRAM_CHAT_ID", "")
 
-    # ── LinkedIn ────────────────────────────────────────────────────────────
-    LINKEDIN_ACCESS_TOKEN: str = os.getenv("LINKEDIN_ACCESS_TOKEN", "")
-    LINKEDIN_ORGANIZATION_URN: str = os.getenv("LINKEDIN_ORGANIZATION_URN", "")
+    # ── LinkedIn (Strictly disabled for Tamil companion) ────────────────────
+    ENABLE_LINKEDIN: bool = False
+    LINKEDIN_ACCESS_TOKEN: str = ""
+    LINKEDIN_ORGANIZATION_URN: str = ""
 
     # ── Feature Flags ───────────────────────────────────────────────────────
     ENABLE_INSTAGRAM: bool = os.getenv("ENABLE_INSTAGRAM", "true").lower() == "true"
     ENABLE_FACEBOOK: bool = os.getenv("ENABLE_FACEBOOK", "true").lower() == "true"
     ENABLE_TELEGRAM: bool = os.getenv("ENABLE_TELEGRAM", "true").lower() == "true"
-    ENABLE_LINKEDIN: bool = os.getenv("ENABLE_LINKEDIN", "false").lower() == "true"
 
     # ── Branding ────────────────────────────────────────────────────────────
     BRAND_NAME: str = "Market Debunk Tamil"
