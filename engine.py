@@ -78,6 +78,17 @@ def run_pipeline(dry_run: bool = False, master_pkg_path: str = None, override_qu
         logger.info("✅ %s", content_report)
         logger.info("✓ Prepared %d Tanglish slides.", len(slides))
 
+        # Audio Automation: Select trending Reels audio track for Tamil
+        from src.audio_director import AudioDirector
+        audio_director = AudioDirector()
+        audio_track = audio_director.select_audio_recommendation()
+        deck["audio_recommendation"] = audio_track
+
+        # Caption Engineering: Apply Tanglish 4-part formula with audio note and GUIDE trigger
+        from src.workflow_agents import GrammarAgent
+        grammar_agent = GrammarAgent()
+        deck["caption"] = grammar_agent.format_converting_caption(deck, topic_data, audio_track)
+
         # ── Phase 2: Playwright Visual Rendering & PDF Compilation ─────────────
         logger.info("═══ Phase 2: Playwright 1080x1350 (4:5) Retina Rendering (Tamil) ═══")
         image_director = ImageDirector()
