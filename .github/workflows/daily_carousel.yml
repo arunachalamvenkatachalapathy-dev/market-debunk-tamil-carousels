@@ -3,7 +3,7 @@ name: Daily Tamil Financial Carousel Pipeline (7:15 PM IST)
 
 on:
   schedule:
-    # 7:15 PM IST = 13:45 UTC every day (runs 15 mins after English)
+    # 7:15 PM IST = 13:45 UTC every day (evening post-market edition)
     - cron: '45 13 * * *'
   workflow_dispatch:
     inputs:
