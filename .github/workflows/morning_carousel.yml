@@ -1,10 +1,10 @@
-name: Daily Tamil Financial Carousel Pipeline (7:15 PM IST)
-# Scheduled daily at 7:15 PM IST (13:45 UTC)
+name: Daily Tamil Financial Carousel - Morning Edition (7:15 AM IST)
+# Scheduled daily at 7:15 AM IST (01:45 UTC)
 
 on:
   schedule:
-    # 7:15 PM IST = 13:45 UTC every day (evening post-market edition)
-    - cron: '45 13 * * *'
+    # 7:15 AM IST = 01:45 UTC every day (morning pre-market edition)
+    - cron: '45 1 * * *'
   workflow_dispatch:
     inputs:
       dry_run:
@@ -21,7 +21,7 @@ on:
         default: ""
 
 concurrency:
-  group: tamil-carousel-pipeline
+  group: tamil-morning-carousel-pipeline
   cancel-in-progress: false
 
 permissions:
@@ -61,7 +61,7 @@ jobs:
           gh run download --repo arunachalamvenkatachalapathy-dev/market-debunk-carousels \
             --name market-debunk-carousel-master --dir state/ || echo "No English package downloaded; will use standalone research."
 
-      - name: Run Tamil Carousel Pipeline
+      - name: Run Tamil Carousel Pipeline (Morning Edition)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
@@ -79,7 +79,7 @@ jobs:
           echo "Fetching latest English master package from market-debunk-carousels..."
           curl -sSL "https://raw.githubusercontent.com/arunachalamvenkatachalapathy-dev/market-debunk-carousels/master/state/market_debunk_carousel_master.json" -o state/market_debunk_carousel_master.json || echo "Remote package fetch skipped."
           
-          EXTRA_ARGS=""
+          EXTRA_ARGS="--edition morning"
           if [ "${{ inputs.dry_run }}" = "true" ]; then
             EXTRA_ARGS="$EXTRA_ARGS --dry-run"
           fi
@@ -97,7 +97,7 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add data/used_carousel_topics.json state/
           if ! git diff --staged --quiet; then
-            git commit -m "chore: update Tamil carousel slides, topic history, and master package [skip ci]"
+            git commit -m "chore: update Tamil morning carousel slides, topic history, and master package [skip ci]"
             for i in {1..3}; do
               git pull origin master --rebase -X ours && git push origin master && break || sleep 3
             done
@@ -112,7 +112,7 @@ jobs:
       - name: Upload Tamil Carousel PDF Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: market-debunk-tamil-carousel-pdf
+          name: market-debunk-tamil-carousel-pdf-morning
           path: state/latest_carousel.pdf
           if-no-files-found: warn
 
@@ -120,6 +120,6 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: thinker-incident-report
+          name: thinker-incident-report-morning
           path: state/thinker_incident_report.json
           if-no-files-found: ignore
