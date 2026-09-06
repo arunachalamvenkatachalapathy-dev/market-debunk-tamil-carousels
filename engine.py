@@ -71,6 +71,11 @@ def run_pipeline(dry_run: bool = False, master_pkg_path: str = None, override_qu
             deck = editorial_engine.compose_from_master(mock_master)
 
         slides = deck.get("slides", [])
+        from src.validator import CarouselValidator
+        is_valid, content_report = CarouselValidator.validate_content(deck)
+        if not is_valid:
+            raise ValueError(f"Deck failed content validation gate: {content_report}")
+        logger.info("✅ %s", content_report)
         logger.info("✓ Prepared %d Tanglish slides.", len(slides))
 
         # ── Phase 2: Playwright Visual Rendering & PDF Compilation ─────────────
@@ -80,6 +85,19 @@ def run_pipeline(dry_run: bool = False, master_pkg_path: str = None, override_qu
         visual_pkg = image_director.render_carousel(deck, run_id=run_id)
         slide_paths = visual_pkg["slide_paths"]
         pdf_path = visual_pkg["pdf_path"]
+
+        # ── Phase 2b: Mandatory Per-Slide and PDF Validation Gate ────────────
+        logger.info("═══ Phase 2b: Automated Render & Dimension Quality Gate ═══")
+        for sp in slide_paths:
+            is_png_valid, png_report = CarouselValidator.validate_slide_png(sp)
+            if not is_png_valid:
+                raise ValueError(f"Slide PNG validation failed: {png_report}")
+            logger.info("✓ %s", png_report)
+
+        is_pdf_valid, pdf_report = CarouselValidator.validate_pdf(pdf_path)
+        if not is_pdf_valid:
+            raise ValueError(f"Multi-page PDF validation failed: {pdf_report}")
+        logger.info("✅ %s", pdf_report)
 
         # ── Phase 3: Prepare Direct Raw Image URLs for Instagram ───────────────
         repo_owner = "arunachalamvenkatachalapathy-dev"

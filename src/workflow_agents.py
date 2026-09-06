@@ -115,3 +115,154 @@ class PromptEngineer:
             f"LEAD MAGNET TRIGGER: Comment '{trigger}' for '{resource}'\n"
             f"AVOID: {', '.join(plan.get('banned_phrases', []))}"
         )
+
+
+class GrammarAgent:
+    """
+    Grammar & Stylistic Verification Agent for Market Debunk Tamil:
+    1. Cross-checks spelling, grammar, punctuation, and sentence flow across all slides.
+    2. Strips any leaked markdown artifacts (e.g. raw '**', '#', leading numbers inside text).
+    3. Intelligently selects punchy words/phrases to wrap with '<span class="highlight-box">...</span>'.
+    4. Ensures vertical density and clarity without forcing or rushing content.
+    """
+
+    def __init__(self, llm_client=None):
+        self.llm = llm_client
+
+    def sanitize_text(self, text: str) -> str:
+        """Removes markdown syntax, website URLs/domains, leaked publish dates, and messy quotes."""
+        if not text:
+            return ""
+        t = str(text)
+        t = re.sub(r"\s*[-|–—]\s*(?:indianexpress\.com|moneycontrol|economic times|ndtv profit|reuters|bloomberg|livemint|[a-zA-Z0-9.-]+\.(?:com|in|org|net)).*$", "", t, flags=re.I)
+        t = re.sub(r"https?://\S+", "", t)
+        t = re.sub(r"\b[a-zA-Z0-9.-]+\.(?:com|in|org|net)\b", "", t, flags=re.I)
+        t = re.sub(r"Published:\s*\d{4}-\d{2}-\d{2}\s*[-—:]*\s*", "", t, flags=re.IGNORECASE)
+        t = re.sub(r"^[‘'\"“]+|[’'\"”]+$", "", t)
+        t = re.sub(r"^[‘'\"“][^:’'\"]+[:’'\"]\s*", "", t)
+        t = re.sub(r"\*\*([^*]+)\*\*", r"\1", t)
+        t = re.sub(r"\*([^*]+)\*", r"\1", t)
+        t = re.sub(r"`([^`]+)`", r"\1", t)
+        t = re.sub(r":([^\s])", r": \1", t)
+        t = re.sub(r"\s+", " ", t).strip()
+        return t
+
+    def clean_text(self, text: str) -> str:
+        return self.sanitize_text(text)
+
+    def review_and_polish_deck(self, deck: dict, topic_data: Optional[dict] = None) -> dict:
+        """
+        AI-Powered Grammar & Sentence Formation Gate for Tanglish:
+        1. Formulates a concise 4-6 word hook (NOT huge, zero websites).
+        2. Ensures Slides 2-7 have contextual 3-5 word titles (NO '#1' on a separate line).
+        3. Fills Slide 8 with complete takeaway text.
+        """
+        topic_data = topic_data or {}
+        topic_title = self.sanitize_text(topic_data.get("title", ""))
+        slides = deck.get("slides", [])
+
+        if self.llm and slides:
+            try:
+                prompt = f"""You are the Lead Editorial Grammar & Sentence Formation Agent for 'Market Debunk Tamil'.
+Refine the Tanglish headlines and titles for this 8-slide Instagram carousel to ensure premium editorial flow.
+
+TOPIC: {topic_title}
+SLIDES OVERVIEW:
+{json.dumps([{"role": s.get("role"), "title": s.get("title"), "card_text": s.get("card_text", "")[:120]} for s in slides], indent=2)}
+
+STRICT RULES:
+1. Slide 1 (hook): Must be punchy and concise (4 to 6 words MAXIMUM). NEVER huge, NEVER include website names, URLs, or news domains. Include exactly ONE <span class="highlight-box">...</span> around 1-2 powerful words.
+2. Slides 2 to 7 (value): Titles must be 3 to 5 words MAXIMUM in Tanglish. Contextual to the card content. NEVER use numbers like '#1', '#2'.
+3. Slide 8 (save CTA): Provide 'cta_detail' (20-30 words) in Tanglish explaining WHY investors must save this framework for their next trade review.
+
+Return JSON ONLY:
+{{
+  "slide_1_hook": "Mutual Fund-ல் <span class='highlight-box'>₹34 Lakhs Loss-ஆ?!</span>",
+  "slide_titles": [
+    "1% Fee-யின் <span class='highlight-box'>மாயை & உண்மை</span>",
+    "Trailing Commission <span class='highlight-box'>ரகசிய கசிவு</span>",
+    "Compounding <span class='highlight-box'>இழப்பின் தாக்கம்</span>",
+    "Regular Plans <span class='highlight-box'>கூடுதல் லாபம் தராது</span>",
+    "முதலீட்டை <span class='highlight-box'>பாதுகாக்கும் விதி</span>",
+    "Pre-Trade <span class='highlight-box'>Capital தணிக்கை</span>"
+  ],
+  "slide_8_cta_detail": "இந்த institutional risk checkpoints-ஐ உங்கள் அடுத்த trade-க்கு முன் review செய்ய save செய்து கொள்ளுங்கள்."
+}}"""
+                resp = self.llm.models.generate_content(
+                    model=settings.GEMINI_MODEL,
+                    contents=prompt,
+                    config={"response_mime_type": "application/json", "temperature": 0.2}
+                )
+                if resp.text:
+                    refined = json.loads(resp.text)
+                    if refined.get("slide_1_hook"):
+                        slides[0]["title"] = refined["slide_1_hook"]
+                    titles = refined.get("slide_titles", [])
+                    for i, t in enumerate(titles):
+                        if i + 1 < len(slides) - 1:
+                            slides[i + 1]["title"] = t
+                    if refined.get("slide_8_cta_detail") and len(slides) >= 8:
+                        slides[-1]["cta_detail"] = refined["slide_8_cta_detail"]
+            except Exception as e:
+                logger.warning("Tamil LLM sentence formation fallback to deterministic: %s", e)
+
+        for i, s in enumerate(slides):
+            raw_title = s.get("title", "")
+            cleaned = self.sanitize_text(raw_title)
+            cleaned = re.sub(r"\s*#\d+\b", "", cleaned).strip()
+            if cleaned:
+                s["title"] = cleaned
+
+            if "card_text" in s:
+                ct = str(s["card_text"])
+                ct = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", ct)
+                ct = re.sub(r"`([^`]+)`", r"\1", ct)
+                s["card_text"] = ct.strip()
+
+            if i == len(slides) - 1 and not s.get("cta_detail"):
+                s["cta_detail"] = "இந்த institutional risk checkpoints-ஐ உங்கள் அடுத்த trade-க்கு முன் review செய்ய save செய்து கொள்ளுங்கள்."
+
+        return deck
+
+    def format_converting_caption(self, deck: dict, topic_data: dict, audio_track: Optional[dict] = None) -> str:
+        """
+        Formats a high-converting Tanglish caption:
+        1. Opening Hook
+        2. 3 Bullet points
+        3. Clear single CTA with keyword trigger
+        4. Audio recommendation
+        5. 3-5 relevant hashtags
+        """
+        title = topic_data.get("title", "")
+        slides = deck.get("slides", [])
+        hook_text = slides[0].get("title", title) if slides else title
+        clean_hook = re.sub(r"<[^>]+>", "", hook_text).strip()
+
+        trigger = "GUIDE"
+        bullets = []
+        for s in slides[1:4]:
+            t = s.get("title") or ""
+            t_clean = re.sub(r"<[^>]+>", "", t).strip()
+            if t_clean:
+                bullets.append(f"📌 {t_clean}")
+        if not bullets:
+            bullets = [
+                "📌 1% fee-யின் கணக்கீடு மற்றும் compounding இழப்பு",
+                "📌 Institutional vs Retail அணுகுமுறை",
+                "📌 உங்கள் முதலீட்டை பாதுகாக்கும் முக்கிய விதி"
+            ]
+
+        audio_str = ""
+        if audio_track:
+            audio_str = f"\n🎵 Recommended Audio: {audio_track.get('title')} ({audio_track.get('artist')})\n"
+
+        caption = (
+            f"🚨 {clean_hook}\n\n"
+            f"Retail முதலீட்டாளர்கள் தவிர்க்க வேண்டிய மிகப்பெரிய நிதி அபாயங்கள் மற்றும் கணக்கீடுகள்:\n\n"
+            f"{chr(10).join(bullets)}\n\n"
+            f"முழு 8-slide breakdown-ஐ படிக்க swipe செய்யுங்கள். 👉\n\n"
+            f"💬 Follow @marketdebunk_tamil மற்றும் 'GUIDE'-னு கீழே comment பண்ணுங்க — complete detailed Investor Playbook & Risk Checklist PDF-ஐ உங்க DM-க்கு உடனே அனுப்புறோம்!\n"
+            f"{audio_str}\n"
+            f"#TamilFinance #MarketDebunk #MutualFundsTamil #StockMarketTamil #InvestingTamil #PersonalFinance"
+        )
+        return caption

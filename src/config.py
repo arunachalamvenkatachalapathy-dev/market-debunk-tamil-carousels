@@ -8,12 +8,27 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = ROOT_DIR / "src" / "templates"
 DATA_DIR = ROOT_DIR / "data"
 STATE_DIR = ROOT_DIR / "state"
+FONTS_DIR = ROOT_DIR / "assets" / "fonts"
 
 TEMPLATES_DIR.mkdir(parents=True, exist_ok=True)
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 STATE_DIR.mkdir(parents=True, exist_ok=True)
+FONTS_DIR.mkdir(parents=True, exist_ok=True)
 
 class Settings:
+    # ── Slide & Visual Specifications ─────────────────────────────────────────
+    EXPECTED_SLIDE_COUNT: int = 8
+    SLIDE_WIDTH: int = 1080
+    SLIDE_HEIGHT: int = 1350
+    PDF_DPI: int = 300
+
+    # ── Strict Reference Design Tokens ────────────────────────────────────────
+    BG_COLOR: str = "#f8f8f9"
+    BRAND_GREEN: str = "#16a34a"
+    CARD_GREEN: str = "#15803d"
+    TEXT_WHITE: str = "#ffffff"
+    TEXT_MUTED: str = "#333333"
+    BRAND_URL: str = "www.marketdebunk.com"
     # ── AI Keys ─────────────────────────────────────────────────────────────
     GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
     GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "gemini-3.6-flash")
