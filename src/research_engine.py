@@ -366,14 +366,43 @@ class ResearchEngine:
         return base_text
 
     def _is_repetitive(self, title: str) -> bool:
-        past_topics = [t.get("title", "").lower() for t in self.memory.get("topics", [])[-25:]]
-        filler = {"the", "a", "an", "in", "to", "for", "of", "and", "or", "is", "how", "what", "why", "india", "market", "stocks"}
-        title_words = set(re.findall(r"\w{4,}", title.lower())) - filler
+        # Compare against last 40 topics (expanded from 25)
+        past_topics = [t.get("title", "").lower() for t in self.memory.get("topics", [])[-40:]]
+        filler = {
+            "the", "a", "an", "in", "to", "for", "of", "and", "or", "is", "how",
+            "what", "why", "india", "market", "stocks", "stock", "fund", "funds",
+            "will", "from", "with", "that", "this", "your", "has", "have", "its",
+            "can", "been", "than", "more", "when", "here", "about", "should", "says",
+            "investors", "investor", "financial", "economy", "news", "latest", "today"
+        }
+        title_lower = title.lower()
+        title_words = set(re.findall(r"\w{4,}", title_lower)) - filler
 
+        # ── Keyword-level blocking: if title contains a recently-used high-traffic theme ──
+        # Extract top-level theme keywords from used topic titles (last 10 runs)
+        recent_themes = []
+        for past in past_topics[-10:]:
+            for phrase in [
+                "mutual fund", "expense ratio", "direct plan", "credit card",
+                "minimum due", "sip", "nifty", "sensex", "ipo", "sebi", "rbi",
+                "inflation", "fd", "fixed deposit", "smallcap", "midcap", "largecap",
+                "nps", "ppf", "epf", "gold", "real estate", "loan", "emi",
+                "intraday", "derivative", "option", "futures"
+            ]:
+                if phrase in past:
+                    recent_themes.append(phrase)
+
+        for phrase in recent_themes:
+            if phrase in title_lower:
+                logger.info("⛔ Dedup blocked '%s' — keyword '%s' used recently.", title[:60], phrase)
+                return True
+
+        # ── Word-overlap check (raised threshold: ≥4 significant shared words) ──
         for past in past_topics:
             past_words = set(re.findall(r"\w{4,}", past)) - filler
             overlap = title_words.intersection(past_words)
-            if len(overlap) >= 3:
+            if len(overlap) >= 4:
+                logger.info("⛔ Dedup overlap block: '%s' vs '%s' (overlap: %s)", title[:50], past[:50], overlap)
                 return True
         return False
 

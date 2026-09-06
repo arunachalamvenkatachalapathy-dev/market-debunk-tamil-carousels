@@ -48,6 +48,15 @@ def run_pipeline(dry_run: bool = False, master_pkg_path: str = None, override_qu
                 topic_data = master_pkg.get("topic", {})
                 deck = editorial_engine.compose_from_master(master_pkg)
                 logger.info("✓ Independently scripted Tanglish deck from English concept: '%s'!", topic_data.get("title"))
+
+                # ── Record the English concept into Tamil's dedup memory ─────────
+                # This prevents the same idea from being chosen on future standalone research runs
+                research_engine = ResearchEngine()
+                research_engine._record_topic(
+                    topic_data.get("title", ""),
+                    topic_data.get("source_url", "")
+                )
+                logger.info("✓ Recorded English master concept in Tamil dedup memory to prevent repetition.")
             except Exception as e:
                 logger.warning("Failed to parse master package (%s); invoking Thinker Layer.", e)
                 thinker.diagnose_master_pkg_failure(master_pkg_path, e)
