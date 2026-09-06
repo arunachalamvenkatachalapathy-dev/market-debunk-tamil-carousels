@@ -26,7 +26,7 @@ logging.basicConfig(
 logger = logging.getLogger("market_debunk_tamil_carousel")
 
 
-def run_pipeline(dry_run: bool = False, master_pkg_path: str = None, override_query: str = None, edition: str = "daily") -> bool:
+def run_pipeline(dry_run: bool = False, override_query: str = None, edition: str = "daily") -> bool:
     mode_str = "DRY RUN (No live publishing)" if dry_run else "LIVE DIRECT PRODUCTION"
     edition_label = f" ({edition.upper()} EDITION)" if edition != "daily" else ""
     logger.info("=" * 60)
@@ -41,45 +41,23 @@ def run_pipeline(dry_run: bool = False, master_pkg_path: str = None, override_qu
         topic_data = None
         deck = None
 
-        # ── Phase 1: Load English Master Package or Sourced Topic ─────────────
-        if master_pkg_path and os.path.isfile(master_pkg_path):
-            logger.info("═══ Phase 1: Consuming English Master Carousel Package ═══")
-            try:
-                with open(master_pkg_path, "r", encoding="utf-8") as f:
-                    master_pkg = json.load(f)
-                topic_data = master_pkg.get("topic", {})
-                deck = editorial_engine.compose_from_master(master_pkg)
-                logger.info("✓ Independently scripted Tanglish deck from English concept: '%s'!", topic_data.get("title"))
+        # ── Phase 1: Standalone 48h Market News Sourcing (Tamil Independent) ───
+        logger.info("═══ Phase 1: Standalone 48h Market News Sourcing (Tamil Independent) ═══")
+        research_engine = ResearchEngine()
+        topic_data = research_engine.fetch_fresh_market_news(max_age_hours=48, override_query=override_query)
+        try:
+            from src.news_comprehension_agent import NewsComprehensionAgent
+            from src.workflow_agents import PlannerAgent
+            nca = NewsComprehensionAgent()
+            topic_data["news_analysis"] = nca.analyze_news_item(topic_data)
+            planner = PlannerAgent(llm_client=editorial_engine.client)
+            plan = planner.plan(topic_data)
+        except Exception as pe:
+            logger.warning("News analysis error in Tamil standalone: %s", pe)
+            plan = {"hidden_reality": topic_data.get("title")}
 
-                # ── Record the English concept into Tamil's dedup memory ─────────
-                # This prevents the same idea from being chosen on future standalone research runs
-                research_engine = ResearchEngine()
-                research_engine._record_topic(
-                    topic_data.get("title", ""),
-                    topic_data.get("source_url", "")
-                )
-                logger.info("✓ Recorded English master concept in Tamil dedup memory to prevent repetition.")
-            except Exception as e:
-                logger.warning("Failed to parse master package (%s); invoking Thinker Layer.", e)
-                thinker.diagnose_master_pkg_failure(master_pkg_path, e)
-
-        if not deck:
-            logger.info("═══ Phase 1: Standalone 48h Market News Sourcing ═══")
-            research_engine = ResearchEngine()
-            topic_data = research_engine.fetch_fresh_market_news(max_age_hours=48, override_query=override_query)
-            try:
-                from src.news_comprehension_agent import NewsComprehensionAgent
-                from src.workflow_agents import PlannerAgent
-                nca = NewsComprehensionAgent()
-                topic_data["news_analysis"] = nca.analyze_news_item(topic_data)
-                planner = PlannerAgent(llm_client=editorial_engine.client)
-                plan = planner.plan(topic_data)
-            except Exception as pe:
-                logger.warning("News analysis error in Tamil standalone: %s", pe)
-                plan = {"hidden_reality": topic_data.get("title")}
-
-            mock_master = {"topic": topic_data, "plan": plan}
-            deck = editorial_engine.compose_from_master(mock_master)
+        mock_master = {"topic": topic_data, "plan": plan}
+        deck = editorial_engine.compose_from_master(mock_master)
 
         slides = deck.get("slides", [])
         from src.validator import CarouselValidator
@@ -171,7 +149,7 @@ def run_pipeline(dry_run: bool = False, master_pkg_path: str = None, override_qu
         thinker.diagnose_pipeline_crash(
             phase="TAMIL_PIPELINE_ORCHESTRATION",
             error=e,
-            context={"dry_run": dry_run, "master_pkg_path": master_pkg_path, "override_query": override_query}
+            context={"dry_run": dry_run, "override_query": override_query, "edition": edition}
         )
         return False
 
@@ -180,14 +158,13 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Market Debunk Tamil Carousel Engine")
     parser.add_argument("--dry-run", action="store_true", help="Generate visuals and PDF without publishing")
     parser.add_argument("--edition", type=str, default="daily", choices=["morning", "evening", "daily"], help="Edition identifier (morning or evening)")
-    parser.add_argument("--master-pkg", type=str, default=None, help="Path to English master carousel package")
     parser.add_argument("--query", type=str, default=None, help="Override search query for market topic")
     args = parser.parse_args()
 
     success = run_pipeline(
         dry_run=args.dry_run,
-        master_pkg_path=args.master_pkg,
         override_query=args.query,
         edition=args.edition
     )
     sys.exit(0 if success else 1)
+

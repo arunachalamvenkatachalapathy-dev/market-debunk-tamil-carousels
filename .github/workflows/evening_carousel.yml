@@ -11,8 +11,8 @@ on:
         description: "Run in Dry-Run mode (no live publishing)"
         type: boolean
         default: false
-      master_pkg_path:
-        description: "Path to English master carousel package if available"
+      query:
+        description: "Optional custom market topic search query"
         type: string
         default: ""
 
@@ -47,16 +47,6 @@ jobs:
         run: |
           python -m playwright install --with-deps chromium
 
-      - name: Download English Master Package
-        id: download_master
-        env:
-          GH_TOKEN: ${{ secrets.ENGLISH_MASTER_READ_TOKEN || github.token }}
-        run: |
-          mkdir -p state
-          echo "Attempting to fetch latest English master package..."
-          gh run download --repo arunachalamvenkatachalapathy-dev/market-debunk-carousels \
-            --name market-debunk-carousel-master --dir state/ || echo "No English package downloaded; will use standalone research."
-
       - name: Run Tamil Carousel Pipeline (Evening Edition - Direct Live Publish)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -71,16 +61,12 @@ jobs:
           ENABLE_FACEBOOK: ${{ secrets.ENABLE_FACEBOOK || 'true' }}
           ENABLE_TELEGRAM: ${{ secrets.ENABLE_TELEGRAM || 'true' }}
         run: |
-          mkdir -p state
-          echo "Fetching latest English master package from market-debunk-carousels..."
-          curl -sSL "https://raw.githubusercontent.com/arunachalamvenkatachalapathy-dev/market-debunk-carousels/master/state/market_debunk_carousel_master.json" -o state/market_debunk_carousel_master.json || echo "Remote package fetch skipped."
-          
           EXTRA_ARGS="--edition evening"
           if [ "${{ inputs.dry_run }}" = "true" ]; then
             EXTRA_ARGS="$EXTRA_ARGS --dry-run"
           fi
-          if [ -s "state/market_debunk_carousel_master.json" ]; then
-            EXTRA_ARGS="$EXTRA_ARGS --master-pkg state/market_debunk_carousel_master.json"
+          if [ -n "${{ inputs.query }}" ]; then
+            EXTRA_ARGS="$EXTRA_ARGS --query '${{ inputs.query }}'"
           fi
           python engine.py $EXTRA_ARGS
 

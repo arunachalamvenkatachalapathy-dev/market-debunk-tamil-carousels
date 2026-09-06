@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 RSS_FEEDS = [
     {
         "name": "Google News India Finance (Past 2 Days)",
-        "url": "https://news.google.com/rss/search?q=(SEBI+OR+RBI+OR+Nifty+OR+Sensex+OR+IPO+OR+%22Mutual+Fund%22+OR+%22Stock+Market%22)+when:2d&hl=en-IN&gl=IN&ceid=IN:en",
+        "url": "https://news.google.com/rss/search?q=(SEBI+OR+RBI+OR+Nifty+OR+Sensex+OR+IPO+OR+%22Stock+Market%22)+when:2d&hl=en-IN&gl=IN&ceid=IN:en",
         "priority": 1
     },
     {
@@ -196,7 +196,7 @@ class ResearchEngine:
 
         # ── Source 3: SerpApi Google News (if key configured) ────────────────
         if settings.SERPAPI_KEY and settings.SERPAPI_KEY.strip():
-            query = override_query or "SEBI OR RBI OR Nifty OR Sensex OR 'Stock Market' OR 'Mutual Fund'"
+            query = override_query or "SEBI OR RBI OR Nifty OR Sensex OR 'Stock Market' OR IPO"
             logger.info("Querying SerpApi Google News for: '%s'...", query)
             try:
                 params = {
