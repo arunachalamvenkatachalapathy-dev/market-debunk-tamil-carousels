@@ -18,6 +18,8 @@ from src.editorial_engine import EditorialEngine
 from src.image_director import ImageDirector
 from src.publisher import Publisher
 from src.thinker_engine import ThinkerEngine
+from src.jitter_manager import JitterManager
+from src.analytics_tracker import AnalyticsFeedbackEngine
 
 logging.basicConfig(
     level=logging.INFO,
@@ -26,7 +28,7 @@ logging.basicConfig(
 logger = logging.getLogger("market_debunk_tamil_carousel")
 
 
-def run_pipeline(dry_run: bool = False, override_query: str = None, edition: str = "daily") -> bool:
+def run_pipeline(dry_run: bool = False, override_query: str = None, edition: str = "daily", no_jitter: bool = False) -> bool:
     mode_str = "DRY RUN (No live publishing)" if dry_run else "LIVE DIRECT PRODUCTION"
     edition_label = f" ({edition.upper()} EDITION)" if edition != "daily" else ""
     logger.info("=" * 60)
@@ -35,8 +37,27 @@ def run_pipeline(dry_run: bool = False, override_query: str = None, edition: str
     logger.info("=" * 60)
 
     thinker = ThinkerEngine()
+    jitter_mgr = JitterManager()
+    analytics_engine = AnalyticsFeedbackEngine()
 
     try:
+        # ── Phase 0a: 48-Hour Closed-Loop Analytics Audit ─────────────────────
+        logger.info("═══ Phase 0a: 48-Hour Feedback Sensor Audit ═══")
+        analytics_engine.audit_mature_posts(min_age_hours=48.0)
+        editorial_biases = analytics_engine.get_editorial_guidance()
+
+        # ── Phase 0b: Organic Timing Jitter (14 to 28 mins) ────────────────────
+        logger.info("═══ Phase 0b: Programmatic Jitter Verification ═══")
+        jitter_mgr.inject_jitter(min_seconds=14*60, max_seconds=28*60, skip_jitter=no_jitter, dry_run=dry_run)
+
+        # ── Phase 0c: Mandatory 4-Hour Cooldown Guard ─────────────────────────
+        if not dry_run:
+            passed, cooldown_msg = jitter_mgr.check_cooldown(min_cooldown_hours=4.0)
+            if not passed:
+                logger.warning(cooldown_msg)
+                return False
+            logger.info("✓ %s", cooldown_msg)
+
         editorial_engine = EditorialEngine()
         topic_data = None
         deck = None
@@ -138,6 +159,17 @@ def run_pipeline(dry_run: bool = False, override_query: str = None, edition: str
             dry_run=dry_run
         )
 
+        # Record upload in ledger for 48h analytics loop
+        media_id = results.get("instagram", {}).get("container_id") or results.get("instagram", {}).get("media_id") or "simulated_id"
+        jitter_mgr.record_successful_upload(
+            title=topic_data.get("title", "Market Debunk Tamil"),
+            media_id=media_id,
+            publish_results=results,
+            topic_category=topic_data.get("news_analysis", {}).get("debunk_category", "GENERAL"),
+            hook_archetype=deck.get("hook_archetype_id", "CONTRARIAN"),
+            caption_hashtag_cluster=deck.get("hashtag_cluster_id", "default")
+        )
+
         logger.info("📢 Publishing Results: %s", json.dumps(results, indent=2))
         logger.info("=" * 60)
         logger.info("🎉 TAMIL CAROUSEL WORKFLOW COMPLETED SUCCESSFULLY")
@@ -157,6 +189,7 @@ def run_pipeline(dry_run: bool = False, override_query: str = None, edition: str
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Market Debunk Tamil Carousel Engine")
     parser.add_argument("--dry-run", action="store_true", help="Generate visuals and PDF without publishing")
+    parser.add_argument("--no-jitter", action="store_true", help="Bypass programmatic anti-bot jitter delay")
     parser.add_argument("--edition", type=str, default="daily", choices=["morning", "evening", "daily"], help="Edition identifier (morning or evening)")
     parser.add_argument("--query", type=str, default=None, help="Override search query for market topic")
     args = parser.parse_args()
@@ -164,7 +197,8 @@ if __name__ == "__main__":
     success = run_pipeline(
         dry_run=args.dry_run,
         override_query=args.query,
-        edition=args.edition
+        edition=args.edition,
+        no_jitter=args.no_jitter
     )
     sys.exit(0 if success else 1)
 

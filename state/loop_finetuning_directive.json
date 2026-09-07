@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-09-07T07:51:52.125303+00:00",
+  "channel": "TAMIL",
+  "data_points_analyzed": 0,
+  "historical_avg_save_rate_pct": 2.5,
+  "prioritized_categories": [
+    "SMART_MONEY",
+    "MARKET_TRAPS",
+    "MUTUAL_FUNDS_TRUTH"
+  ],
+  "deprecated_categories": [],
+  "high_performing_hooks": [],
+  "deprecated_hooks": [],
+  "video_finetuning_directive": {
+    "opening_3s_hook": "Mandatory Tanglish contrarian shock with citable rupee anchor. Open immediately with institutional mechanism (e.g. 'Mutual Fund-ல் ₹34 Lakhs ரகசிய கசிவு!').",
+    "pacing_calibration": "Introduce hard mathematical friction between seconds 4 and 10 in conversational Tanglish (e.g. '1% fee சின்ன விஷயம்னு நினைப்பீங்க, ஆனா 20 வருஷத்துல...').",
+    "visual_friction": "Tamil typography with high contrast highlight box; photoreal amber-teal lighting.",
+    "retention_cta": "End with Tanglish bookmark trigger: 'அடுத்த trade-க்கு முன் இந்த checklist-ஐ Save பண்ணி வச்சுக்கோங்க.'"
+  },
+  "carousel_finetuning_directive": {
+    "slide_1_hook_bias": "Tanglish contrarian curiosity gap with exactly one <span class='highlight-box'>...</span> tag.",
+    "slide_2_3_mechanism": "Lead with the exact citable mathematical formula or institutional orderflow disparity on Slide 2.",
+    "slide_8_dual_cta": "Separate personal saving from peer sharing (Save & Share)."
+  },
+  "prompt_injection_snippet": "TAMIL ALGORITHMIC REINFORCEMENT DIRECTIVE: Historical performance shows Tamil audiences respond to institutional order flow and hidden fee debunks with an average save rate of 2.5%. Prioritize topics covering Smart Money, Market Traps. Ensure opening 3s / Slide 1 deliver immediate contrarian friction in natural conversational Tanglish."
+}

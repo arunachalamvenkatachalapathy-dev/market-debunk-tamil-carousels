@@ -1,0 +1,32 @@
+{
+  "uploads": [
+    {
+      "title": "Multibagger stock Himadri up 50% in 6 months amid major expansion, investment plans",
+      "media_id": "simulated_id",
+      "timestamp": "2026-09-07T08:00:29.212273+00:00",
+      "topic_category": "VALUATION_MYTH",
+      "hook_archetype": "tamil_angle_2",
+      "hashtag_cluster": "tamil_cluster_4",
+      "publish_results": {
+        "instagram": {
+          "success": true,
+          "status": "dry_run_simulated"
+        },
+        "facebook": {
+          "success": true,
+          "status": "dry_run_simulated"
+        },
+        "telegram": {
+          "success": true,
+          "status": "dry_run_simulated"
+        },
+        "linkedin": {
+          "success": false,
+          "status": "skipped"
+        }
+      },
+      "insights_fetched_48h": false,
+      "insights": {}
+    }
+  ]
+}

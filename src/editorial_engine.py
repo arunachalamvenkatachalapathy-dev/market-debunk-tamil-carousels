@@ -253,10 +253,10 @@ Return JSON ONLY matching this 8-slide schema:
                 s["card_text"] = ""
             elif idx == expected_count - 1:
                 s["role"] = "bookmark_save"
-                s["title_lines"] = ["பிற்காலத்திற்கு", "இந்த பதிவை", "<span class='highlight-box'>சேமிக்க</span>", "மறக்காதீர்கள்"]
+                s["title_lines"] = ["பிற்காலத்திற்கு", "இந்த பதிவை", "<span class='highlight-box'>Save & Share</span>", "செய்யுங்கள்"]
                 s["card_text"] = ""
                 if not s.get("cta_detail"):
-                    s["cta_detail"] = "இந்த institutional risk checkpoints-ஐ உங்கள் அடுத்த trade-க்கு முன் review செய்ய save செய்து கொள்ளுங்கள்."
+                    s["cta_detail"] = "இந்த institutional risk checkpoints-ஐ உங்கள் அடுத்த trade-க்கு முன் review செய்ய Save செய்யுங்கள். உங்கள் நண்பர்களுக்கும் Share செய்து உதவுங்கள்."
             else:
                 s["role"] = s.get("role") or f"value_{idx}"
                 raw_title = s.get("title") or s.get("headline")
@@ -416,7 +416,7 @@ Return JSON ONLY matching this 8-slide schema:
                 },
                 {
                     "role": "bookmark_save",
-                    "title_lines": ["பிற்காலத்திற்கு", "இந்த பதிவை", "<span class='highlight-box'>சேமிக்க</span>", "மறக்காதீர்கள்"],
+                    "title_lines": ["பிற்காலத்திற்கு", "இந்த பதிவை", "<span class='highlight-box'>Save & Share</span>", "செய்யுங்கள்"],
                     "tag": "#MARKETDEBUNK"
                 }
             ]

@@ -4,16 +4,20 @@ Transforms real-time financial market news and deep comprehension into structure
 """
 import json
 import logging
+import os
+import random
 import re
-from typing import Optional
+from datetime import datetime
+from pathlib import Path
+from typing import Optional, Dict, Any, List
 
-from src.config import settings
+from src.config import settings, STATE_DIR
 
 logger = logging.getLogger(__name__)
 
 
 class PlannerAgent:
-    """Builds a structured financial debunk plan for a 6-slide carousel."""
+    """Builds a structured financial debunk plan for an 8-slide carousel."""
 
     def __init__(self, llm_client=None):
         self.llm = llm_client
@@ -43,7 +47,7 @@ class PlannerAgent:
         raw_text = topic_data.get("raw_text", "")
 
         if self.llm:
-            prompt = f"""Act as a senior quantitative financial editor for 'Market Debunk' creating a 6-slide educational Instagram/LinkedIn carousel.
+            prompt = f"""Act as a senior quantitative financial editor for 'Market Debunk Tamil' creating an 8-slide educational Instagram carousel.
 A financial market event occurred in India in the last 48 hours.
 
 Breaking News: {title}
@@ -221,17 +225,16 @@ Return JSON ONLY:
 
             if i == len(slides) - 1 and not s.get("cta_detail"):
                 s["cta_detail"] = "இந்த institutional risk checkpoints-ஐ உங்கள் அடுத்த trade-க்கு முன் review செய்ய save செய்து கொள்ளுங்கள்."
-
         return deck
 
     def format_converting_caption(self, deck: dict, topic_data: dict, audio_track: Optional[dict] = None) -> str:
         """
-        Formats a high-converting Tanglish caption:
-        1. Opening Hook
-        2. 3 Bullet points
-        3. Clear single CTA with keyword trigger
-        4. Audio recommendation
-        5. 3-5 relevant hashtags
+        Formats a high-converting, organically diverse Tanglish caption based on the 2026 Algorithmic Directive:
+        1. Curiosity Hook (rotates across 5 distinct opening archetypes in Tanglish)
+        2. Progressive Value Preview (3 slide teasers)
+        3. Double Algorithmic Engagement Signal: Bookmark Save + DM Share CTA
+        4. Lead Magnet keyword comment trigger
+        5. Rotating non-repetitive hashtag cluster (anti-spam diversity)
         """
         title = topic_data.get("title", "")
         slides = deck.get("slides", [])
@@ -247,17 +250,64 @@ Return JSON ONLY:
                 bullets.append(f"📌 {t_clean}")
         if not bullets:
             bullets = [
-                "📌 1% fee-யின் கணக்கீடு மற்றும் compounding இழப்பு",
+                "📌 செய்திகளுக்கு பின்னால் உள்ள Institutional எதார்த்தம்",
                 "📌 Institutional vs Retail அணுகுமுறை",
                 "📌 உங்கள் முதலீட்டை பாதுகாக்கும் முக்கிய விதி"
             ]
 
+        # ── 1. Rotate Dynamic Curiosity-Driven Opening Hooks (Tanglish) ───────
+        opening_angles = [
+            "சந்தையில் வரும் செய்திகளை மட்டும் நம்பி முதலீடு செய்வது எப்படி institutional trap-ல் சிக்க வைக்கும் என்பதை பாருங்கள்.",
+            "இந்த நகர்வின் பின்னணியில் உள்ள உண்மை நிதி கணக்கீடுகள், டிவி செய்திகள் சொல்வதை விட முற்றிலும் மாறுபட்டவை.",
+            "அடுத்த trade எடுக்கும் முன், Smart Money மற்றும் நிறுவனங்கள் உண்மையில் என்ன செய்கிறார்கள் என்பதை கவனியுங்கள்.",
+            "சாதாரண முதலீட்டாளர்கள் இந்த breakout-ஐ துரத்தும் போது, பெரிய நிறுவனங்கள் தங்கள் ரிஸ்க்கை அமைதியாக hedge செய்கின்றன.",
+            "FOMO அவசரம் உங்கள் முதலீட்டு வளர்ச்சியை எப்படி பாதிக்கிறது? இந்த முக்கிய data-வை உடனே audit செய்யுங்கள்."
+        ]
+
+        # ── 2. Rotate Across 5 Diverse Tamil Thematic Hashtag Clusters ────────
+        hashtag_clusters = [
+            ["#TamilFinance", "#StockMarketTamil", "#TamilTrading", "#TamilInvestors", "#MarketDebunk"],
+            ["#TamilShareMarket", "#NiftyTamil", "#InvestmentTamil", "#TradingTamil", "#ShareMarketTamil"],
+            ["#TamilWealth", "#PersonalFinanceTamil", "#TamilBusiness", "#MoneyTamil", "#TamilSavings"],
+            ["#MarketDebunkTamil", "#StockTipsTamil", "#TradingStrategyTamil", "#RiskTamil", "#TamilKnowledge"],
+            ["#TamilStockMarket", "#IndianEconomyTamil", "#WealthBuildingTamil", "#FinancialLiteracyTamil", "#Tamil"]
+        ]
+
+        # Inspect last upload history to guarantee zero back-to-back cluster or angle repetition
+        last_cluster_id = None
+        last_angle_id = None
+        try:
+            from src.config import STATE_DIR
+            history_file = STATE_DIR / "upload_history.json"
+            if history_file.exists():
+                with open(history_file, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                    uploads = data.get("uploads", []) if isinstance(data, dict) else data
+                    if uploads:
+                        last_cluster_id = uploads[-1].get("hashtag_cluster")
+                        last_angle_id = uploads[-1].get("hook_archetype")
+        except Exception:
+            pass
+
+        available_angle_indices = [i for i in range(len(opening_angles)) if f"tamil_angle_{i+1}" != last_angle_id]
+        angle_idx = random.choice(available_angle_indices) if available_angle_indices else random.randint(0, len(opening_angles) - 1)
+        chosen_opening = opening_angles[angle_idx]
+
+        available_cluster_indices = [i for i in range(len(hashtag_clusters)) if f"tamil_cluster_{i+1}" != last_cluster_id]
+        cluster_idx = random.choice(available_cluster_indices) if available_cluster_indices else random.randint(0, len(hashtag_clusters) - 1)
+        chosen_hashtags = " ".join(hashtag_clusters[cluster_idx])
+
+        deck["hashtag_cluster_id"] = f"tamil_cluster_{cluster_idx + 1}"
+        deck["hook_archetype_id"] = f"tamil_angle_{angle_idx + 1}"
+
         caption = (
             f"🚨 {clean_hook}\n\n"
-            f"Retail முதலீட்டாளர்கள் தவிர்க்க வேண்டிய மிகப்பெரிய நிதி அபாயங்கள் மற்றும் கணக்கீடுகள்:\n\n"
+            f"{chosen_opening}\n\n"
+            f"முழு 8-slide Tanglish breakdown-ஐ படிக்க swipe செய்யுங்கள். 👉\n"
             f"{chr(10).join(bullets)}\n\n"
-            f"முழு 8-slide breakdown-ஐ படிக்க swipe செய்யுங்கள். 👉\n\n"
-            f"💬 Follow @marketdebunk_tamil மற்றும் 'GUIDE'-னு கீழே comment பண்ணுங்க — complete detailed Investor Playbook & Risk Checklist PDF-ஐ உங்க DM-க்கு உடனே அனுப்புறோம்!\n\n"
-            f"#TamilFinance #MarketDebunk #MutualFundsTamil #StockMarketTamil #InvestingTamil #PersonalFinance"
+            f"📌 உங்கள் அடுத்த trade-க்கு முன் பார்க்க இந்த பதிவை Save செய்து கொள்ளுங்கள்.\n"
+            f"✈️ உங்கள் முதலீட்டாளர் நண்பர்களுக்கு Share செய்து அவர்களின் Capital-ஐ பாதுகாக்கவும்.\n\n"
+            f"💬 Follow @marketdebunk_tamil மற்றும் '{trigger}'-னு கீழே comment பண்ணுங்க — complete detailed Investor Playbook & Risk Checklist PDF-ஐ உங்க DM-க்கு உடனே அனுப்புறோம்!\n\n"
+            f"{chosen_hashtags}"
         )
         return caption
