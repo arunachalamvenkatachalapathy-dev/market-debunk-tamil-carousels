@@ -84,8 +84,9 @@ class JitterManager:
 
     def inject_jitter(
         self,
-        target_window_start_ist: Tuple[int, int] = (9, 18),   # 09:18 AM IST (staggered from English)
-        target_window_end_ist: Tuple[int, int] = (9, 32),     # 09:32 AM IST
+        target_window_start_ist: Optional[Tuple[int, int]] = None,
+        target_window_end_ist: Optional[Tuple[int, int]] = None,
+        edition: str = "daily",
         min_seconds: int = 14 * 60,
         max_seconds: int = 28 * 60,
         skip_jitter: bool = False,
@@ -93,10 +94,10 @@ class JitterManager:
     ) -> int:
         """
         Calculates intelligent organic jitter using Target-Window Math.
-        Absorbs GitHub Actions queue scheduling variance:
-        - If runner triggered early (08:35 AM IST), sleeps until target window (09:18 - 09:32 AM IST).
-        - If runner was delayed by GitHub queues into the target window, sleeps only the remaining seconds.
-        - If runner was delayed past the window (e.g. queue delay > 45m), bypasses long sleep to prevent missing window.
+        Supports both Morning (09:25 AM IST) and Evening (07:45 PM IST) publication editions:
+        - Morning window: 09:18 - 09:32 AM IST (centered at 09:25 AM IST, staggered from English).
+        - Evening window: 19:40 - 19:50 PM IST (centered at 07:45 PM IST, staggered from English).
+        Absorbs GitHub Actions queue scheduling variance.
         """
         if skip_jitter or dry_run:
             logger.info("⏩ Jitter skipped (dry_run=%s, skip_jitter=%s).", dry_run, skip_jitter)
@@ -110,12 +111,23 @@ class JitterManager:
         ist_offset = timedelta(hours=5, minutes=30)
         now_ist = now_utc + ist_offset
 
-        cycle_start = now_ist.replace(hour=8, minute=0, second=0, microsecond=0)
-        cycle_end = now_ist.replace(hour=10, minute=0, second=0, microsecond=0)
+        # Detect or configure edition window
+        if edition == "evening" or (edition == "daily" and now_ist.hour >= 16):
+            start_tuple = target_window_start_ist or (19, 40)  # 07:40 PM IST
+            end_tuple = target_window_end_ist or (19, 50)      # 07:50 PM IST (centered at 7:45 PM)
+            cycle_start = now_ist.replace(hour=18, minute=30, second=0, microsecond=0)
+            cycle_end = now_ist.replace(hour=20, minute=30, second=0, microsecond=0)
+            edition_label = "EVENING (7:45 PM IST)"
+        else:
+            start_tuple = target_window_start_ist or (9, 18)   # 09:18 AM IST
+            end_tuple = target_window_end_ist or (9, 32)      # 09:32 AM IST (centered at 9:25 AM)
+            cycle_start = now_ist.replace(hour=8, minute=0, second=0, microsecond=0)
+            cycle_end = now_ist.replace(hour=10, minute=30, second=0, microsecond=0)
+            edition_label = "MORNING (9:25 AM IST)"
 
         if cycle_start <= now_ist <= cycle_end:
-            win_start = now_ist.replace(hour=target_window_start_ist[0], minute=target_window_start_ist[1], second=0, microsecond=0)
-            win_end = now_ist.replace(hour=target_window_end_ist[0], minute=target_window_end_ist[1], second=0, microsecond=0)
+            win_start = now_ist.replace(hour=start_tuple[0], minute=start_tuple[1], second=0, microsecond=0)
+            win_end = now_ist.replace(hour=end_tuple[0], minute=end_tuple[1], second=0, microsecond=0)
             
             window_span_secs = int((win_end - win_start).total_seconds())
             random_offset_secs = random.randint(0, max(0, window_span_secs))
@@ -127,20 +139,22 @@ class JitterManager:
                 mins = delay // 60
                 secs = delay % 60
                 logger.info(
-                    "⏳ [TARGET-WINDOW JITTER TAMIL] Current IST: %02d:%02d:%02d | Target Publish IST: %02d:%02d:%02d | "
+                    "⏳ [TARGET-WINDOW JITTER TAMIL - %s] Current IST: %02d:%02d:%02d | Target Publish IST: %02d:%02d:%02d | "
                     "Sleeping %dm %ds to absorb CI queue variance and land organically in target window.",
+                    edition_label,
                     now_ist.hour, now_ist.minute, now_ist.second,
                     target_post_ist.hour, target_post_ist.minute, target_post_ist.second,
                     mins, secs
                 )
                 time.sleep(delay)
-                logger.info("✓ Target window reached. Proceeding with organic Tamil upload.")
+                logger.info("✓ Target window reached (%s). Proceeding with organic Tamil upload.", edition_label)
                 return delay
             else:
                 brief_delay = random.randint(15, 30)
                 logger.warning(
-                    "⚠️ [QUEUE DELAY DETECTED TAMIL] Current IST (%02d:%02d:%02d) is already past target (%02d:%02d:%02d). "
-                    "Shortening jitter to %ds buffer to avoid missing morning window.",
+                    "⚠️ [QUEUE DELAY DETECTED TAMIL - %s] Current IST (%02d:%02d:%02d) is already past target (%02d:%02d:%02d). "
+                    "Shortening jitter to %ds buffer to avoid missing target window.",
+                    edition_label,
                     now_ist.hour, now_ist.minute, now_ist.second,
                     target_post_ist.hour, target_post_ist.minute, target_post_ist.second,
                     brief_delay

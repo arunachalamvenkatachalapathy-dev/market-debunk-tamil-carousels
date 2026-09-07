@@ -1,10 +1,8 @@
-name: Daily Tamil Financial Carousel - Evening Edition (Manual Dispatch)
+name: Daily Tamil Financial Carousel - Evening Edition (7:45 PM IST)
 
 on:
-  # Automated schedule decommissioned per 2-post/day directive (1 morning carousel + 1 evening video).
-  # Kept for on-demand manual dispatch.
-  # schedule:
-  #   - cron: '45 13 * * *'
+  schedule:
+    - cron: '0 14 * * *'  # 14:00 UTC = 19:30 IST -> Lands organically at 19:40 - 19:50 IST (7:45 PM IST)
   workflow_dispatch:
     inputs:
       dry_run:
