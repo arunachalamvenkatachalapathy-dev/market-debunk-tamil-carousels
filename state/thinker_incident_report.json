@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-09-07T06:38:51.857753+00:00",
+  "timestamp": "2026-09-07T18:38:22.912558+00:00",
   "phase": "PUBLISHING",
   "platform": "Instagram",
   "severity": "CRITICAL",
   "error_code": "ERR_META_API",
-  "root_cause_analysis": "Meta API triggered a behavioral block (Subcode 2207051) due to 'Application request limit reached', indicating the account or app has been flagged for spam-like activity or exceeded the allowed action threshold.",
+  "root_cause_analysis": "Meta Graph API returned code 4 with subcode 2207051 ('Application request limit reached' / 'Action is blocked'). Instagram has temporarily flagged or restricted publishing activity on the account/app to protect the community.",
   "reproducibility": "RATE_LIMIT",
   "automated_remediation": {
-    "action": "RETRY_AFTER_DELAY",
-    "retry_delay_seconds": 3600
+    "action": "ABORT",
+    "retry_delay_seconds": 0
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Stop all automated posting for 24 hours to clear the block.",
-    "Log into the Instagram account manually to check for 'Account Status' warnings or required CAPTCHAs.",
-    "Verify that the posting frequency does not violate Meta's community guidelines or API rate limits."
+    "Check the Meta Business Suite or Instagram app for account status warnings or policy violations.",
+    "Submit an appeal or request a review via the Instagram/Meta support interface ('Tell us if you think that we've made a mistake').",
+    "Temporarily pause automated publishing jobs to avoid prolonged account suspension."
   ]
 }
