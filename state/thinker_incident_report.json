@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-09-08T17:46:26.396040+00:00",
+  "timestamp": "2026-09-09T07:36:15.048856+00:00",
   "phase": "PUBLISHING",
   "platform": "Instagram",
   "severity": "CRITICAL",
   "error_code": "ERR_META_API",
-  "root_cause_analysis": "Meta Graph API returned OAuthException Code 4, Subcode 2207051 ('Application request limit reached' / 'Action is blocked'). The account or application has triggered an automated anti-spam/rate limit restriction preventing publication.",
+  "root_cause_analysis": "Meta Graph API application request limit reached and activity restricted (Code 4, Subcode 2207051) due to automated posting rate limits or action block enforcement.",
   "reproducibility": "RATE_LIMIT",
   "automated_remediation": {
-    "action": "ABORT",
-    "retry_delay_seconds": 86400
+    "action": "RETRY_AFTER_DELAY",
+    "retry_delay_seconds": 3600
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Check the Instagram account status directly in the Instagram Mobile App or Meta Business Suite for account action blocks or security checkpoints.",
-    "Cease automated posting requests to Meta Graph API for at least 24 hours to allow the application restriction to reset.",
-    "Verify Meta Developer App call volume metrics and rate-limit tiers under Meta App Dashboard > Instagram Platform > Rate Limiting."
+    "Check the Meta Developer Portal / Meta Business Manager for active enforcement warnings or API quota usage.",
+    "Pause automated posting for at least 1 to 24 hours to allow the Instagram action block to clear naturally.",
+    "If the issue persists, submit a review request via Meta Business Support for error subcode 2207051."
   ]
 }

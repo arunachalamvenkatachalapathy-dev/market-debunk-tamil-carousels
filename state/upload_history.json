@@ -114,6 +114,35 @@
       },
       "insights_fetched_48h": false,
       "insights": {}
+    },
+    {
+      "title": "Taiwan Stock Market Hits Record Trading Volume as TDCC Boosts System Capacity by 30% - India Infoline",
+      "media_id": "simulated_id",
+      "timestamp": "2026-09-09T07:36:49.552727+00:00",
+      "topic_category": "LIQUIDITY_TRAP",
+      "hook_archetype": "tamil_angle_1",
+      "hashtag_cluster": "tamil_cluster_2",
+      "publish_results": {
+        "instagram": {
+          "success": false,
+          "error": "Publish failed: {'message': 'Application request limit reached', 'type': 'OAuthException', 'is_transient': False, 'code': 4, 'error_subcode': 2207051, 'error_user_title': 'Action is blocked', 'error_user_msg': \"We restrict certain activity to protect our community. Tell us if you think that we've made a mistake.\", 'fbtrace_id': 'A-CEPLsSANQxf-402nCQ3QW'}"
+        },
+        "facebook": {
+          "success": true,
+          "post_id": "1297757220087165_122105218965463457",
+          "url": "https://www.facebook.com/1297757220087165_122105218965463457"
+        },
+        "telegram": {
+          "success": false,
+          "status": "skipped"
+        },
+        "linkedin": {
+          "success": false,
+          "status": "skipped"
+        }
+      },
+      "insights_fetched_48h": false,
+      "insights": {}
     }
   ]
 }
