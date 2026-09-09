@@ -3,8 +3,8 @@ name: Daily Tamil Financial Carousel - Morning Edition (9:20 AM IST)
 
 on:
   schedule:
-    # 08:35 AM IST = 03:05 UTC every day
-    - cron: '5 3 * * *'
+    # 08:54 AM IST = 03:24 UTC every day (off-peak minute avoids GitHub Actions queue delays)
+    - cron: '24 3 * * *'
   workflow_dispatch:
     inputs:
       dry_run:

@@ -2,7 +2,7 @@ name: Daily Tamil Financial Carousel - Evening Edition (7:45 PM IST)
 
 on:
   schedule:
-    - cron: '0 14 * * *'  # 14:00 UTC = 19:30 IST -> Lands organically at 19:40 - 19:50 IST (7:45 PM IST)
+    - cron: '8 14 * * *'  # 14:08 UTC = 19:38 IST (off-peak minute) -> Lands organically at 19:40 - 19:50 IST (7:45 PM IST)
   workflow_dispatch:
     inputs:
       dry_run:
