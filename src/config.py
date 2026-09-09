@@ -42,7 +42,7 @@ class Settings:
     # ── Meta (Instagram & Facebook) ─────────────────────────────────────────
     INSTAGRAM_USER_ID: str = os.getenv("INSTAGRAM_USER_ID", "17841436821575762")
     INSTAGRAM_ACCESS_TOKEN: str = os.getenv("INSTAGRAM_ACCESS_TOKEN", "")
-    INSTAGRAM_GRAPH_VERSION: str = os.getenv("INSTAGRAM_GRAPH_VERSION", "v21.0")
+    INSTAGRAM_GRAPH_VERSION: str = os.getenv("INSTAGRAM_GRAPH_VERSION", "v23.0")
 
     FACEBOOK_PAGE_ID: str = os.getenv("FACEBOOK_PAGE_ID", "1297757220087165")
     FACEBOOK_ACCESS_TOKEN: str = os.getenv("FACEBOOK_ACCESS_TOKEN", "")
