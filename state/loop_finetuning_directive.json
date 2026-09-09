@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-09T07:33:06.595930+00:00",
+  "generated_at": "2026-09-09T08:04:37.731607+00:00",
   "channel": "TAMIL",
-  "data_points_analyzed": 0,
-  "historical_avg_save_rate_pct": 2.5,
+  "data_points_analyzed": 1,
+  "historical_avg_save_rate_pct": 0.0,
   "prioritized_categories": [
     "SMART_MONEY",
     "MARKET_TRAPS",
@@ -22,5 +22,5 @@
     "slide_2_3_mechanism": "Lead with the exact citable mathematical formula or institutional orderflow disparity on Slide 2.",
     "slide_8_dual_cta": "Separate personal saving from peer sharing (Save & Share)."
   },
-  "prompt_injection_snippet": "TAMIL ALGORITHMIC REINFORCEMENT DIRECTIVE: Historical performance shows Tamil audiences respond to institutional order flow and hidden fee debunks with an average save rate of 2.5%. Prioritize topics covering Smart Money, Market Traps. Ensure opening 3s / Slide 1 deliver immediate contrarian friction in natural conversational Tanglish."
+  "prompt_injection_snippet": "TAMIL ALGORITHMIC REINFORCEMENT DIRECTIVE: Historical performance shows Tamil audiences respond to institutional order flow and hidden fee debunks with an average save rate of 0.0%. Prioritize topics covering Smart Money, Market Traps. Ensure opening 3s / Slide 1 deliver immediate contrarian friction in natural conversational Tanglish."
 }
