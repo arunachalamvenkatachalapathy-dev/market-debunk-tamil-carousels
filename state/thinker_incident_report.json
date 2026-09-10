@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-09-10T08:16:50.055840+00:00",
+  "timestamp": "2026-09-10T17:44:06.899089+00:00",
   "phase": "PUBLISHING",
   "platform": "Instagram",
   "severity": "CRITICAL",
   "error_code": "ERR_META_API",
-  "root_cause_analysis": "The Instagram Graph API returned a 429-like 'Application request limit reached' error (code 4, subcode 2207051), indicating the account or application has exceeded the allowed frequency of publishing actions within the current window.",
+  "root_cause_analysis": "Meta Graph API blocked publishing activity due to application request limit or automated action restrictions (OAuthException Code 4, Subcode 2207051).",
   "reproducibility": "RATE_LIMIT",
   "automated_remediation": {
-    "action": "RETRY_AFTER_DELAY",
-    "retry_delay_seconds": 3600
+    "action": "ABORT",
+    "retry_delay_seconds": 86400
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Wait for at least 60 minutes before attempting to re-publish to allow the rate limit window to reset.",
-    "Verify if other automated scripts or third-party tools are concurrently accessing the Instagram Graph API for this account.",
-    "If the issue persists after 24 hours, check the Meta Business Suite for any account-level restrictions or 'Action Blocked' notifications."
+    "Check Meta Business Suite and Instagram app settings to request an unblock or review the policy restriction.",
+    "Pause automated Instagram publishing pipeline for 24 hours to let rate limits and security flags clear.",
+    "Verify API call frequency to ensure publishing requests stay within Meta's rate limits."
   ]
 }
