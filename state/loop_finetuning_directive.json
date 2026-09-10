@@ -1,14 +1,16 @@
 {
-  "generated_at": "2026-09-09T18:09:45.874058+00:00",
+  "generated_at": "2026-09-10T08:14:16.697649+00:00",
   "channel": "TAMIL",
-  "data_points_analyzed": 1,
+  "data_points_analyzed": 3,
   "historical_avg_save_rate_pct": 0.0,
   "prioritized_categories": [
     "SMART_MONEY",
     "MARKET_TRAPS",
     "MUTUAL_FUNDS_TRUTH"
   ],
-  "deprecated_categories": [],
+  "deprecated_categories": [
+    "LIQUIDITY_TRAP"
+  ],
   "high_performing_hooks": [],
   "deprecated_hooks": [],
   "video_finetuning_directive": {

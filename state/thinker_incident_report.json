@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-09-09T18:12:12.117612+00:00",
+  "timestamp": "2026-09-10T08:16:50.055840+00:00",
   "phase": "PUBLISHING",
   "platform": "Instagram",
-  "severity": "RECOVERABLE",
+  "severity": "CRITICAL",
   "error_code": "ERR_META_API",
-  "root_cause_analysis": "The Instagram Graph API returned a 429-like error (code 4, subcode 2207051) indicating that the application has exceeded the allowed request frequency or volume for the current window, triggering a temporary security block.",
+  "root_cause_analysis": "The Instagram Graph API returned a 429-like 'Application request limit reached' error (code 4, subcode 2207051), indicating the account or application has exceeded the allowed frequency of publishing actions within the current window.",
   "reproducibility": "RATE_LIMIT",
   "automated_remediation": {
     "action": "RETRY_AFTER_DELAY",
     "retry_delay_seconds": 3600
   },
-  "operator_action_required": false,
+  "operator_action_required": true,
   "actionable_instructions": [
-    "Wait for the cooling-off period (at least 1 hour) before attempting to publish again.",
-    "Review the publishing frequency to ensure it stays within Meta's platform rate limits.",
-    "If the error persists after 24 hours, verify the Facebook App's 'App Mode' status in the Meta Developer Dashboard."
+    "Wait for at least 60 minutes before attempting to re-publish to allow the rate limit window to reset.",
+    "Verify if other automated scripts or third-party tools are concurrently accessing the Instagram Graph API for this account.",
+    "If the issue persists after 24 hours, check the Meta Business Suite for any account-level restrictions or 'Action Blocked' notifications."
   ]
 }

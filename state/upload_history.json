@@ -62,8 +62,16 @@
           "status": "skipped"
         }
       },
-      "insights_fetched_48h": false,
-      "insights": {}
+      "insights_fetched_48h": true,
+      "insights": {
+        "saves": 0,
+        "shares": 0,
+        "impressions": 0,
+        "reach": 0,
+        "save_to_reach_pct": 0.0,
+        "status": "success"
+      },
+      "age_at_audit_hours": 61.6
     },
     {
       "title": "Defence stock Raymond hits 52-week high, rises 12% ahead of board meeting outcome on fundraise",
@@ -91,8 +99,16 @@
           "status": "skipped"
         }
       },
-      "insights_fetched_48h": false,
-      "insights": {}
+      "insights_fetched_48h": true,
+      "insights": {
+        "saves": 0,
+        "shares": 0,
+        "impressions": 0,
+        "reach": 0,
+        "save_to_reach_pct": 0.0,
+        "status": "success"
+      },
+      "age_at_audit_hours": 48.2
     },
     {
       "title": "How Apple shares will fare amid iPhone 18 launch event — all eyes on stock and foldable Ultra",
@@ -168,6 +184,35 @@
           "success": true,
           "post_id": "1297757220087165_122105620293463457",
           "url": "https://www.facebook.com/1297757220087165_122105620293463457"
+        },
+        "telegram": {
+          "success": false,
+          "status": "skipped"
+        },
+        "linkedin": {
+          "success": false,
+          "status": "skipped"
+        }
+      },
+      "insights_fetched_48h": false,
+      "insights": {}
+    },
+    {
+      "title": "Coforge eyes industry-leading growth. Will chairman’s exit derail the story?",
+      "media_id": "simulated_id",
+      "timestamp": "2026-09-10T08:17:42.556135+00:00",
+      "topic_category": "VALUATION_MYTH",
+      "hook_archetype": "tamil_angle_1",
+      "hashtag_cluster": "tamil_cluster_2",
+      "publish_results": {
+        "instagram": {
+          "success": false,
+          "error": "Publish failed: {'message': 'Application request limit reached', 'type': 'OAuthException', 'is_transient': False, 'code': 4, 'error_subcode': 2207051, 'error_user_title': 'Action is blocked', 'error_user_msg': \"We restrict certain activity to protect our community. Tell us if you think that we've made a mistake.\", 'fbtrace_id': 'Adeh9QVO8fxdrRetklVsz14'}"
+        },
+        "facebook": {
+          "success": true,
+          "post_id": "1297757220087165_122106066735463457",
+          "url": "https://www.facebook.com/1297757220087165_122106066735463457"
         },
         "telegram": {
           "success": false,
