@@ -136,8 +136,16 @@
           "status": "skipped"
         }
       },
-      "insights_fetched_48h": false,
-      "insights": {}
+      "insights_fetched_48h": true,
+      "insights": {
+        "saves": 0,
+        "shares": 0,
+        "impressions": 0,
+        "reach": 0,
+        "save_to_reach_pct": 0.0,
+        "status": "success"
+      },
+      "age_at_audit_hours": 62.4
     },
     {
       "title": "Taiwan Stock Market Hits Record Trading Volume as TDCC Boosts System Capacity by 30% - India Infoline",
@@ -165,8 +173,16 @@
           "status": "skipped"
         }
       },
-      "insights_fetched_48h": false,
-      "insights": {}
+      "insights_fetched_48h": true,
+      "insights": {
+        "saves": 0,
+        "shares": 0,
+        "impressions": 0,
+        "reach": 0,
+        "save_to_reach_pct": 0.0,
+        "status": "success"
+      },
+      "age_at_audit_hours": 48.5
     },
     {
       "title": "US Treasury triples bond buyback to $6 billion: Why markets saw the move as a disappointment",
@@ -242,6 +258,35 @@
           "success": true,
           "post_id": "1297757220087165_122106475575463457",
           "url": "https://www.facebook.com/1297757220087165_122106475575463457"
+        },
+        "telegram": {
+          "success": false,
+          "status": "skipped"
+        },
+        "linkedin": {
+          "success": false,
+          "status": "skipped"
+        }
+      },
+      "insights_fetched_48h": false,
+      "insights": {}
+    },
+    {
+      "title": "Titan stock outlook by Motilal Oswal: Buy for 20% upside; check share price target - 'Growth runway remains long'",
+      "media_id": "simulated_id",
+      "timestamp": "2026-09-11T08:11:59.977515+00:00",
+      "topic_category": "VALUATION_MYTH",
+      "hook_archetype": "tamil_angle_3",
+      "hashtag_cluster": "tamil_cluster_2",
+      "publish_results": {
+        "instagram": {
+          "success": false,
+          "error": "Publish failed: {'message': 'Application request limit reached', 'type': 'OAuthException', 'is_transient': False, 'code': 4, 'error_subcode': 2207051, 'error_user_title': 'Action is blocked', 'error_user_msg': \"We restrict certain activity to protect our community. Tell us if you think that we've made a mistake.\", 'fbtrace_id': 'Au4Kl6bReJBRVUCZsAGJ9GM'}"
+        },
+        "facebook": {
+          "success": true,
+          "post_id": "1297757220087165_122106919041463457",
+          "url": "https://www.facebook.com/1297757220087165_122106919041463457"
         },
         "telegram": {
           "success": false,

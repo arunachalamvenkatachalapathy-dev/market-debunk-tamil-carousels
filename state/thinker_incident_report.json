@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-09-10T17:44:06.899089+00:00",
+  "timestamp": "2026-09-11T08:11:42.100753+00:00",
   "phase": "PUBLISHING",
   "platform": "Instagram",
   "severity": "CRITICAL",
   "error_code": "ERR_META_API",
-  "root_cause_analysis": "Meta Graph API blocked publishing activity due to application request limit or automated action restrictions (OAuthException Code 4, Subcode 2207051).",
+  "root_cause_analysis": "Meta API returned OAuthException Code 4 (subcode 2207051): Application request limit reached and automated activity is blocked by platform security restrictions.",
   "reproducibility": "RATE_LIMIT",
   "automated_remediation": {
     "action": "ABORT",
-    "retry_delay_seconds": 86400
+    "retry_delay_seconds": 0
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Check Meta Business Suite and Instagram app settings to request an unblock or review the policy restriction.",
-    "Pause automated Instagram publishing pipeline for 24 hours to let rate limits and security flags clear.",
-    "Verify API call frequency to ensure publishing requests stay within Meta's rate limits."
+    "Check Meta Business Suite and Instagram App Dashboard for active account restrictions or action blocks.",
+    "Pause automated publishing pipeline for at least 24 hours to clear application request limits.",
+    "Submit a appeal/review request in Meta Business Manager if the action block persists after cooldown."
   ]
 }
