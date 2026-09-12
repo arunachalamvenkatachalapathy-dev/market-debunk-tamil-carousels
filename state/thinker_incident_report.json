@@ -1,20 +1,19 @@
 {
-  "timestamp": "2026-09-12T08:05:20.004090+00:00",
+  "timestamp": "2026-09-12T17:08:36.000839+00:00",
   "phase": "PUBLISHING",
   "platform": "Instagram",
   "severity": "CRITICAL",
   "error_code": "ERR_META_API",
-  "root_cause_analysis": "The Instagram Graph API returned a 403-like 'Action is blocked' error (subcode 2207051) indicating that the application or user account has exceeded the daily publishing quota or triggered a spam-prevention mechanism.",
+  "root_cause_analysis": "Meta API returned OAuthException Code 4 / Subcode 2207051 ('Application request limit reached / Action is blocked'). The account or application has triggered Meta's rate limiting or community protection filters, causing an action block.",
   "reproducibility": "RATE_LIMIT",
   "automated_remediation": {
     "action": "ABORT",
-    "retry_delay_seconds": 86400
+    "retry_delay_seconds": 0
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Do not attempt immediate retries as this may extend the block duration.",
-    "Verify the Instagram account status in the Meta Business Suite for any manual review flags.",
-    "Wait 24 hours before attempting the next automated publication.",
-    "If the issue persists, review the application's API usage logs to ensure compliance with Meta's platform policies."
+    "Check Meta Business Suite and Meta Developer Dashboard for account status warnings or policy violations.",
+    "Pause automated publishing attempts for 24 to 48 hours to allow the non-transient action block to expire.",
+    "Review API call volume and posting frequency to ensure compliance with Meta Graph API rate limits."
   ]
 }

@@ -247,8 +247,16 @@
           "status": "skipped"
         }
       },
-      "insights_fetched_48h": false,
-      "insights": {}
+      "insights_fetched_48h": true,
+      "insights": {
+        "saves": 0,
+        "shares": 0,
+        "impressions": 0,
+        "reach": 0,
+        "save_to_reach_pct": 0.0,
+        "status": "success"
+      },
+      "age_at_audit_hours": 56.8
     },
     {
       "title": "SEBI says closing auction session is here to stay: What it means for stock market investors",
@@ -353,6 +361,35 @@
           "success": true,
           "post_id": "1297757220087165_122107351611463457",
           "url": "https://www.facebook.com/1297757220087165_122107351611463457"
+        },
+        "telegram": {
+          "success": false,
+          "status": "skipped"
+        },
+        "linkedin": {
+          "success": false,
+          "status": "skipped"
+        }
+      },
+      "insights_fetched_48h": false,
+      "insights": {}
+    },
+    {
+      "title": "Share Market Live News: Indian Stock Market Prediction, Nifty 50 - Liquide Blog",
+      "media_id": "simulated_id",
+      "timestamp": "2026-09-12T17:08:53.073167+00:00",
+      "topic_category": "LIQUIDITY_TRAP",
+      "hook_archetype": "MATH_BREAKDOWN",
+      "hashtag_cluster": "tamil_cluster_5",
+      "publish_results": {
+        "instagram": {
+          "success": false,
+          "error": "Publish failed: {'message': 'Application request limit reached', 'type': 'OAuthException', 'is_transient': False, 'code': 4, 'error_subcode': 2207051, 'error_user_title': 'Action is blocked', 'error_user_msg': \"We restrict certain activity to protect our community. Tell us if you think that we've made a mistake.\", 'fbtrace_id': 'Ao-Z_ddyys3SiX3zVr6vvQr'}"
+        },
+        "facebook": {
+          "success": true,
+          "post_id": "1297757220087165_122107502943463457",
+          "url": "https://www.facebook.com/1297757220087165_122107502943463457"
         },
         "telegram": {
           "success": false,

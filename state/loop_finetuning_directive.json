@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-12T07:59:34.747726+00:00",
+  "generated_at": "2026-09-12T17:05:33.290360+00:00",
   "channel": "TAMIL",
-  "data_points_analyzed": 6,
+  "data_points_analyzed": 7,
   "historical_avg_save_rate_pct": 0.0,
   "prioritized_categories": [
     "SMART_MONEY",
@@ -9,6 +9,7 @@
     "MUTUAL_FUNDS_TRUTH"
   ],
   "deprecated_categories": [
+    "VALUATION_MYTH",
     "LIQUIDITY_TRAP"
   ],
   "high_performing_hooks": [],
