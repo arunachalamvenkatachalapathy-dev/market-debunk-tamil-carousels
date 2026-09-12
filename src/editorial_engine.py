@@ -51,6 +51,9 @@ class EditorialEngine:
         trigger = lead_magnet.get("trigger_word", "DEBUNK")
         resource = lead_magnet.get("resource_name", "The Tamil Risk Checklist")
 
+        winning_hook = topic.get("headline_hook") or (topic.get("news_analysis", {}).get("headline_hook") if isinstance(topic.get("news_analysis"), dict) else None)
+        editorial_directive = topic.get("editorial_directive") or (topic.get("news_analysis", {}).get("editorial_directive") if isinstance(topic.get("news_analysis"), dict) else "")
+
         logger.info("═══ Autonomous Tanglish Scripting Agent: Sourcing Concept '%s' ═══", title)
         prompt = f"""You are the Lead Financial Scripting Agent for "Market Debunk Tamil" — an educational Instagram carousel series for Tamil-speaking retail investors.
 
@@ -60,6 +63,8 @@ FINANCIAL CONCEPT & EVIDENCE:
 - Topic: {title}
 - Source: {source}
 - Context: {raw_text}
+- Winning Critic Angle/Hook: {winning_hook or 'N/A'}
+- Editorial Directive: {editorial_directive or 'N/A'}
 - The Retail Illusion / Trap: {retail_trap}
 - The Institutional Reality / Thesis: {core_thesis}
 - Mandatory Verified Metric: {citable_metric}

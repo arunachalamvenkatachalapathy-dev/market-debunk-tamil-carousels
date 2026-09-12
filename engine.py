@@ -20,6 +20,13 @@ from src.publisher import Publisher
 from src.thinker_engine import ThinkerEngine
 from src.jitter_manager import JitterManager
 from src.analytics_tracker import AnalyticsFeedbackEngine
+from src.evolutionary_memory import TamilEvolutionaryMemory
+from src.creative_critic_agent import TamilCreativeCriticAgent
+from src.visual_inspector_agent import TamilVisualInspectorAgent
+from src.news_comprehension_agent import NewsComprehensionAgent
+from src.workflow_agents import PlannerAgent, GrammarAgent
+from src.audio_director import AudioDirector
+from src.validator import CarouselValidator
 
 logging.basicConfig(
     level=logging.INFO,
@@ -34,11 +41,15 @@ def run_pipeline(dry_run: bool = False, override_query: str = None, edition: str
     logger.info("=" * 60)
     logger.info("🚀 MARKET DEBUNK TAMIL FINANCIAL CAROUSEL ENGINE%s", edition_label)
     logger.info("   Mode: %s", mode_str)
+    logger.info("   Format: Instagram Native 4:5 (1080x1350 px)")
     logger.info("=" * 60)
 
     thinker = ThinkerEngine()
     jitter_mgr = JitterManager()
     analytics_engine = AnalyticsFeedbackEngine()
+
+    evolutionary_memory = TamilEvolutionaryMemory()
+    evolutionary_directives = evolutionary_memory.get_prompt_directives()
 
     try:
         # ── Phase 0a: 48-Hour Closed-Loop Analytics Audit ─────────────────────
@@ -66,22 +77,42 @@ def run_pipeline(dry_run: bool = False, override_query: str = None, edition: str
         logger.info("═══ Phase 1: Standalone 48h Market News Sourcing (Tamil Independent) ═══")
         research_engine = ResearchEngine()
         topic_data = research_engine.fetch_fresh_market_news(max_age_hours=48, override_query=override_query)
-        try:
-            from src.news_comprehension_agent import NewsComprehensionAgent
-            from src.workflow_agents import PlannerAgent
-            nca = NewsComprehensionAgent()
-            topic_data["news_analysis"] = nca.analyze_news_item(topic_data)
-            planner = PlannerAgent(llm_client=editorial_engine.client)
-            plan = planner.plan(topic_data)
-        except Exception as pe:
-            logger.warning("News analysis error in Tamil standalone: %s", pe)
-            plan = {"hidden_reality": topic_data.get("title")}
+        logger.info("📌 Sourced (Tamil): '%s' | Age: %sh | Source: [%s]", topic_data.get("title"), topic_data.get("age_hours"), topic_data.get("source"))
 
+        # ── Phase 2: Deep Financial News Comprehension & Debunk Extraction ────
+        logger.info("═══ Phase 2: Deep Financial News Comprehension & Debunk Extraction (Tamil) ═══")
+        comprehension_agent = NewsComprehensionAgent()
+        news_analysis = comprehension_agent.analyze_news_item(topic_data)
+        topic_data["news_analysis"] = news_analysis
+        logger.info("🎯 Initial Debunk Angle: '%s' | Category: [%s]", news_analysis.get("headline_hook"), news_analysis.get("debunk_category"))
+
+        # ── Phase 2b: Multi-Candidate Creative Darwinism & Critic Selection ──
+        logger.info("═══ Phase 2b: Multi-Candidate Creative Darwinism & Critic Selection (Tamil) ═══")
+        critic_agent = TamilCreativeCriticAgent()
+        darwin_result = critic_agent.generate_and_evaluate(topic_data, evolutionary_directives=evolutionary_directives)
+        topic_data["darwin_result"] = darwin_result
+        winning_candidate = darwin_result.get("winning_candidate", {})
+        critic_score = darwin_result.get("critic_score", 8.5)
+        winning_archetype = darwin_result.get("archetype", "SHOCKING_MYTH")
+
+        if winning_candidate.get("headline_hook"):
+            topic_data["headline_hook"] = winning_candidate["headline_hook"]
+            news_analysis["headline_hook"] = winning_candidate["headline_hook"]
+        if winning_candidate.get("highlight_word"):
+            topic_data["highlight_word"] = winning_candidate["highlight_word"]
+            news_analysis["highlight_word"] = winning_candidate["highlight_word"]
+        if darwin_result.get("final_editorial_directive"):
+            topic_data["editorial_directive"] = darwin_result["final_editorial_directive"]
+            news_analysis["editorial_directive"] = darwin_result["final_editorial_directive"]
+
+        # ── Phase 2c: Financial Planning & Tanglish Scripting ──────────────────
+        logger.info("═══ Phase 2c: Financial Planning & Tanglish Scripting ═══")
+        planner = PlannerAgent(llm_client=editorial_engine.client)
+        plan = planner.plan(topic_data)
         mock_master = {"topic": topic_data, "plan": plan}
         deck = editorial_engine.compose_from_master(mock_master)
 
         slides = deck.get("slides", [])
-        from src.validator import CarouselValidator
         is_valid, content_report = CarouselValidator.validate_content(deck)
         if not is_valid:
             raise ValueError(f"Deck failed content validation gate: {content_report}")
@@ -89,26 +120,24 @@ def run_pipeline(dry_run: bool = False, override_query: str = None, edition: str
         logger.info("✓ Prepared %d Tanglish slides.", len(slides))
 
         # Audio Automation: Select trending Reels audio track for Tamil
-        from src.audio_director import AudioDirector
         audio_director = AudioDirector()
         audio_track = audio_director.select_audio_recommendation()
         deck["audio_recommendation"] = audio_track
 
         # Caption Engineering: Apply Tanglish 4-part formula with audio note and GUIDE trigger
-        from src.workflow_agents import GrammarAgent
         grammar_agent = GrammarAgent()
         deck["caption"] = grammar_agent.format_converting_caption(deck, topic_data, audio_track)
 
-        # ── Phase 2: Playwright Visual Rendering & PDF Compilation ─────────────
-        logger.info("═══ Phase 2: Playwright 1080x1350 (4:5) Retina Rendering (Tamil) ═══")
+        # ── Phase 3: Playwright 1080x1350 Retina Rendering & PDF Compilation ───
+        logger.info("═══ Phase 3: Playwright 1080x1350 (4:5) Retina Rendering (Tamil) ═══")
         image_director = ImageDirector()
         run_id = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
         visual_pkg = image_director.render_carousel(deck, run_id=run_id)
         slide_paths = visual_pkg["slide_paths"]
         pdf_path = visual_pkg["pdf_path"]
 
-        # ── Phase 2b: Mandatory Per-Slide and PDF Validation Gate ────────────
-        logger.info("═══ Phase 2b: Automated Render & Dimension Quality Gate ═══")
+        # ── Phase 3b: Mandatory Per-Slide and PDF Validation Gate ────────────
+        logger.info("═══ Phase 3b: Automated Render & Dimension Quality Gate ═══")
         for sp in slide_paths:
             is_png_valid, png_report = CarouselValidator.validate_slide_png(sp)
             if not is_png_valid:
@@ -120,7 +149,41 @@ def run_pipeline(dry_run: bool = False, override_query: str = None, edition: str
             raise ValueError(f"Multi-page PDF validation failed: {pdf_report}")
         logger.info("✅ %s", pdf_report)
 
-        # ── Phase 3: Prepare Direct Raw Image URLs for Instagram ───────────────
+        # ── Phase 3c: Multimodal Vision Quality Inspection & Contrast Audit ───
+        logger.info("═══ Phase 3c: Multimodal Vision Quality Inspection & Contrast Audit (Tamil) ═══")
+        visual_inspector = TamilVisualInspectorAgent()
+        visual_audit = visual_inspector.audit_carousel_visuals(slide_paths)
+        visual_score = visual_audit.get("average_score", 8.5)
+        logger.info("👁️ Visual Inspection Verdict (Tamil): %.1f/10 | Passed: %s", visual_score, visual_audit.get("passed", True))
+
+        # ── Phase 3d: Evolutionary Memory Mutation & Master Package Export ─────
+        evolutionary_memory.record_cycle(
+            winning_archetype=winning_archetype,
+            critic_score=critic_score,
+            visual_score=visual_score,
+            topic_title=topic_data.get("title", ""),
+            key_learning=darwin_result.get("selection_rationale", "")[:120] if darwin_result.get("selection_rationale") else None
+        )
+
+        analytics_engine.record_or_fetch_metrics()
+
+        master_pkg_path = STATE_DIR / "market_debunk_tamil_carousel_master.json"
+        master_package = {
+            "topic": topic_data,
+            "plan": plan,
+            "deck": deck,
+            "audio": audio_track,
+            "run_id": run_id,
+            "slide_count": len(slide_paths),
+            "darwin_result": darwin_result,
+            "visual_audit": visual_audit,
+            "exported_at": datetime.now(timezone.utc).isoformat()
+        }
+        with open(master_pkg_path, "w", encoding="utf-8") as f:
+            json.dump(master_package, f, indent=2, ensure_ascii=False)
+        logger.info("✓ Exported Tamil Master Package to: %s", master_pkg_path)
+
+        # ── Phase 4: Prepare Direct Raw Image URLs for Instagram ───────────────
         repo_owner = "arunachalamvenkatachalapathy-dev"
         repo_name = "market-debunk-tamil-carousels"
         image_urls = [
@@ -133,7 +196,7 @@ def run_pipeline(dry_run: bool = False, override_query: str = None, edition: str
             logger.info("🚀 Pre-pushing Tamil slides to GitHub master before live publishing...")
             os.system("git config --global user.name 'github-actions[bot]'")
             os.system("git config --global user.email 'github-actions[bot]@users.noreply.github.com'")
-            os.system("git add state/carousel_slides/ state/latest_carousel.pdf")
+            os.system("git add state/carousel_slides/ state/latest_carousel.pdf state/market_debunk_tamil_carousel_master.json state/evolutionary_playbook.json")
             os.system('git commit -m "chore: pre-push tamil slides for live publishing [skip ci]" || true')
             for attempt in range(1, 4):
                 os.system("git pull origin master --rebase -X ours || true")
@@ -147,8 +210,8 @@ def run_pipeline(dry_run: bool = False, override_query: str = None, edition: str
             import time
             time.sleep(4)
 
-        # ── Phase 4: Multi-Platform Publishing ────────────────────────────────
-        logger.info("═══ Phase 4: Multi-Platform Distribution (Tamil) ═══")
+        # ── Phase 5: Multi-Platform Publishing ────────────────────────────────
+        logger.info("═══ Phase 5: Multi-Platform Distribution (Tamil) ═══")
         publisher = Publisher()
         results = publisher.publish_all(
             image_urls=image_urls,
@@ -166,7 +229,7 @@ def run_pipeline(dry_run: bool = False, override_query: str = None, edition: str
             media_id=media_id,
             publish_results=results,
             topic_category=topic_data.get("news_analysis", {}).get("debunk_category", "GENERAL"),
-            hook_archetype=deck.get("hook_archetype_id", "CONTRARIAN"),
+            hook_archetype=winning_archetype,
             caption_hashtag_cluster=deck.get("hashtag_cluster_id", "default")
         )
 
