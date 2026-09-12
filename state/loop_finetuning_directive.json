@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-11T17:44:28.361401+00:00",
+  "generated_at": "2026-09-12T07:59:34.747726+00:00",
   "channel": "TAMIL",
-  "data_points_analyzed": 5,
+  "data_points_analyzed": 6,
   "historical_avg_save_rate_pct": 0.0,
   "prioritized_categories": [
     "SMART_MONEY",
@@ -15,6 +15,11 @@
   "deprecated_hooks": [
     {
       "hook": "tamil_angle_1",
+      "avg_save_rate": "0.00%",
+      "reason": "Low dwell & bookmark retention"
+    },
+    {
+      "hook": "tamil_angle_4",
       "avg_save_rate": "0.00%",
       "reason": "Low dwell & bookmark retention"
     }
