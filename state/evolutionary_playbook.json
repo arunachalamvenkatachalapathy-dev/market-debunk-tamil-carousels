@@ -1,9 +1,9 @@
 {
   "version": "2.0.0",
-  "total_cycles_recorded": 1,
+  "total_cycles_recorded": 2,
   "archetype_weights": {
     "SHOCKING_MYTH": 1.3,
-    "MATH_BREAKDOWN": 1.35,
+    "MATH_BREAKDOWN": 1.4,
     "INSTITUTIONAL_SECRET": 1.1
   },
   "learned_rules": [
@@ -11,7 +11,8 @@
     "Slide 1 hook must be strictly 5-8 words in punchy spoken Tanglish rhythm.",
     "Lead with exact rupee figures: '₹34 லட்சம் இழப்பு', '1% கட்டணம்'.",
     "Final slide must end with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'",
-    "Candidate B hits the 'MATH_BREAKDOWN' archetype perfectly by quantifying the risk. In financial content, specific rupee "
+    "Candidate B hits the 'MATH_BREAKDOWN' archetype perfectly by quantifying the risk. In financial content, specific rupee ",
+    "Candidate B hits the MATH_BREAKDOWN archetype perfectly by quantifying risk with exact figures ('₹3.5 லட்சம் இழப்பு'). F"
   ],
   "cycle_history": [
     {
@@ -22,6 +23,15 @@
       "critic_score": 9.2,
       "visual_score": 9.0,
       "key_learning": "Candidate B hits the 'MATH_BREAKDOWN' archetype perfectly by quantifying the risk. In financial content, specific rupee "
+    },
+    {
+      "cycle": 2,
+      "timestamp": "2026-09-12T17:07:19.224207+00:00",
+      "topic": "Share Market Live News: Indian Stock Market Prediction, Nifty 50 - Liquide Blog",
+      "winning_archetype": "MATH_BREAKDOWN",
+      "critic_score": 9.5,
+      "visual_score": 9.0,
+      "key_learning": "Candidate B hits the MATH_BREAKDOWN archetype perfectly by quantifying risk with exact figures ('₹3.5 லட்சம் இழப்பு'). F"
     }
   ]
 }
