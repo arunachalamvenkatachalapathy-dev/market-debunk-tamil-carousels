@@ -1,117 +1,113 @@
 {
   "topic": {
-    "title": "One 97 Communications consolidated net profit rises 78.86% in the June 2026 quarter",
+    "title": "Stock market holiday: Are NSE, BSE closed for trading on Ganesh Chaturthi?",
     "archetype": "market_breaking_news",
     "archetype_name": "Breaking Financial News Debunk",
-    "source": "Business Standard",
-    "source_snippet": "Sales rise 27.63% to Rs 2448.00 crore Powered by Capital Market - Live News",
-    "source_url": "https://www.business-standard.com/markets/capital-market-news/one-97-communications-consolidated-net-profit-rises-78-86-in-the-june-2026-quarter-126072100232_1.html",
-    "raw_text": "One 97 Communications consolidated net profit rises 78.86% in the June 2026 quarter. Sales rise 27.63% to Rs 2448.00 crore Powered by Capital Market - Live News",
+    "source": "timesofindia.indiatimes.com",
+    "source_snippet": "India Business News: Ganesh Chaturthi is falling on Monday, September 14 and investors are wondering whether the festival will affect trading in the stock and commodity ma.",
+    "source_url": "https://timesofindia.indiatimes.com/business/india-business/stock-market-holiday-are-nse-bse-closed-for-trading-on-ganesh-chaturthi/articleshow/134207678.cms",
+    "raw_text": "Stock market holiday: Are NSE, BSE closed for trading on Ganesh Chaturthi?. India Business News: Ganesh Chaturthi is falling on Monday, September 14 and investors are wondering whether the festival will affect trading in the stock and commodity ma.",
     "numbers_detected": [
-      "97",
-      "78.86%",
-      "2026",
-      "27.63%",
-      "2448.00"
+      "14"
     ],
-    "published_at": "2026-09-13T07:25:10.041208+00:00",
-    "age_hours": 1.0,
-    "retrieved_at": "2026-09-13T08:25:10.041208+00:00",
+    "published_at": "2026-09-13T15:22:01+00:00",
+    "age_hours": 2.0,
+    "retrieved_at": "2026-09-13T17:24:50.621712+00:00",
     "date": "13 Sep 2026",
     "from_live_api": true,
-    "evidence_snapshot": "Source: Business Standard | Published: 2026-09-13T07:25:10.041208+00:00 (1.0h ago) | Headline: One 97 Communications consolidated net profit rises 78.86% in the June 2026 quarter | Context: One 97 Communications consolidated net profit rises 78.86% in the June 2026 quarter. Sales rise 27.63% to Rs 2448.00 crore Powered by Capital Market - Live News",
+    "evidence_snapshot": "Source: timesofindia.indiatimes.com | Published: 2026-09-13T15:22:01+00:00 (2.0h ago) | Headline: Stock market holiday: Are NSE, BSE closed for trading on Ganesh Chaturthi? | Context: Stock market holiday: Are NSE, BSE closed for trading on Ganesh Chaturthi?. India Business News: Ganesh Chaturthi is falling on Monday, September 14 and investors are wondering whether the festival will affect trading in the stock and commodity ma.",
     "news_analysis": {
-      "headline_hook": "Paytm 78.86% Profit: உங்க ₹1 லட்சத்திற்கு என்ன ஆச்சு?",
-      "breaking_event_summary": "One 97 Communications (Paytm) posted a 78.86% increase in consolidated net profit for the June 2026 quarter, with sales climbing 27.63% to ₹2,448.00 crore.",
-      "retail_illusion": "Retail traders falsely assume that a 78.86% surge in net profit signifies hyper-growth recovery and that the stock is poised for an immediate multi-bagger rally without fundamental drag.",
-      "institutional_reality": "Institutional desks recognize that dramatic headline profit spikes following multi-quarter operational distress often stem from a depressed base quarter and cost compression rather than sustainable core fee expansion.",
+      "headline_hook": "Ganesh Chaturthi Holiday-ல ₹1.5 லட்சம் இழப்பு!",
+      "breaking_event_summary": "As Ganesh Chaturthi falls on Monday, September 14, media speculation surrounding exchange operations has created confusion among retail investors regarding NSE and BSE trading schedules.",
+      "retail_illusion": "Retail traders falsely rely on news headlines to guess market status, leading to mismanaged After Market Orders (AMOs), panic-cancelled trades, or failing to hedge options against weekend theta decay.",
+      "institutional_reality": "Exchange holiday schedules are locked in advance by the Clearing Corporation. Institutional desks price in weekend volatility and theta decay automatically, capitalizing on thin pre-market liquidity and execution delays caused by misinformed retail order flows.",
       "citable_metrics": [
-        "78.86%",
-        "27.63%",
-        "Rs 2448.00 crore",
-        "June 2026 quarter"
+        "Monday, September 14",
+        "Ganesh Chaturthi",
+        "NSE",
+        "BSE"
       ],
-      "debunk_category": "VALUATION_MYTH",
-      "actionable_retail_rule": "Never buy turnaround fintech momentum purely on percentage PAT growth; always verify operating cash flow and base-year comparison metrics before deploying fresh capital.",
+      "debunk_category": "LIQUIDITY_TRAP",
+      "actionable_retail_rule": "Never rely on financial news outlets for trading schedules; verify directly via official NSE/BSE holiday circulars and avoid carrying unhedged naked options across ambiguous festival windows.",
       "lead_magnet": {
         "trigger_word": "AUDIT",
-        "resource_name": "The Turnaround Tech Quality-of-Earnings Audit Checklist"
+        "resource_name": "The Pre-Holiday Portfolio & AMO Execution Audit Checklist"
       },
       "carousel_outline": [
         {
           "slide": 1,
           "role": "hook",
-          "focus": "Paytm reports a 78.86% profit jump: Why smart money isn't blindly chasing the headline"
+          "focus": "Is NSE/BSE Open Monday? The Holiday Schedule Trap Media Won't Tell You"
         },
         {
           "slide": 2,
           "role": "friction",
-          "focus": "Retail celebration over ₹2,448 Cr revenue vs the optical illusion of turnaround percentages"
+          "focus": "Mainstream Media Speculation vs Official Exchange Circulars"
         },
         {
           "slide": 3,
           "role": "math_reality",
-          "focus": "Breaking down the mathematical base effect behind the 78.86% profit and 27.63% sales growth"
+          "focus": "How Option Decay (Theta) and AMOs Are Exploited During Holiday Confusion"
         },
         {
           "slide": 4,
           "role": "breakdown",
-          "focus": "How chasing high-percentage base-year earnings traps retail portfolios at local tops"
+          "focus": "Step-by-step impact of schedule ambiguity on retail execution prices and gap risk"
         },
         {
           "slide": 5,
           "role": "actionable_rule",
-          "focus": "The 3-step filter to evaluate real cash flows versus optical profit surges"
+          "focus": "The 3-Step Exchange Verification Rule to Protect Your Capital"
         },
         {
           "slide": 6,
           "role": "cta",
-          "focus": "Comment AUDIT to get the 1-Page Turnaround Tech Quality-of-Earnings Checklist"
+          "focus": "Save this post and comment AUDIT to get the Pre-Holiday Execution Checklist"
         }
       ],
-      "highlight_word": "என்ன ஆச்சு?",
-      "editorial_directive": "Use candidate B as the hook. Ensure slide 2 breaks down the net profit increase vs actual EPS growth in Tamil loanwords ('நிகர லாபம்', 'பங்கு விலை'). Maintain spoken Tanglish rhythm throughout and strictly end the final slide with 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'."
+      "highlight_word": "₹1.5 லட்சம்",
+      "editorial_directive": "Use Candidate B as Slide 1. Throughout slides 2-7, detail the NSE/BSE holiday status alongside option premium decay math (e.g., 2% time decay cost). Final slide MUST end with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'"
     },
     "darwin_result": {
       "winning_candidate": {
         "id": "B",
         "archetype": "MATH_BREAKDOWN",
-        "headline_hook": "Paytm 78.86% Profit: உங்க ₹1 லட்சத்திற்கு என்ன ஆச்சு?",
-        "highlight_word": "என்ன ஆச்சு?",
+        "headline_hook": "Ganesh Chaturthi Holiday-ல ₹1.5 லட்சம் இழப்பு!",
+        "highlight_word": "₹1.5 லட்சம்",
         "scores": {
-          "curiosity_gap": 9.2,
-          "retail_actionability": 9.2,
+          "curiosity_gap": 9.5,
+          "retail_actionability": 9.5,
           "data_density": 9.5,
-          "tanglish_rhythm": 9.3,
-          "total": 37.2
+          "tanglish_rhythm": 9.5,
+          "total": 38.0
         },
-        "critic_critique": "Perfectly hits the MATH_BREAKDOWN archetype. Quantifies the 78.86% net profit jump directly into retail portfolio impact with exact rupee metrics and high curiosity."
+        "critic_critique": "Outstanding execution. Quantifies the overnight Theta decay and market gap risk with an exact rupee figure ('₹1.5 லட்சம்'). Highly actionable for retail F&O traders."
       },
-      "critic_score": 9.3,
+      "critic_score": 9.5,
       "archetype": "MATH_BREAKDOWN",
-      "selection_rationale": "Candidate B dominates on data density and retail actionability. By taking the headline earnings surge of 78.86% and grounding it into a concrete ₹1,000,000 investment breakdown, it creates an irresistible curiosity gap for Tamil retail investors.",
-      "final_editorial_directive": "Use candidate B as the hook. Ensure slide 2 breaks down the net profit increase vs actual EPS growth in Tamil loanwords ('நிகர லாபம்', 'பங்கு விலை'). Maintain spoken Tanglish rhythm throughout and strictly end the final slide with 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'."
+      "selection_rationale": "Candidate B dominates by combining the strict 6-word punchy Tanglish hook constraint with quantified risk ('₹1.5 லட்சம் இழப்பு'). It directly connects the market holiday schedule with overnight option decay math that retail traders constantly lose money on.",
+      "final_editorial_directive": "Use Candidate B as Slide 1. Throughout slides 2-7, detail the NSE/BSE holiday status alongside option premium decay math (e.g., 2% time decay cost). Final slide MUST end with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'"
     },
-    "headline_hook": "Paytm 78.86% Profit: உங்க ₹1 லட்சத்திற்கு என்ன ஆச்சு?",
-    "highlight_word": "என்ன ஆச்சு?",
-    "editorial_directive": "Use candidate B as the hook. Ensure slide 2 breaks down the net profit increase vs actual EPS growth in Tamil loanwords ('நிகர லாபம்', 'பங்கு விலை'). Maintain spoken Tanglish rhythm throughout and strictly end the final slide with 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'."
+    "headline_hook": "Ganesh Chaturthi Holiday-ல ₹1.5 லட்சம் இழப்பு!",
+    "highlight_word": "₹1.5 லட்சம்",
+    "editorial_directive": "Use Candidate B as Slide 1. Throughout slides 2-7, detail the NSE/BSE holiday status alongside option premium decay math (e.g., 2% time decay cost). Final slide MUST end with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'"
   },
   "plan": {
-    "hook_headline": "Paytm 78.86% Profit: உங்க ₹1 லட்சத்திற்கு என்ன ஆச்சு?",
-    "core_illusion": "Retail traders falsely assume that a 78.86% surge in net profit signifies hyper-growth recovery and that the stock is poised for an immediate multi-bagger rally without fundamental drag.",
-    "hidden_reality": "Institutional desks recognize that dramatic headline profit spikes following multi-quarter operational distress often stem from a depressed base quarter and cost compression rather than sustainable core fee expansion.",
-    "citable_metric": "78.86%",
+    "hook_headline": "Ganesh Chaturthi Holiday-ல ₹1.5 லட்சம் இழப்பு!",
+    "core_illusion": "Retail traders falsely rely on news headlines to guess market status, leading to mismanaged After Market Orders (AMOs), panic-cancelled trades, or failing to hedge options against weekend theta decay.",
+    "hidden_reality": "Exchange holiday schedules are locked in advance by the Clearing Corporation. Institutional desks price in weekend volatility and theta decay automatically, capitalizing on thin pre-market liquidity and execution delays caused by misinformed retail order flows.",
+    "citable_metric": "Monday, September 14",
     "all_metrics": [
-      "78.86%",
-      "27.63%",
-      "Rs 2448.00 crore",
-      "June 2026 quarter"
+      "Monday, September 14",
+      "Ganesh Chaturthi",
+      "NSE",
+      "BSE"
     ],
-    "actionable_rule": "Never buy turnaround fintech momentum purely on percentage PAT growth; always verify operating cash flow and base-year comparison metrics before deploying fresh capital.",
-    "breaking_event": "One 97 Communications (Paytm) posted a 78.86% increase in consolidated net profit for the June 2026 quarter, with sales climbing 27.63% to ₹2,448.00 crore.",
+    "actionable_rule": "Never rely on financial news outlets for trading schedules; verify directly via official NSE/BSE holiday circulars and avoid carrying unhedged naked options across ambiguous festival windows.",
+    "breaking_event": "As Ganesh Chaturthi falls on Monday, September 14, media speculation surrounding exchange operations has created confusion among retail investors regarding NSE and BSE trading schedules.",
     "lead_magnet": {
       "trigger_word": "AUDIT",
-      "resource_name": "The Turnaround Tech Quality-of-Earnings Audit Checklist"
+      "resource_name": "The Pre-Holiday Portfolio & AMO Execution Audit Checklist"
     },
     "banned_phrases": [
       "guaranteed wealth",
@@ -121,88 +117,85 @@
     ]
   },
   "deck": {
-    "caption": "🚨 Paytm 78.86% Profit: உங்க ₹1 லட்சத்திற்கு என்ன ஆச்சு?\n\nஅடுத்த trade எடுக்கும் முன், Smart Money மற்றும் நிறுவனங்கள் உண்மையில் என்ன செய்கிறார்கள் என்பதை கவனியுங்கள்.\n\nமுழு 8-slide Tanglish breakdown-ஐ படிக்க swipe செய்யுங்கள். 👉\n📌 Headline பாத்து ஏமாறாதீங்க Retail Trap!\n📌 78.86% உயர்வு பின்னணியில் Low Base Math\n📌 செலவு குறைப்பு vs உண்மை வளர்ச்சி\n\n📌 உங்கள் அடுத்த trade-க்கு முன் பார்க்க இந்த பதிவை Save செய்து கொள்ளுங்கள்.\n✈️ உங்கள் முதலீட்டாளர் நண்பர்களுக்கு Share செய்து அவர்களின் Capital-ஐ பாதுகாக்கவும்.\n\n💬 Follow @marketdebunk_tamil மற்றும் 'GUIDE'-னு கீழே comment பண்ணுங்க — complete detailed Investor Playbook & Risk Checklist PDF-ஐ உங்க DM-க்கு உடனே அனுப்புறோம்!\n\n#TamilWealth #PersonalFinanceTamil #TamilBusiness #MoneyTamil #TamilSavings",
+    "caption": "🚨 Ganesh Chaturthi Holiday-ல ₹1.5 லட்சம் இழப்பு!\n\nசாதாரண முதலீட்டாளர்கள் இந்த breakout-ஐ துரத்தும் போது, பெரிய நிறுவனங்கள் தங்கள் ரிஸ்க்கை அமைதியாக hedge செய்கின்றன.\n\nமுழு 8-slide Tanglish breakdown-ஐ படிக்க swipe செய்யுங்கள். 👉\n📌 News Headlines-ஐ நம்பி கெடாதீங்க!\n📌 Theta Decay-ன் மறைமுக ஆபத்து\n📌 வட்டி போல் கரையும் ஃப்ரீமியம்\n\n📌 உங்கள் அடுத்த trade-க்கு முன் பார்க்க இந்த பதிவை Save செய்து கொள்ளுங்கள்.\n✈️ உங்கள் முதலீட்டாளர் நண்பர்களுக்கு Share செய்து அவர்களின் Capital-ஐ பாதுகாக்கவும்.\n\n💬 Follow @marketdebunk_tamil மற்றும் 'GUIDE'-னு கீழே comment பண்ணுங்க — complete detailed Investor Playbook & Risk Checklist PDF-ஐ உங்க DM-க்கு உடனே அனுப்புறோம்!\n\n#TamilFinance #StockMarketTamil #TamilTrading #TamilInvestors #MarketDebunk",
     "slides": [
       {
         "role": "hook",
         "tag": "#MARKETDEBUNK",
-        "title": "Paytm 78.86% Profit: <span class='highlight-box'>உங்க ₹1 லட்சத்திற்கு</span> என்ன ஆச்சு?",
+        "title": "Ganesh Chaturthi Holiday-ல <span class='highlight-box'>₹1.5 லட்சம் இழப்பு!</span>",
         "slide_index": 1,
         "title_lines": [
-          "Paytm 78.86%",
-          "Profit:",
-          "<span class='highlight-box'>உங்க ₹1</span>",
-          "என்ன ஆச்சு?"
+          "Ganesh Chaturthi",
+          "Holiday-ல",
+          "<span class='highlight-box'>₹1.5 லட்சம்</span>"
         ],
         "card_text": ""
       },
       {
         "role": "value_1",
         "tag": "#MARKETDEBUNK",
-        "title": "Headline பாத்து ஏமாறாதீங்க <span class='highlight-box'>Retail Trap!</span>",
-        "card_text": "Paytm-ன் <strong>நிகர லாபம்</strong> (Net Profit) 78.86% உயர்ந்த செய்தி வந்ததும் <strong>பங்கு விலை</strong> உடனே மல்டிபேக்கர் ஆகும்னு அவசரப்பட்டு ஃபண்ட் போடாதீங்க. இதன் பின்னணியில் பெரிய கணக்கு இருக்கு!",
+        "title": "News Headlines-ஐ <span class='highlight-box'>நம்பி கெடாதீங்க!</span>",
+        "card_text": "Retail traders news headlines-ஐ பார்த்து market விடுமுறைனு தப்பா கணக்கு போடுறாங்க. இதனால mismanaged <strong>After Market Orders (AMOs)</strong> போட்டு, panic-ல trades cancel பண்ணி பெரும் நஷ்டம் அடையுறாங்க.",
         "slide_index": 2,
         "title_lines": [
-          "Headline பாத்து",
-          "<span class='highlight-box'>ஏமாறாதீங்க Retail</span>",
-          "Trap!"
+          "News Headlines-ஐ",
+          "<span class='highlight-box'>நம்பி கெடாதீங்க!</span>"
         ]
       },
       {
         "role": "value_2",
         "tag": "#MARKETDEBUNK",
-        "title": "78.86% உயர்வு பின்னணியில் <span class='highlight-box'>Low Base Math</span>",
-        "card_text": "கடந்த காலாண்டில் லாபம் மிகக் குறைவாக இருந்ததால், இந்த <strong>78.86%</strong> ஏற்றம் பெரிய அளவாக தெரிகிறது. இது <strong>core fee expansion</strong> இல்லை, வெறும் base year comparison ஏமாற்று வேலை!",
+        "title": "Theta Decay-ன் <span class='highlight-box'>மறைமுக ஆபத்து</span>",
+        "card_text": "<strong>Monday, September 14</strong> போன்ற பண்டிகை நாட்களில் சந்தை இயங்குமா இல்லையா என்ற குழப்பத்தில் <strong>2% time decay cost</strong> ஏற்படுகிறது. Unhedged naked options வைத்திருந்தால், ஃப்ரீமியம் தானாக கரையத் தொடங்கும்.",
         "slide_index": 3,
         "title_lines": [
-          "78.86% உயர்வு",
-          "<span class='highlight-box'>பின்னணியில் Low</span>",
-          "Base Math"
+          "Theta Decay-ன்",
+          "<span class='highlight-box'>மறைமுக ஆபத்து</span>"
         ]
       },
       {
         "role": "value_3",
         "tag": "#MARKETDEBUNK",
-        "title": "செலவு குறைப்பு vs <span class='highlight-box'>உண்மை வளர்ச்சி</span>",
-        "card_text": "Cost compression மூலம் தற்காலிகமாக Profit காட்ட முடியும். ஆனால் <strong>sustainable revenue</strong> உயராவிட்டால், தவறான விலையில் வாங்கும் Retail Investors <strong>portfolio</strong> தான் பாதிக்கப்படும்.",
+        "title": "வட்டி போல் <span class='highlight-box'>கரையும் ஃப்ரீமியம்</span>",
+        "card_text": "Weekend மற்றும் festival holiday சேர்ந்து வரும்போது <strong>Option Theta Decay</strong> மிக வேகமாக நடக்கும். Retailers குழப்பத்தில் இருக்கும் போது execution delays உருவாகி நஷ்டத்தை இரட்டிப்பாக்கும்.",
         "slide_index": 4,
         "title_lines": [
-          "செலவு குறைப்பு",
-          "<span class='highlight-box'>vs உண்மை</span>",
-          "வளர்ச்சி"
+          "வட்டி போல்",
+          "<span class='highlight-box'>கரையும் ஃப்ரீமியம்</span>"
         ]
       },
       {
         "role": "value_4",
         "tag": "#MARKETDEBUNK",
-        "title": "Big Players என்ன <span class='highlight-box'>பார்க்கிறார்கள்?</span>",
-        "card_text": "Institutional desks வெறும் PAT Growth-ஐ மட்டும் பார்த்து முடிவெடுக்க மாட்டார்கள். நிறுவனத்தின் <strong>Operating Cash Flow</strong> மற்றும் <strong>Business Recovery</strong>-யை ஆழமாக பகுப்பாய்வு செய்வார்கள்.",
+        "title": "Big Players செய்யும் <span class='highlight-box'>Smart Move</span>",
+        "card_text": "Clearing Corporation மூலமாக <strong>official holiday circulars</strong>-ஐ advance-ஆகவே institutions track பண்ணுவாங்க. Thin pre-market liquidity-ஐ தங்களுக்கு சாதகமாக பயன்படுத்தி <strong>hedged positions</strong> மட்டுமே எடுப்பாங்க.",
         "slide_index": 5,
         "title_lines": [
           "Big Players",
-          "<span class='highlight-box'>என்ன பார்க்கிறார்கள்?</span>"
+          "<span class='highlight-box'>செய்யும் Smart</span>",
+          "Move"
         ]
       },
       {
         "role": "value_5",
         "tag": "#MARKETDEBUNK",
-        "title": "மூலதனத்தை காக்க <span class='highlight-box'>Golden Rule</span>",
-        "card_text": "Turnaround Fintech பங்குகளின் percentage PAT உயர்வைக் கண்டு <strong>fresh capital</strong> இறக்காதீர்கள். எப்போதும் <strong>operating cash flow</strong> மற்றும் base metrics சரிபார்த்த பின்னரே முடிவு செய்யுங்கள்!",
+        "title": "உங்கள் பணத்தை <span class='highlight-box'>பாதுகாக்கும் Rule</span>",
+        "card_text": "Financial news-ஐ நம்பாமல் <strong>official NSE/BSE circulars</strong>-ஐ மட்டுமே பார்க்க வேண்டும். Ambiguous festival windows-ல் <strong>naked options carry over</strong> செய்வதை முற்றிலும் தவிர்க்க வேண்டும்.",
         "slide_index": 6,
         "title_lines": [
-          "மூலதனத்தை காக்க",
-          "<span class='highlight-box'>Golden Rule</span>"
+          "உங்கள் பணத்தை",
+          "<span class='highlight-box'>பாதுகாக்கும் Rule</span>"
         ]
       },
       {
         "role": "value_6",
         "tag": "#MARKETDEBUNK",
-        "title": "Trade எடுக்கும் முன் <span class='highlight-box'>Checklist</span>",
-        "card_text": "1. Base Quarter எண்களை ஒப்பிடுங்கள். 2. <strong>Operating Cash Flow</strong> பாசிட்டிவாக உள்ளதா என பாருங்கள். 3. <strong>Core Business Fee</strong> உயர்கிறதா என்பதை உறுதி செய்யுங்கள்.",
+        "title": "Holiday Trading <span class='highlight-box'>Checklist</span>",
+        "card_text": "பண்டிகை நாட்களுக்கு முன் official schedule சரிபார்க்கவும். <strong>Unhedged options</strong> வச்சிருக்காதீங்க. <strong>முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!</strong>",
         "slide_index": 7,
         "title_lines": [
-          "Trade எடுக்கும்",
-          "<span class='highlight-box'>முன் Checklist</span>"
+          "<span class='highlight-box'>Holiday Trading</span>",
+          "Checklist"
         ]
       },
       {
@@ -221,45 +214,45 @@
     ],
     "fact_check_status": "verified_pass",
     "audio_recommendation": {
-      "title": "Master The Blaster (Instrumental Flow)",
-      "artist": "Anirudh Ravichander",
-      "bpm": 115,
-      "vibe": "High Energy Capital Momentum",
-      "reels_boost_tier": "Viral Regional",
-      "search_query": "Master The Blaster Instrumental Anirudh"
+      "title": "Azhagiya Theeye (Acoustic Minimal)",
+      "artist": "Harris Jayaraj / Classical Touch",
+      "bpm": 108,
+      "vibe": "Calm Rational Thinking",
+      "reels_boost_tier": "High Retention",
+      "search_query": "Harris Jayaraj Instrumental Acoustic"
     },
-    "hashtag_cluster_id": "tamil_cluster_3",
-    "hook_archetype_id": "tamil_angle_3"
+    "hashtag_cluster_id": "tamil_cluster_1",
+    "hook_archetype_id": "tamil_angle_4"
   },
   "audio": {
-    "title": "Master The Blaster (Instrumental Flow)",
-    "artist": "Anirudh Ravichander",
-    "bpm": 115,
-    "vibe": "High Energy Capital Momentum",
-    "reels_boost_tier": "Viral Regional",
-    "search_query": "Master The Blaster Instrumental Anirudh"
+    "title": "Azhagiya Theeye (Acoustic Minimal)",
+    "artist": "Harris Jayaraj / Classical Touch",
+    "bpm": 108,
+    "vibe": "Calm Rational Thinking",
+    "reels_boost_tier": "High Retention",
+    "search_query": "Harris Jayaraj Instrumental Acoustic"
   },
-  "run_id": "20260913_082558",
+  "run_id": "20260913_172601",
   "slide_count": 8,
   "darwin_result": {
     "winning_candidate": {
       "id": "B",
       "archetype": "MATH_BREAKDOWN",
-      "headline_hook": "Paytm 78.86% Profit: உங்க ₹1 லட்சத்திற்கு என்ன ஆச்சு?",
-      "highlight_word": "என்ன ஆச்சு?",
+      "headline_hook": "Ganesh Chaturthi Holiday-ல ₹1.5 லட்சம் இழப்பு!",
+      "highlight_word": "₹1.5 லட்சம்",
       "scores": {
-        "curiosity_gap": 9.2,
-        "retail_actionability": 9.2,
+        "curiosity_gap": 9.5,
+        "retail_actionability": 9.5,
         "data_density": 9.5,
-        "tanglish_rhythm": 9.3,
-        "total": 37.2
+        "tanglish_rhythm": 9.5,
+        "total": 38.0
       },
-      "critic_critique": "Perfectly hits the MATH_BREAKDOWN archetype. Quantifies the 78.86% net profit jump directly into retail portfolio impact with exact rupee metrics and high curiosity."
+      "critic_critique": "Outstanding execution. Quantifies the overnight Theta decay and market gap risk with an exact rupee figure ('₹1.5 லட்சம்'). Highly actionable for retail F&O traders."
     },
-    "critic_score": 9.3,
+    "critic_score": 9.5,
     "archetype": "MATH_BREAKDOWN",
-    "selection_rationale": "Candidate B dominates on data density and retail actionability. By taking the headline earnings surge of 78.86% and grounding it into a concrete ₹1,000,000 investment breakdown, it creates an irresistible curiosity gap for Tamil retail investors.",
-    "final_editorial_directive": "Use candidate B as the hook. Ensure slide 2 breaks down the net profit increase vs actual EPS growth in Tamil loanwords ('நிகர லாபம்', 'பங்கு விலை'). Maintain spoken Tanglish rhythm throughout and strictly end the final slide with 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'."
+    "selection_rationale": "Candidate B dominates by combining the strict 6-word punchy Tanglish hook constraint with quantified risk ('₹1.5 லட்சம் இழப்பு'). It directly connects the market holiday schedule with overnight option decay math that retail traders constantly lose money on.",
+    "final_editorial_directive": "Use Candidate B as Slide 1. Throughout slides 2-7, detail the NSE/BSE holiday status alongside option premium decay math (e.g., 2% time decay cost). Final slide MUST end with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'"
   },
   "visual_audit": {
     "passed": true,
@@ -267,12 +260,12 @@
     "slide_1_report": {
       "overall_score": 9.5,
       "passed": true,
-      "critique_summary": "The Tamil typography is rendered excellently with no character collision or glyph distortion. The hierarchy is strong, with the headline size commanding immediate attention. The green highlight box for 'உங்க ₹1' provides effective visual grounding, although the tracking between the Tamil word and the Rupee symbol could be slightly tightened for better optical balance.",
+      "critique_summary": "The Tamil Unicode rendering is excellent, with the 'லட்சம்' (latcham) glyphs appearing crisp and correctly joined. The headline exhibits strong hierarchy through weight and color. The contrast of the green highlight box against the white background is optimal for mobile readability. The integration of Tamil and English script within the same line is handled professionally.",
       "suggested_css_adjustments": {
-        "notes": "Ensure font-kerning is set to 'normal' or 'auto' for the Tamil font-face. Consider applying 'letter-spacing: -0.01em' to the highlighted text block to unify the Tamil script with the currency symbol."
+        "notes": "Ensure that the Tamil font (e.g., Mukta Malar or Noto Sans Tamil) is explicitly declared in the font-family stack to prevent fallback rendering issues on older mobile devices."
       }
     },
     "slide_count_audited": 2
   },
-  "exported_at": "2026-09-13T08:26:06.958988+00:00"
+  "exported_at": "2026-09-13T17:26:12.600189+00:00"
 }

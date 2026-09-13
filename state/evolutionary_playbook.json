@@ -1,9 +1,9 @@
 {
   "version": "2.0.0",
-  "total_cycles_recorded": 3,
+  "total_cycles_recorded": 4,
   "archetype_weights": {
     "SHOCKING_MYTH": 1.3,
-    "MATH_BREAKDOWN": 1.45,
+    "MATH_BREAKDOWN": 1.5,
     "INSTITUTIONAL_SECRET": 1.1
   },
   "learned_rules": [
@@ -13,7 +13,8 @@
     "Final slide must end with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'",
     "Candidate B hits the 'MATH_BREAKDOWN' archetype perfectly by quantifying the risk. In financial content, specific rupee ",
     "Candidate B hits the MATH_BREAKDOWN archetype perfectly by quantifying risk with exact figures ('₹3.5 லட்சம் இழப்பு'). F",
-    "Candidate B dominates on data density and retail actionability. By taking the headline earnings surge of 78.86% and grou"
+    "Candidate B dominates on data density and retail actionability. By taking the headline earnings surge of 78.86% and grou",
+    "Candidate B dominates by combining the strict 6-word punchy Tanglish hook constraint with quantified risk ('₹1.5 லட்சம் "
   ],
   "cycle_history": [
     {
@@ -42,6 +43,15 @@
       "critic_score": 9.3,
       "visual_score": 9.0,
       "key_learning": "Candidate B dominates on data density and retail actionability. By taking the headline earnings surge of 78.86% and grou"
+    },
+    {
+      "cycle": 4,
+      "timestamp": "2026-09-13T17:26:12.599600+00:00",
+      "topic": "Stock market holiday: Are NSE, BSE closed for trading on Ganesh Chaturthi?",
+      "winning_archetype": "MATH_BREAKDOWN",
+      "critic_score": 9.5,
+      "visual_score": 9.0,
+      "key_learning": "Candidate B dominates by combining the strict 6-word punchy Tanglish hook constraint with quantified risk ('₹1.5 லட்சம் "
     }
   ]
 }
