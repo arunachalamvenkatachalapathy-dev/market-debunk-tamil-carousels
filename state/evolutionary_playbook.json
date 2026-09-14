@@ -1,9 +1,9 @@
 {
   "version": "2.0.0",
-  "total_cycles_recorded": 4,
+  "total_cycles_recorded": 5,
   "archetype_weights": {
     "SHOCKING_MYTH": 1.3,
-    "MATH_BREAKDOWN": 1.5,
+    "MATH_BREAKDOWN": 1.55,
     "INSTITUTIONAL_SECRET": 1.1
   },
   "learned_rules": [
@@ -14,7 +14,8 @@
     "Candidate B hits the 'MATH_BREAKDOWN' archetype perfectly by quantifying the risk. In financial content, specific rupee ",
     "Candidate B hits the MATH_BREAKDOWN archetype perfectly by quantifying risk with exact figures ('₹3.5 லட்சம் இழப்பு'). F",
     "Candidate B dominates on data density and retail actionability. By taking the headline earnings surge of 78.86% and grou",
-    "Candidate B dominates by combining the strict 6-word punchy Tanglish hook constraint with quantified risk ('₹1.5 லட்சம் "
+    "Candidate B dominates by combining the strict 6-word punchy Tanglish hook constraint with quantified risk ('₹1.5 லட்சம் ",
+    "Candidate B hits the MATH_BREAKDOWN archetype perfectly with a heavy 1.5 archetype weight. By leading with '₹14 Cr Loss!"
   ],
   "cycle_history": [
     {
@@ -52,6 +53,15 @@
       "critic_score": 9.5,
       "visual_score": 9.0,
       "key_learning": "Candidate B dominates by combining the strict 6-word punchy Tanglish hook constraint with quantified risk ('₹1.5 லட்சம் "
+    },
+    {
+      "cycle": 5,
+      "timestamp": "2026-09-14T19:23:04.391026+00:00",
+      "topic": "BHEL approves  ₹65 crore further investment in NTPC joint venture NBPPL",
+      "winning_archetype": "MATH_BREAKDOWN",
+      "critic_score": 9.4,
+      "visual_score": 8.5,
+      "key_learning": "Candidate B hits the MATH_BREAKDOWN archetype perfectly with a heavy 1.5 archetype weight. By leading with '₹14 Cr Loss!"
     }
   ]
 }

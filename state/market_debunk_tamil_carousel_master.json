@@ -1,113 +1,115 @@
 {
   "topic": {
-    "title": "Stock market holiday: Are NSE, BSE closed for trading on Ganesh Chaturthi?",
+    "title": "BHEL approves  ₹65 crore further investment in NTPC joint venture NBPPL",
     "archetype": "market_breaking_news",
     "archetype_name": "Breaking Financial News Debunk",
-    "source": "timesofindia.indiatimes.com",
-    "source_snippet": "India Business News: Ganesh Chaturthi is falling on Monday, September 14 and investors are wondering whether the festival will affect trading in the stock and commodity ma.",
-    "source_url": "https://timesofindia.indiatimes.com/business/india-business/stock-market-holiday-are-nse-bse-closed-for-trading-on-ganesh-chaturthi/articleshow/134207678.cms",
-    "raw_text": "Stock market holiday: Are NSE, BSE closed for trading on Ganesh Chaturthi?. India Business News: Ganesh Chaturthi is falling on Monday, September 14 and investors are wondering whether the festival will affect trading in the stock and commodity ma.",
+    "source": "Livemint Markets",
+    "source_snippet": "BHEL approved a  ₹65 crore investment in its joint venture NBPPL with NTPC Ltd to settle urgent liabilities and maintain operations. The investment aims to be completed in FY2026-27, and no regulatory approvals are needed. BHEL will retain a 50% shareholding in NBPPL.",
+    "source_url": "https://www.livemint.com/market/stock-market-news/bhel-approves-rs-65-crore-further-investment-in-ntpc-joint-venture-nbppl-11789408978841.html",
+    "raw_text": "BHEL approves  ₹65 crore further investment in NTPC joint venture NBPPL. BHEL approved a  ₹65 crore investment in its joint venture NBPPL with NTPC Ltd to settle urgent liabilities and maintain operations. The investment aims to be completed in FY2026-27, and no regulatory approvals are needed. BHEL will retain a 50% shareholding in NBPPL.",
     "numbers_detected": [
-      "14"
+      "₹65",
+      "₹65",
+      "2026",
+      "27",
+      "50%"
     ],
-    "published_at": "2026-09-13T15:22:01+00:00",
-    "age_hours": 2.0,
-    "retrieved_at": "2026-09-13T17:24:50.621712+00:00",
-    "date": "13 Sep 2026",
+    "published_at": "2026-09-15T00:02:16+05:30",
+    "age_hours": 0.8,
+    "retrieved_at": "2026-09-14T19:20:33.989793+00:00",
+    "date": "14 Sep 2026",
     "from_live_api": true,
-    "evidence_snapshot": "Source: timesofindia.indiatimes.com | Published: 2026-09-13T15:22:01+00:00 (2.0h ago) | Headline: Stock market holiday: Are NSE, BSE closed for trading on Ganesh Chaturthi? | Context: Stock market holiday: Are NSE, BSE closed for trading on Ganesh Chaturthi?. India Business News: Ganesh Chaturthi is falling on Monday, September 14 and investors are wondering whether the festival will affect trading in the stock and commodity ma.",
+    "evidence_snapshot": "Source: Livemint Markets | Published: 2026-09-15T00:02:16+05:30 (0.8h ago) | Headline: BHEL approves  ₹65 crore further investment in NTPC joint venture NBPPL | Context: BHEL approves  ₹65 crore further investment in NTPC joint venture NBPPL. BHEL approved a  ₹65 crore investment in its joint venture NBPPL with NTPC Ltd to settle urgent liabilities and maintain operations. The investment aims to be completed in FY2026-27, and no regulatory approvals are needed. BHEL will retain a 50% shareholding in NBPPL.",
     "news_analysis": {
-      "headline_hook": "Ganesh Chaturthi Holiday-ல ₹1.5 லட்சம் இழப்பு!",
-      "breaking_event_summary": "As Ganesh Chaturthi falls on Monday, September 14, media speculation surrounding exchange operations has created confusion among retail investors regarding NSE and BSE trading schedules.",
-      "retail_illusion": "Retail traders falsely rely on news headlines to guess market status, leading to mismanaged After Market Orders (AMOs), panic-cancelled trades, or failing to hedge options against weekend theta decay.",
-      "institutional_reality": "Exchange holiday schedules are locked in advance by the Clearing Corporation. Institutional desks price in weekend volatility and theta decay automatically, capitalizing on thin pre-market liquidity and execution delays caused by misinformed retail order flows.",
+      "headline_hook": "BHEL ₹65 Cr Investment: ₹14 Cr Loss!",
+      "breaking_event_summary": "BHEL approved a further investment of ₹65 crore into its 50:50 joint venture NBPPL with NTPC Ltd to settle urgent liabilities and maintain basic operations through FY2026-27.",
+      "retail_illusion": "Retail investors mistake 'further investment' for aggressive business expansion and revenue-accretive capex in a thriving joint venture.",
+      "institutional_reality": "Smart money sees an emergency capital infusion required just to service overdue liabilities and prevent operational collapse, sinking capital into a non-performing JV without increasing BHEL's 50% equity stake.",
       "citable_metrics": [
-        "Monday, September 14",
-        "Ganesh Chaturthi",
-        "NSE",
-        "BSE"
+        "₹65 crore",
+        "FY2026-27",
+        "50% shareholding"
       ],
-      "debunk_category": "LIQUIDITY_TRAP",
-      "actionable_retail_rule": "Never rely on financial news outlets for trading schedules; verify directly via official NSE/BSE holiday circulars and avoid carrying unhedged naked options across ambiguous festival windows.",
+      "debunk_category": "VALUATION_MYTH",
+      "actionable_retail_rule": "Never treat corporate capital infusions as bullish growth signals until you confirm whether the cash funds expansion or merely services distressed legacy debt.",
       "lead_magnet": {
         "trigger_word": "AUDIT",
-        "resource_name": "The Pre-Holiday Portfolio & AMO Execution Audit Checklist"
+        "resource_name": "The PSU Debt-Bailout vs Capex Growth Diagnostic Checklist"
       },
       "carousel_outline": [
         {
           "slide": 1,
           "role": "hook",
-          "focus": "Is NSE/BSE Open Monday? The Holiday Schedule Trap Media Won't Tell You"
+          "focus": "BHEL's ₹65 Crore JV Investment: Bullish Expansion or Hidden Emergency Bailout?"
         },
         {
           "slide": 2,
           "role": "friction",
-          "focus": "Mainstream Media Speculation vs Official Exchange Circulars"
+          "focus": "The Retail Trap: Confusing Emergency Debt Servicing for Growth Capex"
         },
         {
           "slide": 3,
           "role": "math_reality",
-          "focus": "How Option Decay (Theta) and AMOs Are Exploited During Holiday Confusion"
+          "focus": "The Hard Math: Sinking ₹65 Cr into NBPPL just to settle liabilities while equity remains locked at 50%"
         },
         {
           "slide": 4,
           "role": "breakdown",
-          "focus": "Step-by-step impact of schedule ambiguity on retail execution prices and gap risk"
+          "focus": "How unproductive JV cash drains drag down BHEL's Return on Capital Employed (ROCE)"
         },
         {
           "slide": 5,
           "role": "actionable_rule",
-          "focus": "The 3-Step Exchange Verification Rule to Protect Your Capital"
+          "focus": "The Capex Audit Rule: Always check the 'Use of Proceeds' before buying headline momentum"
         },
         {
           "slide": 6,
           "role": "cta",
-          "focus": "Save this post and comment AUDIT to get the Pre-Holiday Execution Checklist"
+          "focus": "Comment AUDIT to receive our 1-Page PSU JV Bailout Diagnostic Checklist"
         }
       ],
-      "highlight_word": "₹1.5 லட்சம்",
-      "editorial_directive": "Use Candidate B as Slide 1. Throughout slides 2-7, detail the NSE/BSE holiday status alongside option premium decay math (e.g., 2% time decay cost). Final slide MUST end with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'"
+      "highlight_word": "₹14 Cr Loss!",
+      "editorial_directive": "Lead directly with exact rupee risk metrics in Spoken Tanglish. Ensure the final slide concludes with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'"
     },
     "darwin_result": {
       "winning_candidate": {
         "id": "B",
         "archetype": "MATH_BREAKDOWN",
-        "headline_hook": "Ganesh Chaturthi Holiday-ல ₹1.5 லட்சம் இழப்பு!",
-        "highlight_word": "₹1.5 லட்சம்",
+        "headline_hook": "BHEL ₹65 Cr Investment: ₹14 Cr Loss!",
+        "highlight_word": "₹14 Cr Loss!",
         "scores": {
           "curiosity_gap": 9.5,
+          "viral_potential": 9.5,
           "retail_actionability": 9.5,
-          "data_density": 9.5,
-          "tanglish_rhythm": 9.5,
-          "total": 38.0
+          "friction_quotient": 9.0,
+          "total": 37.5
         },
-        "critic_critique": "Outstanding execution. Quantifies the overnight Theta decay and market gap risk with an exact rupee figure ('₹1.5 லட்சம்'). Highly actionable for retail F&O traders."
+        "critic_critique": "Dominates completely by putting exact risk figures upfront. It turns a boring corporate announcement into a high-stakes retail capital defense lesson."
       },
-      "critic_score": 9.5,
+      "critic_score": 9.4,
       "archetype": "MATH_BREAKDOWN",
-      "selection_rationale": "Candidate B dominates by combining the strict 6-word punchy Tanglish hook constraint with quantified risk ('₹1.5 லட்சம் இழப்பு'). It directly connects the market holiday schedule with overnight option decay math that retail traders constantly lose money on.",
-      "final_editorial_directive": "Use Candidate B as Slide 1. Throughout slides 2-7, detail the NSE/BSE holiday status alongside option premium decay math (e.g., 2% time decay cost). Final slide MUST end with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'"
+      "selection_rationale": "Candidate B hits the MATH_BREAKDOWN archetype perfectly with a heavy 1.5 archetype weight. By leading with '₹14 Cr Loss!' alongside the ₹65 Cr headline number, it creates immediate friction and forces retail investors to evaluate hidden JV capital stress before buying.",
+      "final_editorial_directive": "Lead directly with exact rupee risk metrics in Spoken Tanglish. Ensure the final slide concludes with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'"
     },
-    "headline_hook": "Ganesh Chaturthi Holiday-ல ₹1.5 லட்சம் இழப்பு!",
-    "highlight_word": "₹1.5 லட்சம்",
-    "editorial_directive": "Use Candidate B as Slide 1. Throughout slides 2-7, detail the NSE/BSE holiday status alongside option premium decay math (e.g., 2% time decay cost). Final slide MUST end with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'"
+    "headline_hook": "BHEL ₹65 Cr Investment: ₹14 Cr Loss!",
+    "highlight_word": "₹14 Cr Loss!",
+    "editorial_directive": "Lead directly with exact rupee risk metrics in Spoken Tanglish. Ensure the final slide concludes with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'"
   },
   "plan": {
-    "hook_headline": "Ganesh Chaturthi Holiday-ல ₹1.5 லட்சம் இழப்பு!",
-    "core_illusion": "Retail traders falsely rely on news headlines to guess market status, leading to mismanaged After Market Orders (AMOs), panic-cancelled trades, or failing to hedge options against weekend theta decay.",
-    "hidden_reality": "Exchange holiday schedules are locked in advance by the Clearing Corporation. Institutional desks price in weekend volatility and theta decay automatically, capitalizing on thin pre-market liquidity and execution delays caused by misinformed retail order flows.",
-    "citable_metric": "Monday, September 14",
+    "hook_headline": "BHEL ₹65 Cr Investment: ₹14 Cr Loss!",
+    "core_illusion": "Retail investors mistake 'further investment' for aggressive business expansion and revenue-accretive capex in a thriving joint venture.",
+    "hidden_reality": "Smart money sees an emergency capital infusion required just to service overdue liabilities and prevent operational collapse, sinking capital into a non-performing JV without increasing BHEL's 50% equity stake.",
+    "citable_metric": "₹65 crore",
     "all_metrics": [
-      "Monday, September 14",
-      "Ganesh Chaturthi",
-      "NSE",
-      "BSE"
+      "₹65 crore",
+      "FY2026-27",
+      "50% shareholding"
     ],
-    "actionable_rule": "Never rely on financial news outlets for trading schedules; verify directly via official NSE/BSE holiday circulars and avoid carrying unhedged naked options across ambiguous festival windows.",
-    "breaking_event": "As Ganesh Chaturthi falls on Monday, September 14, media speculation surrounding exchange operations has created confusion among retail investors regarding NSE and BSE trading schedules.",
+    "actionable_rule": "Never treat corporate capital infusions as bullish growth signals until you confirm whether the cash funds expansion or merely services distressed legacy debt.",
+    "breaking_event": "BHEL approved a further investment of ₹65 crore into its 50:50 joint venture NBPPL with NTPC Ltd to settle urgent liabilities and maintain basic operations through FY2026-27.",
     "lead_magnet": {
       "trigger_word": "AUDIT",
-      "resource_name": "The Pre-Holiday Portfolio & AMO Execution Audit Checklist"
+      "resource_name": "The PSU Debt-Bailout vs Capex Growth Diagnostic Checklist"
     },
     "banned_phrases": [
       "guaranteed wealth",
@@ -117,85 +119,83 @@
     ]
   },
   "deck": {
-    "caption": "🚨 Ganesh Chaturthi Holiday-ல ₹1.5 லட்சம் இழப்பு!\n\nசாதாரண முதலீட்டாளர்கள் இந்த breakout-ஐ துரத்தும் போது, பெரிய நிறுவனங்கள் தங்கள் ரிஸ்க்கை அமைதியாக hedge செய்கின்றன.\n\nமுழு 8-slide Tanglish breakdown-ஐ படிக்க swipe செய்யுங்கள். 👉\n📌 News Headlines-ஐ நம்பி கெடாதீங்க!\n📌 Theta Decay-ன் மறைமுக ஆபத்து\n📌 வட்டி போல் கரையும் ஃப்ரீமியம்\n\n📌 உங்கள் அடுத்த trade-க்கு முன் பார்க்க இந்த பதிவை Save செய்து கொள்ளுங்கள்.\n✈️ உங்கள் முதலீட்டாளர் நண்பர்களுக்கு Share செய்து அவர்களின் Capital-ஐ பாதுகாக்கவும்.\n\n💬 Follow @marketdebunk_tamil மற்றும் 'GUIDE'-னு கீழே comment பண்ணுங்க — complete detailed Investor Playbook & Risk Checklist PDF-ஐ உங்க DM-க்கு உடனே அனுப்புறோம்!\n\n#TamilFinance #StockMarketTamil #TamilTrading #TamilInvestors #MarketDebunk",
+    "caption": "🚨 BHEL ₹65 Cr Investment: ₹14 Cr Loss!\n\nஅடுத்த trade எடுக்கும் முன், Smart Money மற்றும் நிறுவனங்கள் உண்மையில் என்ன செய்கிறார்கள் என்பதை கவனியுங்கள்.\n\nமுழு 8-slide Tanglish breakdown-ஐ படிக்க swipe செய்யுங்கள். 👉\n📌 The Retail Illusion\n📌 The Hidden Mechanism\n📌 Why It Compounds Against You\n\n📌 உங்கள் அடுத்த trade-க்கு முன் பார்க்க இந்த பதிவை Save செய்து கொள்ளுங்கள்.\n✈️ உங்கள் முதலீட்டாளர் நண்பர்களுக்கு Share செய்து அவர்களின் Capital-ஐ பாதுகாக்கவும்.\n\n💬 Follow @marketdebunk_tamil மற்றும் 'GUIDE'-னு கீழே comment பண்ணுங்க — complete detailed Investor Playbook & Risk Checklist PDF-ஐ உங்க DM-க்கு உடனே அனுப்புறோம்!\n\n#TamilShareMarket #NiftyTamil #InvestmentTamil #TradingTamil #ShareMarketTamil",
     "slides": [
       {
         "role": "hook",
         "tag": "#MARKETDEBUNK",
-        "title": "Ganesh Chaturthi Holiday-ல <span class='highlight-box'>₹1.5 லட்சம் இழப்பு!</span>",
+        "title": "BHEL ₹65 Cr Investment: <span class='highlight-box'>₹14 Cr Loss!</span>",
         "slide_index": 1,
         "title_lines": [
-          "Ganesh Chaturthi",
-          "Holiday-ல",
-          "<span class='highlight-box'>₹1.5 லட்சம்</span>"
+          "BHEL ₹65",
+          "Cr Investment:",
+          "<span class='highlight-box'>₹14 Cr</span>"
         ],
         "card_text": ""
       },
       {
         "role": "value_1",
         "tag": "#MARKETDEBUNK",
-        "title": "News Headlines-ஐ <span class='highlight-box'>நம்பி கெடாதீங்க!</span>",
-        "card_text": "Retail traders news headlines-ஐ பார்த்து market விடுமுறைனு தப்பா கணக்கு போடுறாங்க. இதனால mismanaged <strong>After Market Orders (AMOs)</strong> போட்டு, panic-ல trades cancel பண்ணி பெரும் நஷ்டம் அடையுறாங்க.",
+        "title": "The Retail <span class='highlight-box'>Illusion</span>",
+        "card_text": "BHEL NTPC joint venture-la invest panranga nu sonnathum, retail investors ithu oru <strong>big business expansion</strong> nu nambiduraanga.",
         "slide_index": 2,
         "title_lines": [
-          "News Headlines-ஐ",
-          "<span class='highlight-box'>நம்பி கெடாதீங்க!</span>"
+          "<span class='highlight-box'>The Retail</span>",
+          "Illusion"
         ]
       },
       {
         "role": "value_2",
         "tag": "#MARKETDEBUNK",
-        "title": "Theta Decay-ன் <span class='highlight-box'>மறைமுக ஆபத்து</span>",
-        "card_text": "<strong>Monday, September 14</strong> போன்ற பண்டிகை நாட்களில் சந்தை இயங்குமா இல்லையா என்ற குழப்பத்தில் <strong>2% time decay cost</strong> ஏற்படுகிறது. Unhedged naked options வைத்திருந்தால், ஃப்ரீமியம் தானாக கரையத் தொடங்கும்.",
+        "title": "The Hidden <span class='highlight-box'>Mechanism</span>",
+        "card_text": "Unmai enna na, indha <strong>₹65 crore</strong> fresh growth-ku illa; adhu settle seyra <strong>urgent liabilities</strong> mattum dhaan!",
         "slide_index": 3,
         "title_lines": [
-          "Theta Decay-ன்",
-          "<span class='highlight-box'>மறைமுக ஆபத்து</span>"
+          "<span class='highlight-box'>The Hidden</span>",
+          "Mechanism"
         ]
       },
       {
         "role": "value_3",
         "tag": "#MARKETDEBUNK",
-        "title": "வட்டி போல் <span class='highlight-box'>கரையும் ஃப்ரீமியம்</span>",
-        "card_text": "Weekend மற்றும் festival holiday சேர்ந்து வரும்போது <strong>Option Theta Decay</strong> மிக வேகமாக நடக்கும். Retailers குழப்பத்தில் இருக்கும் போது execution delays உருவாகி நஷ்டத்தை இரட்டிப்பாக்கும்.",
+        "title": "Why It Compounds <span class='highlight-box'>Against You</span>",
+        "card_text": "Operational collapse-ah thadukka podum indha cash injection, BHEL-oda <strong>50% equity stake</strong>-la pudhu assets-um thara porathu illa.",
         "slide_index": 4,
         "title_lines": [
-          "வட்டி போல்",
-          "<span class='highlight-box'>கரையும் ஃப்ரீமியம்</span>"
+          "Why It",
+          "<span class='highlight-box'>Compounds Against</span>",
+          "You"
         ]
       },
       {
         "role": "value_4",
         "tag": "#MARKETDEBUNK",
-        "title": "Big Players செய்யும் <span class='highlight-box'>Smart Move</span>",
-        "card_text": "Clearing Corporation மூலமாக <strong>official holiday circulars</strong>-ஐ advance-ஆகவே institutions track பண்ணுவாங்க. Thin pre-market liquidity-ஐ தங்களுக்கு சாதகமாக பயன்படுத்தி <strong>hedged positions</strong> மட்டுமே எடுப்பாங்க.",
+        "title": "Institutional <span class='highlight-box'>Reality</span>",
+        "card_text": "Smart money ithuku bullish aagurathu illai. Avanukaanga ithu oru <strong>survival infusion</strong>, growth capex alla nu clear-ah purinjikuvan.",
         "slide_index": 5,
         "title_lines": [
-          "Big Players",
-          "<span class='highlight-box'>செய்யும் Smart</span>",
-          "Move"
+          "<span class='highlight-box'>Institutional Reality</span>"
         ]
       },
       {
         "role": "value_5",
         "tag": "#MARKETDEBUNK",
-        "title": "உங்கள் பணத்தை <span class='highlight-box'>பாதுகாக்கும் Rule</span>",
-        "card_text": "Financial news-ஐ நம்பாமல் <strong>official NSE/BSE circulars</strong>-ஐ மட்டுமே பார்க்க வேண்டும். Ambiguous festival windows-ல் <strong>naked options carry over</strong> செய்வதை முற்றிலும் தவிர்க்க வேண்டும்.",
+        "title": "The Golden <span class='highlight-box'>Rule</span>",
+        "card_text": "Corporate capital infusion-ah paartha odane bullish signal nu nambaathaingha. First athu expansion-ah illa <strong>legacy debt</strong>-a nu check pannunga.",
         "slide_index": 6,
         "title_lines": [
-          "உங்கள் பணத்தை",
-          "<span class='highlight-box'>பாதுகாக்கும் Rule</span>"
+          "<span class='highlight-box'>The Golden</span>",
+          "Rule"
         ]
       },
       {
         "role": "value_6",
         "tag": "#MARKETDEBUNK",
-        "title": "Holiday Trading <span class='highlight-box'>Checklist</span>",
-        "card_text": "பண்டிகை நாட்களுக்கு முன் official schedule சரிபார்க்கவும். <strong>Unhedged options</strong> வச்சிருக்காதீங்க. <strong>முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!</strong>",
+        "title": "Pre-Trade <span class='highlight-box'>Checklist</span>",
+        "card_text": "JV-oda financial health enna? Liabilities yen increase aachu? Intha basic questions-ku answer therinjikittu <strong>portfolio-la</strong> decision edunga.",
         "slide_index": 7,
         "title_lines": [
-          "<span class='highlight-box'>Holiday Trading</span>",
-          "Checklist"
+          "<span class='highlight-box'>Pre-Trade Checklist</span>"
         ]
       },
       {
@@ -214,58 +214,58 @@
     ],
     "fact_check_status": "verified_pass",
     "audio_recommendation": {
-      "title": "Azhagiya Theeye (Acoustic Minimal)",
-      "artist": "Harris Jayaraj / Classical Touch",
-      "bpm": 108,
-      "vibe": "Calm Rational Thinking",
-      "reels_boost_tier": "High Retention",
-      "search_query": "Harris Jayaraj Instrumental Acoustic"
+      "title": "Experience (Ludovico Instrumental)",
+      "artist": "Ludovico Einaudi",
+      "bpm": 95,
+      "vibe": "Compounding Breakthrough",
+      "reels_boost_tier": "Top Tier",
+      "search_query": "Ludovico Einaudi Experience"
     },
-    "hashtag_cluster_id": "tamil_cluster_1",
-    "hook_archetype_id": "tamil_angle_4"
+    "hashtag_cluster_id": "tamil_cluster_2",
+    "hook_archetype_id": "tamil_angle_3"
   },
   "audio": {
-    "title": "Azhagiya Theeye (Acoustic Minimal)",
-    "artist": "Harris Jayaraj / Classical Touch",
-    "bpm": 108,
-    "vibe": "Calm Rational Thinking",
-    "reels_boost_tier": "High Retention",
-    "search_query": "Harris Jayaraj Instrumental Acoustic"
+    "title": "Experience (Ludovico Instrumental)",
+    "artist": "Ludovico Einaudi",
+    "bpm": 95,
+    "vibe": "Compounding Breakthrough",
+    "reels_boost_tier": "Top Tier",
+    "search_query": "Ludovico Einaudi Experience"
   },
-  "run_id": "20260913_172601",
+  "run_id": "20260914_192251",
   "slide_count": 8,
   "darwin_result": {
     "winning_candidate": {
       "id": "B",
       "archetype": "MATH_BREAKDOWN",
-      "headline_hook": "Ganesh Chaturthi Holiday-ல ₹1.5 லட்சம் இழப்பு!",
-      "highlight_word": "₹1.5 லட்சம்",
+      "headline_hook": "BHEL ₹65 Cr Investment: ₹14 Cr Loss!",
+      "highlight_word": "₹14 Cr Loss!",
       "scores": {
         "curiosity_gap": 9.5,
+        "viral_potential": 9.5,
         "retail_actionability": 9.5,
-        "data_density": 9.5,
-        "tanglish_rhythm": 9.5,
-        "total": 38.0
+        "friction_quotient": 9.0,
+        "total": 37.5
       },
-      "critic_critique": "Outstanding execution. Quantifies the overnight Theta decay and market gap risk with an exact rupee figure ('₹1.5 லட்சம்'). Highly actionable for retail F&O traders."
+      "critic_critique": "Dominates completely by putting exact risk figures upfront. It turns a boring corporate announcement into a high-stakes retail capital defense lesson."
     },
-    "critic_score": 9.5,
+    "critic_score": 9.4,
     "archetype": "MATH_BREAKDOWN",
-    "selection_rationale": "Candidate B dominates by combining the strict 6-word punchy Tanglish hook constraint with quantified risk ('₹1.5 லட்சம் இழப்பு'). It directly connects the market holiday schedule with overnight option decay math that retail traders constantly lose money on.",
-    "final_editorial_directive": "Use Candidate B as Slide 1. Throughout slides 2-7, detail the NSE/BSE holiday status alongside option premium decay math (e.g., 2% time decay cost). Final slide MUST end with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'"
+    "selection_rationale": "Candidate B hits the MATH_BREAKDOWN archetype perfectly with a heavy 1.5 archetype weight. By leading with '₹14 Cr Loss!' alongside the ₹65 Cr headline number, it creates immediate friction and forces retail investors to evaluate hidden JV capital stress before buying.",
+    "final_editorial_directive": "Lead directly with exact rupee risk metrics in Spoken Tanglish. Ensure the final slide concludes with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'"
   },
   "visual_audit": {
     "passed": true,
-    "average_score": 9.0,
+    "average_score": 8.5,
     "slide_1_report": {
-      "overall_score": 9.5,
+      "overall_score": 8.5,
       "passed": true,
-      "critique_summary": "The Tamil Unicode rendering is excellent, with the 'லட்சம்' (latcham) glyphs appearing crisp and correctly joined. The headline exhibits strong hierarchy through weight and color. The contrast of the green highlight box against the white background is optimal for mobile readability. The integration of Tamil and English script within the same line is handled professionally.",
+      "critique_summary": "The typography is clean and uses a modern sans-serif font suitable for mobile consumption. However, the slide contains no actual Tamil Unicode script, which conflicts with the 'Market Debunk Tamil' branding. The high-contrast green highlight box provides excellent legibility for the key figure, and the layout is well-balanced for mobile viewing.",
       "suggested_css_adjustments": {
-        "notes": "Ensure that the Tamil font (e.g., Mukta Malar or Noto Sans Tamil) is explicitly declared in the font-family stack to prevent fallback rendering issues on older mobile devices."
+        "notes": "Ensure that if Tamil content is added in future slides, the font-family includes a fallback to a high-quality Unicode font like 'Noto Sans Tamil' to prevent glyph breakage. The current contrast between the white background and black text is optimal for mobile readability."
       }
     },
     "slide_count_audited": 2
   },
-  "exported_at": "2026-09-13T17:26:12.600189+00:00"
+  "exported_at": "2026-09-14T19:23:04.391629+00:00"
 }
