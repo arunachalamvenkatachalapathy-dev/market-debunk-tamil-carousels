@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-13T17:24:21.546947+00:00",
+  "generated_at": "2026-09-14T09:03:36.702135+00:00",
   "channel": "TAMIL",
-  "data_points_analyzed": 9,
+  "data_points_analyzed": 11,
   "historical_avg_save_rate_pct": 0.0,
   "prioritized_categories": [
     "SMART_MONEY",
@@ -15,12 +15,22 @@
   "high_performing_hooks": [],
   "deprecated_hooks": [
     {
+      "hook": "tamil_angle_2",
+      "avg_save_rate": "0.00%",
+      "reason": "Low dwell & bookmark retention"
+    },
+    {
       "hook": "tamil_angle_1",
       "avg_save_rate": "0.00%",
       "reason": "Low dwell & bookmark retention"
     },
     {
       "hook": "tamil_angle_4",
+      "avg_save_rate": "0.00%",
+      "reason": "Low dwell & bookmark retention"
+    },
+    {
+      "hook": "tamil_angle_3",
       "avg_save_rate": "0.00%",
       "reason": "Low dwell & bookmark retention"
     }
