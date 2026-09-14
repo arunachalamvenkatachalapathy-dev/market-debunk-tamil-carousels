@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-09-13T17:27:21.472743+00:00",
+  "timestamp": "2026-09-14T19:24:18.980390+00:00",
   "phase": "PUBLISHING",
   "platform": "Instagram",
   "severity": "CRITICAL",
   "error_code": "ERR_META_API",
-  "root_cause_analysis": "Meta API application request limit reached and action blocked by Meta risk systems (Error Code 4, Subcode 2207051). The account or app has triggered automated rate limiting or community protection restriction rules.",
+  "root_cause_analysis": "Meta API request failed with OAuthException Code 4 (subcode 2207051): 'Application request limit reached' / 'Action is blocked'. The app or account has exceeded Meta's publishing velocity thresholds or triggered a temporary anti-spam action block.",
   "reproducibility": "RATE_LIMIT",
   "automated_remediation": {
-    "action": "RETRY_AFTER_DELAY",
-    "retry_delay_seconds": 3600
+    "action": "ABORT",
+    "retry_delay_seconds": 86400
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Halt automated publishing requests to Meta Graph API for at least 1 hour to allow the rate limit/action block window to cool down.",
-    "Log into the associated Instagram account via mobile app or web browser to clear any pending security checkpoints or action block prompts.",
-    "Verify Meta App dashboard metrics for Graph API usage limits and confirm app permissions status."
+    "Check Meta Developer Dashboard under 'API Rate Limit' or 'App Health' to inspect current usage and policy restrictions.",
+    "Log into the Instagram mobile app for the target account to verify if an 'Action Block' dialog needs manual acknowledgment.",
+    "Halt automated queue processing for 24 hours to allow the application limit window to reset."
   ]
 }
