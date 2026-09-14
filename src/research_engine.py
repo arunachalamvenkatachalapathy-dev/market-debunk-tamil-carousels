@@ -194,9 +194,9 @@ class ResearchEngine:
         # ── Source 2: Indian Stock Market API (IndianAPI) ───────────────────
         candidates.extend(self.fetch_indianapi_news(now, cutoff))
 
-        # ── Source 3: SerpApi Google News (if key configured) ────────────────
+        # 🟢 Source 3: SerpApi Google News (if key configured) 🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢
         if settings.SERPAPI_KEY and settings.SERPAPI_KEY.strip():
-            query = override_query or "SEBI OR RBI OR Nifty OR Sensex OR 'Stock Market' OR IPO"
+            query = override_query or "'Mutual Fund' OR 'Penny Stock' OR Multibagger OR Scam OR 'Options Trading' OR 'F&O' OR 'Stock Crash' OR 'Nifty Crash'"
             logger.info("Querying SerpApi Google News for: '%s'...", query)
             try:
                 params = {

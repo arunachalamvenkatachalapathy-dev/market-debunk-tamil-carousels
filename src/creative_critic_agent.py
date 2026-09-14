@@ -58,11 +58,13 @@ TASK:
    - Candidate B (Archetype: MATH_BREAKDOWN): Break down the exact rupee loss caused by hidden costs/fees.
    - Candidate C (Archetype: INSTITUTIONAL_SECRET): Expose what smart money institutions do while retail traders panic.
 
-2. Act as a critical editor. Score each candidate (0-10):
-   - curiosity_gap: Will a Tamil speaker immediately swipe?
-   - retail_actionability: Clear money defense?
-   - data_density: Exact rupee/percentage numbers cited?
-   - tanglish_rhythm: Natural spoken rhythm without bookish Tamil?
+2. Act as a harsh editorial critic. Evaluate each candidate on a 0-10 scale:
+   - curiosity_gap (0-10): Will a user immediately swipe slide 1?
+   - viral_potential (0-10): Does this trigger FOMO, outrage, or extreme greed?
+   - retail_actionability (0-10): Does it deliver concrete pre-trade defense?
+   - friction_quotient (0-10): Does it challenge comfortable assumptions?
+
+3. Calculate total_score (sum of 4 criteria, max 40) and pick the definitive winning candidate.
 
 Return JSON strictly:
 {{
