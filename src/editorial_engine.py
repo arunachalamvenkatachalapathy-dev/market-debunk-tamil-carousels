@@ -134,7 +134,7 @@ Return JSON ONLY matching this 8-slide schema:
     {{
       "role": "bookmark_save",
       "tag": "#MARKETDEBUNK",
-      "title_lines": ["பிற்காலத்திற்கு", "இந்த பதிவை", "<span class='highlight-box'>சேமிக்க</span>", "மறக்காதீர்கள்"]
+      "title_lines": ["இந்த பதிவை உங்க", "<span class='highlight-box'>F&O நண்பருக்கு</span>", "இப்போவே Share", "பண்ணுங்க!"]
     }}
   ]
 }}"""
@@ -375,7 +375,7 @@ Return JSON ONLY matching this 8-slide schema:
                 f"🚨 {short_title} - Institutional Reality என்ன? 📊\n\n"
                 f"சந்தை செய்திகளை பார்த்து அவசரப்பட்டு முடிவெடுக்காதீர்கள்! Institutions எப்படி இந்த நகர்வை அணுகுகிறார்கள் என்பதை புரிந்து கொள்ளுங்கள்.\n\n"
                 f"முழு 8-slide Tanglish breakdown-ஐ பாருங்கள். 👉\n\n"
-                f"💬 Follow @marketdebunk_tamil மற்றும் 'GUIDE'-னு comment பண்ணுங்க, complete Tamil Investor Playbook & Risk Checklist-ஐ உங்க DM-க்கு அனுப்புறோம்!\n\n"
+                f"💬 Follow @marketdebunk_tamil மற்றும் 'AUDIT'-னு comment பண்ணுங்க, complete Tamil Investor Playbook & Risk Checklist-ஐ உங்க DM-க்கு அனுப்புறோம்!\n\n"
                 f"#TamilFinance #StockMarketTamil #NiftyTamil #InvestingTamil #PersonalFinance"
             ),
             "slides": [
@@ -422,7 +422,7 @@ Return JSON ONLY matching this 8-slide schema:
                 },
                 {
                     "role": "bookmark_save",
-                    "title_lines": ["பிற்காலத்திற்கு", "இந்த பதிவை", "<span class='highlight-box'>Save & Share</span>", "செய்யுங்கள்"],
+                    "title_lines": ["இந்த பதிவை உங்க", "<span class='highlight-box'>F&O நண்பருக்கு</span>", "இப்போவே Share", "பண்ணுங்க!"],
                     "tag": "#MARKETDEBUNK"
                 }
             ]

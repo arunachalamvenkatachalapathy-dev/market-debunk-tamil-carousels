@@ -40,11 +40,16 @@
         <!-- ── SLIDE 8: DEDICATED BOOKMARK & SAVE CTA ── -->
         <div class="cta-container">
           <h1 class="editorial-headline cta-headline">
-            <div class="title-line">Don’t</div>
-            <div class="title-line">forget to</div>
-            <div class="title-line"><span class="highlight-box">save this</span></div>
-            <div class="title-line">post for</div>
-            <div class="title-line">later</div>
+            {% if slide.title_lines %}
+              {% for line in slide.title_lines %}
+                <div class="title-line">{{ line | safe }}</div>
+              {% endfor %}
+            {% else %}
+              <div class="title-line">இந்த பதிவை உங்க</div>
+              <div class="title-line"><span class="highlight-box">F&O நண்பருக்கு</span></div>
+              <div class="title-line">இப்போவே Share</div>
+              <div class="title-line">பண்ணுங்க!</div>
+            {% endif %}
           </h1>
 
           <div class="cta-guide-card">
