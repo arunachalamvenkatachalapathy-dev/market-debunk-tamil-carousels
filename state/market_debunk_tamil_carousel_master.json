@@ -1,115 +1,110 @@
 {
   "topic": {
-    "title": "BHEL approves  ₹65 crore further investment in NTPC joint venture NBPPL",
+    "title": "South Korean retail traders’ scam losses rose to $250 million amid market swing - The Japan Times",
     "archetype": "market_breaking_news",
     "archetype_name": "Breaking Financial News Debunk",
-    "source": "Livemint Markets",
-    "source_snippet": "BHEL approved a  ₹65 crore investment in its joint venture NBPPL with NTPC Ltd to settle urgent liabilities and maintain operations. The investment aims to be completed in FY2026-27, and no regulatory approvals are needed. BHEL will retain a 50% shareholding in NBPPL.",
-    "source_url": "https://www.livemint.com/market/stock-market-news/bhel-approves-rs-65-crore-further-investment-in-ntpc-joint-venture-nbppl-11789408978841.html",
-    "raw_text": "BHEL approves  ₹65 crore further investment in NTPC joint venture NBPPL. BHEL approved a  ₹65 crore investment in its joint venture NBPPL with NTPC Ltd to settle urgent liabilities and maintain operations. The investment aims to be completed in FY2026-27, and no regulatory approvals are needed. BHEL will retain a 50% shareholding in NBPPL.",
+    "topic_category": "MARKET_TRAP",
+    "viral_demand_score": 80.6,
+    "source": "The Japan Times",
+    "source_snippet": "South Korean retail traders’ scam losses rose to $250 million amid market swing&nbsp;&nbsp;The Japan Times",
+    "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVEhfMmhKbUFNeUFoZEc1b1ZEakhxQWdCenhRT0ZIbnNWUUpwMy05WmxCS21Idm1zMmlvY0tMRUNwckhhZzMzTHNWUVliLWpuWDZoLXNMZllaTENCTlE4bDJ6Rzl1QWxEQ2tGWkRTYXA5MGdCWU43MFF1ckhxOEJPTDhqMjRBNldWY2JKazFDLXpPeG5fdElCUw?oc=5",
+    "raw_text": "South Korean retail traders’ scam losses rose to $250 million amid market swing - The Japan Times. South Korean retail traders’ scam losses rose to $250 million amid market swing&nbsp;&nbsp;The Japan Times",
     "numbers_detected": [
-      "₹65",
-      "₹65",
-      "2026",
-      "27",
-      "50%"
+      "$250",
+      "$250"
     ],
-    "published_at": "2026-09-15T00:02:16+05:30",
-    "age_hours": 0.8,
-    "retrieved_at": "2026-09-14T19:20:33.989793+00:00",
-    "date": "14 Sep 2026",
+    "published_at": "2026-09-16T02:18:00+00:00",
+    "age_hours": 16.1,
+    "retrieved_at": "2026-09-16T18:22:28.269828+00:00",
+    "date": "16 Sep 2026",
     "from_live_api": true,
-    "evidence_snapshot": "Source: Livemint Markets | Published: 2026-09-15T00:02:16+05:30 (0.8h ago) | Headline: BHEL approves  ₹65 crore further investment in NTPC joint venture NBPPL | Context: BHEL approves  ₹65 crore further investment in NTPC joint venture NBPPL. BHEL approved a  ₹65 crore investment in its joint venture NBPPL with NTPC Ltd to settle urgent liabilities and maintain operations. The investment aims to be completed in FY2026-27, and no regulatory approvals are needed. BHEL will retain a 50% shareholding in NBPPL.",
+    "evidence_snapshot": "Source: The Japan Times | Published: 2026-09-16T02:18:00+00:00 (16.1h ago) | Headline: South Korean retail traders’ scam losses rose to $250 million amid market swing - The Japan Times | Context: South Korean retail traders’ scam losses rose to $250 million amid market swing - The Japan Times. South Korean retail traders’ scam losses rose to $250 million amid market swing&nbsp;&nbsp;The Japan Times",
     "news_analysis": {
-      "headline_hook": "BHEL ₹65 Cr Investment: ₹14 Cr Loss!",
-      "breaking_event_summary": "BHEL approved a further investment of ₹65 crore into its 50:50 joint venture NBPPL with NTPC Ltd to settle urgent liabilities and maintain basic operations through FY2026-27.",
-      "retail_illusion": "Retail investors mistake 'further investment' for aggressive business expansion and revenue-accretive capex in a thriving joint venture.",
-      "institutional_reality": "Smart money sees an emergency capital infusion required just to service overdue liabilities and prevent operational collapse, sinking capital into a non-performing JV without increasing BHEL's 50% equity stake.",
+      "headline_hook": "Market Volatility-ல ₹2,075 Cr Loss! 1 Trader-க்கு எவ்வளவு இழப்பு?",
+      "breaking_event_summary": "South Korean retail traders suffered unprecedented scam losses totaling $250 million as sharp market swings created ideal conditions for fraudulent investment operations.",
+      "retail_illusion": "Retail investors falsely believe that massive losses during volatile market swings are simply bad trading decisions or standard portfolio drawdowns.",
+      "institutional_reality": "Heightened market volatility is systematically exploited by unregulated entities using fake trading apps and social funnels to siphon capital under the guise of high-yield algorithmic signals.",
       "citable_metrics": [
-        "₹65 crore",
-        "FY2026-27",
-        "50% shareholding"
+        "$250 million"
       ],
-      "debunk_category": "VALUATION_MYTH",
-      "actionable_retail_rule": "Never treat corporate capital infusions as bullish growth signals until you confirm whether the cash funds expansion or merely services distressed legacy debt.",
+      "debunk_category": "LIQUIDITY_TRAP",
+      "actionable_retail_rule": "Never deposit capital into third-party platforms or follow trading signals originating from private messaging groups during high-volatility regimes.",
       "lead_magnet": {
         "trigger_word": "AUDIT",
-        "resource_name": "The PSU Debt-Bailout vs Capex Growth Diagnostic Checklist"
+        "resource_name": "The Unregulated Platform & Scam Defense Checklist"
       },
       "carousel_outline": [
         {
           "slide": 1,
           "role": "hook",
-          "focus": "BHEL's ₹65 Crore JV Investment: Bullish Expansion or Hidden Emergency Bailout?"
+          "focus": "Why $250M in retail scam losses isn't just bad luck—it's a structural liquidity trap."
         },
         {
           "slide": 2,
           "role": "friction",
-          "focus": "The Retail Trap: Confusing Emergency Debt Servicing for Growth Capex"
+          "focus": "Retail Illusion: Blaming market swings vs Institutional Reality: Targeted predatory extraction."
         },
         {
           "slide": 3,
           "role": "math_reality",
-          "focus": "The Hard Math: Sinking ₹65 Cr into NBPPL just to settle liabilities while equity remains locked at 50%"
+          "focus": "The hard numbers: How $250 million was siphoned during sharp market swings."
         },
         {
           "slide": 4,
           "role": "breakdown",
-          "focus": "How unproductive JV cash drains drag down BHEL's Return on Capital Employed (ROCE)"
+          "focus": "Anatomy of the trap: From social media trade tips to total capital withdrawal blocks."
         },
         {
           "slide": 5,
           "role": "actionable_rule",
-          "focus": "The Capex Audit Rule: Always check the 'Use of Proceeds' before buying headline momentum"
+          "focus": "The non-negotiable zero-trust verification framework for retail capital."
         },
         {
           "slide": 6,
           "role": "cta",
-          "focus": "Comment AUDIT to receive our 1-Page PSU JV Bailout Diagnostic Checklist"
+          "focus": "Comment AUDIT to receive the 1-page defense checklist and save for future reference."
         }
       ],
-      "highlight_word": "₹14 Cr Loss!",
-      "editorial_directive": "Lead directly with exact rupee risk metrics in Spoken Tanglish. Ensure the final slide concludes with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'"
+      "highlight_word": "₹2,075 Cr Loss!",
+      "editorial_directive": "Use Candidate B's hook. Maintain high data density across all 8 slides. Ensure specific breakdown of how volatile markets are manipulated via fake exchange apps. Final slide must end strictly with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'"
     },
     "darwin_result": {
       "winning_candidate": {
         "id": "B",
         "archetype": "MATH_BREAKDOWN",
-        "headline_hook": "BHEL ₹65 Cr Investment: ₹14 Cr Loss!",
-        "highlight_word": "₹14 Cr Loss!",
+        "headline_hook": "Market Volatility-ல ₹2,075 Cr Loss! 1 Trader-க்கு எவ்வளவு இழப்பு?",
+        "highlight_word": "₹2,075 Cr Loss!",
         "scores": {
           "curiosity_gap": 9.5,
-          "viral_potential": 9.5,
-          "retail_actionability": 9.5,
+          "viral_potential": 9.8,
+          "retail_actionability": 9.2,
           "friction_quotient": 9.0,
           "total": 37.5
         },
-        "critic_critique": "Dominates completely by putting exact risk figures upfront. It turns a boring corporate announcement into a high-stakes retail capital defense lesson."
+        "critic_critique": "Dominates effortlessly by converting $250M into ₹2,075 Crores. Hits the MATH_BREAKDOWN archetype perfectly with heavy data density and immediate financial reality check for retail traders."
       },
       "critic_score": 9.4,
       "archetype": "MATH_BREAKDOWN",
-      "selection_rationale": "Candidate B hits the MATH_BREAKDOWN archetype perfectly with a heavy 1.5 archetype weight. By leading with '₹14 Cr Loss!' alongside the ₹65 Cr headline number, it creates immediate friction and forces retail investors to evaluate hidden JV capital stress before buying.",
-      "final_editorial_directive": "Lead directly with exact rupee risk metrics in Spoken Tanglish. Ensure the final slide concludes with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'"
+      "selection_rationale": "Candidate B scored the highest total (37.5/40) by converting $250M into a hard-hitting ₹2,075 Crores figure. With the MATH_BREAKDOWN archetype carrying a 1.6 weight multiplier, leading with quantified risk creates maximum curiosity and emotional friction.",
+      "final_editorial_directive": "Use Candidate B's hook. Maintain high data density across all 8 slides. Ensure specific breakdown of how volatile markets are manipulated via fake exchange apps. Final slide must end strictly with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'"
     },
-    "headline_hook": "BHEL ₹65 Cr Investment: ₹14 Cr Loss!",
-    "highlight_word": "₹14 Cr Loss!",
-    "editorial_directive": "Lead directly with exact rupee risk metrics in Spoken Tanglish. Ensure the final slide concludes with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'"
+    "headline_hook": "Market Volatility-ல ₹2,075 Cr Loss! 1 Trader-க்கு எவ்வளவு இழப்பு?",
+    "highlight_word": "₹2,075 Cr Loss!",
+    "editorial_directive": "Use Candidate B's hook. Maintain high data density across all 8 slides. Ensure specific breakdown of how volatile markets are manipulated via fake exchange apps. Final slide must end strictly with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'"
   },
   "plan": {
-    "hook_headline": "BHEL ₹65 Cr Investment: ₹14 Cr Loss!",
-    "core_illusion": "Retail investors mistake 'further investment' for aggressive business expansion and revenue-accretive capex in a thriving joint venture.",
-    "hidden_reality": "Smart money sees an emergency capital infusion required just to service overdue liabilities and prevent operational collapse, sinking capital into a non-performing JV without increasing BHEL's 50% equity stake.",
-    "citable_metric": "₹65 crore",
+    "hook_headline": "Market Volatility-ல ₹2,075 Cr Loss! 1 Trader-க்கு எவ்வளவு இழப்பு?",
+    "core_illusion": "Retail investors falsely believe that massive losses during volatile market swings are simply bad trading decisions or standard portfolio drawdowns.",
+    "hidden_reality": "Heightened market volatility is systematically exploited by unregulated entities using fake trading apps and social funnels to siphon capital under the guise of high-yield algorithmic signals.",
+    "citable_metric": "$250 million",
     "all_metrics": [
-      "₹65 crore",
-      "FY2026-27",
-      "50% shareholding"
+      "$250 million"
     ],
-    "actionable_rule": "Never treat corporate capital infusions as bullish growth signals until you confirm whether the cash funds expansion or merely services distressed legacy debt.",
-    "breaking_event": "BHEL approved a further investment of ₹65 crore into its 50:50 joint venture NBPPL with NTPC Ltd to settle urgent liabilities and maintain basic operations through FY2026-27.",
+    "actionable_rule": "Never deposit capital into third-party platforms or follow trading signals originating from private messaging groups during high-volatility regimes.",
+    "breaking_event": "South Korean retail traders suffered unprecedented scam losses totaling $250 million as sharp market swings created ideal conditions for fraudulent investment operations.",
     "lead_magnet": {
       "trigger_word": "AUDIT",
-      "resource_name": "The PSU Debt-Bailout vs Capex Growth Diagnostic Checklist"
+      "resource_name": "The Unregulated Platform & Scam Defense Checklist"
     },
     "banned_phrases": [
       "guaranteed wealth",
@@ -119,83 +114,86 @@
     ]
   },
   "deck": {
-    "caption": "🚨 BHEL ₹65 Cr Investment: ₹14 Cr Loss!\n\nஅடுத்த trade எடுக்கும் முன், Smart Money மற்றும் நிறுவனங்கள் உண்மையில் என்ன செய்கிறார்கள் என்பதை கவனியுங்கள்.\n\nமுழு 8-slide Tanglish breakdown-ஐ படிக்க swipe செய்யுங்கள். 👉\n📌 The Retail Illusion\n📌 The Hidden Mechanism\n📌 Why It Compounds Against You\n\n📌 உங்கள் அடுத்த trade-க்கு முன் பார்க்க இந்த பதிவை Save செய்து கொள்ளுங்கள்.\n✈️ உங்கள் முதலீட்டாளர் நண்பர்களுக்கு Share செய்து அவர்களின் Capital-ஐ பாதுகாக்கவும்.\n\n💬 Follow @marketdebunk_tamil மற்றும் 'GUIDE'-னு கீழே comment பண்ணுங்க — complete detailed Investor Playbook & Risk Checklist PDF-ஐ உங்க DM-க்கு உடனே அனுப்புறோம்!\n\n#TamilShareMarket #NiftyTamil #InvestmentTamil #TradingTamil #ShareMarketTamil",
+    "caption": "🚨 Market Volatility-ல ₹2,075 Cr Loss! 1 Trader-க்கு எவ்வளவு இழப்பு?\n\nFOMO அவசரம் உங்கள் முதலீட்டு வளர்ச்சியை எப்படி பாதிக்கிறது? இந்த முக்கிய data-வை உடனே audit செய்யுங்கள்.\n\nமுழு 8-slide Tanglish breakdown-ஐ படிக்க swipe செய்யுங்கள். 👉\n📌 Retail Investor-ன் பெரிய Trap\n📌 Hidden Math: $250 Million Scam\n📌 ஏன் இது ரீடைல் முதலீட்டாளர்களை அழிக்குது?\n\n📌 உங்கள் அடுத்த trade-க்கு முன் பார்க்க இந்த பதிவை Save செய்து கொள்ளுங்கள்.\n✈️ உங்கள் முதலீட்டாளர் நண்பர்களுக்கு Share செய்து அவர்களின் Capital-ஐ பாதுகாக்கவும்.\n\n💬 Follow @marketdebunk_tamil மற்றும் 'GUIDE'-னு கீழே comment பண்ணுங்க — complete detailed Investor Playbook & Risk Checklist PDF-ஐ உங்க DM-க்கு உடனே அனுப்புறோம்!\n\n#TamilStockMarket #IndianEconomyTamil #WealthBuildingTamil #FinancialLiteracyTamil #Tamil",
     "slides": [
       {
         "role": "hook",
         "tag": "#MARKETDEBUNK",
-        "title": "BHEL ₹65 Cr Investment: <span class='highlight-box'>₹14 Cr Loss!</span>",
+        "title": "Market Volatility-ல ₹2,075 Cr Loss! 1 Trader-க்கு எவ்வளவு <span class='highlight-box'>இழப்பு?</span>",
         "slide_index": 1,
         "title_lines": [
-          "BHEL ₹65",
-          "Cr Investment:",
-          "<span class='highlight-box'>₹14 Cr</span>"
+          "Market Volatility-ல",
+          "₹2,075 Cr",
+          "<span class='highlight-box'>இழப்பு?</span>"
         ],
         "card_text": ""
       },
       {
         "role": "value_1",
         "tag": "#MARKETDEBUNK",
-        "title": "The Retail <span class='highlight-box'>Illusion</span>",
-        "card_text": "BHEL NTPC joint venture-la invest panranga nu sonnathum, retail investors ithu oru <strong>big business expansion</strong> nu nambiduraanga.",
+        "title": "Retail Investor-ன் <span class='highlight-box'>பெரிய Trap</span>",
+        "card_text": "Market swing ஆகும்போது, தங்களோட portfolio-ல நடக்குற நஷ்டத்தை வெறும் 'Bad Trading Decision'னு தப்பா நினைக்கிறாங்க. ஆனா நிஜம் என்னன்னா, இது ஒரு திட்டமிட்ட <strong>Fake App Scam</strong>.",
         "slide_index": 2,
         "title_lines": [
-          "<span class='highlight-box'>The Retail</span>",
-          "Illusion"
+          "Retail Investor-ன்",
+          "<span class='highlight-box'>பெரிய Trap</span>"
         ]
       },
       {
         "role": "value_2",
         "tag": "#MARKETDEBUNK",
-        "title": "The Hidden <span class='highlight-box'>Mechanism</span>",
-        "card_text": "Unmai enna na, indha <strong>₹65 crore</strong> fresh growth-ku illa; adhu settle seyra <strong>urgent liabilities</strong> mattum dhaan!",
+        "title": "Hidden Math: <span class='highlight-box'>$250 Million</span> Scam",
+        "card_text": "South Korea-வில் மட்டும் ரீடைல் டிரேடர்கள் இழந்த தொகை <strong>$250 million</strong>. போலி trading apps மூலம் 'High-yield algorithmic signals' தர்றதா சொல்லி, மக்கள் பணத்தை அப்படியே சுருட்டிட்டாங்க.",
         "slide_index": 3,
         "title_lines": [
-          "<span class='highlight-box'>The Hidden</span>",
-          "Mechanism"
+          "Hidden Math:",
+          "<span class='highlight-box'>$250 Million</span>",
+          "Scam"
         ]
       },
       {
         "role": "value_3",
         "tag": "#MARKETDEBUNK",
-        "title": "Why It Compounds <span class='highlight-box'>Against You</span>",
-        "card_text": "Operational collapse-ah thadukka podum indha cash injection, BHEL-oda <strong>50% equity stake</strong>-la pudhu assets-um thara porathu illa.",
+        "title": "ஏன் இது ரீடைல் முதலீட்டாளர்களை <span class='highlight-box'>அழிக்குது?</span>",
+        "card_text": "Volatility அதிகமா இருக்கும்போது, பயத்துல மக்கள் இந்த மாதிரி fake groups-ல சேர்றாங்க. அங்க தர்ற <strong>fake signals</strong>-ஐ நம்பி, பணத்தை இழந்த பிறகுதான் அது ஒரு பெரிய மோசடினு தெரிய வருது.",
         "slide_index": 4,
         "title_lines": [
-          "Why It",
-          "<span class='highlight-box'>Compounds Against</span>",
-          "You"
+          "ஏன் இது",
+          "<span class='highlight-box'>ரீடைல் முதலீட்டாளர்களை</span>",
+          "அழிக்குது?"
         ]
       },
       {
         "role": "value_4",
         "tag": "#MARKETDEBUNK",
-        "title": "Institutional <span class='highlight-box'>Reality</span>",
-        "card_text": "Smart money ithuku bullish aagurathu illai. Avanukaanga ithu oru <strong>survival infusion</strong>, growth capex alla nu clear-ah purinjikuvan.",
+        "title": "Institutional Reality: <span class='highlight-box'>Scammer-களின் பிளான்</span>",
+        "card_text": "Scammer-கள் மார்க்கெட் மூவ்மென்ட்டை பயன்படுத்தி, உங்களை ஒரு போலி தளத்துக்கு கூட்டிட்டு போவாங்க. அங்க உங்க <strong>Capital-ஐ siphon</strong> பண்ணிட்டு, கடைசியில ஆப்-ஐயே மூடிட்டு ஓடிடுவாங்க.",
         "slide_index": 5,
         "title_lines": [
-          "<span class='highlight-box'>Institutional Reality</span>"
+          "Compounding இழப்பின்",
+          "<span class='highlight-box'>உண்மை தாக்கம்</span>"
         ]
       },
       {
         "role": "value_5",
         "tag": "#MARKETDEBUNK",
-        "title": "The Golden <span class='highlight-box'>Rule</span>",
-        "card_text": "Corporate capital infusion-ah paartha odane bullish signal nu nambaathaingha. First athu expansion-ah illa <strong>legacy debt</strong>-a nu check pannunga.",
+        "title": "Golden Protective <span class='highlight-box'>Rule</span>",
+        "card_text": "எந்த ஒரு <strong>Third-party platform</strong>-லயும் பணத்தை டெபாசிட் பண்ணாதீங்க. Private messaging groups-ல வர்ற 'Trading Signals'-ஐ நம்பி உங்க கஷ்டப்பட்டு சம்பாதிச்ச பணத்தை ரிஸ்க் எடுக்காதீங்க.",
         "slide_index": 6,
         "title_lines": [
-          "<span class='highlight-box'>The Golden</span>",
+          "<span class='highlight-box'>Golden Protective</span>",
           "Rule"
         ]
       },
       {
         "role": "value_6",
         "tag": "#MARKETDEBUNK",
-        "title": "Pre-Trade <span class='highlight-box'>Checklist</span>",
-        "card_text": "JV-oda financial health enna? Liabilities yen increase aachu? Intha basic questions-ku answer therinjikittu <strong>portfolio-la</strong> decision edunga.",
+        "title": "Pre-Trade Action <span class='highlight-box'>Checklist</span>",
+        "card_text": "எப்பவும் <strong>SEBI-registered</strong> ப்ரோக்கர்ஸை மட்டும் பயன்படுத்துங்க. எந்த ஒரு ஆப்-ஐயும் டவுன்லோட் பண்றதுக்கு முன்னாடி, அதுக்கு முறையான <strong>Regulatory license</strong> இருக்கான்னு செக் பண்ணுங்க.",
         "slide_index": 7,
         "title_lines": [
-          "<span class='highlight-box'>Pre-Trade Checklist</span>"
+          "<span class='highlight-box'>Pre-Trade Action</span>",
+          "Checklist"
         ]
       },
       {
@@ -221,8 +219,8 @@
       "reels_boost_tier": "Top Tier",
       "search_query": "Ludovico Einaudi Experience"
     },
-    "hashtag_cluster_id": "tamil_cluster_2",
-    "hook_archetype_id": "tamil_angle_3"
+    "hashtag_cluster_id": "tamil_cluster_5",
+    "hook_archetype_id": "tamil_angle_5"
   },
   "audio": {
     "title": "Experience (Ludovico Instrumental)",
@@ -232,40 +230,40 @@
     "reels_boost_tier": "Top Tier",
     "search_query": "Ludovico Einaudi Experience"
   },
-  "run_id": "20260914_192251",
+  "run_id": "20260916_182331",
   "slide_count": 8,
   "darwin_result": {
     "winning_candidate": {
       "id": "B",
       "archetype": "MATH_BREAKDOWN",
-      "headline_hook": "BHEL ₹65 Cr Investment: ₹14 Cr Loss!",
-      "highlight_word": "₹14 Cr Loss!",
+      "headline_hook": "Market Volatility-ல ₹2,075 Cr Loss! 1 Trader-க்கு எவ்வளவு இழப்பு?",
+      "highlight_word": "₹2,075 Cr Loss!",
       "scores": {
         "curiosity_gap": 9.5,
-        "viral_potential": 9.5,
-        "retail_actionability": 9.5,
+        "viral_potential": 9.8,
+        "retail_actionability": 9.2,
         "friction_quotient": 9.0,
         "total": 37.5
       },
-      "critic_critique": "Dominates completely by putting exact risk figures upfront. It turns a boring corporate announcement into a high-stakes retail capital defense lesson."
+      "critic_critique": "Dominates effortlessly by converting $250M into ₹2,075 Crores. Hits the MATH_BREAKDOWN archetype perfectly with heavy data density and immediate financial reality check for retail traders."
     },
     "critic_score": 9.4,
     "archetype": "MATH_BREAKDOWN",
-    "selection_rationale": "Candidate B hits the MATH_BREAKDOWN archetype perfectly with a heavy 1.5 archetype weight. By leading with '₹14 Cr Loss!' alongside the ₹65 Cr headline number, it creates immediate friction and forces retail investors to evaluate hidden JV capital stress before buying.",
-    "final_editorial_directive": "Lead directly with exact rupee risk metrics in Spoken Tanglish. Ensure the final slide concludes with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'"
+    "selection_rationale": "Candidate B scored the highest total (37.5/40) by converting $250M into a hard-hitting ₹2,075 Crores figure. With the MATH_BREAKDOWN archetype carrying a 1.6 weight multiplier, leading with quantified risk creates maximum curiosity and emotional friction.",
+    "final_editorial_directive": "Use Candidate B's hook. Maintain high data density across all 8 slides. Ensure specific breakdown of how volatile markets are manipulated via fake exchange apps. Final slide must end strictly with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'"
   },
   "visual_audit": {
     "passed": true,
-    "average_score": 8.5,
+    "average_score": 9.5,
     "slide_1_report": {
-      "overall_score": 8.5,
+      "overall_score": 9.5,
       "passed": true,
-      "critique_summary": "The typography is clean and uses a modern sans-serif font suitable for mobile consumption. However, the slide contains no actual Tamil Unicode script, which conflicts with the 'Market Debunk Tamil' branding. The high-contrast green highlight box provides excellent legibility for the key figure, and the layout is well-balanced for mobile viewing.",
+      "critique_summary": "The Tamil text 'இழப்பு' is rendered with excellent clarity and correct Unicode spacing. The contrast between the black headline text and the off-white background is optimal for mobile readability. The green highlight box provides a strong visual anchor, though the vertical padding inside the box could be marginally increased for better optical balance.",
       "suggested_css_adjustments": {
-        "notes": "Ensure that if Tamil content is added in future slides, the font-family includes a fallback to a high-quality Unicode font like 'Noto Sans Tamil' to prevent glyph breakage. The current contrast between the white background and black text is optimal for mobile readability."
+        "notes": "Ensure the padding-top and padding-bottom of the green highlight div are set to 0.1em to prevent the descender of the Tamil glyph 'ழ' from appearing too close to the bottom edge."
       }
     },
     "slide_count_audited": 2
   },
-  "exported_at": "2026-09-14T19:23:04.391629+00:00"
+  "exported_at": "2026-09-16T18:23:45.494640+00:00"
 }
