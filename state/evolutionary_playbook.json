@@ -1,9 +1,9 @@
 {
   "version": "2.0.0",
-  "total_cycles_recorded": 6,
+  "total_cycles_recorded": 7,
   "archetype_weights": {
     "SHOCKING_MYTH": 1.3,
-    "MATH_BREAKDOWN": 1.6,
+    "MATH_BREAKDOWN": 1.58,
     "INSTITUTIONAL_SECRET": 1.1
   },
   "learned_rules": [
@@ -16,7 +16,8 @@
     "Candidate B dominates on data density and retail actionability. By taking the headline earnings surge of 78.86% and grou",
     "Candidate B dominates by combining the strict 6-word punchy Tanglish hook constraint with quantified risk ('₹1.5 லட்சம் ",
     "Candidate B hits the MATH_BREAKDOWN archetype perfectly with a heavy 1.5 archetype weight. By leading with '₹14 Cr Loss!",
-    "Candidate B scored the highest total (37.5/40) by converting $250M into a hard-hitting ₹2,075 Crores figure. With the MA"
+    "Candidate B scored the highest total (37.5/40) by converting $250M into a hard-hitting ₹2,075 Crores figure. With the MA",
+    "Candidate B wins because it perfectly aligns with the Tanglish audience's preference for 'hard numbers over fluff.' It c"
   ],
   "cycle_history": [
     {
@@ -72,6 +73,15 @@
       "critic_score": 9.4,
       "visual_score": 9.5,
       "key_learning": "Candidate B scored the highest total (37.5/40) by converting $250M into a hard-hitting ₹2,075 Crores figure. With the MA"
+    },
+    {
+      "cycle": 7,
+      "timestamp": "2026-09-18T14:32:01.252538+00:00",
+      "topic": "3-year SIP returns remain subdued: How 11 equity mutual fund categories performe",
+      "winning_archetype": "MATH_BREAKDOWN",
+      "critic_score": 9.0,
+      "visual_score": 3.8,
+      "key_learning": "Candidate B wins because it perfectly aligns with the Tanglish audience's preference for 'hard numbers over fluff.' It c"
     }
   ]
 }
