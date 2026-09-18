@@ -1,19 +1,20 @@
 {
-  "timestamp": "2026-09-16T18:25:00.679434+00:00",
+  "timestamp": "2026-09-18T14:33:20.410316+00:00",
   "phase": "PUBLISHING",
   "platform": "Instagram",
   "severity": "CRITICAL",
   "error_code": "ERR_META_API",
-  "root_cause_analysis": "Instagram Graph API request failed with error code 4 and subcode 2207051 ('Action is blocked'). The account or application has triggered Meta's rate limits or automated security restrictions, blocking further publishing activities.",
+  "root_cause_analysis": "The Instagram Graph API returned a 403-like 'Action is blocked' error (subcode 2207051), indicating that the application or account has exceeded the platform's rate limits or triggered a security threshold for automated posting activity.",
   "reproducibility": "RATE_LIMIT",
   "automated_remediation": {
     "action": "ABORT",
-    "retry_delay_seconds": 0
+    "retry_delay_seconds": 3600
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Log into the Meta Business Manager / Developer Dashboard to inspect active account restrictions or policy warnings.",
-    "Pause automated Instagram publishing workflows for 24 hours to allow the action block to expire.",
-    "Verify that publishing frequency adheres to Instagram Graph API rate limiting guidelines."
+    "Do not attempt immediate retries as this may extend the block duration.",
+    "Verify if the account has been flagged for spam-like behavior in the Meta Business Suite.",
+    "Wait at least 1 hour before attempting to publish again.",
+    "If the issue persists, review the Instagram Graph API rate limit documentation to optimize posting frequency."
   ]
 }
