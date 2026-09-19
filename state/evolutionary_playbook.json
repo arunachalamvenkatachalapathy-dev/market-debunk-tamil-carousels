@@ -1,13 +1,12 @@
 {
   "version": "2.0.0",
-  "total_cycles_recorded": 8,
+  "total_cycles_recorded": 9,
   "archetype_weights": {
     "SHOCKING_MYTH": 1.3,
-    "MATH_BREAKDOWN": 1.63,
+    "MATH_BREAKDOWN": 1.68,
     "INSTITUTIONAL_SECRET": 1.1
   },
   "learned_rules": [
-    "Use phonetic Tamil Unicode for financial loanwords: 'மியூச்சுவல் ஃபண்ட்', 'ரிட்டர்ன்ஸ்', 'டிவிடெண்ட்', 'போர்ட்ஃபோலியோ'.",
     "Slide 1 hook must be strictly 5-8 words in punchy spoken Tanglish rhythm.",
     "Lead with exact rupee figures: '₹34 லட்சம் இழப்பு', '1% கட்டணம்'.",
     "Final slide must end with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'",
@@ -18,7 +17,8 @@
     "Candidate B hits the MATH_BREAKDOWN archetype perfectly with a heavy 1.5 archetype weight. By leading with '₹14 Cr Loss!",
     "Candidate B scored the highest total (37.5/40) by converting $250M into a hard-hitting ₹2,075 Crores figure. With the MA",
     "Candidate B wins because it perfectly aligns with the Tanglish audience's preference for 'hard numbers over fluff.' It c",
-    "Candidate B wins decisively by scoring 38.0/40. It strictly follows the evolutionary weights (MATH_BREAKDOWN: 1.6) by co"
+    "Candidate B wins decisively by scoring 38.0/40. It strictly follows the evolutionary weights (MATH_BREAKDOWN: 1.6) by co",
+    "Candidate B dominates because it transforms a dry brokerage report into a 'what is in it for me' calculation. By quantif"
   ],
   "cycle_history": [
     {
@@ -92,6 +92,15 @@
       "critic_score": 9.5,
       "visual_score": 9.0,
       "key_learning": "Candidate B wins decisively by scoring 38.0/40. It strictly follows the evolutionary weights (MATH_BREAKDOWN: 1.6) by co"
+    },
+    {
+      "cycle": 9,
+      "timestamp": "2026-09-19T17:16:59.400987+00:00",
+      "topic": "ITC stock: 360 ONE maintains BUY, sees 68% upside; here’s why brokerage is bulli",
+      "winning_archetype": "MATH_BREAKDOWN",
+      "critic_score": 8.8,
+      "visual_score": 9.0,
+      "key_learning": "Candidate B dominates because it transforms a dry brokerage report into a 'what is in it for me' calculation. By quantif"
     }
   ]
 }

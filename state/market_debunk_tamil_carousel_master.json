@@ -1,114 +1,118 @@
 {
   "topic": {
-    "title": "Fake AI crypto bot tutorials scam $517K from 22... - Pluang",
+    "title": "ITC stock: 360 ONE maintains BUY, sees 68% upside; here’s why brokerage is bullish",
     "archetype": "market_breaking_news",
     "archetype_name": "Breaking Financial News Debunk",
-    "topic_category": "MARKET_TRAP",
-    "viral_demand_score": 69.0,
-    "source": "Pluang",
-    "source_snippet": "Fake AI crypto bot tutorials scam $517K from 22...&nbsp;&nbsp;Pluang",
-    "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQbkJtdE84LUNxaV9mNjhrekUzdEt6MXBXZy1wSWN1X3NkSDJDU1VxUXNadGlzUkxlcGZ6elJYNEs3eWIxYXZSX2FnUHJWNjBSZklBem45XzJxZEV1bldaSFNHSmVoZmFRc09GMDQ1TGpQcUhqUjAyZGRTSUtwaklsaEtnaHdJbmVRQjNNcVJCbzIxMDh0cXJLelJqSkFHdVVoZktkdEN3?oc=5",
-    "raw_text": "Fake AI crypto bot tutorials scam $517K from 22... - Pluang. Fake AI crypto bot tutorials scam $517K from 22...&nbsp;&nbsp;Pluang",
+    "topic_category": "WEALTH_LEAK",
+    "viral_demand_score": 70.9,
+    "source": "Livemint Markets",
+    "source_snippet": "ITC navigates weakened cigarette volumes due to tax changes but is offsetting losses with price hikes and improving margins. 360 ONE maintains a BUY rating, predicting an upside of 68% with a target price of  ₹440 per share despite a 35% stock decline last year.",
+    "source_url": "https://www.livemint.com/market/stock-market-news/itc-stock-360-one-maintains-buy-sees-65-upside-here-s-why-brokerage-is-bullish-11789814022662.html",
+    "raw_text": "ITC stock: 360 ONE maintains BUY, sees 68% upside; here’s why brokerage is bullish. ITC navigates weakened cigarette volumes due to tax changes but is offsetting losses with price hikes and improving margins. 360 ONE maintains a BUY rating, predicting an upside of 68% with a target price of  ₹440 per share despite a 35% stock decline last year.",
     "numbers_detected": [
-      "$517",
-      "22",
-      "$517",
-      "22"
+      "360",
+      "68%",
+      "360",
+      "68%",
+      "₹440",
+      "35%"
     ],
-    "published_at": "2026-09-18T17:54:14+00:00",
-    "age_hours": 14.2,
-    "retrieved_at": "2026-09-19T08:09:07.246017+00:00",
+    "published_at": "2026-09-19T17:27:07+05:30",
+    "age_hours": 5.3,
+    "retrieved_at": "2026-09-19T17:15:59.348210+00:00",
     "date": "19 Sep 2026",
     "from_live_api": true,
-    "evidence_snapshot": "Source: Pluang | Published: 2026-09-18T17:54:14+00:00 (14.2h ago) | Headline: Fake AI crypto bot tutorials scam $517K from 22... - Pluang | Context: Fake AI crypto bot tutorials scam $517K from 22... - Pluang. Fake AI crypto bot tutorials scam $517K from 22...&nbsp;&nbsp;Pluang",
+    "evidence_snapshot": "Source: Livemint Markets | Published: 2026-09-19T17:27:07+05:30 (5.3h ago) | Headline: ITC stock: 360 ONE maintains BUY, sees 68% upside; here’s why brokerage is bullish | Context: ITC stock: 360 ONE maintains BUY, sees 68% upside; here’s why brokerage is bullish. ITC navigates weakened cigarette volumes due to tax changes but is offsetting losses with price hikes and improving margins. 360 ONE maintains a BUY rating, predicting an upside of 68% with a target price of  ₹440 per share despite a 35% stock decline last year.",
     "news_analysis": {
-      "headline_hook": "Fake AI Bot Scam: ₹4.3 Cr Loss Breakdown!",
-      "breaking_event_summary": "Fraudulent tutorials promoting fake AI-powered crypto trading bots have scammed over $517,000 from retail investors through malicious code execution.",
-      "retail_illusion": "Retail investors falsely believe open-source AI trading bots offer an automated algorithmic edge that generates risk-free crypto yields.",
-      "institutional_reality": "Institutional algorithmic trading requires multi-million dollar low-latency infrastructure; public 'plug-and-play' AI bot tutorials are almost exclusively smart contract drainers designed to expropriate wallet keys.",
+      "headline_hook": "ITC 68% growth! 1 lakh investment enna aagum?",
+      "breaking_event_summary": "Brokerage firm 360 ONE reiterated a BUY rating on ITC with an aggressive target price of ₹440, forecasting a 68% upside despite a 35% stock drop over the past year and tax-driven cigarette volume declines.",
+      "retail_illusion": "Retail investors assume a 68% projected upside means an imminent, risk-free mean reversion trade, believing margin improvements from price hikes can permanently offset shrinking consumer volumes.",
+      "institutional_reality": "Institutions recognize that masking volume contraction with price hikes reaches a strict consumer elasticity ceiling under persistent tax headwinds. Bullish price targets often anchor to historical terminal multiples rather than structural volume compression, creating exit liquidity for institutional rebalancing.",
       "citable_metrics": [
-        "$517K",
-        "22"
+        "68% upside",
+        "₹440 per share target price",
+        "35% stock decline last year"
       ],
-      "debunk_category": "LIQUIDITY_TRAP",
-      "actionable_retail_rule": "Never deploy or execute code from video tutorials or third-party repositories without auditing smart contract function approvals and token allowance permissions.",
+      "debunk_category": "VALUATION_MYTH",
+      "actionable_retail_rule": "Never buy an equity solely on a brokerage percentage upside; verify whether top-line growth is driven by genuine unit volume expansion or defensive price hikes masking demand erosion.",
       "lead_magnet": {
         "trigger_word": "AUDIT",
-        "resource_name": "The 1-Page Crypto AI Bot & Wallet Security Checklist"
+        "resource_name": "The Brokerage Target Price Reality Checklist"
       },
       "carousel_outline": [
         {
           "slide": 1,
           "role": "hook",
-          "focus": "The $517K Crypto AI Trap: Why Free Trading Bots Are Draining Wallets"
+          "focus": "Why 360 ONE's 68% ITC Target Price (₹440) Is a Classic Retail Anchor Trap"
         },
         {
           "slide": 2,
           "role": "friction",
-          "focus": "Retail Illusion (Easy Passive Income) vs Reality ($517K Stolen via Malicious Scripts)"
+          "focus": "The 35% Drop vs. The Promise: Why Retail Thinks Price Hikes Solve Volume Pain"
         },
         {
           "slide": 3,
           "role": "math_reality",
-          "focus": "Institutional Algorithmic Trading Math vs Open-Source Contract Drainers"
+          "focus": "The Volume Elasticity Math: The Hidden Margin Ceiling When Core Volumes Decline"
         },
         {
           "slide": 4,
           "role": "breakdown",
-          "focus": "How fake AI code tricks users into giving unlimited token spending approvals"
+          "focus": "How Analyst Target Price Models Ignore Persistent Regulatory Tax Shocks"
         },
         {
           "slide": 5,
           "role": "actionable_rule",
-          "focus": "The Zero-Trust Code Rule: Revoke active approvals and verify contract addresses"
+          "focus": "The 3-Step Valuation Filter: Deconstruct Volume vs. Margin Quality Before Buying"
         },
         {
           "slide": 6,
           "role": "cta",
-          "focus": "Save this post and comment AUDIT for the 1-page wallet security guide"
+          "focus": "Comment AUDIT to get our 1-Page Brokerage Target Price Reality Checklist"
         }
       ],
-      "highlight_word": "₹4.3 Cr Loss",
-      "editorial_directive": "Use spoken Tanglish with bold rupee numbers on Slide 1. Lead immediately with '₹4.3 Cr Losses in fake YouTube AI bot scams' followed by a slide-by-slide mathematical breakdown of malicious smart contracts draining wallet permissions."
+      "highlight_word": "Math Magic",
+      "editorial_directive": "Use high-contrast yellow/black colors for the hook. Ensure the Tanglish is conversational, not formal. Avoid heavy jargon; use 'Profit' instead of 'Capital Appreciation'. Always include a 'swipe to see the math' CTA on slide 1."
     },
     "darwin_result": {
       "winning_candidate": {
         "id": "B",
         "archetype": "MATH_BREAKDOWN",
-        "headline_hook": "Fake AI Bot Scam: ₹4.3 Cr Loss Breakdown!",
-        "highlight_word": "₹4.3 Cr Loss",
+        "headline_hook": "ITC 68% growth! 1 lakh investment enna aagum?",
+        "highlight_word": "Math Magic",
         "scores": {
-          "curiosity_gap": 9.6,
-          "viral_potential": 9.7,
-          "retail_actionability": 9.5,
-          "friction_quotient": 9.2,
-          "total": 38.0
+          "curiosity_gap": 9,
+          "viral_potential": 9,
+          "retail_actionability": 9,
+          "friction_quotient": 8,
+          "total": 35.0
         },
-        "critic_critique": "Dominates by converting $517K directly into ₹4.3 Crores and breaking down the ₹19.5 Lakhs per victim loss. Ultra-dense data with high retail actionability."
+        "critic_critique": "This hits the sweet spot. Retail investors love seeing their capital projected. The 68% figure creates immediate greed-driven urgency."
       },
-      "critic_score": 9.5,
+      "critic_score": 8.8,
       "archetype": "MATH_BREAKDOWN",
-      "selection_rationale": "Candidate B wins decisively by scoring 38.0/40. It strictly follows the evolutionary weights (MATH_BREAKDOWN: 1.6) by converting $517K into a high-impact localized figure of ₹4.3 Crores (₹19.5 Lakhs per victim loss). It delivers hard numbers over fluff with a punchy 6-word Tanglish hook.",
-      "final_editorial_directive": "Use spoken Tanglish with bold rupee numbers on Slide 1. Lead immediately with '₹4.3 Cr Losses in fake YouTube AI bot scams' followed by a slide-by-slide mathematical breakdown of malicious smart contracts draining wallet permissions."
+      "selection_rationale": "Candidate B dominates because it transforms a dry brokerage report into a 'what is in it for me' calculation. By quantifying the 68% upside against a ₹1 Lakh base, it triggers the exact greed-based FOMO required for viral engagement in the Tamil finance community.",
+      "final_editorial_directive": "Use high-contrast yellow/black colors for the hook. Ensure the Tanglish is conversational, not formal. Avoid heavy jargon; use 'Profit' instead of 'Capital Appreciation'. Always include a 'swipe to see the math' CTA on slide 1."
     },
-    "headline_hook": "Fake AI Bot Scam: ₹4.3 Cr Loss Breakdown!",
-    "highlight_word": "₹4.3 Cr Loss",
-    "editorial_directive": "Use spoken Tanglish with bold rupee numbers on Slide 1. Lead immediately with '₹4.3 Cr Losses in fake YouTube AI bot scams' followed by a slide-by-slide mathematical breakdown of malicious smart contracts draining wallet permissions."
+    "headline_hook": "ITC 68% growth! 1 lakh investment enna aagum?",
+    "highlight_word": "Math Magic",
+    "editorial_directive": "Use high-contrast yellow/black colors for the hook. Ensure the Tanglish is conversational, not formal. Avoid heavy jargon; use 'Profit' instead of 'Capital Appreciation'. Always include a 'swipe to see the math' CTA on slide 1."
   },
   "plan": {
-    "hook_headline": "Fake AI Bot Scam: ₹4.3 Cr Loss Breakdown!",
-    "core_illusion": "Retail investors falsely believe open-source AI trading bots offer an automated algorithmic edge that generates risk-free crypto yields.",
-    "hidden_reality": "Institutional algorithmic trading requires multi-million dollar low-latency infrastructure; public 'plug-and-play' AI bot tutorials are almost exclusively smart contract drainers designed to expropriate wallet keys.",
-    "citable_metric": "$517K",
+    "hook_headline": "ITC 68% growth! 1 lakh investment enna aagum?",
+    "core_illusion": "Retail investors assume a 68% projected upside means an imminent, risk-free mean reversion trade, believing margin improvements from price hikes can permanently offset shrinking consumer volumes.",
+    "hidden_reality": "Institutions recognize that masking volume contraction with price hikes reaches a strict consumer elasticity ceiling under persistent tax headwinds. Bullish price targets often anchor to historical terminal multiples rather than structural volume compression, creating exit liquidity for institutional rebalancing.",
+    "citable_metric": "68% upside",
     "all_metrics": [
-      "$517K",
-      "22"
+      "68% upside",
+      "₹440 per share target price",
+      "35% stock decline last year"
     ],
-    "actionable_rule": "Never deploy or execute code from video tutorials or third-party repositories without auditing smart contract function approvals and token allowance permissions.",
-    "breaking_event": "Fraudulent tutorials promoting fake AI-powered crypto trading bots have scammed over $517,000 from retail investors through malicious code execution.",
+    "actionable_rule": "Never buy an equity solely on a brokerage percentage upside; verify whether top-line growth is driven by genuine unit volume expansion or defensive price hikes masking demand erosion.",
+    "breaking_event": "Brokerage firm 360 ONE reiterated a BUY rating on ITC with an aggressive target price of ₹440, forecasting a 68% upside despite a 35% stock drop over the past year and tax-driven cigarette volume declines.",
     "lead_magnet": {
       "trigger_word": "AUDIT",
-      "resource_name": "The 1-Page Crypto AI Bot & Wallet Security Checklist"
+      "resource_name": "The Brokerage Target Price Reality Checklist"
     },
     "banned_phrases": [
       "guaranteed wealth",
@@ -118,88 +122,87 @@
     ]
   },
   "deck": {
-    "caption": "🚨 YouTube AI Bot Scam: ₹4.3 Cr Loss Breakdown!\n\nஇந்த நகர்வின் பின்னணியில் உள்ள உண்மை நிதி கணக்கீடுகள், டிவி செய்திகள் சொல்வதை விட முற்றிலும் மாறுபட்டவை.\n\nமுழு 8-slide Tanglish breakdown-ஐ படிக்க swipe செய்யுங்கள். 👉\n📌 Free AI Bot-ல Passive Income-ஆ?\n📌 Smart Contract Wallet Drain Scam\n📌 Permissive Code Silent Danger\n\n📌 உங்கள் அடுத்த trade-க்கு முன் பார்க்க இந்த பதிவை Save செய்து கொள்ளுங்கள்.\n✈️ உங்கள் முதலீட்டாளர் நண்பர்களுக்கு Share செய்து அவர்களின் Capital-ஐ பாதுகாக்கவும்.\n\n💬 Follow @marketdebunk_tamil மற்றும் 'GUIDE'-னு கீழே comment பண்ணுங்க — complete detailed Investor Playbook & Risk Checklist PDF-ஐ உங்க DM-க்கு உடனே அனுப்புறோம்!\n\n#TamilFinance #StockMarketTamil #TamilTrading #TamilInvestors #MarketDebunk",
+    "caption": "🚨 ITC 68% Growth! ₹1 Lakh Investment Enna Aagum? Swipe to see the math!\n\nFOMO அவசரம் உங்கள் முதலீட்டு வளர்ச்சியை எப்படி பாதிக்கிறது? இந்த முக்கிய data-வை உடனே audit செய்யுங்கள்.\n\nமுழு 8-slide Tanglish breakdown-ஐ படிக்க swipe செய்யுங்கள். 👉\n📌 Brokerage Report-அ நம்புனீங்களா?\n📌 Price Hike vs Sales Loss\n📌 நமக்கு தெரியாத Hidden Trap\n\n📌 உங்கள் அடுத்த trade-க்கு முன் பார்க்க இந்த பதிவை Save செய்து கொள்ளுங்கள்.\n✈️ உங்கள் முதலீட்டாளர் நண்பர்களுக்கு Share செய்து அவர்களின் Capital-ஐ பாதுகாக்கவும்.\n\n💬 Follow @marketdebunk_tamil மற்றும் 'GUIDE'-னு கீழே comment பண்ணுங்க — complete detailed Investor Playbook & Risk Checklist PDF-ஐ உங்க DM-க்கு உடனே அனுப்புறோம்!\n\n#TamilWealth #PersonalFinanceTamil #TamilBusiness #MoneyTamil #TamilSavings",
     "slides": [
       {
         "role": "hook",
         "tag": "#MARKETDEBUNK",
-        "title": "YouTube AI Bot Scam: <span class='highlight-box'>₹4.3 Cr Loss</span> Breakdown!",
+        "title": "ITC 68% Growth! <span class='highlight-box'>₹1 Lakh Investment</span> Enna Aagum? Swipe to see the math!",
         "slide_index": 1,
         "title_lines": [
-          "YouTube AI",
-          "Bot Scam:",
-          "<span class='highlight-box'>₹4.3 Cr</span>",
-          "Breakdown!"
+          "ITC 68%",
+          "Growth!",
+          "<span class='highlight-box'>₹1 Lakh</span>",
+          "Enna Aagum?"
         ],
         "card_text": ""
       },
       {
         "role": "value_1",
         "tag": "#MARKETDEBUNK",
-        "title": "Free AI Bot-ல <span class='highlight-box'>Passive Income-ஆ?</span>",
-        "card_text": "YouTube tutorials-ல 'Risk-free AI Crypto Bot' நு open-source code குடுப்பாங்க. இத நம்பி deploy பண்ணா <strong>automated profit</strong> வரும்னு retail investors ஏமாறுறாங்க!",
+        "title": "Brokerage Report-அ <span class='highlight-box'>நம்புனீங்களா?</span>",
+        "card_text": "Retail investors 360 ONE சொன்ன <strong>68% upside</strong> பார்த்த உடனே, risk-free profit வரப்போகுது-னு blind-ஆ buy பண்றாங்க. Sales குறைந்தாலும் price hike பண்ணி <strong>Profit</strong> அள்ளிடலாம்-னு நினைக்கறது ஒரு பெரிய ஏமாற்றம்!",
         "slide_index": 2,
         "title_lines": [
-          "Free AI",
-          "<span class='highlight-box'>Bot-ல Passive</span>",
-          "Income-ஆ?"
+          "<span class='highlight-box'>Brokerage Report-அ</span>",
+          "நம்புனீங்களா?"
         ]
       },
       {
         "role": "value_2",
         "tag": "#MARKETDEBUNK",
-        "title": "Smart Contract <span class='highlight-box'>Wallet Drain Scam</span>",
-        "card_text": "இந்த fake bots மூலம் மொத்தமா <strong>$517K</strong> பணம் scam ஆகிருக்கு! நீங்க code run பண்ணும்போதே, உங்க wallet permissions-ஐ hack பண்ணி <strong>total balance-ஐ drain</strong> பண்ணிடுவாங்க.",
+        "title": "Price Hike vs <span class='highlight-box'>Sales Loss</span>",
+        "card_text": "Brokerage target price ₹440 வச்சு <strong>68% upside</strong> Predict பண்றாங்க. ஆனா Tax hikes-ஆல actual cigarette volume சரிஞ்சுகிட்டே இருக்கு! வெறும் <strong>Price hike</strong> மட்டுமே எப்போதுமே Profit-அ காப்பாத்த முடியாது.",
         "slide_index": 3,
         "title_lines": [
-          "Smart Contract",
-          "<span class='highlight-box'>Wallet Drain</span>",
-          "Scam"
+          "Price Hike",
+          "<span class='highlight-box'>vs Sales</span>",
+          "Loss"
         ]
       },
       {
         "role": "value_3",
         "tag": "#MARKETDEBUNK",
-        "title": "Permissive Code <span class='highlight-box'>Silent Danger</span>",
-        "card_text": "Simple algorithmic code மாதிரி தெரியும், ஆனா பின்னால 'Unlimited Token Allowance' permission இருக்கும். ஒரு தடவை <strong>Approve</strong> பண்ணிட்டா, உங்க <strong>crypto portfolio</strong> காலி!",
+        "title": "நமக்கு தெரியாத <span class='highlight-box'>Hidden Trap</span>",
+        "card_text": "விலையை ஏத்திக்கிட்டே இருந்தா ஒரு கட்டத்துல Demand பயங்கரமா குறையும். Sales volume தொடர்ந்து சுருங்கும் போது, நிறுவனத்தோட overall <strong>Profit growth</strong> லாக் ஆகி <strong>Portfolio</strong>-வை பாதிக்கும்.",
         "slide_index": 4,
         "title_lines": [
-          "Permissive Code",
-          "<span class='highlight-box'>Silent Danger</span>"
+          "நமக்கு தெரியாத",
+          "<span class='highlight-box'>Hidden Trap</span>"
         ]
       },
       {
         "role": "value_4",
         "tag": "#MARKETDEBUNK",
-        "title": "Real Algo Trading <span class='highlight-box'>Institutional Truth</span>",
-        "card_text": "Institutional funds கோடி கணக்குல செலவு பண்ணி <strong>low-latency infrastructure</strong> வச்சு தான் algo trade பண்ணுவாங்க. Public-ஆ வர்ற free plug-and-play bots <strong>99% drainer scams</strong> தான்!",
+        "title": "Big Investors <span class='highlight-box'>என்ன பண்றாங்க?</span>",
+        "card_text": "Institutions-க்கு தெரியும் volume reduction ஒரு பெரிய பிரச்சனை-னு! இந்த மாதிரி Bullish targets வரப்ப, retail buyers வர்ற கேப்-ல அவங்க தங்களோட <strong>Exit Liquidity</strong>-ஆ பயன்படுத்தி <strong>Portfolio Rebalance</strong> பண்ணி வெளிய போயிடுவாங்க.",
         "slide_index": 5,
         "title_lines": [
-          "Real Algo",
-          "<span class='highlight-box'>Trading Institutional</span>",
-          "Truth"
+          "Big Investors",
+          "<span class='highlight-box'>என்ன பண்றாங்க?</span>"
         ]
       },
       {
         "role": "value_5",
         "tag": "#MARKETDEBUNK",
-        "title": "Capital Protection <span class='highlight-box'>Golden Rule</span>",
-        "card_text": "Video tutorials அல்லது third-party repository code-ஐ audit பண்ணாம deploy பண்ணாதீங்க. எப்போவும் <strong>smart contract function approvals</strong> மற்றும் token permissions-ஐ check பண்ணுவது கட்டாயம்!",
+        "title": "Golden Rule for <span class='highlight-box'>Smart Investors</span>",
+        "card_text": "வெறும் Brokerage target percentage-அ பார்த்து <strong>Equity Buy பண்ணாதீங்க!</strong> Top-line growth <strong>real unit volume</strong> அதிகமாகறதால வருதா இல்ல defensive price hikes-ஆல வருதா-னு verify பண்ணுங்க.",
         "slide_index": 6,
         "title_lines": [
-          "Capital Protection",
-          "<span class='highlight-box'>Golden Rule</span>"
+          "Golden Rule",
+          "<span class='highlight-box'>for Smart</span>",
+          "Investors"
         ]
       },
       {
         "role": "value_6",
         "tag": "#MARKETDEBUNK",
-        "title": "Safe Crypto <span class='highlight-box'>Action Checklist</span>",
-        "card_text": "1. Unverified GitHub repo-வை trust பண்ணாதீங்க. 2. Revoke.cash மூலமா <strong>active wallet approvals</strong> check பண்ணி revoke பண்ணுங்க. 3. Complete audit இல்லாம <strong>code execute</strong> பண்ணாதீங்க!",
+        "title": "Stock Buy பண்ணும்முன் <span class='highlight-box'>Checklist</span>",
+        "card_text": "1. Company-வோட <strong>Sales Volume Expansion</strong> செக் பண்ணுங்க. 2. Price hike இல்லாம <strong>Profit Margin</strong> நிக்குதா-னு பாருங்க. 3. Target price-அ மட்டும் நம்பி <strong>Lumpsum</strong> போடாதீங்க!",
         "slide_index": 7,
         "title_lines": [
-          "Safe Crypto",
-          "<span class='highlight-box'>Action Checklist</span>"
+          "Stock Buy",
+          "<span class='highlight-box'>பண்ணும்முன் Checklist</span>"
         ]
       },
       {
@@ -218,58 +221,58 @@
     ],
     "fact_check_status": "verified_pass",
     "audio_recommendation": {
-      "title": "Experience (Ludovico Instrumental)",
-      "artist": "Ludovico Einaudi",
-      "bpm": 95,
-      "vibe": "Compounding Breakthrough",
-      "reels_boost_tier": "Top Tier",
-      "search_query": "Ludovico Einaudi Experience"
+      "title": "Cornfield Chase (Interstellar Tension)",
+      "artist": "Hans Zimmer / Dorian Marko",
+      "bpm": 100,
+      "vibe": "Cinematic Tension & Deep Focus",
+      "reels_boost_tier": "High Velocity",
+      "search_query": "Hans Zimmer Cornfield Chase Dorian Marko"
     },
-    "hashtag_cluster_id": "tamil_cluster_1",
-    "hook_archetype_id": "tamil_angle_2"
+    "hashtag_cluster_id": "tamil_cluster_3",
+    "hook_archetype_id": "tamil_angle_5"
   },
   "audio": {
-    "title": "Experience (Ludovico Instrumental)",
-    "artist": "Ludovico Einaudi",
-    "bpm": 95,
-    "vibe": "Compounding Breakthrough",
-    "reels_boost_tier": "Top Tier",
-    "search_query": "Ludovico Einaudi Experience"
+    "title": "Cornfield Chase (Interstellar Tension)",
+    "artist": "Hans Zimmer / Dorian Marko",
+    "bpm": 100,
+    "vibe": "Cinematic Tension & Deep Focus",
+    "reels_boost_tier": "High Velocity",
+    "search_query": "Hans Zimmer Cornfield Chase Dorian Marko"
   },
-  "run_id": "20260919_080953",
+  "run_id": "20260919_171648",
   "slide_count": 8,
   "darwin_result": {
     "winning_candidate": {
       "id": "B",
       "archetype": "MATH_BREAKDOWN",
-      "headline_hook": "Fake AI Bot Scam: ₹4.3 Cr Loss Breakdown!",
-      "highlight_word": "₹4.3 Cr Loss",
+      "headline_hook": "ITC 68% growth! 1 lakh investment enna aagum?",
+      "highlight_word": "Math Magic",
       "scores": {
-        "curiosity_gap": 9.6,
-        "viral_potential": 9.7,
-        "retail_actionability": 9.5,
-        "friction_quotient": 9.2,
-        "total": 38.0
+        "curiosity_gap": 9,
+        "viral_potential": 9,
+        "retail_actionability": 9,
+        "friction_quotient": 8,
+        "total": 35.0
       },
-      "critic_critique": "Dominates by converting $517K directly into ₹4.3 Crores and breaking down the ₹19.5 Lakhs per victim loss. Ultra-dense data with high retail actionability."
+      "critic_critique": "This hits the sweet spot. Retail investors love seeing their capital projected. The 68% figure creates immediate greed-driven urgency."
     },
-    "critic_score": 9.5,
+    "critic_score": 8.8,
     "archetype": "MATH_BREAKDOWN",
-    "selection_rationale": "Candidate B wins decisively by scoring 38.0/40. It strictly follows the evolutionary weights (MATH_BREAKDOWN: 1.6) by converting $517K into a high-impact localized figure of ₹4.3 Crores (₹19.5 Lakhs per victim loss). It delivers hard numbers over fluff with a punchy 6-word Tanglish hook.",
-    "final_editorial_directive": "Use spoken Tanglish with bold rupee numbers on Slide 1. Lead immediately with '₹4.3 Cr Losses in fake YouTube AI bot scams' followed by a slide-by-slide mathematical breakdown of malicious smart contracts draining wallet permissions."
+    "selection_rationale": "Candidate B dominates because it transforms a dry brokerage report into a 'what is in it for me' calculation. By quantifying the 68% upside against a ₹1 Lakh base, it triggers the exact greed-based FOMO required for viral engagement in the Tamil finance community.",
+    "final_editorial_directive": "Use high-contrast yellow/black colors for the hook. Ensure the Tanglish is conversational, not formal. Avoid heavy jargon; use 'Profit' instead of 'Capital Appreciation'. Always include a 'swipe to see the math' CTA on slide 1."
   },
   "visual_audit": {
     "passed": true,
     "average_score": 9.0,
     "slide_1_report": {
-      "overall_score": 9.5,
+      "overall_score": 8.5,
       "passed": true,
-      "critique_summary": "The slide features excellent typographical hierarchy. While the content is primarily in English, the brand name 'Market Debunk Tamil' is rendered cleanly without any rendering artifacts. The headline utilizes a bold sans-serif typeface that provides high readability, and the green highlight box for the monetary value effectively draws the eye. The visual balance is professional and well-optimized for a mobile social media feed.",
+      "critique_summary": "The typography is highly effective for a mobile carousel format with bold, high-contrast sans-serif weighting. The Tamil script in the headline 'Enna Aagum?' is rendered clearly without overlapping issues. However, the contrast between the white text and the bright green background of the highlight box could be slightly improved by increasing the font-weight of '₹1 Lakh' for better readability at smaller device sizes.",
       "suggested_css_adjustments": {
-        "notes": "The current layout is optimal; however, for future accessibility, ensuring the green background of the highlight box meets WCAG contrast ratios against the white text would be the only technical recommendation for long-term consistency."
+        "notes": "Ensure the font-weight for the text inside the highlight box is set to '800' or higher to maintain legibility against the green background. Ensure the font-family used supports proper ligature rendering for the Tamil script if transitioning to dynamic text."
       }
     },
     "slide_count_audited": 2
   },
-  "exported_at": "2026-09-19T08:10:01.730277+00:00"
+  "exported_at": "2026-09-19T17:16:59.401710+00:00"
 }
