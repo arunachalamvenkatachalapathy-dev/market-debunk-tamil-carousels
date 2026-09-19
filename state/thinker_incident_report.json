@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-09-19T08:11:13.405506+00:00",
+  "timestamp": "2026-09-19T17:18:09.014465+00:00",
   "phase": "PUBLISHING",
   "platform": "Instagram",
   "severity": "CRITICAL",
   "error_code": "ERR_META_API",
-  "root_cause_analysis": "The Instagram Graph API returned a 429-like 'Application request limit reached' error (code 4, subcode 2207051), indicating that the account or application has exceeded the allowed frequency of publishing actions, triggering a temporary security block.",
+  "root_cause_analysis": "Meta API application request limit reached and action blocked (OAuthException code 4, subcode 2207051). Meta has flagged or temporarily restricted automated publishing activity on the account.",
   "reproducibility": "RATE_LIMIT",
   "automated_remediation": {
     "action": "ABORT",
-    "retry_delay_seconds": 3600
+    "retry_delay_seconds": 0
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Do not attempt manual retries for at least 60 minutes to allow the platform's rate-limiting window to reset.",
-    "Review the publishing frequency logs to ensure the automation script is not triggering multiple concurrent requests.",
-    "If the block persists beyond 24 hours, verify the account status in the Meta Business Suite for any manual review flags."
+    "Log into the Instagram app or Meta Business Suite for 'Market Debunk Tamil' to verify if a manual security challenge or policy violation warning needs acknowledgement.",
+    "Pause automated publishing scripts for at least 24 hours to allow the Meta action block/rate limit window to expire.",
+    "Check Meta Developer Portal application dashboard for API rate limit usage graphs and appeal any false-positive spam blocks if prompted."
   ]
 }
