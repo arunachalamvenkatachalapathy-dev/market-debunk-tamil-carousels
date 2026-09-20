@@ -1,19 +1,20 @@
 {
-  "timestamp": "2026-09-20T08:44:18.875798+00:00",
+  "timestamp": "2026-09-20T17:30:05.915879+00:00",
   "phase": "PUBLISHING",
   "platform": "Instagram",
   "severity": "CRITICAL",
   "error_code": "ERR_META_API",
-  "root_cause_analysis": "Meta Graph API rate limit reached and action blocked by community protection mechanisms (OAuthException Code 4, Subcode 2207051).",
+  "root_cause_analysis": "Meta Graph API request blocked with error code 4 (Application request limit reached) and subcode 2207051 ('Action is blocked' / spam/anti-abuse protection trigger). The account or app has hit rate limits or automated action restrictions enforced by Instagram community protection systems.",
   "reproducibility": "RATE_LIMIT",
   "automated_remediation": {
-    "action": "RETRY_AFTER_DELAY",
-    "retry_delay_seconds": 3600
+    "action": "ABORT",
+    "retry_delay_seconds": 0
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Pause automated publishing pipeline for at least 60 minutes to clear Meta API rate limits.",
-    "Inspect Meta Developer Portal and Instagram Business Suite for any active account flags or action restrictions.",
-    "Review API call frequency to ensure posting intervals comply with Meta application rate limits."
+    "Check Meta App Dashboard and Instagram Professional Account status for policy violations or integrity blocks.",
+    "Submit an appeal via the Meta Business Manager or Instagram app ('Tell us if you think that we've made a mistake') if flagged incorrectly.",
+    "Pause automated publishing to Instagram for at least 24 hours to allow temporary anti-abuse block cooldown to expire.",
+    "Verify publishing frequency and reduce posting intervals to avoid triggering anti-spam rate limit thresholds."
   ]
 }
