@@ -1,116 +1,110 @@
 {
   "topic": {
-    "title": "Top stocks to buy under  ₹200: Castrol, NHPC, Vikram Solar - 3 shares by Anand Rathi‘s Mehul Kothari; target, stop-loss",
+    "title": "Kerala Police Warn of Fake Hospital Appointment APK Scams Targeting Patients Through Google Search - the420.in",
     "archetype": "market_breaking_news",
     "archetype_name": "Breaking Financial News Debunk",
     "topic_category": "MARKET_TRAP",
-    "viral_demand_score": 67.2,
-    "source": "Livemint Markets",
-    "source_snippet": "Kothari warns that a close below 55,500 may lead to increased selling pressure. He sees 57,000 as a key resistance for Bank Nifty. Recommended stocks under  ₹200 include Castrol India, NHPC, and Vikram Solar, with specific targets and stop losses provided.",
-    "source_url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-buy-under-rs-200-castrol-nhpc-vikram-solar-3-shares-by-anand-rathi-s-mehul-kothari-target-stoploss-11789809341916.html",
-    "raw_text": "Top stocks to buy under  ₹200: Castrol, NHPC, Vikram Solar - 3 shares by Anand Rathi‘s Mehul Kothari; target, stop-loss. Kothari warns that a close below 55,500 may lead to increased selling pressure. He sees 57,000 as a key resistance for Bank Nifty. Recommended stocks under  ₹200 include Castrol India, NHPC, and Vikram Solar, with specific targets and stop losses provided.",
+    "viral_demand_score": 62.0,
+    "source": "the420.in",
+    "source_snippet": "Kerala Police Warn of Fake Hospital Appointment APK Scams Targeting Patients Through Google Search&nbsp;&nbsp;the420.in",
+    "source_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBydWZsWGhpbnFYbWRVaWFiNVRycWUwV3Z0WTlXNjE5NGZKbHR6eWxCWDJOeFdvd3RKOWZKWHJ0OUFmeWZkaUp5U0YwdEdKS0thMXAzRzk3VkxUTERULS1XemdfZ016cnBvdFRnT0tJLUQ4ZHM?oc=5",
+    "raw_text": "Kerala Police Warn of Fake Hospital Appointment APK Scams Targeting Patients Through Google Search - the420.in. Kerala Police Warn of Fake Hospital Appointment APK Scams Targeting Patients Through Google Search&nbsp;&nbsp;the420.in",
     "numbers_detected": [
-      "₹200",
-      "55,500",
-      "57,000",
-      "₹200"
+      "420",
+      "420"
     ],
-    "published_at": "2026-09-19T09:44:11+00:00",
-    "age_hours": 23.0,
-    "retrieved_at": "2026-09-20T08:41:57.576496+00:00",
+    "published_at": "2026-09-20T17:20:12+00:00",
+    "age_hours": 0.1,
+    "retrieved_at": "2026-09-20T17:27:45.924066+00:00",
     "date": "20 Sep 2026",
     "from_live_api": true,
-    "evidence_snapshot": "Source: Livemint Markets | Published: 2026-09-19T09:44:11+00:00 (23.0h ago) | Headline: Top stocks to buy under  ₹200: Castrol, NHPC, Vikram Solar - 3 shares by Anand Rathi‘s Mehul Kothari; target, stop-loss | Context: Top stocks to buy under  ₹200: Castrol, NHPC, Vikram Solar - 3 shares by Anand Rathi‘s Mehul Kothari; target, stop-loss. Kothari warns that a close below 55,500 may lead to increased selling pressure. He sees 57,000 as a key resistance for Bank Nifty. Recommended stocks under  ₹200 include Castrol India, NHPC, and Vikram Solar, with specific targets and stop losses provided.",
+    "evidence_snapshot": "Source: the420.in | Published: 2026-09-20T17:20:12+00:00 (0.1h ago) | Headline: Kerala Police Warn of Fake Hospital Appointment APK Scams Targeting Patients Through Google Search - the420.in | Context: Kerala Police Warn of Fake Hospital Appointment APK Scams Targeting Patients Through Google Search - the420.in. Kerala Police Warn of Fake Hospital Appointment APK Scams Targeting Patients Through Google Search&nbsp;&nbsp;the420.in",
     "news_analysis": {
-      "headline_hook": "₹200 Stocks-ல ₹45,000 Profit Math!",
-      "breaking_event_summary": "Anand Rathi analyst Mehul Kothari issued buy recommendations for Castrol, NHPC, and Vikram Solar under ₹200, while warning that a Bank Nifty close below 55,500 could unleash broader market selling pressure.",
-      "retail_illusion": "Retail investors falsely equate a low unit share price (under ₹200) with a cheap valuation, believing lower nominal prices offer a safer margin of safety and higher explosive upside.",
-      "institutional_reality": "Unit price is a cosmetic metric; institutional algorithms trade on Enterprise Value, earnings yield, and systemic index support. A Bank Nifty break below 55,500 triggers automated risk-off selling that crushes high-beta, retail-heavy 'cheap' stocks regardless of target prices.",
+      "headline_hook": "Oru click-la ₹5 Lakhs varai loss? APK Scam math-ah paarunga!",
+      "breaking_event_summary": "Kerala Police issued a formal warning regarding cybercriminals using malicious APK files disguised as hospital appointment booking apps to compromise retail user devices via Google Search results.",
+      "retail_illusion": "Retail investors assume this is just a 'tech issue' for the elderly or non-tech savvy, ignoring that these breaches are the primary vector for draining linked UPI and banking apps.",
+      "institutional_reality": "Institutions view this as a systemic failure in 'Zero Trust' architecture; the real threat isn't the fake app, but the 'overlay attack' that captures banking credentials, bypassing 2FA by intercepting SMS permissions.",
       "citable_metrics": [
-        "₹200",
-        "55,500",
-        "57,000"
+        "2026-09-20T17:20:12+00:00"
       ],
-      "debunk_category": "VALUATION_MYTH",
-      "actionable_retail_rule": "Never purchase equity based on nominal price per share; evaluate market cap, structural support levels, and index macro risk before entering stop-loss orders.",
+      "debunk_category": "LIQUIDITY_TRAP",
+      "actionable_retail_rule": "Never install APKs from search engine results; only use official app stores and verify the developer name against the hospital's official website domain.",
       "lead_magnet": {
         "trigger_word": "AUDIT",
-        "resource_name": "The Low-Unit-Price Stock Risk & Valuation Checklist"
+        "resource_name": "The 5-Point Digital Asset Protection Audit"
       },
       "carousel_outline": [
         {
           "slide": 1,
           "role": "hook",
-          "focus": "Why Buying Stocks Just Because They Are 'Under ₹200' Is a Mathematical Trap"
+          "focus": "Why your hospital appointment search is a gateway for hackers"
         },
         {
           "slide": 2,
           "role": "friction",
-          "focus": "The Retail Illusion: Believing ₹200 shares are cheap while ignoring total market valuation and market trends"
+          "focus": "Retail thinks it's a nuisance; Reality is it's a full account takeover"
         },
         {
           "slide": 3,
           "role": "math_reality",
-          "focus": "Bank Nifty's 55,500 support vs 57,000 resistance: The real institutional liquidity boundary"
+          "focus": "The mechanics of overlay attacks and SMS permission hijacking"
         },
         {
           "slide": 4,
           "role": "breakdown",
-          "focus": "How algorithmic selling triggered below 55,500 traps retail traders holding low-price recommendations"
+          "focus": "How one malicious APK bypasses your bank's security protocols"
         },
         {
           "slide": 5,
           "role": "actionable_rule",
-          "focus": "The Non-Negotiable Rule: Sizing positions by stop-loss delta rather than nominal share price"
+          "focus": "The Golden Rule: Verify the source, ignore the search result"
         },
         {
           "slide": 6,
           "role": "cta",
-          "focus": "Comment AUDIT to get our Low-Unit-Price Stock Risk Checklist and save this post"
+          "focus": "Comment AUDIT to secure your portfolio access"
         }
       ],
-      "highlight_word": "Profit Math",
-      "editorial_directive": "Use strict 6-word Tanglish hooks on Slide 1. Break down Castrol, NHPC, and Vikram Solar with exact Stop-Loss and Target numbers in rupees. Highlight precise risk-reward metrics using high-contrast highlight boxes."
+      "highlight_word": "Zero Balance",
+      "editorial_directive": "Use punchy, short sentences. Avoid formal Tamil; use colloquial Tanglish (e.g., 'Panreengala', 'Paarunga', 'Loss-ah'). Ensure the math breakdown slide uses bold, large font for the rupee figures to maximize stop-scroll effect."
     },
     "darwin_result": {
       "winning_candidate": {
         "id": "B",
         "archetype": "MATH_BREAKDOWN",
-        "headline_hook": "₹200 Stocks-ல ₹45,000 Profit Math!",
-        "highlight_word": "Profit Math",
+        "headline_hook": "Oru click-la ₹5 Lakhs varai loss? APK Scam math-ah paarunga!",
+        "highlight_word": "Zero Balance",
         "scores": {
-          "curiosity_gap": 9.5,
-          "viral_potential": 9.5,
-          "retail_actionability": 9.5,
-          "friction_quotient": 9.5,
-          "total": 38.0
+          "curiosity_gap": 9,
+          "viral_potential": 10,
+          "retail_actionability": 9,
+          "friction_quotient": 9,
+          "total": 37.0
         },
-        "critic_critique": "Flawless execution of the high-weight MATH_BREAKDOWN archetype. Directly maps Mehul Kothari's targets and stop-losses for Castrol, NHPC, and Vikram Solar into exact risk-reward rupees for a ₹1 Lakh portfolio."
+        "critic_critique": "The math breakdown is brutal and effective. Quantifying the potential loss in rupees is the fastest way to get a Tamil user's attention. Excellent conversion of abstract risk to hard cash."
       },
-      "critic_score": 9.5,
+      "critic_score": 9.2,
       "archetype": "MATH_BREAKDOWN",
-      "selection_rationale": "Candidate B dominates by aligning perfectly with the heavily weighted MATH_BREAKDOWN archetype (1.7 weight). It translates Anand Rathi's brokerage targets and stop-losses into exact rupee profit/loss calculations for retail traders, delivering instant clarity and high actionability.",
-      "final_editorial_directive": "Use strict 6-word Tanglish hooks on Slide 1. Break down Castrol, NHPC, and Vikram Solar with exact Stop-Loss and Target numbers in rupees. Highlight precise risk-reward metrics using high-contrast highlight boxes."
+      "selection_rationale": "Candidate B dominates because it hits the 'wallet nerve.' In the Tamil retail market, translating a cyber threat into a direct financial loss (₹5 Lakhs) creates immediate urgency and high shareability.",
+      "final_editorial_directive": "Use punchy, short sentences. Avoid formal Tamil; use colloquial Tanglish (e.g., 'Panreengala', 'Paarunga', 'Loss-ah'). Ensure the math breakdown slide uses bold, large font for the rupee figures to maximize stop-scroll effect."
     },
-    "headline_hook": "₹200 Stocks-ல ₹45,000 Profit Math!",
-    "highlight_word": "Profit Math",
-    "editorial_directive": "Use strict 6-word Tanglish hooks on Slide 1. Break down Castrol, NHPC, and Vikram Solar with exact Stop-Loss and Target numbers in rupees. Highlight precise risk-reward metrics using high-contrast highlight boxes."
+    "headline_hook": "Oru click-la ₹5 Lakhs varai loss? APK Scam math-ah paarunga!",
+    "highlight_word": "Zero Balance",
+    "editorial_directive": "Use punchy, short sentences. Avoid formal Tamil; use colloquial Tanglish (e.g., 'Panreengala', 'Paarunga', 'Loss-ah'). Ensure the math breakdown slide uses bold, large font for the rupee figures to maximize stop-scroll effect."
   },
   "plan": {
-    "hook_headline": "₹200 Stocks-ல ₹45,000 Profit Math!",
-    "core_illusion": "Retail investors falsely equate a low unit share price (under ₹200) with a cheap valuation, believing lower nominal prices offer a safer margin of safety and higher explosive upside.",
-    "hidden_reality": "Unit price is a cosmetic metric; institutional algorithms trade on Enterprise Value, earnings yield, and systemic index support. A Bank Nifty break below 55,500 triggers automated risk-off selling that crushes high-beta, retail-heavy 'cheap' stocks regardless of target prices.",
-    "citable_metric": "₹200",
+    "hook_headline": "Oru click-la ₹5 Lakhs varai loss? APK Scam math-ah paarunga!",
+    "core_illusion": "Retail investors assume this is just a 'tech issue' for the elderly or non-tech savvy, ignoring that these breaches are the primary vector for draining linked UPI and banking apps.",
+    "hidden_reality": "Institutions view this as a systemic failure in 'Zero Trust' architecture; the real threat isn't the fake app, but the 'overlay attack' that captures banking credentials, bypassing 2FA by intercepting SMS permissions.",
+    "citable_metric": "2026-09-20T17:20:12+00:00",
     "all_metrics": [
-      "₹200",
-      "55,500",
-      "57,000"
+      "2026-09-20T17:20:12+00:00"
     ],
-    "actionable_rule": "Never purchase equity based on nominal price per share; evaluate market cap, structural support levels, and index macro risk before entering stop-loss orders.",
-    "breaking_event": "Anand Rathi analyst Mehul Kothari issued buy recommendations for Castrol, NHPC, and Vikram Solar under ₹200, while warning that a Bank Nifty close below 55,500 could unleash broader market selling pressure.",
+    "actionable_rule": "Never install APKs from search engine results; only use official app stores and verify the developer name against the hospital's official website domain.",
+    "breaking_event": "Kerala Police issued a formal warning regarding cybercriminals using malicious APK files disguised as hospital appointment booking apps to compromise retail user devices via Google Search results.",
     "lead_magnet": {
       "trigger_word": "AUDIT",
-      "resource_name": "The Low-Unit-Price Stock Risk & Valuation Checklist"
+      "resource_name": "The 5-Point Digital Asset Protection Audit"
     },
     "banned_phrases": [
       "guaranteed wealth",
@@ -120,87 +114,88 @@
     ]
   },
   "deck": {
-    "caption": "🚨 ₹200 Stocks-ல ₹45,000 Profit Math Real-ஆ?\n\nஇந்த நகர்வின் பின்னணியில் உள்ள உண்மை நிதி கணக்கீடுகள், டிவி செய்திகள் சொல்வதை விட முற்றிலும் மாறுபட்டவை.\n\nமுழு 8-slide Tanglish breakdown-ஐ படிக்க swipe செய்யுங்கள். 👉\n📌 Low Price Cheap Market Trap!\n📌 The Price Perception Illusion\n📌 Macro Risk Bank Nifty Support\n\n📌 உங்கள் அடுத்த trade-க்கு முன் பார்க்க இந்த பதிவை Save செய்து கொள்ளுங்கள்.\n✈️ உங்கள் முதலீட்டாளர் நண்பர்களுக்கு Share செய்து அவர்களின் Capital-ஐ பாதுகாக்கவும்.\n\n💬 Follow @marketdebunk_tamil மற்றும் 'GUIDE'-னு கீழே comment பண்ணுங்க — complete detailed Investor Playbook & Risk Checklist PDF-ஐ உங்க DM-க்கு உடனே அனுப்புறோம்!\n\n#TamilStockMarket #IndianEconomyTamil #WealthBuildingTamil #FinancialLiteracyTamil #Tamil",
+    "caption": "🚨 Oru click-la ₹5 Lakhs Loss-ah? APK Scam Math!\n\nஇந்த நகர்வின் பின்னணியில் உள்ள உண்மை நிதி கணக்கீடுகள், டிவி செய்திகள் சொல்வதை விட முற்றிலும் மாறுபட்டவை.\n\nமுழு 8-slide Tanglish breakdown-ஐ படிக்க swipe செய்யுங்கள். 👉\n📌 Elderly People-ku mattum dhaan Danger-ah?\n📌 Google Search-la Fake APK Trap\n📌 Full Portfolio-ve Wipeout Aagum!\n\n📌 உங்கள் அடுத்த trade-க்கு முன் பார்க்க இந்த பதிவை Save செய்து கொள்ளுங்கள்.\n✈️ உங்கள் முதலீட்டாளர் நண்பர்களுக்கு Share செய்து அவர்களின் Capital-ஐ பாதுகாக்கவும்.\n\n💬 Follow @marketdebunk_tamil மற்றும் 'GUIDE'-னு கீழே comment பண்ணுங்க — complete detailed Investor Playbook & Risk Checklist PDF-ஐ உங்க DM-க்கு உடனே அனுப்புறோம்!\n\n#MarketDebunkTamil #StockTipsTamil #TradingStrategyTamil #RiskTamil #TamilKnowledge",
     "slides": [
       {
         "role": "hook",
         "tag": "#MARKETDEBUNK",
-        "title": "₹200 Stocks-ல <span class='highlight-box'>₹45,000 Profit Math</span> Real-ஆ?",
+        "title": "Oru click-la ₹5 Lakhs Loss-ah? <span class='highlight-box'>APK Scam Math!</span>",
         "slide_index": 1,
         "title_lines": [
-          "₹200 Stocks-ல",
-          "<span class='highlight-box'>₹45,000 Profit</span>",
-          "Real-ஆ?"
+          "Oru click-la",
+          "₹5 Lakhs",
+          "<span class='highlight-box'>APK Scam</span>"
         ],
         "card_text": ""
       },
       {
         "role": "value_1",
         "tag": "#MARKETDEBUNK",
-        "title": "Low Price <span class='highlight-box'>Cheap Market</span> Trap!",
-        "card_text": "Retail investors ₹200-க்கு கீழே இருக்குற <strong>Castrol, NHPC, Vikram Solar</strong>-ஐ cheap-ன்னு நினைச்சு bulk-ஆ வாங்குவாங்க. Nominal price கம்மியா இருந்தா safe investment-ன்னு நினைக்கறது பெரிய <strong>Retail Trap</strong>!",
+        "title": "Elderly People-ku mattum dhaan <span class='highlight-box'>Danger-ah?</span>",
+        "card_text": "Idhu tech-savvy illadha people-ku mattum vara problem nu nenaikaadheenga. Unga smartphone-la irukra <strong>linked UPI apps</strong> and bank accounts-ah direct-ah drain panna mudiyum.",
         "slide_index": 2,
         "title_lines": [
-          "Low Price",
-          "<span class='highlight-box'>Cheap Market</span>",
-          "Trap!"
+          "Elderly People-ku",
+          "<span class='highlight-box'>mattum dhaan</span>",
+          "Danger-ah?"
         ]
       },
       {
         "role": "value_2",
         "tag": "#MARKETDEBUNK",
-        "title": "The Price <span class='highlight-box'>Perception Illusion</span>",
-        "card_text": "Share price <strong>₹200</strong>-க்கு கீழ இருந்தா multibagger risk-free profit வரும்னு நம்பறீங்களா? Company-யோட <strong>Market Cap & Enterprise Value</strong> பார்க்காம low unit price-க்கு ஆசைப்பட்டா Portfolio severe loss ஆகும்.",
+        "title": "Google Search-la <span class='highlight-box'>Fake APK Trap</span>",
+        "card_text": "Hospital booking name-la fake app download seiya vechu <strong>Overlay Attack</strong> trigger pannuvanga. Security timeline alert <strong>2026-09-20T17:20:12+00:00</strong> kaatradhu enna-na, SMS permission vazhiya <strong>2FA OTP</strong> bypass aagudhu!",
         "slide_index": 3,
         "title_lines": [
-          "The Price",
-          "<span class='highlight-box'>Perception Illusion</span>"
+          "Google Search-la",
+          "<span class='highlight-box'>Fake APK</span>",
+          "Trap"
         ]
       },
       {
         "role": "value_3",
         "tag": "#MARKETDEBUNK",
-        "title": "Macro Risk <span class='highlight-box'>Bank Nifty Support</span>",
-        "card_text": "Bank Nifty <strong>55,500 support</strong>-க்கு கீழ போனாலே market-ல heavy panic selling வரும். Index விழும்போது low price high-beta stocks-தான் <strong>Stop-Loss hit</strong> ஆகி ஃபர்ஸ்ட் அடிவாங்கும்!",
+        "title": "Full Portfolio-ve <span class='highlight-box'>Wipeout Aagum!</span>",
+        "card_text": "Chinna ₹10 consultation fee pay panna poi, total credentials compromise aagudhu. Neenga kashta pattu build panna <strong>emergency savings & fund balance</strong> seconds-la zero aagidum.",
         "slide_index": 4,
         "title_lines": [
-          "Macro Risk",
-          "<span class='highlight-box'>Bank Nifty</span>",
-          "Support"
+          "Full Portfolio-ve",
+          "<span class='highlight-box'>Wipeout Aagum!</span>"
         ]
       },
       {
         "role": "value_4",
         "tag": "#MARKETDEBUNK",
-        "title": "How Big <span class='highlight-box'>Institutions Trade</span>",
-        "card_text": "Big FII algorithms nominal price-ஐ பார்க்காது; <strong>Earnings Yield & Systemic Index</strong> லெவல்களை தான் watch பண்ணும். Recommendations இருந்தாலும்கூட, <strong>strict Stop-Loss</strong> இல்லாம trade பண்ணக்கூடாது.",
+        "title": "Institutions follow panra <span class='highlight-box'>Zero Trust Logic</span>",
+        "card_text": "Smart institutions eppovume <strong>Zero Trust architecture</strong> follow pannuvanga. Yendha external link-aiyum direct-ah trust pannama, unauthorized app installations-ah completely restrict pannuvanga.",
         "slide_index": 5,
         "title_lines": [
-          "How Big",
-          "<span class='highlight-box'>Institutions Trade</span>"
+          "Institutions follow",
+          "<span class='highlight-box'>panra Zero</span>",
+          "Trust Logic"
         ]
       },
       {
         "role": "value_5",
         "tag": "#MARKETDEBUNK",
-        "title": "Golden Rule <span class='highlight-box'>For Capital Protection</span>",
-        "card_text": "<strong>Golden Rule:</strong> Nominal share price வச்சு எதையும் வாங்காதீங்க. <strong>Valuation, Market Cap</strong>, மற்றும் index macro risk check பண்ணிட்டு மட்டும் strict Stop-Loss போடணும்!",
+        "title": "Official Store <span class='highlight-box'>Mattume Use Pannunga!</span>",
+        "card_text": "Search engine ads vazhiya vara <strong>APK files install pannadheenga</strong>. Official Play Store/App Store developer name and domain verify pannitu mattum install pannunga.",
         "slide_index": 6,
         "title_lines": [
-          "Golden Rule",
-          "<span class='highlight-box'>For Capital</span>",
-          "Protection"
+          "Official Store",
+          "<span class='highlight-box'>Mattume Use</span>",
+          "Pannunga!"
         ]
       },
       {
         "role": "value_6",
         "tag": "#MARKETDEBUNK",
-        "title": "Trade Execution <span class='highlight-box'>Action Checklist</span>",
-        "card_text": "1. Stock-ோட <strong>P/E & Valuation</strong>-ஐ சரிபார்க்கவும். 2. Mehul Kothari சொன்ன <strong>Target & Stop-Loss</strong> levels strict-ஆ follow பண்ணுங்க. 3. Bank Nifty <strong>55,500 support</strong> பாத்து trade பண்ணுங்க.",
+        "title": "3-Step Digital <span class='highlight-box'>Safety Checklist</span>",
+        "card_text": "1. Unknown sources 'Install' permission-ah disable pannunga. 2. Hospital website domain-ah check pannunga. 3. Primary banking phone-la <strong>random APKs</strong> avoid pannunga.",
         "slide_index": 7,
         "title_lines": [
-          "Trade Execution",
-          "<span class='highlight-box'>Action Checklist</span>"
+          "3-Step Digital",
+          "<span class='highlight-box'>Safety Checklist</span>"
         ]
       },
       {
@@ -226,7 +221,7 @@
       "reels_boost_tier": "High Velocity",
       "search_query": "Hans Zimmer Cornfield Chase Dorian Marko"
     },
-    "hashtag_cluster_id": "tamil_cluster_5",
+    "hashtag_cluster_id": "tamil_cluster_4",
     "hook_archetype_id": "tamil_angle_2"
   },
   "audio": {
@@ -237,40 +232,40 @@
     "reels_boost_tier": "High Velocity",
     "search_query": "Hans Zimmer Cornfield Chase Dorian Marko"
   },
-  "run_id": "20260920_084300",
+  "run_id": "20260920_172842",
   "slide_count": 8,
   "darwin_result": {
     "winning_candidate": {
       "id": "B",
       "archetype": "MATH_BREAKDOWN",
-      "headline_hook": "₹200 Stocks-ல ₹45,000 Profit Math!",
-      "highlight_word": "Profit Math",
+      "headline_hook": "Oru click-la ₹5 Lakhs varai loss? APK Scam math-ah paarunga!",
+      "highlight_word": "Zero Balance",
       "scores": {
-        "curiosity_gap": 9.5,
-        "viral_potential": 9.5,
-        "retail_actionability": 9.5,
-        "friction_quotient": 9.5,
-        "total": 38.0
+        "curiosity_gap": 9,
+        "viral_potential": 10,
+        "retail_actionability": 9,
+        "friction_quotient": 9,
+        "total": 37.0
       },
-      "critic_critique": "Flawless execution of the high-weight MATH_BREAKDOWN archetype. Directly maps Mehul Kothari's targets and stop-losses for Castrol, NHPC, and Vikram Solar into exact risk-reward rupees for a ₹1 Lakh portfolio."
+      "critic_critique": "The math breakdown is brutal and effective. Quantifying the potential loss in rupees is the fastest way to get a Tamil user's attention. Excellent conversion of abstract risk to hard cash."
     },
-    "critic_score": 9.5,
+    "critic_score": 9.2,
     "archetype": "MATH_BREAKDOWN",
-    "selection_rationale": "Candidate B dominates by aligning perfectly with the heavily weighted MATH_BREAKDOWN archetype (1.7 weight). It translates Anand Rathi's brokerage targets and stop-losses into exact rupee profit/loss calculations for retail traders, delivering instant clarity and high actionability.",
-    "final_editorial_directive": "Use strict 6-word Tanglish hooks on Slide 1. Break down Castrol, NHPC, and Vikram Solar with exact Stop-Loss and Target numbers in rupees. Highlight precise risk-reward metrics using high-contrast highlight boxes."
+    "selection_rationale": "Candidate B dominates because it hits the 'wallet nerve.' In the Tamil retail market, translating a cyber threat into a direct financial loss (₹5 Lakhs) creates immediate urgency and high shareability.",
+    "final_editorial_directive": "Use punchy, short sentences. Avoid formal Tamil; use colloquial Tanglish (e.g., 'Panreengala', 'Paarunga', 'Loss-ah'). Ensure the math breakdown slide uses bold, large font for the rupee figures to maximize stop-scroll effect."
   },
   "visual_audit": {
     "passed": true,
-    "average_score": 9.0,
+    "average_score": 8.5,
     "slide_1_report": {
-      "overall_score": 9.5,
+      "overall_score": 8.5,
       "passed": true,
-      "critique_summary": "The design exhibits excellent typography and high legibility. The Tamil script for 'ல' (la) and 'ஆ' (aa) is rendered with perfect Unicode alignment, maintaining the correct stem and vowel marker spacing. The contrast between the bold, dark typeface and the off-white background is optimal for mobile consumption. The highlight box containing '₹45,000 Profit' provides a strong focal point, though the vertical padding inside the green box could be slightly increased to prevent the descenders of the characters from feeling cramped.",
+      "critique_summary": "The slide features a clean, minimalist design with high-contrast typography. The primary text 'Oru click-la ₹5 Lakhs' effectively uses a mix of Tamil and English (Manglish), which is common for digital content. The APK Scam highlight box has excellent legibility. One minor critique: the vertical spacing between the 'APK Scam' box and the headline is slightly tight, and the 'SWIPE' text at the bottom right feels a bit disconnected from the main layout hierarchy.",
       "suggested_css_adjustments": {
-        "notes": "To improve visual balance within the highlight box, consider adding 'padding-top: 0.1em;' and 'padding-bottom: 0.1em;' to the CSS of the span containing the green background."
+        "notes": "Increase padding inside the green highlight box for better breathing room; consider slightly increasing the letter-spacing for the 'APK Scam' text; adjust the bottom-right 'SWIPE' element to align closer to the main content container edges."
       }
     },
     "slide_count_audited": 2
   },
-  "exported_at": "2026-09-20T08:43:08.552063+00:00"
+  "exported_at": "2026-09-20T17:28:51.077041+00:00"
 }
