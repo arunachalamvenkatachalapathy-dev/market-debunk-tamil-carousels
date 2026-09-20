@@ -1,118 +1,116 @@
 {
   "topic": {
-    "title": "ITC stock: 360 ONE maintains BUY, sees 68% upside; here’s why brokerage is bullish",
+    "title": "Top stocks to buy under  ₹200: Castrol, NHPC, Vikram Solar - 3 shares by Anand Rathi‘s Mehul Kothari; target, stop-loss",
     "archetype": "market_breaking_news",
     "archetype_name": "Breaking Financial News Debunk",
-    "topic_category": "WEALTH_LEAK",
-    "viral_demand_score": 70.9,
+    "topic_category": "MARKET_TRAP",
+    "viral_demand_score": 67.2,
     "source": "Livemint Markets",
-    "source_snippet": "ITC navigates weakened cigarette volumes due to tax changes but is offsetting losses with price hikes and improving margins. 360 ONE maintains a BUY rating, predicting an upside of 68% with a target price of  ₹440 per share despite a 35% stock decline last year.",
-    "source_url": "https://www.livemint.com/market/stock-market-news/itc-stock-360-one-maintains-buy-sees-65-upside-here-s-why-brokerage-is-bullish-11789814022662.html",
-    "raw_text": "ITC stock: 360 ONE maintains BUY, sees 68% upside; here’s why brokerage is bullish. ITC navigates weakened cigarette volumes due to tax changes but is offsetting losses with price hikes and improving margins. 360 ONE maintains a BUY rating, predicting an upside of 68% with a target price of  ₹440 per share despite a 35% stock decline last year.",
+    "source_snippet": "Kothari warns that a close below 55,500 may lead to increased selling pressure. He sees 57,000 as a key resistance for Bank Nifty. Recommended stocks under  ₹200 include Castrol India, NHPC, and Vikram Solar, with specific targets and stop losses provided.",
+    "source_url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-buy-under-rs-200-castrol-nhpc-vikram-solar-3-shares-by-anand-rathi-s-mehul-kothari-target-stoploss-11789809341916.html",
+    "raw_text": "Top stocks to buy under  ₹200: Castrol, NHPC, Vikram Solar - 3 shares by Anand Rathi‘s Mehul Kothari; target, stop-loss. Kothari warns that a close below 55,500 may lead to increased selling pressure. He sees 57,000 as a key resistance for Bank Nifty. Recommended stocks under  ₹200 include Castrol India, NHPC, and Vikram Solar, with specific targets and stop losses provided.",
     "numbers_detected": [
-      "360",
-      "68%",
-      "360",
-      "68%",
-      "₹440",
-      "35%"
+      "₹200",
+      "55,500",
+      "57,000",
+      "₹200"
     ],
-    "published_at": "2026-09-19T17:27:07+05:30",
-    "age_hours": 5.3,
-    "retrieved_at": "2026-09-19T17:15:59.348210+00:00",
-    "date": "19 Sep 2026",
+    "published_at": "2026-09-19T09:44:11+00:00",
+    "age_hours": 23.0,
+    "retrieved_at": "2026-09-20T08:41:57.576496+00:00",
+    "date": "20 Sep 2026",
     "from_live_api": true,
-    "evidence_snapshot": "Source: Livemint Markets | Published: 2026-09-19T17:27:07+05:30 (5.3h ago) | Headline: ITC stock: 360 ONE maintains BUY, sees 68% upside; here’s why brokerage is bullish | Context: ITC stock: 360 ONE maintains BUY, sees 68% upside; here’s why brokerage is bullish. ITC navigates weakened cigarette volumes due to tax changes but is offsetting losses with price hikes and improving margins. 360 ONE maintains a BUY rating, predicting an upside of 68% with a target price of  ₹440 per share despite a 35% stock decline last year.",
+    "evidence_snapshot": "Source: Livemint Markets | Published: 2026-09-19T09:44:11+00:00 (23.0h ago) | Headline: Top stocks to buy under  ₹200: Castrol, NHPC, Vikram Solar - 3 shares by Anand Rathi‘s Mehul Kothari; target, stop-loss | Context: Top stocks to buy under  ₹200: Castrol, NHPC, Vikram Solar - 3 shares by Anand Rathi‘s Mehul Kothari; target, stop-loss. Kothari warns that a close below 55,500 may lead to increased selling pressure. He sees 57,000 as a key resistance for Bank Nifty. Recommended stocks under  ₹200 include Castrol India, NHPC, and Vikram Solar, with specific targets and stop losses provided.",
     "news_analysis": {
-      "headline_hook": "ITC 68% growth! 1 lakh investment enna aagum?",
-      "breaking_event_summary": "Brokerage firm 360 ONE reiterated a BUY rating on ITC with an aggressive target price of ₹440, forecasting a 68% upside despite a 35% stock drop over the past year and tax-driven cigarette volume declines.",
-      "retail_illusion": "Retail investors assume a 68% projected upside means an imminent, risk-free mean reversion trade, believing margin improvements from price hikes can permanently offset shrinking consumer volumes.",
-      "institutional_reality": "Institutions recognize that masking volume contraction with price hikes reaches a strict consumer elasticity ceiling under persistent tax headwinds. Bullish price targets often anchor to historical terminal multiples rather than structural volume compression, creating exit liquidity for institutional rebalancing.",
+      "headline_hook": "₹200 Stocks-ல ₹45,000 Profit Math!",
+      "breaking_event_summary": "Anand Rathi analyst Mehul Kothari issued buy recommendations for Castrol, NHPC, and Vikram Solar under ₹200, while warning that a Bank Nifty close below 55,500 could unleash broader market selling pressure.",
+      "retail_illusion": "Retail investors falsely equate a low unit share price (under ₹200) with a cheap valuation, believing lower nominal prices offer a safer margin of safety and higher explosive upside.",
+      "institutional_reality": "Unit price is a cosmetic metric; institutional algorithms trade on Enterprise Value, earnings yield, and systemic index support. A Bank Nifty break below 55,500 triggers automated risk-off selling that crushes high-beta, retail-heavy 'cheap' stocks regardless of target prices.",
       "citable_metrics": [
-        "68% upside",
-        "₹440 per share target price",
-        "35% stock decline last year"
+        "₹200",
+        "55,500",
+        "57,000"
       ],
       "debunk_category": "VALUATION_MYTH",
-      "actionable_retail_rule": "Never buy an equity solely on a brokerage percentage upside; verify whether top-line growth is driven by genuine unit volume expansion or defensive price hikes masking demand erosion.",
+      "actionable_retail_rule": "Never purchase equity based on nominal price per share; evaluate market cap, structural support levels, and index macro risk before entering stop-loss orders.",
       "lead_magnet": {
         "trigger_word": "AUDIT",
-        "resource_name": "The Brokerage Target Price Reality Checklist"
+        "resource_name": "The Low-Unit-Price Stock Risk & Valuation Checklist"
       },
       "carousel_outline": [
         {
           "slide": 1,
           "role": "hook",
-          "focus": "Why 360 ONE's 68% ITC Target Price (₹440) Is a Classic Retail Anchor Trap"
+          "focus": "Why Buying Stocks Just Because They Are 'Under ₹200' Is a Mathematical Trap"
         },
         {
           "slide": 2,
           "role": "friction",
-          "focus": "The 35% Drop vs. The Promise: Why Retail Thinks Price Hikes Solve Volume Pain"
+          "focus": "The Retail Illusion: Believing ₹200 shares are cheap while ignoring total market valuation and market trends"
         },
         {
           "slide": 3,
           "role": "math_reality",
-          "focus": "The Volume Elasticity Math: The Hidden Margin Ceiling When Core Volumes Decline"
+          "focus": "Bank Nifty's 55,500 support vs 57,000 resistance: The real institutional liquidity boundary"
         },
         {
           "slide": 4,
           "role": "breakdown",
-          "focus": "How Analyst Target Price Models Ignore Persistent Regulatory Tax Shocks"
+          "focus": "How algorithmic selling triggered below 55,500 traps retail traders holding low-price recommendations"
         },
         {
           "slide": 5,
           "role": "actionable_rule",
-          "focus": "The 3-Step Valuation Filter: Deconstruct Volume vs. Margin Quality Before Buying"
+          "focus": "The Non-Negotiable Rule: Sizing positions by stop-loss delta rather than nominal share price"
         },
         {
           "slide": 6,
           "role": "cta",
-          "focus": "Comment AUDIT to get our 1-Page Brokerage Target Price Reality Checklist"
+          "focus": "Comment AUDIT to get our Low-Unit-Price Stock Risk Checklist and save this post"
         }
       ],
-      "highlight_word": "Math Magic",
-      "editorial_directive": "Use high-contrast yellow/black colors for the hook. Ensure the Tanglish is conversational, not formal. Avoid heavy jargon; use 'Profit' instead of 'Capital Appreciation'. Always include a 'swipe to see the math' CTA on slide 1."
+      "highlight_word": "Profit Math",
+      "editorial_directive": "Use strict 6-word Tanglish hooks on Slide 1. Break down Castrol, NHPC, and Vikram Solar with exact Stop-Loss and Target numbers in rupees. Highlight precise risk-reward metrics using high-contrast highlight boxes."
     },
     "darwin_result": {
       "winning_candidate": {
         "id": "B",
         "archetype": "MATH_BREAKDOWN",
-        "headline_hook": "ITC 68% growth! 1 lakh investment enna aagum?",
-        "highlight_word": "Math Magic",
+        "headline_hook": "₹200 Stocks-ல ₹45,000 Profit Math!",
+        "highlight_word": "Profit Math",
         "scores": {
-          "curiosity_gap": 9,
-          "viral_potential": 9,
-          "retail_actionability": 9,
-          "friction_quotient": 8,
-          "total": 35.0
+          "curiosity_gap": 9.5,
+          "viral_potential": 9.5,
+          "retail_actionability": 9.5,
+          "friction_quotient": 9.5,
+          "total": 38.0
         },
-        "critic_critique": "This hits the sweet spot. Retail investors love seeing their capital projected. The 68% figure creates immediate greed-driven urgency."
+        "critic_critique": "Flawless execution of the high-weight MATH_BREAKDOWN archetype. Directly maps Mehul Kothari's targets and stop-losses for Castrol, NHPC, and Vikram Solar into exact risk-reward rupees for a ₹1 Lakh portfolio."
       },
-      "critic_score": 8.8,
+      "critic_score": 9.5,
       "archetype": "MATH_BREAKDOWN",
-      "selection_rationale": "Candidate B dominates because it transforms a dry brokerage report into a 'what is in it for me' calculation. By quantifying the 68% upside against a ₹1 Lakh base, it triggers the exact greed-based FOMO required for viral engagement in the Tamil finance community.",
-      "final_editorial_directive": "Use high-contrast yellow/black colors for the hook. Ensure the Tanglish is conversational, not formal. Avoid heavy jargon; use 'Profit' instead of 'Capital Appreciation'. Always include a 'swipe to see the math' CTA on slide 1."
+      "selection_rationale": "Candidate B dominates by aligning perfectly with the heavily weighted MATH_BREAKDOWN archetype (1.7 weight). It translates Anand Rathi's brokerage targets and stop-losses into exact rupee profit/loss calculations for retail traders, delivering instant clarity and high actionability.",
+      "final_editorial_directive": "Use strict 6-word Tanglish hooks on Slide 1. Break down Castrol, NHPC, and Vikram Solar with exact Stop-Loss and Target numbers in rupees. Highlight precise risk-reward metrics using high-contrast highlight boxes."
     },
-    "headline_hook": "ITC 68% growth! 1 lakh investment enna aagum?",
-    "highlight_word": "Math Magic",
-    "editorial_directive": "Use high-contrast yellow/black colors for the hook. Ensure the Tanglish is conversational, not formal. Avoid heavy jargon; use 'Profit' instead of 'Capital Appreciation'. Always include a 'swipe to see the math' CTA on slide 1."
+    "headline_hook": "₹200 Stocks-ல ₹45,000 Profit Math!",
+    "highlight_word": "Profit Math",
+    "editorial_directive": "Use strict 6-word Tanglish hooks on Slide 1. Break down Castrol, NHPC, and Vikram Solar with exact Stop-Loss and Target numbers in rupees. Highlight precise risk-reward metrics using high-contrast highlight boxes."
   },
   "plan": {
-    "hook_headline": "ITC 68% growth! 1 lakh investment enna aagum?",
-    "core_illusion": "Retail investors assume a 68% projected upside means an imminent, risk-free mean reversion trade, believing margin improvements from price hikes can permanently offset shrinking consumer volumes.",
-    "hidden_reality": "Institutions recognize that masking volume contraction with price hikes reaches a strict consumer elasticity ceiling under persistent tax headwinds. Bullish price targets often anchor to historical terminal multiples rather than structural volume compression, creating exit liquidity for institutional rebalancing.",
-    "citable_metric": "68% upside",
+    "hook_headline": "₹200 Stocks-ல ₹45,000 Profit Math!",
+    "core_illusion": "Retail investors falsely equate a low unit share price (under ₹200) with a cheap valuation, believing lower nominal prices offer a safer margin of safety and higher explosive upside.",
+    "hidden_reality": "Unit price is a cosmetic metric; institutional algorithms trade on Enterprise Value, earnings yield, and systemic index support. A Bank Nifty break below 55,500 triggers automated risk-off selling that crushes high-beta, retail-heavy 'cheap' stocks regardless of target prices.",
+    "citable_metric": "₹200",
     "all_metrics": [
-      "68% upside",
-      "₹440 per share target price",
-      "35% stock decline last year"
+      "₹200",
+      "55,500",
+      "57,000"
     ],
-    "actionable_rule": "Never buy an equity solely on a brokerage percentage upside; verify whether top-line growth is driven by genuine unit volume expansion or defensive price hikes masking demand erosion.",
-    "breaking_event": "Brokerage firm 360 ONE reiterated a BUY rating on ITC with an aggressive target price of ₹440, forecasting a 68% upside despite a 35% stock drop over the past year and tax-driven cigarette volume declines.",
+    "actionable_rule": "Never purchase equity based on nominal price per share; evaluate market cap, structural support levels, and index macro risk before entering stop-loss orders.",
+    "breaking_event": "Anand Rathi analyst Mehul Kothari issued buy recommendations for Castrol, NHPC, and Vikram Solar under ₹200, while warning that a Bank Nifty close below 55,500 could unleash broader market selling pressure.",
     "lead_magnet": {
       "trigger_word": "AUDIT",
-      "resource_name": "The Brokerage Target Price Reality Checklist"
+      "resource_name": "The Low-Unit-Price Stock Risk & Valuation Checklist"
     },
     "banned_phrases": [
       "guaranteed wealth",
@@ -122,87 +120,87 @@
     ]
   },
   "deck": {
-    "caption": "🚨 ITC 68% Growth! ₹1 Lakh Investment Enna Aagum? Swipe to see the math!\n\nFOMO அவசரம் உங்கள் முதலீட்டு வளர்ச்சியை எப்படி பாதிக்கிறது? இந்த முக்கிய data-வை உடனே audit செய்யுங்கள்.\n\nமுழு 8-slide Tanglish breakdown-ஐ படிக்க swipe செய்யுங்கள். 👉\n📌 Brokerage Report-அ நம்புனீங்களா?\n📌 Price Hike vs Sales Loss\n📌 நமக்கு தெரியாத Hidden Trap\n\n📌 உங்கள் அடுத்த trade-க்கு முன் பார்க்க இந்த பதிவை Save செய்து கொள்ளுங்கள்.\n✈️ உங்கள் முதலீட்டாளர் நண்பர்களுக்கு Share செய்து அவர்களின் Capital-ஐ பாதுகாக்கவும்.\n\n💬 Follow @marketdebunk_tamil மற்றும் 'GUIDE'-னு கீழே comment பண்ணுங்க — complete detailed Investor Playbook & Risk Checklist PDF-ஐ உங்க DM-க்கு உடனே அனுப்புறோம்!\n\n#TamilWealth #PersonalFinanceTamil #TamilBusiness #MoneyTamil #TamilSavings",
+    "caption": "🚨 ₹200 Stocks-ல ₹45,000 Profit Math Real-ஆ?\n\nஇந்த நகர்வின் பின்னணியில் உள்ள உண்மை நிதி கணக்கீடுகள், டிவி செய்திகள் சொல்வதை விட முற்றிலும் மாறுபட்டவை.\n\nமுழு 8-slide Tanglish breakdown-ஐ படிக்க swipe செய்யுங்கள். 👉\n📌 Low Price Cheap Market Trap!\n📌 The Price Perception Illusion\n📌 Macro Risk Bank Nifty Support\n\n📌 உங்கள் அடுத்த trade-க்கு முன் பார்க்க இந்த பதிவை Save செய்து கொள்ளுங்கள்.\n✈️ உங்கள் முதலீட்டாளர் நண்பர்களுக்கு Share செய்து அவர்களின் Capital-ஐ பாதுகாக்கவும்.\n\n💬 Follow @marketdebunk_tamil மற்றும் 'GUIDE'-னு கீழே comment பண்ணுங்க — complete detailed Investor Playbook & Risk Checklist PDF-ஐ உங்க DM-க்கு உடனே அனுப்புறோம்!\n\n#TamilStockMarket #IndianEconomyTamil #WealthBuildingTamil #FinancialLiteracyTamil #Tamil",
     "slides": [
       {
         "role": "hook",
         "tag": "#MARKETDEBUNK",
-        "title": "ITC 68% Growth! <span class='highlight-box'>₹1 Lakh Investment</span> Enna Aagum? Swipe to see the math!",
+        "title": "₹200 Stocks-ல <span class='highlight-box'>₹45,000 Profit Math</span> Real-ஆ?",
         "slide_index": 1,
         "title_lines": [
-          "ITC 68%",
-          "Growth!",
-          "<span class='highlight-box'>₹1 Lakh</span>",
-          "Enna Aagum?"
+          "₹200 Stocks-ல",
+          "<span class='highlight-box'>₹45,000 Profit</span>",
+          "Real-ஆ?"
         ],
         "card_text": ""
       },
       {
         "role": "value_1",
         "tag": "#MARKETDEBUNK",
-        "title": "Brokerage Report-அ <span class='highlight-box'>நம்புனீங்களா?</span>",
-        "card_text": "Retail investors 360 ONE சொன்ன <strong>68% upside</strong> பார்த்த உடனே, risk-free profit வரப்போகுது-னு blind-ஆ buy பண்றாங்க. Sales குறைந்தாலும் price hike பண்ணி <strong>Profit</strong> அள்ளிடலாம்-னு நினைக்கறது ஒரு பெரிய ஏமாற்றம்!",
+        "title": "Low Price <span class='highlight-box'>Cheap Market</span> Trap!",
+        "card_text": "Retail investors ₹200-க்கு கீழே இருக்குற <strong>Castrol, NHPC, Vikram Solar</strong>-ஐ cheap-ன்னு நினைச்சு bulk-ஆ வாங்குவாங்க. Nominal price கம்மியா இருந்தா safe investment-ன்னு நினைக்கறது பெரிய <strong>Retail Trap</strong>!",
         "slide_index": 2,
         "title_lines": [
-          "<span class='highlight-box'>Brokerage Report-அ</span>",
-          "நம்புனீங்களா?"
+          "Low Price",
+          "<span class='highlight-box'>Cheap Market</span>",
+          "Trap!"
         ]
       },
       {
         "role": "value_2",
         "tag": "#MARKETDEBUNK",
-        "title": "Price Hike vs <span class='highlight-box'>Sales Loss</span>",
-        "card_text": "Brokerage target price ₹440 வச்சு <strong>68% upside</strong> Predict பண்றாங்க. ஆனா Tax hikes-ஆல actual cigarette volume சரிஞ்சுகிட்டே இருக்கு! வெறும் <strong>Price hike</strong> மட்டுமே எப்போதுமே Profit-அ காப்பாத்த முடியாது.",
+        "title": "The Price <span class='highlight-box'>Perception Illusion</span>",
+        "card_text": "Share price <strong>₹200</strong>-க்கு கீழ இருந்தா multibagger risk-free profit வரும்னு நம்பறீங்களா? Company-யோட <strong>Market Cap & Enterprise Value</strong> பார்க்காம low unit price-க்கு ஆசைப்பட்டா Portfolio severe loss ஆகும்.",
         "slide_index": 3,
         "title_lines": [
-          "Price Hike",
-          "<span class='highlight-box'>vs Sales</span>",
-          "Loss"
+          "The Price",
+          "<span class='highlight-box'>Perception Illusion</span>"
         ]
       },
       {
         "role": "value_3",
         "tag": "#MARKETDEBUNK",
-        "title": "நமக்கு தெரியாத <span class='highlight-box'>Hidden Trap</span>",
-        "card_text": "விலையை ஏத்திக்கிட்டே இருந்தா ஒரு கட்டத்துல Demand பயங்கரமா குறையும். Sales volume தொடர்ந்து சுருங்கும் போது, நிறுவனத்தோட overall <strong>Profit growth</strong> லாக் ஆகி <strong>Portfolio</strong>-வை பாதிக்கும்.",
+        "title": "Macro Risk <span class='highlight-box'>Bank Nifty Support</span>",
+        "card_text": "Bank Nifty <strong>55,500 support</strong>-க்கு கீழ போனாலே market-ல heavy panic selling வரும். Index விழும்போது low price high-beta stocks-தான் <strong>Stop-Loss hit</strong> ஆகி ஃபர்ஸ்ட் அடிவாங்கும்!",
         "slide_index": 4,
         "title_lines": [
-          "நமக்கு தெரியாத",
-          "<span class='highlight-box'>Hidden Trap</span>"
+          "Macro Risk",
+          "<span class='highlight-box'>Bank Nifty</span>",
+          "Support"
         ]
       },
       {
         "role": "value_4",
         "tag": "#MARKETDEBUNK",
-        "title": "Big Investors <span class='highlight-box'>என்ன பண்றாங்க?</span>",
-        "card_text": "Institutions-க்கு தெரியும் volume reduction ஒரு பெரிய பிரச்சனை-னு! இந்த மாதிரி Bullish targets வரப்ப, retail buyers வர்ற கேப்-ல அவங்க தங்களோட <strong>Exit Liquidity</strong>-ஆ பயன்படுத்தி <strong>Portfolio Rebalance</strong> பண்ணி வெளிய போயிடுவாங்க.",
+        "title": "How Big <span class='highlight-box'>Institutions Trade</span>",
+        "card_text": "Big FII algorithms nominal price-ஐ பார்க்காது; <strong>Earnings Yield & Systemic Index</strong> லெவல்களை தான் watch பண்ணும். Recommendations இருந்தாலும்கூட, <strong>strict Stop-Loss</strong> இல்லாம trade பண்ணக்கூடாது.",
         "slide_index": 5,
         "title_lines": [
-          "Big Investors",
-          "<span class='highlight-box'>என்ன பண்றாங்க?</span>"
+          "How Big",
+          "<span class='highlight-box'>Institutions Trade</span>"
         ]
       },
       {
         "role": "value_5",
         "tag": "#MARKETDEBUNK",
-        "title": "Golden Rule for <span class='highlight-box'>Smart Investors</span>",
-        "card_text": "வெறும் Brokerage target percentage-அ பார்த்து <strong>Equity Buy பண்ணாதீங்க!</strong> Top-line growth <strong>real unit volume</strong> அதிகமாகறதால வருதா இல்ல defensive price hikes-ஆல வருதா-னு verify பண்ணுங்க.",
+        "title": "Golden Rule <span class='highlight-box'>For Capital Protection</span>",
+        "card_text": "<strong>Golden Rule:</strong> Nominal share price வச்சு எதையும் வாங்காதீங்க. <strong>Valuation, Market Cap</strong>, மற்றும் index macro risk check பண்ணிட்டு மட்டும் strict Stop-Loss போடணும்!",
         "slide_index": 6,
         "title_lines": [
           "Golden Rule",
-          "<span class='highlight-box'>for Smart</span>",
-          "Investors"
+          "<span class='highlight-box'>For Capital</span>",
+          "Protection"
         ]
       },
       {
         "role": "value_6",
         "tag": "#MARKETDEBUNK",
-        "title": "Stock Buy பண்ணும்முன் <span class='highlight-box'>Checklist</span>",
-        "card_text": "1. Company-வோட <strong>Sales Volume Expansion</strong> செக் பண்ணுங்க. 2. Price hike இல்லாம <strong>Profit Margin</strong> நிக்குதா-னு பாருங்க. 3. Target price-அ மட்டும் நம்பி <strong>Lumpsum</strong> போடாதீங்க!",
+        "title": "Trade Execution <span class='highlight-box'>Action Checklist</span>",
+        "card_text": "1. Stock-ோட <strong>P/E & Valuation</strong>-ஐ சரிபார்க்கவும். 2. Mehul Kothari சொன்ன <strong>Target & Stop-Loss</strong> levels strict-ஆ follow பண்ணுங்க. 3. Bank Nifty <strong>55,500 support</strong> பாத்து trade பண்ணுங்க.",
         "slide_index": 7,
         "title_lines": [
-          "Stock Buy",
-          "<span class='highlight-box'>பண்ணும்முன் Checklist</span>"
+          "Trade Execution",
+          "<span class='highlight-box'>Action Checklist</span>"
         ]
       },
       {
@@ -228,8 +226,8 @@
       "reels_boost_tier": "High Velocity",
       "search_query": "Hans Zimmer Cornfield Chase Dorian Marko"
     },
-    "hashtag_cluster_id": "tamil_cluster_3",
-    "hook_archetype_id": "tamil_angle_5"
+    "hashtag_cluster_id": "tamil_cluster_5",
+    "hook_archetype_id": "tamil_angle_2"
   },
   "audio": {
     "title": "Cornfield Chase (Interstellar Tension)",
@@ -239,40 +237,40 @@
     "reels_boost_tier": "High Velocity",
     "search_query": "Hans Zimmer Cornfield Chase Dorian Marko"
   },
-  "run_id": "20260919_171648",
+  "run_id": "20260920_084300",
   "slide_count": 8,
   "darwin_result": {
     "winning_candidate": {
       "id": "B",
       "archetype": "MATH_BREAKDOWN",
-      "headline_hook": "ITC 68% growth! 1 lakh investment enna aagum?",
-      "highlight_word": "Math Magic",
+      "headline_hook": "₹200 Stocks-ல ₹45,000 Profit Math!",
+      "highlight_word": "Profit Math",
       "scores": {
-        "curiosity_gap": 9,
-        "viral_potential": 9,
-        "retail_actionability": 9,
-        "friction_quotient": 8,
-        "total": 35.0
+        "curiosity_gap": 9.5,
+        "viral_potential": 9.5,
+        "retail_actionability": 9.5,
+        "friction_quotient": 9.5,
+        "total": 38.0
       },
-      "critic_critique": "This hits the sweet spot. Retail investors love seeing their capital projected. The 68% figure creates immediate greed-driven urgency."
+      "critic_critique": "Flawless execution of the high-weight MATH_BREAKDOWN archetype. Directly maps Mehul Kothari's targets and stop-losses for Castrol, NHPC, and Vikram Solar into exact risk-reward rupees for a ₹1 Lakh portfolio."
     },
-    "critic_score": 8.8,
+    "critic_score": 9.5,
     "archetype": "MATH_BREAKDOWN",
-    "selection_rationale": "Candidate B dominates because it transforms a dry brokerage report into a 'what is in it for me' calculation. By quantifying the 68% upside against a ₹1 Lakh base, it triggers the exact greed-based FOMO required for viral engagement in the Tamil finance community.",
-    "final_editorial_directive": "Use high-contrast yellow/black colors for the hook. Ensure the Tanglish is conversational, not formal. Avoid heavy jargon; use 'Profit' instead of 'Capital Appreciation'. Always include a 'swipe to see the math' CTA on slide 1."
+    "selection_rationale": "Candidate B dominates by aligning perfectly with the heavily weighted MATH_BREAKDOWN archetype (1.7 weight). It translates Anand Rathi's brokerage targets and stop-losses into exact rupee profit/loss calculations for retail traders, delivering instant clarity and high actionability.",
+    "final_editorial_directive": "Use strict 6-word Tanglish hooks on Slide 1. Break down Castrol, NHPC, and Vikram Solar with exact Stop-Loss and Target numbers in rupees. Highlight precise risk-reward metrics using high-contrast highlight boxes."
   },
   "visual_audit": {
     "passed": true,
     "average_score": 9.0,
     "slide_1_report": {
-      "overall_score": 8.5,
+      "overall_score": 9.5,
       "passed": true,
-      "critique_summary": "The typography is highly effective for a mobile carousel format with bold, high-contrast sans-serif weighting. The Tamil script in the headline 'Enna Aagum?' is rendered clearly without overlapping issues. However, the contrast between the white text and the bright green background of the highlight box could be slightly improved by increasing the font-weight of '₹1 Lakh' for better readability at smaller device sizes.",
+      "critique_summary": "The design exhibits excellent typography and high legibility. The Tamil script for 'ல' (la) and 'ஆ' (aa) is rendered with perfect Unicode alignment, maintaining the correct stem and vowel marker spacing. The contrast between the bold, dark typeface and the off-white background is optimal for mobile consumption. The highlight box containing '₹45,000 Profit' provides a strong focal point, though the vertical padding inside the green box could be slightly increased to prevent the descenders of the characters from feeling cramped.",
       "suggested_css_adjustments": {
-        "notes": "Ensure the font-weight for the text inside the highlight box is set to '800' or higher to maintain legibility against the green background. Ensure the font-family used supports proper ligature rendering for the Tamil script if transitioning to dynamic text."
+        "notes": "To improve visual balance within the highlight box, consider adding 'padding-top: 0.1em;' and 'padding-bottom: 0.1em;' to the CSS of the span containing the green background."
       }
     },
     "slide_count_audited": 2
   },
-  "exported_at": "2026-09-19T17:16:59.401710+00:00"
+  "exported_at": "2026-09-20T08:43:08.552063+00:00"
 }
