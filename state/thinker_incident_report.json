@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-09-21T09:10:59.133825+00:00",
+  "timestamp": "2026-09-21T19:26:49.876992+00:00",
   "phase": "PUBLISHING",
   "platform": "Instagram",
   "severity": "CRITICAL",
   "error_code": "ERR_META_API",
-  "root_cause_analysis": "The Instagram Graph API returned a 403/400-level error (Code 4, Subcode 2207051) indicating an application-level rate limit or security block triggered by the platform's automated integrity systems.",
+  "root_cause_analysis": "The Instagram Graph API returned an OAuthException (code 4, subcode 2207051) indicating an application-level request limit or action block, likely due to excessive posting frequency or automated activity patterns triggering Meta's security filters.",
   "reproducibility": "RATE_LIMIT",
   "automated_remediation": {
     "action": "ABORT",
@@ -12,9 +12,8 @@
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Check Meta Business Suite for any account-level restrictions or policy warnings.",
-    "Verify if the application has exceeded daily publishing quotas.",
-    "Wait at least 60 minutes before attempting a manual retry to allow the rate-limit window to reset.",
-    "If the issue persists, review the Instagram Graph API documentation for 'Action is blocked' subcode 2207051 to ensure content compliance."
+    "Wait at least 60 minutes before attempting to publish again to allow the rate limit window to reset.",
+    "Verify if the Instagram account has been flagged for suspicious activity via the Meta Business Suite dashboard.",
+    "If the block persists, manually post the carousel via the Instagram mobile app to confirm account status."
   ]
 }
