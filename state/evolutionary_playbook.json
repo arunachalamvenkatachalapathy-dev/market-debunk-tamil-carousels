@@ -1,13 +1,12 @@
 {
   "version": "2.0.0",
-  "total_cycles_recorded": 12,
+  "total_cycles_recorded": 13,
   "archetype_weights": {
     "SHOCKING_MYTH": 1.3,
-    "MATH_BREAKDOWN": 1.83,
+    "MATH_BREAKDOWN": 1.88,
     "INSTITUTIONAL_SECRET": 1.1
   },
   "learned_rules": [
-    "Candidate B hits the 'MATH_BREAKDOWN' archetype perfectly by quantifying the risk. In financial content, specific rupee ",
     "Candidate B hits the MATH_BREAKDOWN archetype perfectly by quantifying risk with exact figures ('₹3.5 லட்சம் இழப்பு'). F",
     "Candidate B dominates on data density and retail actionability. By taking the headline earnings surge of 78.86% and grou",
     "Candidate B dominates by combining the strict 6-word punchy Tanglish hook constraint with quantified risk ('₹1.5 லட்சம் ",
@@ -18,7 +17,8 @@
     "Candidate B dominates because it transforms a dry brokerage report into a 'what is in it for me' calculation. By quantif",
     "Candidate B dominates by aligning perfectly with the heavily weighted MATH_BREAKDOWN archetype (1.7 weight). It translat",
     "Candidate B dominates because it hits the 'wallet nerve.' In the Tamil retail market, translating a cyber threat into a ",
-    "Candidate B dominates decisively by scoring 38.0/40, perfectly aligning with the high evolutionary weight for MATH_BREAK"
+    "Candidate B dominates decisively by scoring 38.0/40, perfectly aligning with the high evolutionary weight for MATH_BREAK",
+    "Candidate B wins because it aligns with the MATH_BREAKDOWN archetype (1.8 weight). It translates a global tech-crime hea"
   ],
   "cycle_history": [
     {
@@ -128,6 +128,15 @@
       "critic_score": 9.5,
       "visual_score": 9.0,
       "key_learning": "Candidate B dominates decisively by scoring 38.0/40, perfectly aligning with the high evolutionary weight for MATH_BREAK"
+    },
+    {
+      "cycle": 13,
+      "timestamp": "2026-09-21T19:25:35.155651+00:00",
+      "topic": "65-Year-Old Woman In China Uses AI To Trap Man In $25,000 Dating Scam - NDTV",
+      "winning_archetype": "MATH_BREAKDOWN",
+      "critic_score": 8.8,
+      "visual_score": 8.5,
+      "key_learning": "Candidate B wins because it aligns with the MATH_BREAKDOWN archetype (1.8 weight). It translates a global tech-crime hea"
     }
   ]
 }
