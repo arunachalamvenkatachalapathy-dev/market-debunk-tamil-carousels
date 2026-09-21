@@ -1,20 +1,20 @@
 {
-  "timestamp": "2026-09-20T17:30:05.915879+00:00",
+  "timestamp": "2026-09-21T09:10:59.133825+00:00",
   "phase": "PUBLISHING",
   "platform": "Instagram",
   "severity": "CRITICAL",
   "error_code": "ERR_META_API",
-  "root_cause_analysis": "Meta Graph API request blocked with error code 4 (Application request limit reached) and subcode 2207051 ('Action is blocked' / spam/anti-abuse protection trigger). The account or app has hit rate limits or automated action restrictions enforced by Instagram community protection systems.",
+  "root_cause_analysis": "The Instagram Graph API returned a 403/400-level error (Code 4, Subcode 2207051) indicating an application-level rate limit or security block triggered by the platform's automated integrity systems.",
   "reproducibility": "RATE_LIMIT",
   "automated_remediation": {
     "action": "ABORT",
-    "retry_delay_seconds": 0
+    "retry_delay_seconds": 3600
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Check Meta App Dashboard and Instagram Professional Account status for policy violations or integrity blocks.",
-    "Submit an appeal via the Meta Business Manager or Instagram app ('Tell us if you think that we've made a mistake') if flagged incorrectly.",
-    "Pause automated publishing to Instagram for at least 24 hours to allow temporary anti-abuse block cooldown to expire.",
-    "Verify publishing frequency and reduce posting intervals to avoid triggering anti-spam rate limit thresholds."
+    "Check Meta Business Suite for any account-level restrictions or policy warnings.",
+    "Verify if the application has exceeded daily publishing quotas.",
+    "Wait at least 60 minutes before attempting a manual retry to allow the rate-limit window to reset.",
+    "If the issue persists, review the Instagram Graph API documentation for 'Action is blocked' subcode 2207051 to ensure content compliance."
   ]
 }
