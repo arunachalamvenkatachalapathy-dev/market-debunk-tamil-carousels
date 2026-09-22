@@ -749,8 +749,19 @@
           "status": "skipped"
         }
       },
-      "insights_fetched_48h": false,
-      "insights": {}
+      "insights_fetched_48h": true,
+      "insights": {
+        "saves": 0,
+        "shares": 0,
+        "impressions": 0,
+        "reach": 0,
+        "total_interactions": 0,
+        "fb_reach": 0,
+        "fb_engaged_users": 0,
+        "save_to_reach_pct": 0.0,
+        "status": "success"
+      },
+      "age_at_audit_hours": 57.3
     },
     {
       "title": "Kerala Police Warn of Fake Hospital Appointment APK Scams Targeting Patients Through Google Search - the420.in",
@@ -778,8 +789,19 @@
           "status": "skipped"
         }
       },
-      "insights_fetched_48h": false,
-      "insights": {}
+      "insights_fetched_48h": true,
+      "insights": {
+        "saves": 0,
+        "shares": 0,
+        "impressions": 0,
+        "reach": 0,
+        "total_interactions": 0,
+        "fb_reach": 0,
+        "fb_engaged_users": 0,
+        "save_to_reach_pct": 0.0,
+        "status": "success"
+      },
+      "age_at_audit_hours": 48.5
     },
     {
       "title": "SME IPOs returns in 2026: 21 became multibaggers, but investors also faced 50% losses: What to know - The Economic Times",
@@ -855,6 +877,35 @@
           "success": true,
           "post_id": "1297757220087165_122111292693463457",
           "url": "https://www.facebook.com/1297757220087165_122111292693463457"
+        },
+        "telegram": {
+          "success": false,
+          "status": "skipped"
+        },
+        "linkedin": {
+          "success": false,
+          "status": "skipped"
+        }
+      },
+      "insights_fetched_48h": false,
+      "insights": {}
+    },
+    {
+      "title": "Stock Market prediction tomorrow: Sensex, Nifty outlook for Wed | Kospi, Taiwan Index, Nikkei cues to watch | 23 Sept",
+      "media_id": "simulated_id",
+      "timestamp": "2026-09-22T18:11:49.857967+00:00",
+      "topic_category": "LIQUIDITY_TRAP",
+      "hook_archetype": "SHOCKING_MYTH",
+      "hashtag_cluster": "tamil_cluster_3",
+      "publish_results": {
+        "instagram": {
+          "success": false,
+          "error": "Publish failed: {'message': 'Application request limit reached', 'type': 'OAuthException', 'is_transient': False, 'code': 4, 'error_subcode': 2207051, 'error_user_title': 'Action is blocked', 'error_user_msg': \"We restrict certain activity to protect our community. Tell us if you think that we've made a mistake.\", 'fbtrace_id': 'ATRdBx-vKSHujlgm_gSZJvo'}"
+        },
+        "facebook": {
+          "success": true,
+          "post_id": "1297757220087165_122111452623463457",
+          "url": "https://www.facebook.com/1297757220087165_122111452623463457"
         },
         "telegram": {
           "success": false,
