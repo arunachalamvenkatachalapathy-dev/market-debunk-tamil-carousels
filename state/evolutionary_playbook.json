@@ -1,13 +1,12 @@
 {
   "version": "2.0.0",
-  "total_cycles_recorded": 13,
+  "total_cycles_recorded": 14,
   "archetype_weights": {
     "SHOCKING_MYTH": 1.3,
-    "MATH_BREAKDOWN": 1.88,
+    "MATH_BREAKDOWN": 1.93,
     "INSTITUTIONAL_SECRET": 1.1
   },
   "learned_rules": [
-    "Candidate B hits the MATH_BREAKDOWN archetype perfectly by quantifying risk with exact figures ('₹3.5 லட்சம் இழப்பு'). F",
     "Candidate B dominates on data density and retail actionability. By taking the headline earnings surge of 78.86% and grou",
     "Candidate B dominates by combining the strict 6-word punchy Tanglish hook constraint with quantified risk ('₹1.5 லட்சம் ",
     "Candidate B hits the MATH_BREAKDOWN archetype perfectly with a heavy 1.5 archetype weight. By leading with '₹14 Cr Loss!",
@@ -18,7 +17,8 @@
     "Candidate B dominates by aligning perfectly with the heavily weighted MATH_BREAKDOWN archetype (1.7 weight). It translat",
     "Candidate B dominates because it hits the 'wallet nerve.' In the Tamil retail market, translating a cyber threat into a ",
     "Candidate B dominates decisively by scoring 38.0/40, perfectly aligning with the high evolutionary weight for MATH_BREAK",
-    "Candidate B wins because it aligns with the MATH_BREAKDOWN archetype (1.8 weight). It translates a global tech-crime hea"
+    "Candidate B wins because it aligns with the MATH_BREAKDOWN archetype (1.8 weight). It translates a global tech-crime hea",
+    "Candidate B dominates because it hits the wallet and effort nerve directly. By converting a massive ₹92 Lakhs news headl"
   ],
   "cycle_history": [
     {
@@ -137,6 +137,15 @@
       "critic_score": 8.8,
       "visual_score": 8.5,
       "key_learning": "Candidate B wins because it aligns with the MATH_BREAKDOWN archetype (1.8 weight). It translates a global tech-crime hea"
+    },
+    {
+      "cycle": 14,
+      "timestamp": "2026-09-22T08:46:12.895023+00:00",
+      "topic": "KPSC exam scam: 40 candidates questioned as CID traces Rs 92 lakh money trail - ",
+      "winning_archetype": "MATH_BREAKDOWN",
+      "critic_score": 9.6,
+      "visual_score": 8.8,
+      "key_learning": "Candidate B dominates because it hits the wallet and effort nerve directly. By converting a massive ₹92 Lakhs news headl"
     }
   ]
 }
