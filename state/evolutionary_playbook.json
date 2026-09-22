@@ -1,24 +1,23 @@
 {
   "version": "2.0.0",
-  "total_cycles_recorded": 15,
+  "total_cycles_recorded": 7,
   "archetype_weights": {
-    "SHOCKING_MYTH": 1.35,
-    "MATH_BREAKDOWN": 1.93,
+    "SHOCKING_MYTH": 1.3,
+    "MATH_BREAKDOWN": 1.65,
     "INSTITUTIONAL_SECRET": 1.1
   },
   "learned_rules": [
+    "Use phonetic Tamil Unicode for financial loanwords: 'மியூச்சுவல் ஃபண்ட்', 'ரிட்டர்ன்ஸ்', 'டிவிடெண்ட்', 'போர்ட்ஃபோலியோ'.",
+    "Slide 1 hook must be strictly 5-8 words in punchy spoken Tanglish rhythm.",
+    "Lead with exact rupee figures: '₹34 லட்சம் இழப்பு', '1% கட்டணம்'.",
+    "Final slide must end with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'",
+    "Candidate B hits the 'MATH_BREAKDOWN' archetype perfectly by quantifying the risk. In financial content, specific rupee ",
+    "Candidate B hits the MATH_BREAKDOWN archetype perfectly by quantifying risk with exact figures ('₹3.5 லட்சம் இழப்பு'). F",
+    "Candidate B dominates on data density and retail actionability. By taking the headline earnings surge of 78.86% and grou",
     "Candidate B dominates by combining the strict 6-word punchy Tanglish hook constraint with quantified risk ('₹1.5 லட்சம் ",
     "Candidate B hits the MATH_BREAKDOWN archetype perfectly with a heavy 1.5 archetype weight. By leading with '₹14 Cr Loss!",
     "Candidate B scored the highest total (37.5/40) by converting $250M into a hard-hitting ₹2,075 Crores figure. With the MA",
-    "Candidate B wins because it perfectly aligns with the Tanglish audience's preference for 'hard numbers over fluff.' It c",
-    "Candidate B wins decisively by scoring 38.0/40. It strictly follows the evolutionary weights (MATH_BREAKDOWN: 1.6) by co",
-    "Candidate B dominates because it transforms a dry brokerage report into a 'what is in it for me' calculation. By quantif",
-    "Candidate B dominates by aligning perfectly with the heavily weighted MATH_BREAKDOWN archetype (1.7 weight). It translat",
-    "Candidate B dominates because it hits the 'wallet nerve.' In the Tamil retail market, translating a cyber threat into a ",
-    "Candidate B dominates decisively by scoring 38.0/40, perfectly aligning with the high evolutionary weight for MATH_BREAK",
-    "Candidate B wins because it aligns with the MATH_BREAKDOWN archetype (1.8 weight). It translates a global tech-crime hea",
-    "Candidate B dominates because it hits the wallet and effort nerve directly. By converting a massive ₹92 Lakhs news headl",
-    "Fallback Tanglish anchor."
+    "Candidate B wins because it transforms an abstract market trend into a personal financial threat. In the Tamil retail ma"
   ],
   "cycle_history": [
     {
@@ -77,84 +76,12 @@
     },
     {
       "cycle": 7,
-      "timestamp": "2026-09-18T14:32:01.252538+00:00",
-      "topic": "3-year SIP returns remain subdued: How 11 equity mutual fund categories performe",
-      "winning_archetype": "MATH_BREAKDOWN",
-      "critic_score": 9.0,
-      "visual_score": 3.8,
-      "key_learning": "Candidate B wins because it perfectly aligns with the Tanglish audience's preference for 'hard numbers over fluff.' It c"
-    },
-    {
-      "cycle": 8,
-      "timestamp": "2026-09-19T08:10:01.729623+00:00",
-      "topic": "Fake AI crypto bot tutorials scam $517K from 22... - Pluang",
-      "winning_archetype": "MATH_BREAKDOWN",
-      "critic_score": 9.5,
-      "visual_score": 9.0,
-      "key_learning": "Candidate B wins decisively by scoring 38.0/40. It strictly follows the evolutionary weights (MATH_BREAKDOWN: 1.6) by co"
-    },
-    {
-      "cycle": 9,
-      "timestamp": "2026-09-19T17:16:59.400987+00:00",
-      "topic": "ITC stock: 360 ONE maintains BUY, sees 68% upside; here’s why brokerage is bulli",
-      "winning_archetype": "MATH_BREAKDOWN",
-      "critic_score": 8.8,
-      "visual_score": 9.0,
-      "key_learning": "Candidate B dominates because it transforms a dry brokerage report into a 'what is in it for me' calculation. By quantif"
-    },
-    {
-      "cycle": 10,
-      "timestamp": "2026-09-20T08:43:08.551560+00:00",
-      "topic": "Top stocks to buy under  ₹200: Castrol, NHPC, Vikram Solar - 3 shares by Anand R",
-      "winning_archetype": "MATH_BREAKDOWN",
-      "critic_score": 9.5,
-      "visual_score": 9.0,
-      "key_learning": "Candidate B dominates by aligning perfectly with the heavily weighted MATH_BREAKDOWN archetype (1.7 weight). It translat"
-    },
-    {
-      "cycle": 11,
-      "timestamp": "2026-09-20T17:28:51.076655+00:00",
-      "topic": "Kerala Police Warn of Fake Hospital Appointment APK Scams Targeting Patients Thr",
-      "winning_archetype": "MATH_BREAKDOWN",
-      "critic_score": 9.2,
-      "visual_score": 8.5,
-      "key_learning": "Candidate B dominates because it hits the 'wallet nerve.' In the Tamil retail market, translating a cyber threat into a "
-    },
-    {
-      "cycle": 12,
-      "timestamp": "2026-09-21T09:09:43.431943+00:00",
+      "timestamp": "2026-09-22T19:12:57.407790+00:00",
       "topic": "SME IPOs returns in 2026: 21 became multibaggers, but investors also faced 50% l",
       "winning_archetype": "MATH_BREAKDOWN",
-      "critic_score": 9.5,
+      "critic_score": 9.0,
       "visual_score": 9.0,
-      "key_learning": "Candidate B dominates decisively by scoring 38.0/40, perfectly aligning with the high evolutionary weight for MATH_BREAK"
-    },
-    {
-      "cycle": 13,
-      "timestamp": "2026-09-21T19:25:35.155651+00:00",
-      "topic": "65-Year-Old Woman In China Uses AI To Trap Man In $25,000 Dating Scam - NDTV",
-      "winning_archetype": "MATH_BREAKDOWN",
-      "critic_score": 8.8,
-      "visual_score": 8.5,
-      "key_learning": "Candidate B wins because it aligns with the MATH_BREAKDOWN archetype (1.8 weight). It translates a global tech-crime hea"
-    },
-    {
-      "cycle": 14,
-      "timestamp": "2026-09-22T08:46:12.895023+00:00",
-      "topic": "KPSC exam scam: 40 candidates questioned as CID traces Rs 92 lakh money trail - ",
-      "winning_archetype": "MATH_BREAKDOWN",
-      "critic_score": 9.6,
-      "visual_score": 8.8,
-      "key_learning": "Candidate B dominates because it hits the wallet and effort nerve directly. By converting a massive ₹92 Lakhs news headl"
-    },
-    {
-      "cycle": 15,
-      "timestamp": "2026-09-22T18:09:43.700124+00:00",
-      "topic": "Stock Market prediction tomorrow: Sensex, Nifty outlook for Wed | Kospi, Taiwan ",
-      "winning_archetype": "SHOCKING_MYTH",
-      "critic_score": 8.5,
-      "visual_score": 9.5,
-      "key_learning": "Fallback Tanglish anchor."
+      "key_learning": "Candidate B wins because it transforms an abstract market trend into a personal financial threat. In the Tamil retail ma"
     }
   ]
 }

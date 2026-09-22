@@ -71,24 +71,24 @@ FINANCIAL CONCEPT & EVIDENCE:
 - Golden Actionable Rule: {actionable_rule}
 
 STRICT 8-SLIDE ARCHITECTURAL CONTRACT:
-Every carousel has EXACTLY 8 slides:
-- Slide 1: Hook (Bold Tanglish title with exactly ONE key word/phrase in <span class='highlight-box'>...</span>)
-- Slide 2: Value 1 - The Retail Trap (Editorial headline with 1 highlight box + ONE solid green card text in Tanglish)
-- Slide 3: Value 2 - The Hidden Math / Mechanism (Editorial headline + ONE solid green card with {citable_metric})
-- Slide 4: Value 3 - Why It Compounds Against Retail (Editorial headline + ONE solid green card)
-- Slide 5: Value 4 - Institutional Reality (Editorial headline + ONE solid green card)
-- Slide 6: Value 5 - The Golden Protective Rule (Editorial headline + ONE solid green card)
-- Slide 7: Value 6 - Pre-Trade Action Checklist (Editorial headline + ONE solid green card)
-- Slide 8: Bookmark Save CTA (Fixed text urging them to save this post)
+Every carousel has EXACTLY 8 slides featuring dynamic, high-contrast visual archetypes:
+- Slide 1 (role: "hook"): 4-8 words maximum. Bold Tanglish curiosity gap with exactly ONE key word/phrase in <span class='highlight-box'>...</span>. tag: "#MARKETDEBUNK".
+- Slide 2 (role: "value_1"): Comparison Table. title: 2-3 lines with highlight box. comparison_data: {{"myth": "Retail belief in Tanglish...", "reality": "Institutional truth with exact data..."}}.
+- Slide 3 (role: "value_2"): Hard Data Stat Callout. title: 2-3 lines with highlight box. stat_data: {{"badge": "VERIFIED MARKET IMPACT", "metric": "{citable_metric}", "label": "compounding loss / risk in Tanglish", "context": "30-40 words Tanglish explaining mathematical friction."}}.
+- Slide 4 (role: "value_3"): Distribution / Liquidity Mechanism. title: 2-3 lines with highlight box. card_text: 35-50 words Tanglish detailing order flow or flowchart_data: list of 3 numbered steps.
+- Slide 5 (role: "value_4"): Mathematical Drag / Loss. title: 2-3 lines with highlight box. card_text: 35-50 words Tanglish explaining how capital is quietly extracted.
+- Slide 6 (role: "value_5"): The Non-Negotiable Institutional Rule. title: 2-3 lines with highlight box. card_text: 35-50 words Tanglish presenting the golden execution rule.
+- Slide 7 (role: "value_6"): Pre-Trade Risk Checklist. title: 2-3 lines with highlight box. checklist_data: list of 3 checklist items with "status": "pass" or "fail" and "text": "... in Tanglish".
+- Slide 8 (role: "bookmark_save"): Peer DM-Share & Save Trigger. title_lines: ["இந்த பதிவை உங்க", "<span class='highlight-box'>F&O நண்பருக்கு</span>", "இப்போவே Share", "பண்ணுங்க!"]. cta_detail: "இந்த institutional checkpoints-ஐ உங்கள் அடுத்த trade-க்கு முன் review செய்ய Bookmark செய்யுங்கள்." tag: "#MARKETDEBUNK".
 
-RULES FOR GREEN CARD TEXT:
-- Concise, high-velocity reading: 2 to 3 sentences max.
+RULES FOR CONTENT:
+- Concise, high-velocity reading: 2 to 3 sentences max for card texts or contexts.
 - Bold essential numbers and key phrases using <strong>...</strong> (e.g. <strong>{citable_metric}</strong>).
-- Conversational, engaging Tanglish.
+- Conversational, engaging Tanglish (colloquial Tamil blended with financial terms).
 
 Return JSON ONLY matching this 8-slide schema:
 {{
-  "caption": "High-converting Tanglish caption with hook, 3 bullet points, comment CTA ('Follow @marketdebunk_tamil and Comment GUIDE'), and hashtags",
+  "caption": "High-converting Tanglish caption with hook, 3 bullet points, Save & Share prompt ('📌 Save this post for your next trade review / 📤 Share this with a friend'), comment debate question ('நீங்க இந்த சூழ்நிலையை சந்திச்சிருக்கீங்களா? கமெண்ட்ல சொல்லுங்க 👇'), and hashtags",
   "slides": [
     {{
       "role": "hook",
@@ -99,42 +99,55 @@ Return JSON ONLY matching this 8-slide schema:
       "role": "value_1",
       "tag": "#MARKETDEBUNK",
       "title": "Title with <span class='highlight-box'>...</span>",
-      "card_text": "Tanglish explanation with <strong>key terms</strong>."
+      "comparison_data": {{
+        "myth": "Retail belief in Tanglish with <strong>key terms</strong>",
+        "reality": "Institutional reality in Tanglish with <strong>data</strong>"
+      }}
     }},
     {{
       "role": "value_2",
       "tag": "#MARKETDEBUNK",
       "title": "Title with <span class='highlight-box'>...</span>",
-      "card_text": "Math mechanism with <strong>{citable_metric}</strong>."
+      "stat_data": {{
+        "badge": "VERIFIED MARKET IMPACT",
+        "metric": "{citable_metric}",
+        "label": "compounding loss / risk in Tanglish",
+        "context": "Tanglish explanation with <strong>key metrics</strong>"
+      }}
     }},
     {{
       "role": "value_3",
       "tag": "#MARKETDEBUNK",
       "title": "Title with <span class='highlight-box'>...</span>",
-      "card_text": "Compounding drag explanation."
+      "card_text": "Compounding drag or order flow explanation in Tanglish."
     }},
     {{
       "role": "value_4",
       "tag": "#MARKETDEBUNK",
       "title": "Title with <span class='highlight-box'>...</span>",
-      "card_text": "What institutions do differently."
+      "card_text": "What institutions do differently in Tanglish."
     }},
     {{
       "role": "value_5",
       "tag": "#MARKETDEBUNK",
       "title": "Title with <span class='highlight-box'>...</span>",
-      "card_text": "The golden rule to protect capital."
+      "card_text": "The golden rule to protect capital in Tanglish."
     }},
     {{
       "role": "value_6",
       "tag": "#MARKETDEBUNK",
       "title": "Title with <span class='highlight-box'>...</span>",
-      "card_text": "Action checklist for retail investors."
+      "checklist_data": [
+        {{"status": "fail", "text": "Hype-ஐ பார்த்து blind-ஆ entry எடுப்பது"}},
+        {{"status": "pass", "text": "Trade-க்கு முன்பே strict stop-loss முடிவு செய்வது"}},
+        {{"status": "pass", "text": "ஒரு trade-ல் 2%-க்கு மேல் risk செய்யாமல் இருப்பது"}}
+      ]
     }},
     {{
       "role": "bookmark_save",
       "tag": "#MARKETDEBUNK",
-      "title_lines": ["இந்த பதிவை உங்க", "<span class='highlight-box'>F&O நண்பருக்கு</span>", "இப்போவே Share", "பண்ணுங்க!"]
+      "title_lines": ["இந்த பதிவை உங்க", "<span class='highlight-box'>F&O நண்பருக்கு</span>", "இப்போவே Share", "பண்ணுங்க!"],
+      "cta_detail": "இந்த institutional checkpoints-ஐ உங்கள் அடுத்த trade-க்கு முன் review செய்ய Bookmark செய்யுங்கள்."
     }}
   ]
 }}"""
@@ -279,11 +292,31 @@ Return JSON ONLY matching this 8-slide schema:
                 # Strip trailing numbers like #1, #2
                 raw_title = re.sub(r"\s*#\d+\b", "", str(raw_title)).strip()
                 s["title_lines"] = self._format_title_lines(raw_title, is_hook=False, slide_index=idx + 1)
-                card_text = s.get("card_text") or s.get("card_b_text") or s.get("takeaway") or ""
-                if not card_text:
-                    card_text = "Institutions எப்போதும் verified balance sheet மற்றும் data-வை மட்டுமே நம்புகிறார்கள். Hype-ஐ நம்பி ஏமாறாதீர்கள்."
-                card_text = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", card_text)
-                s["card_text"] = card_text
+
+                # Preserve polymorphic archetype structures
+                if s.get("comparison_data") and isinstance(s["comparison_data"], dict):
+                    comp = s["comparison_data"]
+                    comp["myth"] = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", str(comp.get("myth", "")))
+                    comp["reality"] = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", str(comp.get("reality", "")))
+                elif s.get("stat_data") and isinstance(s["stat_data"], dict):
+                    stat = s["stat_data"]
+                    stat["context"] = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", str(stat.get("context", "")))
+                    stat["metric"] = str(stat.get("metric", ""))
+                    stat["label"] = str(stat.get("label", ""))
+                elif s.get("flowchart_data") and isinstance(s["flowchart_data"], list):
+                    for step in s["flowchart_data"]:
+                        if isinstance(step, dict):
+                            step["text"] = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", str(step.get("text", "")))
+                elif s.get("checklist_data") and isinstance(s["checklist_data"], list):
+                    for item in s["checklist_data"]:
+                        if isinstance(item, dict):
+                            item["text"] = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", str(item.get("text", "")))
+                else:
+                    card_text = s.get("card_text") or s.get("card_b_text") or s.get("takeaway") or ""
+                    if not card_text:
+                        card_text = "Institutions எப்போதும் verified balance sheet மற்றும் data-வை மட்டுமே நம்புகிறார்கள். Hype-ஐ நம்பி ஏமாறாதீர்கள்."
+                    card_text = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", card_text)
+                    s["card_text"] = card_text
 
             normalized.append(s)
 
@@ -375,7 +408,9 @@ Return JSON ONLY matching this 8-slide schema:
                 f"🚨 {short_title} - Institutional Reality என்ன? 📊\n\n"
                 f"சந்தை செய்திகளை பார்த்து அவசரப்பட்டு முடிவெடுக்காதீர்கள்! Institutions எப்படி இந்த நகர்வை அணுகுகிறார்கள் என்பதை புரிந்து கொள்ளுங்கள்.\n\n"
                 f"முழு 8-slide Tanglish breakdown-ஐ பாருங்கள். 👉\n\n"
-                f"💬 Follow @marketdebunk_tamil மற்றும் 'AUDIT'-னு comment பண்ணுங்க, complete Tamil Investor Playbook & Risk Checklist-ஐ உங்க DM-க்கு அனுப்புறோம்!\n\n"
+                f"📌 உங்க அடுத்த trade-க்கு முன் இந்த பதிவை Save செய்து வையுங்கள்.\n"
+                f"📤 F&O மற்றும் stocks trade செய்யும் உங்க நண்பர்களுக்கு Share பண்ணுங்க.\n\n"
+                f"💬 நீங்க இந்த மாதிரி headline hype-ல் மாட்டிக்கிட்டது உண்டா? கமெண்ட்ல சொல்லுங்க 👇\n\n"
                 f"#TamilFinance #StockMarketTamil #NiftyTamil #InvestingTamil #PersonalFinance"
             ),
             "slides": [
@@ -423,6 +458,7 @@ Return JSON ONLY matching this 8-slide schema:
                 {
                     "role": "bookmark_save",
                     "title_lines": ["இந்த பதிவை உங்க", "<span class='highlight-box'>F&O நண்பருக்கு</span>", "இப்போவே Share", "பண்ணுங்க!"],
+                    "cta_detail": "இந்த institutional checkpoints-ஐ உங்கள் அடுத்த trade-க்கு முன் review செய்ய Bookmark செய்யுங்கள்.",
                     "tag": "#MARKETDEBUNK"
                 }
             ]

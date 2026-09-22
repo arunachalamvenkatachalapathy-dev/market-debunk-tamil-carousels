@@ -217,11 +217,43 @@ Return JSON ONLY:
             if cleaned:
                 s["title"] = cleaned
 
-            if "card_text" in s:
+            if "card_text" in s and s["card_text"]:
                 ct = str(s["card_text"])
                 ct = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", ct)
                 ct = re.sub(r"`([^`]+)`", r"\1", ct)
                 s["card_text"] = ct.strip()
+
+            # Sanitize polymorphic archetype fields recursively
+            if "comparison_data" in s and isinstance(s["comparison_data"], dict):
+                comp = s["comparison_data"]
+                for k in ["myth", "reality"]:
+                    if k in comp and comp[k]:
+                        val = str(comp[k])
+                        val = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", val)
+                        val = re.sub(r"`([^`]+)`", r"\1", val)
+                        comp[k] = val.strip()
+            if "stat_data" in s and isinstance(s["stat_data"], dict):
+                stat = s["stat_data"]
+                for k in ["context", "badge", "label", "metric"]:
+                    if k in stat and stat[k]:
+                        val = str(stat[k])
+                        val = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", val)
+                        val = re.sub(r"`([^`]+)`", r"\1", val)
+                        stat[k] = val.strip()
+            if "flowchart_data" in s and isinstance(s["flowchart_data"], list):
+                for step in s["flowchart_data"]:
+                    if isinstance(step, dict) and "text" in step and step["text"]:
+                        val = str(step["text"])
+                        val = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", val)
+                        val = re.sub(r"`([^`]+)`", r"\1", val)
+                        step["text"] = val.strip()
+            if "checklist_data" in s and isinstance(s["checklist_data"], list):
+                for item in s["checklist_data"]:
+                    if isinstance(item, dict) and "text" in item and item["text"]:
+                        val = str(item["text"])
+                        val = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", val)
+                        val = re.sub(r"`([^`]+)`", r"\1", val)
+                        item["text"] = val.strip()
 
             if i == len(slides) - 1 and not s.get("cta_detail"):
                 s["cta_detail"] = "இந்த institutional risk checkpoints-ஐ உங்கள் அடுத்த trade-க்கு முன் review செய்ய save செய்து கொள்ளுங்கள்."
@@ -233,7 +265,7 @@ Return JSON ONLY:
         1. Curiosity Hook (rotates across 5 distinct opening archetypes in Tanglish)
         2. Progressive Value Preview (3 slide teasers)
         3. Double Algorithmic Engagement Signal: Bookmark Save + DM Share CTA
-        4. Lead Magnet keyword comment trigger
+        4. Organic community debate question (drives genuine comments instead of ghost DMs)
         5. Rotating non-repetitive hashtag cluster (anti-spam diversity)
         """
         title = topic_data.get("title", "")
@@ -242,7 +274,6 @@ Return JSON ONLY:
         clean_hook = re.sub(r"<[^>]+>", "", hook_text).strip()
         clean_hook = re.sub(r"\s*[-|]\s*(Bloomberg(\.com)?|Reuters|Mint|Moneycontrol|The Economic Times|NDTV Profit|CNBC-TV18|Business Standard|Financial Express).*", "", clean_hook, flags=re.IGNORECASE).strip()
 
-        trigger = "GUIDE"
         bullets = []
         for s in slides[1:4]:
             t = s.get("title") or ""
@@ -301,6 +332,14 @@ Return JSON ONLY:
         deck["hashtag_cluster_id"] = f"tamil_cluster_{cluster_idx + 1}"
         deck["hook_archetype_id"] = f"tamil_angle_{angle_idx + 1}"
 
+        debate_questions = [
+            "சந்தையில் திடீர் breakout வரும் போது உங்களுடைய முக்கிய rule என்ன? கமெண்ட்ல சொல்லுங்க 👇",
+            "நீங்க இந்த மாதிரி headline hype-ல் மாட்டிக்கிட்டு நஷ்டமடைஞ்சது உண்டா? உங்க அனுபவத்தை பகிருங்க 👇",
+            "Trade எடுக்கும் போது stop-loss வச்சு trade செய்வீங்களா அல்லது news மட்டும் நம்புவீங்களா? கமெண்ட்ல சொல்லுங்க 👇",
+            "Retail investors செய்யும் மிகப்பெரிய தவறு என்னன்னு நினைக்கிறீங்க? கமெண்ட்ல விவாதிப்போம் 👇"
+        ]
+        debate_q = random.choice(debate_questions)
+
         caption = (
             f"🚨 {clean_hook}\n\n"
             f"{chosen_opening}\n\n"
@@ -308,7 +347,7 @@ Return JSON ONLY:
             f"{chr(10).join(bullets)}\n\n"
             f"📌 உங்கள் அடுத்த trade-க்கு முன் பார்க்க இந்த பதிவை Save செய்து கொள்ளுங்கள்.\n"
             f"✈️ உங்கள் முதலீட்டாளர் நண்பர்களுக்கு Share செய்து அவர்களின் Capital-ஐ பாதுகாக்கவும்.\n\n"
-            f"💬 Follow @marketdebunk_tamil மற்றும் '{trigger}'-னு கீழே comment பண்ணுங்க — complete detailed Investor Playbook & Risk Checklist PDF-ஐ உங்க DM-க்கு உடனே அனுப்புறோம்!\n\n"
+            f"💬 {debate_q}\n\n"
             f"{chosen_hashtags}"
         )
         return caption

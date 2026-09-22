@@ -1,75 +1,123 @@
 {
   "topic": {
-    "title": "Stock Market prediction tomorrow: Sensex, Nifty outlook for Wed | Kospi, Taiwan Index, Nikkei cues to watch | 23 Sept",
+    "title": "SME IPOs returns in 2026: 21 became multibaggers, but investors also faced 50% losses: What to know",
     "archetype": "market_breaking_news",
     "archetype_name": "Breaking Financial News Debunk",
     "topic_category": "MARKET_TRAP",
-    "viral_demand_score": 65.4,
-    "source": "Livemint Markets",
-    "source_snippet": "Indian stocks fell on 22 September as technology and FMCG sectors dragged down benchmarks. Early losses of 0.61% were partly recovered. Brent crude dropped amidst discussions for reopening the Strait of Hormuz if U.S. eases pressure on Iran. Investor caution prevails amid market uncertainties.",
-    "source_url": "https://www.livemint.com/market/stock-market-news/stock-market-prediction-tomorrow-sensex-nifty-outlook-for-wed-kospi-taiwan-index-nikkei-cues-to-watch-23-sept-11790070424595.html",
-    "raw_text": "Stock Market prediction tomorrow: Sensex, Nifty outlook for Wed | Kospi, Taiwan Index, Nikkei cues to watch | 23 Sept. Indian stocks fell on 22 September as technology and FMCG sectors dragged down benchmarks. Early losses of 0.61% were partly recovered. Brent crude dropped amidst discussions for reopening the Strait of Hormuz if U.S. eases pressure on Iran. Investor caution prevails amid market uncertainties.",
+    "viral_demand_score": 88.8,
+    "source": "Economic Times Wealth & Personal Finance",
+    "source_snippet": "",
+    "source_url": "https://economictimes.indiatimes.com/wealth/invest/sme-ipos-returns-in-2026-21-became-multibaggers-but-investors-also-faced-50-losses-what-to-know/slideshow/134380288.cms",
+    "raw_text": "SME IPOs returns in 2026: 21 became multibaggers, but investors also faced 50% losses: What to know. If you're eyeing India's SME IPO market hoping to strike it rich, the headlines can be deceiving. Yes, 21 stocks turned into multibaggers in 2026, with one soaring 456%. But before you put your hard-earned money in, here's the truth: nearly half the SME IPOs this year left investors with losses, not gains. Your actual odds matter more than the flashiest success stories. Here's a lesson every investor needs to learn: averages lie. The SME IPO market shows an average return of 24.4% in 2026, which sounds fantastic. But the median return, what a typical investor with typical luck actually earned, is only 3.9%. If you'd invested in a random SME IPO this year, this smaller number is closer to what you'd have actually pocketed. Apsis Aerocom investors saw their money grow 456%, turning ₹1 lakh into over ₹5.5 lakh. Millworks Technologies, Indo SMC and Tipco Engineering also delivered life-changing gains of over 200%. These stories are real, and they're tempting. But ask yourself honestly: out of 126 IPO options, would you have picked exactly these four? That's the real challenge every investor faces. While multibagger stories grab attention, 60 out of 126 SME stocks listed in 2026 are trading below their offer price today. That means if you'd randomly picked an SME IPO to invest in this year, you'd have close to a 50% chance of being in the red right now. This is the risk that rarely makes it into IPO excitement — and it's the one that should shape your decision-making.",
     "numbers_detected": [
-      "23",
-      "22",
-      "0.61%"
+      "2026",
+      "21",
+      "50%"
     ],
-    "published_at": "2026-09-22T15:44:10+05:30",
-    "age_hours": 7.8,
-    "retrieved_at": "2026-09-22T18:04:46.843786+00:00",
+    "published_at": "2026-09-21T10:21:09+05:30",
+    "age_hours": 38.3,
+    "retrieved_at": "2026-09-22T19:09:54.666990+00:00",
     "date": "22 Sep 2026",
     "from_live_api": true,
-    "evidence_snapshot": "Source: Livemint Markets | Published: 2026-09-22T15:44:10+05:30 (7.8h ago) | Headline: Stock Market prediction tomorrow: Sensex, Nifty outlook for Wed | Kospi, Taiwan Index, Nikkei cues to watch | 23 Sept | Context: Stock Market prediction tomorrow: Sensex, Nifty outlook for Wed | Kospi, Taiwan Index, Nikkei cues to watch | 23 Sept. Indian stocks fell on 22 September as technology and FMCG sectors dragged down benchmarks. Early losses of 0.61% were partly recovered. Brent crude dropped amidst discussions for reopening the Strait of Hormuz if U.S. eases pressure on Iran. Investor caution prevails amid market u",
+    "evidence_snapshot": "Source: Economic Times Wealth & Personal Finance | Published: 2026-09-21T10:21:09+05:30 (38.3h ago) | Headline: SME IPOs returns in 2026: 21 became multibaggers, but investors also faced 50% losses: What to know | Context: SME IPOs returns in 2026: 21 became multibaggers, but investors also faced 50% losses: What to know. If you're eyeing India's SME IPO market hoping to strike it rich, the headlines can be deceiving. Yes, 21 stocks turned into multibaggers in 2026, with one soaring 456%. But before you put your hard-earned money in, here's the truth: nearly half the SME IPOs this year left investors with losses, no",
     "news_analysis": {
-      "headline_hook": "Stock Market prediction tomorrow: Sensex - நீங்கள் அறியாத உண்மை",
-      "breaking_event_summary": "Recent market development reported by Livemint Markets: Stock Market prediction tomorrow: Sensex, Nifty outlook for Wed | Kospi, Taiwan Index, Nikkei cues to watch | 23 Sept",
-      "retail_illusion": "Retail traders assume headline market moves represent easy momentum to chase.",
-      "institutional_reality": "Institutional order flows leverage volatility to offload risk while retail enters at the peak.",
+      "headline_hook": "₹5 lakh investment, ₹2.5 lakh loss!",
+      "breaking_event_summary": "Analysis of 126 SME IPOs listed in 2026 reveals that while 21 stocks became multibaggers, 60 issues (nearly 50%) are trading below their issue price, dragging the true median return down to just 3.9%.",
+      "retail_illusion": "Retail investors assume the widely publicized 24.4% average SME IPO return reflects typical market gains and guarantees easy multibagger profits on listing day allocations.",
+      "institutional_reality": "Arithmetic mean returns are severely skewed by a tiny handful of extreme outliers like Apsis Aerocom (+456%). In reality, nearly half of all listings destroy capital, and the median retail outcome (3.9%) underperforms a standard fixed deposit while locking capital in low-liquidity lot sizes.",
       "citable_metrics": [
-        "23",
-        "22",
-        "0.61%"
+        "21 multibaggers",
+        "456% gain (Apsis Aerocom)",
+        "₹1 lakh to ₹5.5 lakh",
+        "24.4% average return",
+        "3.9% median return",
+        "60 out of 126 stocks below offer price",
+        ">200% gains (Millworks Technologies, Indo SMC, Tipco Engineering)"
       ],
-      "debunk_category": "LIQUIDITY_TRAP",
-      "actionable_retail_rule": "Never chase a headline move without verifying volume distribution and delivery percentages.",
+      "debunk_category": "VALUATION_MYTH",
+      "actionable_retail_rule": "Never evaluate asymmetric or illiquid asset classes using average returns; evaluate median returns and cap total portfolio exposure to SME segment allocations at under 5%.",
       "lead_magnet": {
-        "trigger_word": "GUIDE",
-        "resource_name": "The Market Overlook Checklist"
+        "trigger_word": "AUDIT",
+        "resource_name": "The SME IPO Red-Flag & Liquidity Risk Checklist"
       },
-      "highlight_word": "அறியாத உண்மை"
+      "carousel_outline": [
+        {
+          "slide": 1,
+          "role": "hook",
+          "focus": "The 24% SME IPO Myth: The Hidden Stat Mainstream Media Ignored in 2026"
+        },
+        {
+          "slide": 2,
+          "role": "friction",
+          "focus": "Multibagger Euphoria: Why Retail Thinks Every SME Listing Is a 450% Jackpot"
+        },
+        {
+          "slide": 3,
+          "role": "math_reality",
+          "focus": "Average (24.4%) vs Median (3.9%): The Mathematical Trap of Right-Skewed Data"
+        },
+        {
+          "slide": 4,
+          "role": "breakdown",
+          "focus": "The 50% Coin Toss: How 60 out of 126 Listings Left Portfolios in the Red"
+        },
+        {
+          "slide": 5,
+          "role": "actionable_rule",
+          "focus": "The Non-Negotiable Median Filter & 5% SME Allocation Cap Rule"
+        },
+        {
+          "slide": 6,
+          "role": "cta",
+          "focus": "Comment AUDIT to Get the 1-Page SME IPO Pre-Listing Due Diligence Checklist"
+        }
+      ],
+      "highlight_word": "Hard Truth",
+      "editorial_directive": "Use colloquial Tanglish (e.g., 'Aasai-la payasam kudikathinga' for greed) to balance the harsh math. Ensure the font size for the 'Loss' figure is 3x larger than the rest of the text to maximize visual impact."
     },
     "darwin_result": {
       "winning_candidate": {
-        "id": "A",
-        "archetype": "SHOCKING_MYTH",
-        "headline_hook": "Stock Market prediction tomorrow: Sensex - நீங்கள் அறியாத உண்மை",
-        "highlight_word": "அறியாத உண்மை",
+        "id": "B",
+        "archetype": "MATH_BREAKDOWN",
+        "headline_hook": "₹5 lakh investment, ₹2.5 lakh loss!",
+        "highlight_word": "Hard Truth",
         "scores": {
-          "total": 34.0
-        }
+          "curiosity_gap": 9,
+          "viral_potential": 9,
+          "retail_actionability": 10,
+          "friction_quotient": 8,
+          "total": 36.0
+        },
+        "critic_critique": "The definitive winner. Quantifying the loss in rupees stops the scroll instantly. It forces the reader to confront their own potential risk."
       },
-      "critic_score": 8.5,
-      "archetype": "SHOCKING_MYTH",
-      "selection_rationale": "Fallback Tanglish anchor."
+      "critic_score": 9.0,
+      "archetype": "MATH_BREAKDOWN",
+      "selection_rationale": "Candidate B wins because it transforms an abstract market trend into a personal financial threat. In the Tamil retail market, 'rupee-based' fear is the strongest driver of engagement.",
+      "final_editorial_directive": "Use colloquial Tanglish (e.g., 'Aasai-la payasam kudikathinga' for greed) to balance the harsh math. Ensure the font size for the 'Loss' figure is 3x larger than the rest of the text to maximize visual impact."
     },
-    "headline_hook": "Stock Market prediction tomorrow: Sensex - நீங்கள் அறியாத உண்மை",
-    "highlight_word": "அறியாத உண்மை"
+    "headline_hook": "₹5 lakh investment, ₹2.5 lakh loss!",
+    "highlight_word": "Hard Truth",
+    "editorial_directive": "Use colloquial Tanglish (e.g., 'Aasai-la payasam kudikathinga' for greed) to balance the harsh math. Ensure the font size for the 'Loss' figure is 3x larger than the rest of the text to maximize visual impact."
   },
   "plan": {
-    "hook_headline": "Stock Market prediction tomorrow: Sensex - நீங்கள் அறியாத உண்மை",
-    "core_illusion": "Retail traders assume headline market moves represent easy momentum to chase.",
-    "hidden_reality": "Institutional order flows leverage volatility to offload risk while retail enters at the peak.",
-    "citable_metric": "23",
+    "hook_headline": "₹5 lakh investment, ₹2.5 lakh loss!",
+    "core_illusion": "Retail investors assume the widely publicized 24.4% average SME IPO return reflects typical market gains and guarantees easy multibagger profits on listing day allocations.",
+    "hidden_reality": "Arithmetic mean returns are severely skewed by a tiny handful of extreme outliers like Apsis Aerocom (+456%). In reality, nearly half of all listings destroy capital, and the median retail outcome (3.9%) underperforms a standard fixed deposit while locking capital in low-liquidity lot sizes.",
+    "citable_metric": "21 multibaggers",
     "all_metrics": [
-      "23",
-      "22",
-      "0.61%"
+      "21 multibaggers",
+      "456% gain (Apsis Aerocom)",
+      "₹1 lakh to ₹5.5 lakh",
+      "24.4% average return",
+      "3.9% median return",
+      "60 out of 126 stocks below offer price",
+      ">200% gains (Millworks Technologies, Indo SMC, Tipco Engineering)"
     ],
-    "actionable_rule": "Never chase a headline move without verifying volume distribution and delivery percentages.",
-    "breaking_event": "Recent market development reported by Livemint Markets: Stock Market prediction tomorrow: Sensex, Nifty outlook for Wed | Kospi, Taiwan Index, Nikkei cues to watch | 23 Sept",
+    "actionable_rule": "Never evaluate asymmetric or illiquid asset classes using average returns; evaluate median returns and cap total portfolio exposure to SME segment allocations at under 5%.",
+    "breaking_event": "Analysis of 126 SME IPOs listed in 2026 reveals that while 21 stocks became multibaggers, 60 issues (nearly 50%) are trading below their issue price, dragging the true median return down to just 3.9%.",
     "lead_magnet": {
-      "trigger_word": "GUIDE",
-      "resource_name": "The Market Overlook Checklist"
+      "trigger_word": "AUDIT",
+      "resource_name": "The SME IPO Red-Flag & Liquidity Risk Checklist"
     },
     "banned_phrases": [
       "guaranteed wealth",
@@ -79,83 +127,110 @@
     ]
   },
   "deck": {
-    "caption": "🚨 Stock Market prediction: Sensex - நீங்கள் அறியாத உண்மை\n\nசந்தையில் வரும் செய்திகளை மட்டும் நம்பி முதலீடு செய்வது எப்படி institutional trap-ல் சிக்க வைக்கும் என்பதை பாருங்கள்.\n\nமுழு 8-slide Tanglish breakdown-ஐ படிக்க swipe செய்யுங்கள். 👉\n📌 Retail Traders-ன் பெரிய தவறு\n📌 மார்க்கெட்டின் மறைமுக கணக்கு\n📌 ஏன் இது உங்களுக்கு எதிராக வேலை செய்யுது?\n\n📌 உங்கள் அடுத்த trade-க்கு முன் பார்க்க இந்த பதிவை Save செய்து கொள்ளுங்கள்.\n✈️ உங்கள் முதலீட்டாளர் நண்பர்களுக்கு Share செய்து அவர்களின் Capital-ஐ பாதுகாக்கவும்.\n\n💬 Follow @marketdebunk_tamil மற்றும் 'GUIDE'-னு கீழே comment பண்ணுங்க — complete detailed Investor Playbook & Risk Checklist PDF-ஐ உங்க DM-க்கு உடனே அனுப்புறோம்!\n\n#TamilWealth #PersonalFinanceTamil #TamilBusiness #MoneyTamil #TamilSavings",
+    "caption": "🚨 SME IPO-ல 5 லட்சம் முதலீடு, 2.5 லட்சம் நஷ்டம்!\n\nசாதாரண முதலீட்டாளர்கள் இந்த breakout-ஐ துரத்தும் போது, பெரிய நிறுவனங்கள் தங்கள் ரிஸ்க்கை அமைதியாக hedge செய்கின்றன.\n\nமுழு 8-slide Tanglish breakdown-ஐ படிக்க swipe செய்யுங்கள். 👉\n📌 Aasai-la payasam kudikathinga: Myth vs Reality\n📌 Flashy headlines-க்கு பின்னாடி உள்ள கசப்பான உண்மை\n📌 ஏன் SME IPO-வில் நஷ்டம் அதிகம்?\n\n📌 உங்கள் அடுத்த trade-க்கு முன் பார்க்க இந்த பதிவை Save செய்து கொள்ளுங்கள்.\n✈️ உங்கள் முதலீட்டாளர் நண்பர்களுக்கு Share செய்து அவர்களின் Capital-ஐ பாதுகாக்கவும்.\n\n💬 நீங்க இந்த மாதிரி headline hype-ல் மாட்டிக்கிட்டு நஷ்டமடைஞ்சது உண்டா? உங்க அனுபவத்தை பகிருங்க 👇\n\n#MarketDebunkTamil #StockTipsTamil #TradingStrategyTamil #RiskTamil #TamilKnowledge",
     "slides": [
       {
         "role": "hook",
         "tag": "#MARKETDEBUNK",
-        "title": "Stock Market prediction: Sensex - <span class='highlight-box'>நீங்கள் அறியாத உண்மை</span>",
+        "title": "SME IPO-ல 5 லட்சம் முதலீடு, <span class='highlight-box'>2.5 லட்சம் நஷ்டம்!</span>",
         "slide_index": 1,
         "title_lines": [
-          "Stock Market",
-          "prediction: Sensex",
-          "<span class='highlight-box'>நீங்கள் அறியாத</span>"
+          "SME IPO-ல",
+          "5 லட்சம்",
+          "<span class='highlight-box'>2.5 லட்சம்</span>"
         ],
         "card_text": ""
       },
       {
         "role": "value_1",
         "tag": "#MARKETDEBUNK",
-        "title": "Retail Traders-ன் <span class='highlight-box'>பெரிய தவறு</span>",
-        "card_text": "நாளைக்கு மார்க்கெட் ஏறும்னு நியூஸ் வந்ததும் உடனே பை பண்றதுதான் பெரிய தப்பு. <strong>Headline momentum</strong>-ஐ பார்த்து உள்ள நுழையுற ரீடைல் ட்ரேடர்களை, பெரிய பிளேயர்ஸ் ஈஸியா டிராப் பண்ணிடுவாங்க.",
+        "title": "Aasai-la payasam kudikathinga: <span class='highlight-box'>Myth vs Reality</span>",
+        "comparison_data": {
+          "myth": "Retail investors: 'Average 24.4% return varudhu, so SME IPO-la easy-ah multibagger profit adikkalam!'",
+          "reality": "Institutional reality: 'Median return is just 3.9%. Nearly 50% of stocks are trading below offer price!'"
+        },
         "slide_index": 2,
         "title_lines": [
-          "Retail Traders-ன்",
-          "<span class='highlight-box'>பெரிய தவறு</span>"
+          "Aasai-la payasam",
+          "<span class='highlight-box'>kudikathinga: Myth</span>",
+          "vs Reality"
         ]
       },
       {
         "role": "value_2",
         "tag": "#MARKETDEBUNK",
-        "title": "மார்க்கெட்டின் <span class='highlight-box'>மறைமுக கணக்கு</span>",
-        "card_text": "செப்டம்பர் <strong>23</strong> நிலவரப்படி, டெக் மற்றும் FMCG செக்டார்ஸ் மார்க்கெட்டை கீழ இழுக்குது. குளோபல் கியூஸ் (Kospi, Nikkei) மற்றும் கச்சா எண்ணெய் விலை மாற்றங்களை கவனிக்காம ட்ரேட் பண்றது ரிஸ்க்.",
+        "title": "Flashy headlines-க்கு பின்னாடி <span class='highlight-box'>உள்ள கசப்பான உண்மை</span>",
+        "stat_data": {
+          "badge": "VERIFIED MARKET IMPACT",
+          "metric": "21 multibaggers",
+          "label": "Risk of capital erosion",
+          "context": "2026-ல 126 IPO-ல வெறும் 21 தான் multibaggers. மீதி 60 stocks offer price-க்கும் கீழ தான் இருக்கு. Average-ஐ பார்த்து ஏமாறாதீங்க, Median-ஐ பாருங்க!"
+        },
         "slide_index": 3,
         "title_lines": [
-          "<span class='highlight-box'>மார்க்கெட்டின் மறைமுக</span>",
-          "கணக்கு"
+          "Flashy headlines-க்கு",
+          "<span class='highlight-box'>பின்னாடி உள்ள</span>",
+          "கசப்பான உண்மை"
         ]
       },
       {
         "role": "value_3",
         "tag": "#MARKETDEBUNK",
-        "title": "ஏன் இது உங்களுக்கு <span class='highlight-box'>எதிராக வேலை செய்யுது?</span>",
-        "card_text": "மார்க்கெட் வாலடைலிட்டியா இருக்கும்போது, ரீடைல் ட்ரேடர்ஸ் பயத்துல பொசிஷனை க்ளோஸ் பண்ணுவாங்க. இந்த <strong>panic selling</strong>-ஐ பயன்படுத்தி இன்ஸ்டிடியூஷன்ஸ் கம்மியான விலையில ஸ்டாக்ஸை அள்ளிப்பாங்க.",
+        "title": "ஏன் SME IPO-வில் <span class='highlight-box'>நஷ்டம் அதிகம்?</span>",
+        "card_text": "1. Low Liquidity: விக்க நினைக்கும் போது buyers இருக்க மாட்டாங்க. 2. Skewed Returns: சில stocks 456% ஏறும், ஆனா பாதி stocks capital-ஐ காலி பண்ணிடும். 3. Retail Trap: Hype-ஐ நம்பி entry எடுப்பது பெரிய தப்பு.",
         "slide_index": 4,
         "title_lines": [
-          "ஏன் இது",
-          "<span class='highlight-box'>உங்களுக்கு எதிராக</span>",
-          "வேலை செய்யுது?"
+          "ஏன் SME",
+          "<span class='highlight-box'>IPO-வில் நஷ்டம்</span>",
+          "அதிகம்?"
         ]
       },
       {
         "role": "value_4",
         "tag": "#MARKETDEBUNK",
-        "title": "Institutional <span class='highlight-box'>ரியாலிட்டி</span>",
-        "card_text": "பெரிய இன்ஸ்டிடியூஷன்ஸ் எப்பவுமே <strong>order flow</strong>-ஐ வச்சுதான் மூவ் பண்ணுவாங்க. நீங்க நியூஸை பார்த்து என்ட்ரி எடுக்கும்போது, அவங்க அவங்களுடைய ரிஸ்க்கை உங்ககிட்ட கொடுத்துட்டு வெளிய வந்துடுவாங்க.",
+        "title": "கணக்கு தப்பா போனா <span class='highlight-box'>பணம் காலி!</span>",
+        "card_text": "Apsis Aerocom மாதிரி ஒரு சில stocks 456% ஏறுறதை பார்த்து எல்லாரும் SME IPO-வை தேடி போறாங்க. ஆனா 126-ல அந்த 4-ஐ மட்டும் pick பண்றது 'Luck' தான், 'Strategy' இல்ல. 50% chance நீங்க நஷ்டத்துல இருக்க வாய்ப்பிருக்கு.",
         "slide_index": 5,
         "title_lines": [
-          "<span class='highlight-box'>Institutional ரியாலிட்டி</span>"
+          "கணக்கு தப்பா",
+          "<span class='highlight-box'>போனா பணம்</span>",
+          "காலி!"
         ]
       },
       {
         "role": "value_5",
         "tag": "#MARKETDEBUNK",
-        "title": "Golden <span class='highlight-box'>Protective Rule</span>",
-        "card_text": "எந்த ஒரு நியூஸ் அல்லது ஹெட்லைனை நம்பியும் கண்மூடித்தனமா ட்ரேட் பண்ணாதீங்க. <strong>Volume distribution</strong> மற்றும் <strong>delivery percentage</strong>-ஐ செக் பண்ணாம ஒரு ரூபாய்கூட இன்வெஸ்ட் பண்ணாதீங்க.",
+        "title": "Capital-ஐ பாதுகாக்க <span class='highlight-box'>Golden Rule</span>",
+        "card_text": "எப்பவும் 'Average' ரிட்டர்ன்ஸ்-ஐ நம்பி முதலீடு பண்ணாதீங்க. SME segment-ல உங்க மொத்த portfolio-ல 5%-க்கு மேல exposure வைக்காதீங்க. இது illiquid asset, so கவனமா இருங்க!",
         "slide_index": 6,
         "title_lines": [
-          "<span class='highlight-box'>Golden Protective</span>",
-          "Rule"
+          "Capital-ஐ பாதுகாக்க",
+          "<span class='highlight-box'>Golden Rule</span>"
         ]
       },
       {
         "role": "value_6",
         "tag": "#MARKETDEBUNK",
-        "title": "Pre-Trade <span class='highlight-box'>செக்லிஸ்ட்</span>",
-        "card_text": "ட்ரேட் பண்றதுக்கு முன்னாடி <strong>Global cues</strong>, செக்டார் பெர்ஃபார்மன்ஸ் மற்றும் வால்யூம் டேட்டாவை பாருங்க. ஸ்டாப்-லாஸ் இல்லாம மார்க்கெட்ல என்ட்ரி ஆகாதீங்க, அதுதான் உங்க கேபிட்டலை காப்பாத்தும்.",
+        "title": "Trade-க்கு முன்னாடி <span class='highlight-box'>இந்த checklist பாருங்க</span>",
+        "checklist_data": [
+          {
+            "status": "fail",
+            "text": "Hype-ஐ பார்த்து blind-ஆ entry எடுப்பது"
+          },
+          {
+            "status": "pass",
+            "text": "Portfolio-ல 5%-க்கு கீழ் மட்டும் exposure வைப்பது"
+          },
+          {
+            "status": "pass",
+            "text": "Median returns-ஐ மட்டும் கணக்கில் கொள்வது"
+          }
+        ],
         "slide_index": 7,
         "title_lines": [
-          "<span class='highlight-box'>Pre-Trade செக்லிஸ்ட்</span>"
+          "Trade-க்கு முன்னாடி",
+          "<span class='highlight-box'>இந்த checklist</span>",
+          "பாருங்க"
         ]
       },
       {
@@ -167,59 +242,65 @@
           "<span class='highlight-box'>Save & Share</span>",
           "செய்யுங்கள்"
         ],
+        "cta_detail": "இந்த institutional checkpoints-ஐ உங்கள் அடுத்த trade-க்கு முன் review செய்ய Bookmark செய்யுங்கள்.",
         "slide_index": 8,
-        "card_text": "",
-        "cta_detail": "இந்த institutional risk checkpoints-ஐ உங்கள் அடுத்த trade-க்கு முன் review செய்ய Save செய்யுங்கள். உங்கள் நண்பர்களுக்கும் Share செய்து உதவுங்கள்."
+        "card_text": ""
       }
     ],
     "fact_check_status": "verified_pass",
     "audio_recommendation": {
-      "title": "Azhagiya Theeye (Acoustic Minimal)",
-      "artist": "Harris Jayaraj / Classical Touch",
-      "bpm": 108,
-      "vibe": "Calm Rational Thinking",
-      "reels_boost_tier": "High Retention",
-      "search_query": "Harris Jayaraj Instrumental Acoustic"
+      "title": "Experience (Ludovico Instrumental)",
+      "artist": "Ludovico Einaudi",
+      "bpm": 95,
+      "vibe": "Compounding Breakthrough",
+      "reels_boost_tier": "Top Tier",
+      "search_query": "Ludovico Einaudi Experience"
     },
-    "hashtag_cluster_id": "tamil_cluster_3",
-    "hook_archetype_id": "tamil_angle_1"
+    "hashtag_cluster_id": "tamil_cluster_4",
+    "hook_archetype_id": "tamil_angle_4"
   },
   "audio": {
-    "title": "Azhagiya Theeye (Acoustic Minimal)",
-    "artist": "Harris Jayaraj / Classical Touch",
-    "bpm": 108,
-    "vibe": "Calm Rational Thinking",
-    "reels_boost_tier": "High Retention",
-    "search_query": "Harris Jayaraj Instrumental Acoustic"
+    "title": "Experience (Ludovico Instrumental)",
+    "artist": "Ludovico Einaudi",
+    "bpm": 95,
+    "vibe": "Compounding Breakthrough",
+    "reels_boost_tier": "Top Tier",
+    "search_query": "Ludovico Einaudi Experience"
   },
-  "run_id": "20260922_180719",
+  "run_id": "20260922_191214",
   "slide_count": 8,
   "darwin_result": {
     "winning_candidate": {
-      "id": "A",
-      "archetype": "SHOCKING_MYTH",
-      "headline_hook": "Stock Market prediction tomorrow: Sensex - நீங்கள் அறியாத உண்மை",
-      "highlight_word": "அறியாத உண்மை",
+      "id": "B",
+      "archetype": "MATH_BREAKDOWN",
+      "headline_hook": "₹5 lakh investment, ₹2.5 lakh loss!",
+      "highlight_word": "Hard Truth",
       "scores": {
-        "total": 34.0
-      }
+        "curiosity_gap": 9,
+        "viral_potential": 9,
+        "retail_actionability": 10,
+        "friction_quotient": 8,
+        "total": 36.0
+      },
+      "critic_critique": "The definitive winner. Quantifying the loss in rupees stops the scroll instantly. It forces the reader to confront their own potential risk."
     },
-    "critic_score": 8.5,
-    "archetype": "SHOCKING_MYTH",
-    "selection_rationale": "Fallback Tanglish anchor."
+    "critic_score": 9.0,
+    "archetype": "MATH_BREAKDOWN",
+    "selection_rationale": "Candidate B wins because it transforms an abstract market trend into a personal financial threat. In the Tamil retail market, 'rupee-based' fear is the strongest driver of engagement.",
+    "final_editorial_directive": "Use colloquial Tanglish (e.g., 'Aasai-la payasam kudikathinga' for greed) to balance the harsh math. Ensure the font size for the 'Loss' figure is 3x larger than the rest of the text to maximize visual impact."
   },
   "visual_audit": {
     "passed": true,
-    "average_score": 9.5,
+    "average_score": 9.0,
     "slide_1_report": {
       "overall_score": 9.5,
       "passed": true,
-      "critique_summary": "The Tamil Unicode rendering is excellent, showing no glyph breakage or kerning issues. The headline uses a strong, clean sans-serif typography that ensures high contrast and legibility on mobile devices. The green highlight box provides a strong visual anchor and excellent readability for the Tamil text.",
+      "critique_summary": "The Tamil text is rendered flawlessly with correct conjunct character spacing and vowel positioning. The headline utilizes a bold weight that ensures excellent legibility on mobile devices. The high-contrast green highlight box creates a strong focal point, though the proximity of the two numeric values could be slightly confusing without context on the next slide.",
       "suggested_css_adjustments": {
-        "notes": "The vertical padding inside the green highlight box could be increased by 2-3px to ensure the descenders of the Tamil characters (like in 'அறியாத') have slightly more breathing room from the bottom edge of the box."
+        "notes": "The font-kerning property should be set to 'auto' to ensure the Tamil ligatures remain perfectly connected. Consider adding a subtle drop-shadow or a slightly larger margin-bottom to the '.2.5-latcham' box to further separate it from the headline text."
       }
     },
     "slide_count_audited": 2
   },
-  "exported_at": "2026-09-22T18:09:43.700728+00:00"
+  "exported_at": "2026-09-22T19:12:57.413541+00:00"
 }

@@ -1,45 +1,18 @@
 {
-  "generated_at": "2026-09-22T18:04:10.768575+00:00",
+  "generated_at": "2026-09-22T19:09:51.597859+00:00",
   "channel": "TAMIL",
-  "data_points_analyzed": 21,
-  "historical_avg_save_rate_pct": 0.0,
+  "data_points_analyzed": 0,
+  "historical_avg_save_rate_pct": 2.8,
   "prioritized_categories": [
     "SMART_MONEY",
     "MARKET_TRAPS",
-    "MUTUAL_FUNDS_TRUTH"
-  ],
-  "deprecated_categories": [
+    "MUTUAL_FUNDS_TRUTH",
     "VALUATION_MYTH",
     "LIQUIDITY_TRAP"
   ],
+  "deprecated_categories": [],
   "high_performing_hooks": [],
-  "deprecated_hooks": [
-    {
-      "hook": "tamil_angle_2",
-      "avg_save_rate": "0.00%",
-      "reason": "Low dwell & bookmark retention"
-    },
-    {
-      "hook": "tamil_angle_1",
-      "avg_save_rate": "0.00%",
-      "reason": "Low dwell & bookmark retention"
-    },
-    {
-      "hook": "tamil_angle_4",
-      "avg_save_rate": "0.00%",
-      "reason": "Low dwell & bookmark retention"
-    },
-    {
-      "hook": "tamil_angle_3",
-      "avg_save_rate": "0.00%",
-      "reason": "Low dwell & bookmark retention"
-    },
-    {
-      "hook": "MATH_BREAKDOWN",
-      "avg_save_rate": "0.00%",
-      "reason": "Low dwell & bookmark retention"
-    }
-  ],
+  "deprecated_hooks": [],
   "video_finetuning_directive": {
     "opening_3s_hook": "Mandatory Tanglish contrarian shock with citable rupee anchor. Open immediately with institutional mechanism (e.g. 'Mutual Fund-ல் ₹34 Lakhs ரகசிய கசிவு!').",
     "pacing_calibration": "Introduce hard mathematical friction between seconds 4 and 10 in conversational Tanglish (e.g. '1% fee சின்ன விஷயம்னு நினைப்பீங்க, ஆனா 20 வருஷத்துல...').",
@@ -51,5 +24,5 @@
     "slide_2_3_mechanism": "Lead with the exact citable mathematical formula or institutional orderflow disparity on Slide 2.",
     "slide_8_dual_cta": "Separate personal saving from peer sharing (Save & Share)."
   },
-  "prompt_injection_snippet": "TAMIL ALGORITHMIC REINFORCEMENT DIRECTIVE: Historical performance shows Tamil audiences respond to institutional order flow and hidden fee debunks with an average save rate of 0.0%. Prioritize topics covering Smart Money, Market Traps. Ensure opening 3s / Slide 1 deliver immediate contrarian friction in natural conversational Tanglish."
+  "prompt_injection_snippet": "TAMIL ALGORITHMIC REINFORCEMENT DIRECTIVE: Prioritize high-retention topics covering Smart Money, Market Traps, Mutual Funds Truth, Valuation Myths. Ensure opening 3s / Slide 1 deliver immediate contrarian friction in natural conversational Tanglish."
 }
