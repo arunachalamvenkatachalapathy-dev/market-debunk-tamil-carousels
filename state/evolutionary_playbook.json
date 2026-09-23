@@ -1,9 +1,9 @@
 {
   "version": "2.0.0",
-  "total_cycles_recorded": 7,
+  "total_cycles_recorded": 8,
   "archetype_weights": {
     "SHOCKING_MYTH": 1.3,
-    "MATH_BREAKDOWN": 1.65,
+    "MATH_BREAKDOWN": 1.7,
     "INSTITUTIONAL_SECRET": 1.1
   },
   "learned_rules": [
@@ -17,7 +17,8 @@
     "Candidate B dominates by combining the strict 6-word punchy Tanglish hook constraint with quantified risk ('₹1.5 லட்சம் ",
     "Candidate B hits the MATH_BREAKDOWN archetype perfectly with a heavy 1.5 archetype weight. By leading with '₹14 Cr Loss!",
     "Candidate B scored the highest total (37.5/40) by converting $250M into a hard-hitting ₹2,075 Crores figure. With the MA",
-    "Candidate B wins because it transforms an abstract market trend into a personal financial threat. In the Tamil retail ma"
+    "Candidate B wins because it transforms an abstract market trend into a personal financial threat. In the Tamil retail ma",
+    "Candidate B wins because it weaponizes the 'Math Breakdown' archetype. In the Tamil retail market, showing exactly how m"
   ],
   "cycle_history": [
     {
@@ -82,6 +83,15 @@
       "critic_score": 9.0,
       "visual_score": 9.0,
       "key_learning": "Candidate B wins because it transforms an abstract market trend into a personal financial threat. In the Tamil retail ma"
+    },
+    {
+      "cycle": 8,
+      "timestamp": "2026-09-23T08:43:00.403876+00:00",
+      "topic": "Fake Eye Surgery Fundraiser Raises Rs 1.5 Lakh, Sparks Scam Controversy On X - N",
+      "winning_archetype": "MATH_BREAKDOWN",
+      "critic_score": 8.5,
+      "visual_score": 9.0,
+      "key_learning": "Candidate B wins because it weaponizes the 'Math Breakdown' archetype. In the Tamil retail market, showing exactly how m"
     }
   ]
 }
