@@ -608,6 +608,35 @@
       },
       "insights_fetched_48h": false,
       "insights": {}
+    },
+    {
+      "title": "Fake Eye Surgery Fundraiser Raises Rs 1.5 Lakh, Sparks Scam Controversy On X - News Mobile",
+      "media_id": "simulated_id",
+      "timestamp": "2026-09-23T08:44:13.820527+00:00",
+      "topic_category": "REGULATORY_SHIFT",
+      "hook_archetype": "MATH_BREAKDOWN",
+      "hashtag_cluster": "tamil_cluster_2",
+      "publish_results": {
+        "instagram": {
+          "success": false,
+          "error": "Child container 1 failed: {'message': 'Only photo or video can be accepted as media type.', 'type': 'OAuthException', 'code': 9004, 'error_subcode': 2207052, 'is_transient': False, 'error_user_title': \"Media download has failed. The media URI doesn't meet our requirements.\", 'error_user_msg': 'The media could not be fetched from this URI: https://raw.githubusercontent.com/arunachalamvenkatachalapathy-dev/market-debunk-tamil-carousels/master/state/carousel_slides/slide_1_20260923_084247.png.Please check the limitations section in our development document for more information: https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media#creating', 'fbtrace_id': 'A6e7SZpoiAoL0py_78Zv879'}"
+        },
+        "facebook": {
+          "success": true,
+          "post_id": "1297757220087165_122111700645463457",
+          "url": "https://www.facebook.com/1297757220087165_122111700645463457"
+        },
+        "telegram": {
+          "success": false,
+          "status": "skipped"
+        },
+        "linkedin": {
+          "success": false,
+          "status": "skipped"
+        }
+      },
+      "insights_fetched_48h": false,
+      "insights": {}
     }
   ]
 }
