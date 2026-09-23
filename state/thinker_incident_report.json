@@ -1,19 +1,18 @@
 {
-  "timestamp": "2026-09-23T08:43:51.266669+00:00",
+  "timestamp": "2026-09-23T18:28:19.390979+00:00",
   "phase": "PUBLISHING",
   "platform": "Instagram",
-  "severity": "RECOVERABLE",
+  "severity": "CRITICAL",
   "error_code": "ERR_IMAGE_NOT_ACCESSIBLE",
-  "root_cause_analysis": "Instagram Graph API failed to download media container 1 from 'https://raw.githubusercontent.com/arunachalamvenkatachalapathy-dev/market-debunk-tamil-carousels/master/state/carousel_slides/slide_1_20260923_084247.png'. The server returned error code 9004 / subcode 2207052, indicating Meta's crawler could not fetch or validate the image file headers/MIME type from the raw GitHub URI.",
+  "root_cause_analysis": "The Instagram Graph API failed to fetch the media from the provided GitHub raw URL because the URI does not meet Meta's requirements or the resource was temporarily unreachable at the time of the container creation request.",
   "reproducibility": "URL_UNAVAILABLE",
   "automated_remediation": {
     "action": "RETRY_AFTER_DELAY",
     "retry_delay_seconds": 60
   },
-  "operator_action_required": true,
+  "operator_action_required": false,
   "actionable_instructions": [
-    "Verify that 'https://raw.githubusercontent.com/arunachalamvenkatachalapathy-dev/market-debunk-tamil-carousels/master/state/carousel_slides/slide_1_20260923_084247.png' is publicly accessible and returns a 200 OK status code without authentication.",
-    "Ensure the HTTP Content-Type header served by the hosting endpoint is strictly 'image/png' or 'image/jpeg'.",
-    "If GitHub raw URLs continue to be blocked or throttled by Meta crawlers, migrate media hosting to a dedicated CDN or public S3 bucket."
+    "Verify that the GitHub repository is public and raw content URLs are accessible without authentication.",
+    "Implement an automated retry mechanism with exponential backoff for transient GitHub raw content fetching failures."
   ]
 }
