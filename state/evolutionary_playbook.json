@@ -1,13 +1,12 @@
 {
   "version": "2.0.0",
-  "total_cycles_recorded": 10,
+  "total_cycles_recorded": 11,
   "archetype_weights": {
     "SHOCKING_MYTH": 1.35,
-    "MATH_BREAKDOWN": 1.72,
+    "MATH_BREAKDOWN": 1.77,
     "INSTITUTIONAL_SECRET": 1.1
   },
   "learned_rules": [
-    "Lead with exact rupee figures: '₹34 லட்சம் இழப்பு', '1% கட்டணம்'.",
     "Final slide must end with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'",
     "Candidate B hits the 'MATH_BREAKDOWN' archetype perfectly by quantifying the risk. In financial content, specific rupee ",
     "Candidate B hits the MATH_BREAKDOWN archetype perfectly by quantifying risk with exact figures ('₹3.5 லட்சம் இழப்பு'). F",
@@ -18,7 +17,8 @@
     "Candidate B wins because it transforms an abstract market trend into a personal financial threat. In the Tamil retail ma",
     "Candidate B wins because it weaponizes the 'Math Breakdown' archetype. In the Tamil retail market, showing exactly how m",
     "Fallback Tanglish anchor.",
-    "Candidate B is the clear winner because it forces the reader to calculate their own loss. By linking macro-economic fact"
+    "Candidate B is the clear winner because it forces the reader to calculate their own loss. By linking macro-economic fact",
+    "Candidate B wins because it transforms a abstract macro-economic event into a personal financial crisis. In the Tamil re"
   ],
   "cycle_history": [
     {
@@ -110,6 +110,15 @@
       "critic_score": 9.0,
       "visual_score": 7.8,
       "key_learning": "Candidate B is the clear winner because it forces the reader to calculate their own loss. By linking macro-economic fact"
+    },
+    {
+      "cycle": 11,
+      "timestamp": "2026-09-24T18:28:12.129427+00:00",
+      "topic": "Sensex crashes over 1,200 points, Nifty falls 384 to 3-month low – what led to s",
+      "winning_archetype": "MATH_BREAKDOWN",
+      "critic_score": 9.2,
+      "visual_score": 9.5,
+      "key_learning": "Candidate B wins because it transforms a abstract macro-economic event into a personal financial crisis. In the Tamil re"
     }
   ]
 }

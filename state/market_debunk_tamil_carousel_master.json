@@ -1,116 +1,86 @@
 {
   "topic": {
-    "title": "Stock market crash: Nifty 50, Sensex fall 1% as crude tops $102; financial, insurance stocks slide on IRDAI proposal - TradingView",
+    "title": "Sensex crashes over 1,200 points, Nifty falls 384 to 3-month low – what led to sharp decline? - The Statesman",
     "archetype": "market_breaking_news",
     "archetype_name": "Breaking Financial News Debunk",
     "topic_category": "MARKET_TRAP",
-    "viral_demand_score": 92.2,
-    "source": "TradingView",
-    "source_snippet": "Stock market crash: Nifty 50, Sensex fall 1% as crude tops $102; financial, insurance stocks slide on IRDAI proposal&nbsp;&nbsp;TradingView",
-    "source_url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOME5YQWFJaDdPSjYzYnhLOGhKZmtNZ3NPc2VxeW1BdVo3V3NQYTJnRm9tSWszanNnR05QREJUTE1mdjhzd3k1R3l0R1lzX2kxZXdqTFRjNGgyMUtVNVdSekczX1F2UEczSWJHdl8teUxnXzQ5d1RiWEJ1eFp0Z2g5VUlUQjhxZ1lYTHJsbkdzLXdzdk9VVWlRRFlTd29JZ09iQ3NsR1Z2YWx1Mm1CckhVcFRQeVk2M0FZQTU3SlRhYWJjV2RBV2xLM2F3LWhQQW8waTBIS3Bmc2ozX0h0SnhNTDB6VlFuVV9FUWNDbzJaN3pjMzRkelltTWpzQQ?oc=5",
-    "raw_text": "Stock market crash: Nifty 50, Sensex fall 1% as crude tops $102; financial, insurance stocks slide on IRDAI proposal - TradingView. Stock market crash: Nifty 50, Sensex fall 1% as crude tops $102; financial, insurance stocks slide on IRDAI proposal&nbsp;&nbsp;TradingView",
+    "viral_demand_score": 90.7,
+    "source": "The Statesman",
+    "source_snippet": "Sensex crashes over 1,200 points, Nifty falls 384 to 3-month low – what led to sharp decline?&nbsp;&nbsp;The Statesman",
+    "source_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNamVWQ1BEaHRRVTMwT2c5aEVDaWhJdExxVkN6cE1RemozYUhrbzBSWHBaU2o2QWlCaXU5UFFLMXppTUlkeXZQRU5KOXVTYXg4dlVfRlpKWU52ZzRJbUQyOWNOVFh3OC1JbS1raXJtdDZQMEszZzJzZ29pdHN5ZFNEOHZCOFE3TG1lOVRjVmc1OXV3RWpQdUwzQmFQNlRPSExBVkVDUXpZUVpRQ1RaSlB1TW0wVmJaUlQ1R0kydlRmcERhRzB3TWh6OWliMzBWOFk0UEHSAdcBQVVfeXFMT3BDWlA4aGJrZHItZHJOOG9RNHdUSkFpbVhtZndyZ2FES25TSXRVS3laTTFIbXg3eFBKNVhtZk11QnJvaTQ0WFYzd3o0TXBfYTBMdFk3bkQyMHVrWVRkcWFIUmxnYVdscUljYVRUZktldjZFdWVkQi10UzM0bTJKdllMZG1MV0pVM0toeUxVY3o0YjNSTk9saXBmcExyVndDbzFtSzZiYW9aOEV2cDVtcFJlMFdVRUxLdTJoYU1ocXoxRHVGZ3ZxaTdnejZ0cXliNk1uN1JlV0U?oc=5",
+    "raw_text": "Sensex crashes over 1,200 points, Nifty falls 384 to 3-month low – what led to sharp decline? - The Statesman. Sensex crashes over 1,200 points, Nifty falls 384 to 3-month low – what led to sharp decline?&nbsp;&nbsp;The Statesman",
     "numbers_detected": [
-      "50",
-      "1%",
-      "$102",
-      "50",
-      "1%",
-      "$102"
+      "1,200 points",
+      "384",
+      "1,200 points",
+      "384"
     ],
-    "published_at": "2026-09-24T07:23:25+00:00",
-    "age_hours": 1.2,
-    "retrieved_at": "2026-09-24T08:34:22.418179+00:00",
+    "published_at": "2026-09-24T11:37:00+00:00",
+    "age_hours": 6.8,
+    "retrieved_at": "2026-09-24T18:25:15.368125+00:00",
     "date": "24 Sep 2026",
     "from_live_api": true,
-    "evidence_snapshot": "Source: TradingView | Published: 2026-09-24T07:23:25+00:00 (1.2h ago) | Headline: Stock market crash: Nifty 50, Sensex fall 1% as crude tops $102; financial, insurance stocks slide on IRDAI proposal - TradingView | Context: Stock market crash: Nifty 50, Sensex fall 1% as crude tops $102; financial, insurance stocks slide on IRDAI proposal - TradingView. Stock market crash: Nifty 50, Sensex fall 1% as crude tops $102; financial, insurance stocks slide on IRDAI proposal&nbsp;&nbsp;TradingView",
+    "evidence_snapshot": "Source: The Statesman | Published: 2026-09-24T11:37:00+00:00 (6.8h ago) | Headline: Sensex crashes over 1,200 points, Nifty falls 384 to 3-month low – what led to sharp decline? - The Statesman | Context: Sensex crashes over 1,200 points, Nifty falls 384 to 3-month low – what led to sharp decline? - The Statesman. Sensex crashes over 1,200 points, Nifty falls 384 to 3-month low – what led to sharp decline?&nbsp;&nbsp;The Statesman",
     "news_analysis": {
-      "headline_hook": "Crude oil $102! Unga portfolio-la ₹50,000 loss?",
-      "breaking_event_summary": "The Nifty 50 and Sensex fell 1% as crude oil crossed $102 per barrel, triggering a broad sell-off concentrated in financial and insurance stocks following a new IRDAI regulatory proposal.",
-      "retail_illusion": "Retail investors assume a global crude oil price shock is causing a systemic market crash, leading them to panic-sell financial and insurance holdings.",
-      "institutional_reality": "Institutions are using crude oil headlines as liquidity cover to trim financial exposure while absorbing insurance stocks at structural discounts ahead of IRDAI's regulatory margin realignment.",
+      "headline_hook": "1200 points crash! Unga portfolio-la ₹1.5 Lakhs loss aagudha? Ippo thaan unmai puriyudhu.",
+      "breaking_event_summary": "Recent market development reported by The Statesman: Sensex crashes over 1,200 points, Nifty falls 384 to 3-month low – what led to sharp decline? - The Statesman",
+      "retail_illusion": "Retail traders assume headline market moves represent easy momentum to chase.",
+      "institutional_reality": "Institutional order flows leverage volatility to offload risk while retail enters at the peak.",
       "citable_metrics": [
-        "1%",
-        "$102"
+        "1,200 points",
+        "384",
+        "1,200 points",
+        "384"
       ],
-      "debunk_category": "REGULATORY_SHIFT",
-      "actionable_retail_rule": "Never panic-sell index constituents on commodity macro headlines when the primary sell-off driver is a structural regulatory proposal.",
+      "debunk_category": "LIQUIDITY_TRAP",
+      "actionable_retail_rule": "Never chase a headline move without verifying volume distribution and delivery percentages.",
       "lead_magnet": {
-        "trigger_word": "AUDIT",
-        "resource_name": "The IRDAI Impact & Financial Stock Risk Audit Checklist"
+        "trigger_word": "GUIDE",
+        "resource_name": "The Market Overlook Checklist"
       },
-      "carousel_outline": [
-        {
-          "slide": 1,
-          "role": "hook",
-          "focus": "Crude at $102 vs IRDAI: The Real Trap Behind Today's 1% Nifty Drop"
-        },
-        {
-          "slide": 2,
-          "role": "friction",
-          "focus": "Why retail investors are panicking over oil while missing the regulatory shift"
-        },
-        {
-          "slide": 3,
-          "role": "math_reality",
-          "focus": "The institutional breakdown of crude $102 impact vs IRDAI policy margin shifts"
-        },
-        {
-          "slide": 4,
-          "role": "breakdown",
-          "focus": "How IRDAI proposals directly alter life insurance valuations and banking liquidity"
-        },
-        {
-          "slide": 5,
-          "role": "actionable_rule",
-          "focus": "The non-negotiable rule for separating macro noise from structural regulatory risk"
-        },
-        {
-          "slide": 6,
-          "role": "cta",
-          "focus": "Comment AUDIT to get the 1-page Financial Portfolio Regulatory Exposure Checklist"
-        }
-      ],
-      "highlight_word": "₹50,000 loss",
-      "editorial_directive": "Use high-contrast visual cues for the currency figures. Keep the Tanglish conversational, avoid heavy academic jargon, and always end the carousel with a 'One-Step' defensive action for the retail trader."
+      "highlight_word": "1.5 Lakhs",
+      "editorial_directive": "Use colloquial Tanglish. Avoid formal Tamil. Use bold red/green color coding in slides. Ensure the tone is 'Big Brother' warning the user about their own money, not just reporting news."
     },
     "darwin_result": {
       "winning_candidate": {
         "id": "B",
         "archetype": "MATH_BREAKDOWN",
-        "headline_hook": "Crude oil $102! Unga portfolio-la ₹50,000 loss?",
-        "highlight_word": "₹50,000 loss",
+        "headline_hook": "1200 points crash! Unga portfolio-la ₹1.5 Lakhs loss aagudha? Ippo thaan unmai puriyudhu.",
+        "highlight_word": "1.5 Lakhs",
         "scores": {
-          "curiosity_gap": 9,
+          "curiosity_gap": 10,
           "viral_potential": 9,
           "retail_actionability": 9,
           "friction_quotient": 9,
-          "total": 36.0
+          "total": 37.0
         },
-        "critic_critique": "The use of specific currency values creates immediate 'wallet-threat' anxiety. This is pure gold for Tamil retail investors who prioritize capital protection over abstract market news."
+        "critic_critique": "This hits the sweet spot. By quantifying the loss, it forces the reader to check their own account immediately. It is brutal, tactical, and highly shareable."
       },
-      "critic_score": 9.0,
+      "critic_score": 9.2,
       "archetype": "MATH_BREAKDOWN",
-      "selection_rationale": "Candidate B is the clear winner because it forces the reader to calculate their own loss. By linking macro-economic factors (Crude @ $102) to personal finance (₹50,000 loss), it transforms a news report into a personal emergency that demands an immediate swipe.",
-      "final_editorial_directive": "Use high-contrast visual cues for the currency figures. Keep the Tanglish conversational, avoid heavy academic jargon, and always end the carousel with a 'One-Step' defensive action for the retail trader."
+      "selection_rationale": "Candidate B wins because it transforms a abstract macro-economic event into a personal financial crisis. In the Tamil retail market, the fear of losing specific amounts of money is the strongest catalyst for engagement.",
+      "final_editorial_directive": "Use colloquial Tanglish. Avoid formal Tamil. Use bold red/green color coding in slides. Ensure the tone is 'Big Brother' warning the user about their own money, not just reporting news."
     },
-    "headline_hook": "Crude oil $102! Unga portfolio-la ₹50,000 loss?",
-    "highlight_word": "₹50,000 loss",
-    "editorial_directive": "Use high-contrast visual cues for the currency figures. Keep the Tanglish conversational, avoid heavy academic jargon, and always end the carousel with a 'One-Step' defensive action for the retail trader."
+    "headline_hook": "1200 points crash! Unga portfolio-la ₹1.5 Lakhs loss aagudha? Ippo thaan unmai puriyudhu.",
+    "highlight_word": "1.5 Lakhs",
+    "editorial_directive": "Use colloquial Tanglish. Avoid formal Tamil. Use bold red/green color coding in slides. Ensure the tone is 'Big Brother' warning the user about their own money, not just reporting news."
   },
   "plan": {
-    "hook_headline": "Crude oil $102! Unga portfolio-la ₹50,000 loss?",
-    "core_illusion": "Retail investors assume a global crude oil price shock is causing a systemic market crash, leading them to panic-sell financial and insurance holdings.",
-    "hidden_reality": "Institutions are using crude oil headlines as liquidity cover to trim financial exposure while absorbing insurance stocks at structural discounts ahead of IRDAI's regulatory margin realignment.",
-    "citable_metric": "1%",
+    "hook_headline": "1200 points crash! Unga portfolio-la ₹1.5 Lakhs loss aagudha? Ippo thaan unmai puriyudhu.",
+    "core_illusion": "Retail traders assume headline market moves represent easy momentum to chase.",
+    "hidden_reality": "Institutional order flows leverage volatility to offload risk while retail enters at the peak.",
+    "citable_metric": "1,200 points",
     "all_metrics": [
-      "1%",
-      "$102"
+      "1,200 points",
+      "384",
+      "1,200 points",
+      "384"
     ],
-    "actionable_rule": "Never panic-sell index constituents on commodity macro headlines when the primary sell-off driver is a structural regulatory proposal.",
-    "breaking_event": "The Nifty 50 and Sensex fell 1% as crude oil crossed $102 per barrel, triggering a broad sell-off concentrated in financial and insurance stocks following a new IRDAI regulatory proposal.",
+    "actionable_rule": "Never chase a headline move without verifying volume distribution and delivery percentages.",
+    "breaking_event": "Recent market development reported by The Statesman: Sensex crashes over 1,200 points, Nifty falls 384 to 3-month low – what led to sharp decline? - The Statesman",
     "lead_magnet": {
-      "trigger_word": "AUDIT",
-      "resource_name": "The IRDAI Impact & Financial Stock Risk Audit Checklist"
+      "trigger_word": "GUIDE",
+      "resource_name": "The Market Overlook Checklist"
     },
     "banned_phrases": [
       "guaranteed wealth",
@@ -120,107 +90,111 @@
     ]
   },
   "deck": {
-    "caption": "🚨 Crude oil $102! Unga portfolio-la ₹50,000 loss?\n\nசந்தையில் வரும் செய்திகளை மட்டும் நம்பி முதலீடு செய்வது எப்படி institutional trap-ல் சிக்க வைக்கும் என்பதை பாருங்கள்.\n\nமுழு 8-slide Tanglish breakdown-ஐ படிக்க swipe செய்யுங்கள். 👉\n📌 Market-ah pathi unga myth vs reality\n📌 Market-oda actual impact analysis\n📌 Institutional liquidity trap\n\n📌 உங்கள் அடுத்த trade-க்கு முன் பார்க்க இந்த பதிவை Save செய்து கொள்ளுங்கள்.\n✈️ உங்கள் முதலீட்டாளர் நண்பர்களுக்கு Share செய்து அவர்களின் Capital-ஐ பாதுகாக்கவும்.\n\n💬 Trade எடுக்கும் போது stop-loss வச்சு trade செய்வீங்களா அல்லது news மட்டும் நம்புவீங்களா? கமெண்ட்ல சொல்லுங்க 👇\n\n#TamilFinance #StockMarketTamil #TamilTrading #TamilInvestors #MarketDebunk",
+    "caption": "🚨 1200 points crash! Unga portfolio loss-ku unmai reasonedhu?\n\nFOMO அவசரம் உங்கள் முதலீட்டு வளர்ச்சியை எப்படி பாதிக்கிறது? இந்த முக்கிய data-வை உடனே audit செய்யுங்கள்.\n\nமுழு 8-slide Tanglish breakdown-ஐ படிக்க swipe செய்யுங்கள். 👉\n📌 Retail trap vs Institutional reality in market drops.\n📌 Sensex & Nifty fall-in real damage check.\n📌 Eppo thaan ungalukku trap puriyudhu?\n\n📌 உங்கள் அடுத்த trade-க்கு முன் பார்க்க இந்த பதிவை Save செய்து கொள்ளுங்கள்.\n✈️ உங்கள் முதலீட்டாளர் நண்பர்களுக்கு Share செய்து அவர்களின் Capital-ஐ பாதுகாக்கவும்.\n\n💬 சந்தையில் திடீர் breakout வரும் போது உங்களுடைய முக்கிய rule என்ன? கமெண்ட்ல சொல்லுங்க 👇\n\n#TamilShareMarket #NiftyTamil #InvestmentTamil #TradingTamil #ShareMarketTamil",
     "slides": [
       {
         "role": "hook",
         "tag": "#MARKETDEBUNK",
-        "title": "Crude oil $102! Unga portfolio-la <span class='highlight-box'>₹50,000 loss?</span>",
+        "title": "1200 points crash! Unga portfolio loss-ku <span class='highlight-box'>unmai reason</span>edhu?",
         "slide_index": 1,
         "title_lines": [
-          "Crude oil",
-          "$102! Unga",
-          "<span class='highlight-box'>₹50,000 loss?</span>"
+          "1200 points",
+          "crash! Unga",
+          "<span class='highlight-box'>unmai reason</span>",
+          "edhu?"
         ],
         "card_text": ""
       },
       {
         "role": "value_1",
         "tag": "#MARKETDEBUNK",
-        "title": "Market-ah pathi unga <span class='highlight-box'>myth vs reality</span>",
+        "title": "Retail trap vs <span class='highlight-box'>Institutional reality</span> in market drops.",
         "comparison_data": {
-          "myth": "Crude oil price high-ah irukkuradhala dhan Nifty <strong>1%</strong> crash aagudhu nu retail investors namburanga.",
-          "reality": "Institutions crude oil-ah oru cover-ah vachukittu, IRDAI regulatory changes-ah use panni stocks-ah cheap-ah accumulate panranga."
+          "myth": "Headline news-ah paathu <strong>market crash</strong> aagum podhu panic aagi udane sell panrathu.",
+          "reality": "Big players indha <strong>liquidity drop</strong>-ah use panni retail investors kitta irundha stocks-ah cheap price-ku buy panranga."
         },
         "slide_index": 2,
         "title_lines": [
-          "Market-ah pathi",
-          "<span class='highlight-box'>unga myth</span>",
-          "vs reality"
+          "Retail trap",
+          "<span class='highlight-box'>vs Institutional</span>",
+          "reality in market drops."
         ]
       },
       {
         "role": "value_2",
         "tag": "#MARKETDEBUNK",
-        "title": "Market-oda actual <span class='highlight-box'>impact analysis</span>",
+        "title": "Sensex & Nifty fall-in <span class='highlight-box'>real damage</span> check.",
         "stat_data": {
           "badge": "VERIFIED MARKET IMPACT",
-          "metric": "1%",
-          "label": "Nifty & Sensex fall",
-          "context": "Indha <strong>1%</strong> fall-ah pathu panic aaguradhu unga capital-ku risk. Idhu crude oil-ala vandhadhu illa, IRDAI proposal-ala vandha structural realignment."
+          "metric": "1,200 points",
+          "label": "Sensex crash to 3-month low",
+          "context": "Indha madhiri sharp fall-ah paathu ungaloda <strong>SIP</strong> matrum long-term holdings-ah disturb panneengalana, adhu unga <strong>compounding wealth</strong>-ku periya friction aagum."
         },
         "slide_index": 3,
         "title_lines": [
-          "Market-oda actual",
-          "<span class='highlight-box'>impact analysis</span>"
+          "Sensex &",
+          "<span class='highlight-box'>Nifty fall-in</span>",
+          "real damage check."
         ]
       },
       {
         "role": "value_3",
         "tag": "#MARKETDEBUNK",
-        "title": "Institutional <span class='highlight-box'>liquidity trap</span>",
-        "card_text": "1. Retailers panic-la sell panranga. 2. Institutions indha liquidity-ah use panni insurance stocks-ah discount-la vanguranga. 3. Regulatory news-ah market-ah control panna oru tool-ah use panranga.",
+        "title": "Eppo thaan ungalukku <span class='highlight-box'>trap puriyudhu</span>?",
+        "card_text": "Neenga headline-ah paathu 'market ippo innum keezhe pogum' nu nenaikireenga. Aana institutions andha <strong>support zone</strong>-la quietly accumulate panranga. Ungaloda panic order-than unga portfolio-oda silent killer.",
         "slide_index": 4,
         "title_lines": [
-          "<span class='highlight-box'>Institutional liquidity</span>",
-          "trap"
+          "Eppo thaan",
+          "<span class='highlight-box'>ungalukku trap</span>",
+          "puriyudhu?"
         ]
       },
       {
         "role": "value_4",
         "tag": "#MARKETDEBUNK",
-        "title": "Capital extraction <span class='highlight-box'>mechanics</span>",
-        "card_text": "Retail investors crude oil news-ah nambi stop-loss hit aaguranga. Institutions indha gap-ah use panni, structural discount-la irukkura financial stocks-ah silent-ah accumulate panni portfolio-va build panranga.",
+        "title": "Volatility-ai eppadi <span class='highlight-box'>capital</span> aakuvathu?",
+        "card_text": "Smart money oru podhum emotion-la trade panrathu illa. Avanga <strong>delivery percentages</strong> matrum institutional order flows-ah track panni, retail panic sell panra time-la entry kudukkum moolamaa profit make panranga.",
         "slide_index": 5,
         "title_lines": [
-          "<span class='highlight-box'>Capital extraction</span>",
-          "mechanics"
+          "Volatility-ai eppadi",
+          "<span class='highlight-box'>capital aakuvathu?</span>"
         ]
       },
       {
         "role": "value_5",
         "tag": "#MARKETDEBUNK",
-        "title": "Golden rule for <span class='highlight-box'>smart traders</span>",
-        "card_text": "Commodity macro headlines-ah pathu panic-sell pannadheenga. Especially index constituents-ah regulatory news-ala sell aagum podhu, adhu oru opportunity-nu purinjukonga.",
+        "title": "The non-negotiable <span class='highlight-box'>golden rule</span> for traders.",
+        "card_text": "Never chase a headline move without verifying volume distribution and delivery percentages. Oru break down-oilla breakout-o nadakkum podhu, volume support irukka nu paarkamal <strong>blind entry</strong> kudukkave kudathu.",
         "slide_index": 6,
         "title_lines": [
-          "Golden rule",
-          "<span class='highlight-box'>for smart</span>",
-          "traders"
+          "The non-negotiable",
+          "<span class='highlight-box'>golden rule</span>",
+          "for traders."
         ]
       },
       {
         "role": "value_6",
         "tag": "#MARKETDEBUNK",
-        "title": "Pre-trade <span class='highlight-box'>risk checklist</span>",
+        "title": "Pre-trade risk <span class='highlight-box'>checklist</span> for tomorrow.",
         "checklist_data": [
           {
             "status": "fail",
-            "text": "News-ah pathu udane panic-sell pannuvathu"
+            "text": "News-ah paathu yosikkamal panic sell panrathu"
           },
           {
             "status": "pass",
-            "text": "Regulatory news-oda impact-ah analyze seivathu"
+            "text": "Trade-ku munbu volume matrum delivery data-va check panrathu"
           },
           {
             "status": "pass",
-            "text": "Structural discount-la irukkum stocks-ah watch list-la vaippathu"
+            "text": "Strict stop-loss-oda unga capital-ah protect panrathu"
           }
         ],
         "slide_index": 7,
         "title_lines": [
-          "<span class='highlight-box'>Pre-trade risk</span>",
-          "checklist"
+          "Pre-trade risk",
+          "<span class='highlight-box'>checklist for</span>",
+          "tomorrow."
         ]
       },
       {
@@ -239,58 +213,58 @@
     ],
     "fact_check_status": "verified_pass",
     "audio_recommendation": {
-      "title": "Time (Institutional Minimalist Mix)",
-      "artist": "Hans Zimmer",
-      "bpm": 124,
-      "vibe": "Deep Mathematical Compounding",
-      "reels_boost_tier": "Top Tier",
-      "search_query": "Hans Zimmer Time Inception"
+      "title": "Master The Blaster (Instrumental Flow)",
+      "artist": "Anirudh Ravichander",
+      "bpm": 115,
+      "vibe": "High Energy Capital Momentum",
+      "reels_boost_tier": "Viral Regional",
+      "search_query": "Master The Blaster Instrumental Anirudh"
     },
-    "hashtag_cluster_id": "tamil_cluster_1",
-    "hook_archetype_id": "tamil_angle_1"
+    "hashtag_cluster_id": "tamil_cluster_2",
+    "hook_archetype_id": "tamil_angle_5"
   },
   "audio": {
-    "title": "Time (Institutional Minimalist Mix)",
-    "artist": "Hans Zimmer",
-    "bpm": 124,
-    "vibe": "Deep Mathematical Compounding",
-    "reels_boost_tier": "Top Tier",
-    "search_query": "Hans Zimmer Time Inception"
+    "title": "Master The Blaster (Instrumental Flow)",
+    "artist": "Anirudh Ravichander",
+    "bpm": 115,
+    "vibe": "High Energy Capital Momentum",
+    "reels_boost_tier": "Viral Regional",
+    "search_query": "Master The Blaster Instrumental Anirudh"
   },
-  "run_id": "20260924_083456",
+  "run_id": "20260924_182723",
   "slide_count": 8,
   "darwin_result": {
     "winning_candidate": {
       "id": "B",
       "archetype": "MATH_BREAKDOWN",
-      "headline_hook": "Crude oil $102! Unga portfolio-la ₹50,000 loss?",
-      "highlight_word": "₹50,000 loss",
+      "headline_hook": "1200 points crash! Unga portfolio-la ₹1.5 Lakhs loss aagudha? Ippo thaan unmai puriyudhu.",
+      "highlight_word": "1.5 Lakhs",
       "scores": {
-        "curiosity_gap": 9,
+        "curiosity_gap": 10,
         "viral_potential": 9,
         "retail_actionability": 9,
         "friction_quotient": 9,
-        "total": 36.0
+        "total": 37.0
       },
-      "critic_critique": "The use of specific currency values creates immediate 'wallet-threat' anxiety. This is pure gold for Tamil retail investors who prioritize capital protection over abstract market news."
+      "critic_critique": "This hits the sweet spot. By quantifying the loss, it forces the reader to check their own account immediately. It is brutal, tactical, and highly shareable."
     },
-    "critic_score": 9.0,
+    "critic_score": 9.2,
     "archetype": "MATH_BREAKDOWN",
-    "selection_rationale": "Candidate B is the clear winner because it forces the reader to calculate their own loss. By linking macro-economic factors (Crude @ $102) to personal finance (₹50,000 loss), it transforms a news report into a personal emergency that demands an immediate swipe.",
-    "final_editorial_directive": "Use high-contrast visual cues for the currency figures. Keep the Tanglish conversational, avoid heavy academic jargon, and always end the carousel with a 'One-Step' defensive action for the retail trader."
+    "selection_rationale": "Candidate B wins because it transforms a abstract macro-economic event into a personal financial crisis. In the Tamil retail market, the fear of losing specific amounts of money is the strongest catalyst for engagement.",
+    "final_editorial_directive": "Use colloquial Tanglish. Avoid formal Tamil. Use bold red/green color coding in slides. Ensure the tone is 'Big Brother' warning the user about their own money, not just reporting news."
   },
   "visual_audit": {
-    "passed": false,
-    "average_score": 7.8,
+    "passed": true,
+    "average_score": 9.5,
     "slide_1_report": {
-      "overall_score": 7.0,
-      "passed": false,
-      "critique_summary": "The typography is clean and legible, however, there is a significant cultural/linguistic oversight: the headline is written in 'Tanglish' (transliterated Tamil) rather than native Tamil script. While the visual contrast is high, the lack of actual Tamil Unicode characters for the primary content renders the 'Tamil' branding inaccurate. The English headline is well-balanced, but the '50,000 loss?' highlight box feels slightly cramped horizontally.",
+      "overall_score": 9.5,
+      "passed": true,
+      "critique_summary": "The typography is highly effective for mobile viewing. The high-contrast black-on-white text ensures excellent readability. The green background highlight provides strong visual emphasis. While there are no Tamil characters present in the text (the phrase 'Unga unmai reason edhu' is written in Tanglish/Latin script), the design principles for legibility and visual hierarchy are expertly applied.",
       "suggested_css_adjustments": {
-        "notes": "To improve authenticity, replace the transliterated text 'Unga' with the Tamil equivalent 'உங்கள்'. Adjust the padding-left and padding-right of the highlight box (class: .highlight-box) to 1.5rem to allow more whitespace around the text."
+        "notes": "No structural changes needed. For better accessibility, ensure the font family used for the Latin text is optimized for high-density mobile screens."
       }
     },
     "slide_count_audited": 2
   },
-  "exported_at": "2026-09-24T08:35:11.094547+00:00"
+  "exported_at": "2026-09-24T18:28:12.130225+00:00"
 }
