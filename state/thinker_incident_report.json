@@ -1,18 +1,20 @@
 {
-  "timestamp": "2026-09-23T18:28:19.390979+00:00",
+  "timestamp": "2026-09-24T08:35:58.388239+00:00",
   "phase": "PUBLISHING",
   "platform": "Instagram",
   "severity": "CRITICAL",
   "error_code": "ERR_IMAGE_NOT_ACCESSIBLE",
-  "root_cause_analysis": "The Instagram Graph API failed to fetch the media from the provided GitHub raw URL because the URI does not meet Meta's requirements or the resource was temporarily unreachable at the time of the container creation request.",
+  "root_cause_analysis": "The Instagram Graph API failed to fetch the image from the provided GitHub raw URL. This is typically caused by the Meta server being unable to resolve the URL, restrictive firewall/security headers on the hosting provider, or the image format/size not meeting Instagram's strict technical requirements (e.g., aspect ratio or file size limits).",
   "reproducibility": "URL_UNAVAILABLE",
   "automated_remediation": {
-    "action": "RETRY_AFTER_DELAY",
-    "retry_delay_seconds": 60
+    "action": "ABORT",
+    "retry_delay_seconds": 0
   },
-  "operator_action_required": false,
+  "operator_action_required": true,
   "actionable_instructions": [
-    "Verify that the GitHub repository is public and raw content URLs are accessible without authentication.",
-    "Implement an automated retry mechanism with exponential backoff for transient GitHub raw content fetching failures."
+    "Verify that the GitHub repository is public and the raw URLs are directly accessible without authentication.",
+    "Ensure the images meet Instagram's aspect ratio requirements (between 4:5 and 1.91:1).",
+    "Consider hosting images on a CDN or a cloud storage service like AWS S3 with public read access to ensure higher availability for Meta's crawlers.",
+    "Check if the image file size exceeds the 8MB limit per slide."
   ]
 }
