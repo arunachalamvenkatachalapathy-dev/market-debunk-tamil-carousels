@@ -1,13 +1,12 @@
 {
   "version": "2.0.0",
-  "total_cycles_recorded": 9,
+  "total_cycles_recorded": 10,
   "archetype_weights": {
     "SHOCKING_MYTH": 1.35,
-    "MATH_BREAKDOWN": 1.7,
+    "MATH_BREAKDOWN": 1.72,
     "INSTITUTIONAL_SECRET": 1.1
   },
   "learned_rules": [
-    "Slide 1 hook must be strictly 5-8 words in punchy spoken Tanglish rhythm.",
     "Lead with exact rupee figures: '₹34 லட்சம் இழப்பு', '1% கட்டணம்'.",
     "Final slide must end with: 'முழு 8-Slide விளக்கமும் நம்ம Profile-ல இருக்கு. இப்போவே பாருங்க!'",
     "Candidate B hits the 'MATH_BREAKDOWN' archetype perfectly by quantifying the risk. In financial content, specific rupee ",
@@ -18,7 +17,8 @@
     "Candidate B scored the highest total (37.5/40) by converting $250M into a hard-hitting ₹2,075 Crores figure. With the MA",
     "Candidate B wins because it transforms an abstract market trend into a personal financial threat. In the Tamil retail ma",
     "Candidate B wins because it weaponizes the 'Math Breakdown' archetype. In the Tamil retail market, showing exactly how m",
-    "Fallback Tanglish anchor."
+    "Fallback Tanglish anchor.",
+    "Candidate B is the clear winner because it forces the reader to calculate their own loss. By linking macro-economic fact"
   ],
   "cycle_history": [
     {
@@ -101,6 +101,15 @@
       "critic_score": 8.5,
       "visual_score": 9.0,
       "key_learning": "Fallback Tanglish anchor."
+    },
+    {
+      "cycle": 10,
+      "timestamp": "2026-09-24T08:35:11.093792+00:00",
+      "topic": "Stock market crash: Nifty 50, Sensex fall 1% as crude tops $102; financial, insu",
+      "winning_archetype": "MATH_BREAKDOWN",
+      "critic_score": 9.0,
+      "visual_score": 7.8,
+      "key_learning": "Candidate B is the clear winner because it forces the reader to calculate their own loss. By linking macro-economic fact"
     }
   ]
 }
