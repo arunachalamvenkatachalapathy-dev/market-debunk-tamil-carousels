@@ -1,122 +1,114 @@
 {
   "topic": {
-    "title": "₹9,450 turns into over  ₹1.30 lakh in one day despite 35% fall in PB Fintech share price; here's how",
+    "title": "Gold price outlook: MCX gold slips for the week as US Fed rate hike bets rise; what’s next for the yellow metal?",
     "archetype": "market_breaking_news",
     "archetype_name": "Breaking Financial News Debunk",
-    "topic_category": "MARKET_TRAP",
-    "viral_demand_score": 91.1,
+    "topic_category": "WEALTH_LEAK",
+    "viral_demand_score": 90.0,
     "source": "Livemint Markets",
-    "source_snippet": "PB Fintech shares fell 35% on September 24, leading to a market cap loss of  ₹30,000 crore. This triggered a surge in put options, allowing traders to profit significantly from the decline. The stock reached a 52-week low due to regulatory changes proposed by the IRDAI.",
-    "source_url": "https://www.livemint.com/market/stock-market-news/rs-9-450-turns-into-over-rs-1-30-lakh-in-one-day-despite-35-fall-in-pb-fintech-share-price-heres-how-11790304551027.html",
-    "raw_text": "₹9,450 turns into over  ₹1.30 lakh in one day despite 35% fall in PB Fintech share price; here's how. PB Fintech shares fell 35% on September 24, leading to a market cap loss of  ₹30,000 crore. This triggered a surge in put options, allowing traders to profit significantly from the decline. The stock reached a 52-week low due to regulatory changes proposed by the IRDAI.",
+    "source_snippet": "MCX gold prices declined, losing  ₹3,351 per 10 grams as traders reacted to higher US Treasury yields and Fed signals. September's gains turned into losses due to concerns over inflation and interest rate hikes, with October delivery gold closing at  ₹1,51,000.",
+    "source_url": "https://www.livemint.com/market/stock-market-news/gold-price-outlook-mcx-gold-slips-for-the-week-as-us-fed-rate-hike-bets-rise-what-s-next-for-the-yellow-metal-11790354545598.html",
+    "raw_text": "Gold price outlook: MCX gold slips for the week as US Fed rate hike bets rise; what’s next for the yellow metal?. MCX gold prices declined, losing  ₹3,351 per 10 grams as traders reacted to higher US Treasury yields and Fed signals. September's gains turned into losses due to concerns over inflation and interest rate hikes, with October delivery gold closing at  ₹1,51,000.",
     "numbers_detected": [
-      "₹9,450",
-      "₹1.30",
-      "35%",
-      "35%",
-      "24",
-      "₹30,000"
+      "₹3,351",
+      "10",
+      "₹1,51",
+      "000"
     ],
-    "published_at": "2026-09-25T09:02:15+05:30",
-    "age_hours": 5.4,
-    "retrieved_at": "2026-09-25T08:56:10.262633+00:00",
+    "published_at": "2026-09-25T23:57:57+05:30",
+    "age_hours": 0.1,
+    "retrieved_at": "2026-09-25T18:34:01.727563+00:00",
     "date": "25 Sep 2026",
     "from_live_api": true,
-    "evidence_snapshot": "Source: Livemint Markets | Published: 2026-09-25T09:02:15+05:30 (5.4h ago) | Headline: ₹9,450 turns into over  ₹1.30 lakh in one day despite 35% fall in PB Fintech share price; here's how | Context: ₹9,450 turns into over  ₹1.30 lakh in one day despite 35% fall in PB Fintech share price; here's how. PB Fintech shares fell 35% on September 24, leading to a market cap loss of  ₹30,000 crore. This triggered a surge in put options, allowing traders to profit significantly from the decline. The stock reached a 52-week low due to regulatory changes proposed by the IRDAI.",
+    "evidence_snapshot": "Source: Livemint Markets | Published: 2026-09-25T23:57:57+05:30 (0.1h ago) | Headline: Gold price outlook: MCX gold slips for the week as US Fed rate hike bets rise; what’s next for the yellow metal? | Context: Gold price outlook: MCX gold slips for the week as US Fed rate hike bets rise; what’s next for the yellow metal?. MCX gold prices declined, losing  ₹3,351 per 10 grams as traders reacted to higher US Treasury yields and Fed signals. September's gains turned into losses due to concerns over inflation and interest rate hikes, with October delivery gold closing at  ₹1,51,000.",
     "news_analysis": {
-      "headline_hook": "₹9,450 to ₹1.30 Lakhs in 24 hours? PB Fintech-la unga pocket-a yaar thirudunaanga?",
-      "breaking_event_summary": "PB Fintech shares plummeted 35% on September 24 following IRDAI regulatory announcements, triggering massive volatility in the derivatives segment.",
-      "retail_illusion": "Retail investors see a '₹9,450 to ₹1.30 lakh' headline and assume they can replicate this 'easy money' by chasing high-volatility put options during market crashes.",
-      "institutional_reality": "This is a classic 'Gamma Squeeze' in reverse. Institutions sold the volatility to retail traders at inflated premiums; the massive gain was a result of extreme leverage and 'black swan' pricing, not a repeatable trading strategy. Most retail participants were likely on the wrong side of the trade, providing the liquidity for the few who profited.",
+      "headline_hook": "Fed rate hike-ala unga 10g gold investment-la ₹2,500 loss! Unga pocket-ah check pannunga.",
+      "breaking_event_summary": "MCX gold prices for October delivery fell to ₹1,51,000 per 10 grams, marking a weekly decline of ₹3,351 as market sentiment shifted due to rising US Treasury yields.",
+      "retail_illusion": "Retail investors believe the drop is a direct, logical reaction to Fed rate hike fears, assuming that gold is now 'cheap' and a prime buying opportunity because the 'inflation hedge' has been temporarily discounted.",
+      "institutional_reality": "Institutions are utilizing the 'Fed narrative' as a liquidity exit strategy. The price drop is driven by algorithmic rebalancing triggered by US Treasury yield spikes, which forces systematic funds to deleverage gold positions to maintain risk-parity models, regardless of gold's intrinsic value.",
       "citable_metrics": [
-        "₹9,450 initial investment",
-        "₹1.30 lakh final value",
-        "35% share price fall",
-        "₹30,000 crore market cap loss",
-        "September 24 date"
+        "₹3,351 decline per 10 grams",
+        "₹1,51,000 closing price for October delivery"
       ],
       "debunk_category": "LIQUIDITY_TRAP",
-      "actionable_retail_rule": "Never deploy more than 2% of your total capital into 'event-based' derivatives; if you aren't the one selling the volatility, you are the one paying for it.",
+      "actionable_retail_rule": "Never buy the 'dip' on gold during a Treasury yield spike until the 14-day RSI confirms a structural support level; wait for the institutional deleveraging cycle to exhaust its volume.",
       "lead_magnet": {
         "trigger_word": "AUDIT",
-        "resource_name": "The Derivatives Risk Exposure Audit Checklist"
+        "resource_name": "The 1-Page Gold Volatility & Yield Correlation Audit"
       },
       "carousel_outline": [
         {
           "slide": 1,
           "role": "hook",
-          "focus": "The PB Fintech 'Lottery' Trap: Why One-Day Option Gains Are Institutional Bait"
+          "focus": "Why the 'Fed Rate Hike' narrative is a distraction for your gold portfolio."
         },
         {
           "slide": 2,
           "role": "friction",
-          "focus": "The Illusion: 'I could have made 13x my money.' The Reality: 'You were likely the liquidity provider for the house.'"
+          "focus": "Retail thinks it's a discount; Institutions know it's a forced liquidation."
         },
         {
           "slide": 3,
           "role": "math_reality",
-          "focus": "Breaking down the 35% drop: How IRDAI regulatory shifts create 'implied volatility' spikes that drain retail accounts."
+          "focus": "How US Treasury yields trigger algorithmic sell-offs in MCX gold."
         },
         {
           "slide": 4,
           "role": "breakdown",
-          "focus": "Why chasing 13x returns in 24 hours is statistically equivalent to gambling, not investing."
+          "focus": "The ₹3,351 drop: Why the math suggests more downside before stabilization."
         },
         {
           "slide": 5,
           "role": "actionable_rule",
-          "focus": "The 2% Rule: Protecting your portfolio from 'Black Swan' regulatory events."
+          "focus": "The Golden Rule: Stop buying the dip until the RSI confirms a trend reversal."
         },
         {
           "slide": 6,
           "role": "cta",
-          "focus": "Comment 'AUDIT' to receive our Derivatives Risk Exposure Checklist."
+          "focus": "Comment AUDIT to get our tactical checklist for gold volatility."
         }
       ],
-      "highlight_word": "₹1.30 Lakhs",
-      "editorial_directive": "Use colloquial Tanglish like 'Vittutingala?' and 'Yosichu paarunga'. Prioritize high-contrast visuals for the numbers. Ensure the math breakdown slide is simple enough for a 10-second read. Avoid heavy jargon; speak like a friend explaining a scam at a tea stall."
+      "highlight_word": "₹2,500 loss",
+      "editorial_directive": "Use high-contrast visual elements showing rupee coins falling. Keep the Tanglish conversational, direct, and aggressive. Focus on the 'hidden' nature of the loss to trigger immediate fear and curiosity."
     },
     "darwin_result": {
       "winning_candidate": {
         "id": "B",
         "archetype": "MATH_BREAKDOWN",
-        "headline_hook": "₹9,450 to ₹1.30 Lakhs in 24 hours? PB Fintech-la unga pocket-a yaar thirudunaanga?",
-        "highlight_word": "₹1.30 Lakhs",
+        "headline_hook": "Fed rate hike-ala unga 10g gold investment-la ₹2,500 loss! Unga pocket-ah check pannunga.",
+        "highlight_word": "₹2,500 loss",
         "scores": {
-          "curiosity_gap": 10,
-          "viral_potential": 10,
+          "curiosity_gap": 9,
+          "viral_potential": 9,
           "retail_actionability": 9,
           "friction_quotient": 9,
-          "total": 38.0
+          "total": 36
         },
-        "critic_critique": "The absolute 'gold standard' for Tamil retail. By juxtaposing a massive profit against the 35% crash, you force the reader to do mental math. It creates an immediate 'I missed out' sting that drives shares."
+        "critic_critique": "Perfectly weaponizes loss aversion. The math breakdown makes the abstract Fed news feel like a personal financial injury, forcing a swipe."
       },
-      "critic_score": 9.5,
+      "critic_score": 9.0,
       "archetype": "MATH_BREAKDOWN",
-      "selection_rationale": "Candidate B is the winner because it weaponizes 'Loss Aversion' and 'Greed' simultaneously. In the Tamil market, showing a specific, quantifiable transformation (9k to 1.3L) makes the abstract market crash feel like a personal financial tragedy for the reader.",
-      "final_editorial_directive": "Use colloquial Tanglish like 'Vittutingala?' and 'Yosichu paarunga'. Prioritize high-contrast visuals for the numbers. Ensure the math breakdown slide is simple enough for a 10-second read. Avoid heavy jargon; speak like a friend explaining a scam at a tea stall."
+      "selection_rationale": "Candidate B wins because it weaponizes the 'Math Breakdown' archetype. It transforms an abstract global economic shift into a tangible rupee loss for the average Tamil retail investor, creating immediate urgency and actionability.",
+      "final_editorial_directive": "Use high-contrast visual elements showing rupee coins falling. Keep the Tanglish conversational, direct, and aggressive. Focus on the 'hidden' nature of the loss to trigger immediate fear and curiosity."
     },
-    "headline_hook": "₹9,450 to ₹1.30 Lakhs in 24 hours? PB Fintech-la unga pocket-a yaar thirudunaanga?",
-    "highlight_word": "₹1.30 Lakhs",
-    "editorial_directive": "Use colloquial Tanglish like 'Vittutingala?' and 'Yosichu paarunga'. Prioritize high-contrast visuals for the numbers. Ensure the math breakdown slide is simple enough for a 10-second read. Avoid heavy jargon; speak like a friend explaining a scam at a tea stall."
+    "headline_hook": "Fed rate hike-ala unga 10g gold investment-la ₹2,500 loss! Unga pocket-ah check pannunga.",
+    "highlight_word": "₹2,500 loss",
+    "editorial_directive": "Use high-contrast visual elements showing rupee coins falling. Keep the Tanglish conversational, direct, and aggressive. Focus on the 'hidden' nature of the loss to trigger immediate fear and curiosity."
   },
   "plan": {
-    "hook_headline": "₹9,450 to ₹1.30 Lakhs in 24 hours? PB Fintech-la unga pocket-a yaar thirudunaanga?",
-    "core_illusion": "Retail investors see a '₹9,450 to ₹1.30 lakh' headline and assume they can replicate this 'easy money' by chasing high-volatility put options during market crashes.",
-    "hidden_reality": "This is a classic 'Gamma Squeeze' in reverse. Institutions sold the volatility to retail traders at inflated premiums; the massive gain was a result of extreme leverage and 'black swan' pricing, not a repeatable trading strategy. Most retail participants were likely on the wrong side of the trade, providing the liquidity for the few who profited.",
-    "citable_metric": "₹9,450 initial investment",
+    "hook_headline": "Fed rate hike-ala unga 10g gold investment-la ₹2,500 loss! Unga pocket-ah check pannunga.",
+    "core_illusion": "Retail investors believe the drop is a direct, logical reaction to Fed rate hike fears, assuming that gold is now 'cheap' and a prime buying opportunity because the 'inflation hedge' has been temporarily discounted.",
+    "hidden_reality": "Institutions are utilizing the 'Fed narrative' as a liquidity exit strategy. The price drop is driven by algorithmic rebalancing triggered by US Treasury yield spikes, which forces systematic funds to deleverage gold positions to maintain risk-parity models, regardless of gold's intrinsic value.",
+    "citable_metric": "₹3,351 decline per 10 grams",
     "all_metrics": [
-      "₹9,450 initial investment",
-      "₹1.30 lakh final value",
-      "35% share price fall",
-      "₹30,000 crore market cap loss",
-      "September 24 date"
+      "₹3,351 decline per 10 grams",
+      "₹1,51,000 closing price for October delivery"
     ],
-    "actionable_rule": "Never deploy more than 2% of your total capital into 'event-based' derivatives; if you aren't the one selling the volatility, you are the one paying for it.",
-    "breaking_event": "PB Fintech shares plummeted 35% on September 24 following IRDAI regulatory announcements, triggering massive volatility in the derivatives segment.",
+    "actionable_rule": "Never buy the 'dip' on gold during a Treasury yield spike until the 14-day RSI confirms a structural support level; wait for the institutional deleveraging cycle to exhaust its volume.",
+    "breaking_event": "MCX gold prices for October delivery fell to ₹1,51,000 per 10 grams, marking a weekly decline of ₹3,351 as market sentiment shifted due to rising US Treasury yields.",
     "lead_magnet": {
       "trigger_word": "AUDIT",
-      "resource_name": "The Derivatives Risk Exposure Audit Checklist"
+      "resource_name": "The 1-Page Gold Volatility & Yield Correlation Audit"
     },
     "banned_phrases": [
       "guaranteed wealth",
@@ -126,105 +118,105 @@
     ]
   },
   "deck": {
-    "caption": "🚨 ₹9,450-லிருந்து ₹1.30 Lakhs? உண்மை என்ன?\n\nஇந்த நகர்வின் பின்னணியில் உள்ள உண்மை நிதி கணக்கீடுகள், டிவி செய்திகள் சொல்வதை விட முற்றிலும் மாறுபட்டவை.\n\nமுழு 8-slide Tanglish breakdown-ஐ படிக்க swipe செய்யுங்கள். 👉\n📌 Retail Illusion vs Institutional Reality\n📌 Volatility-oda Hidden Danger\n📌 Liquidity-oda Unmai Mugam\n\n📌 உங்கள் அடுத்த trade-க்கு முன் பார்க்க இந்த பதிவை Save செய்து கொள்ளுங்கள்.\n✈️ உங்கள் முதலீட்டாளர் நண்பர்களுக்கு Share செய்து அவர்களின் Capital-ஐ பாதுகாக்கவும்.\n\n💬 Trade எடுக்கும் போது stop-loss வச்சு trade செய்வீங்களா அல்லது news மட்டும் நம்புவீங்களா? கமெண்ட்ல சொல்லுங்க 👇\n\n#MarketDebunkTamil #StockTipsTamil #TradingStrategyTamil #RiskTamil #TamilKnowledge",
+    "caption": "🚨 Fed rate hike-ala unga Gold investment-la loss!\n\nசாதாரண முதலீட்டாளர்கள் இந்த breakout-ஐ துரத்தும் போது, பெரிய நிறுவனங்கள் தங்கள் ரிஸ்க்கை அமைதியாக hedge செய்கின்றன.\n\nமுழு 8-slide Tanglish breakdown-ஐ படிக்க swipe செய்யுங்கள். 👉\n📌 Retail vs Institutional Gold Reality\n📌 Verified Market Impact Data\n📌 Institutional Liquidity Mechanism\n\n📌 உங்கள் அடுத்த trade-க்கு முன் பார்க்க இந்த பதிவை Save செய்து கொள்ளுங்கள்.\n✈️ உங்கள் முதலீட்டாளர் நண்பர்களுக்கு Share செய்து அவர்களின் Capital-ஐ பாதுகாக்கவும்.\n\n💬 Trade எடுக்கும் போது stop-loss வச்சு trade செய்வீங்களா அல்லது news மட்டும் நம்புவீங்களா? கமெண்ட்ல சொல்லுங்க 👇\n\n#TamilWealth #PersonalFinanceTamil #TamilBusiness #MoneyTamil #TamilSavings",
     "slides": [
       {
         "role": "hook",
         "tag": "#MARKETDEBUNK",
-        "title": "₹9,450-லிருந்து ₹1.30 Lakhs? <span class='highlight-box'>உண்மை என்ன?</span>",
+        "title": "Fed rate hike-ala unga <span class='highlight-box'>Gold investment-la loss!</span>",
         "slide_index": 1,
         "title_lines": [
-          "₹9,450-லிருந்து ₹1.30",
-          "Lakhs?",
-          "<span class='highlight-box'>உண்மை என்ன?</span>"
+          "Fed rate",
+          "hike-ala unga",
+          "<span class='highlight-box'>Gold investment-la</span>"
         ],
         "card_text": ""
       },
       {
         "role": "value_1",
         "tag": "#MARKETDEBUNK",
-        "title": "Retail Illusion vs <span class='highlight-box'>Institutional Reality</span>",
+        "title": "Retail vs Institutional <span class='highlight-box'>Gold Reality</span>",
         "comparison_data": {
-          "myth": "Retailers ninaikuradhu: 'Easy-ah <strong>options trading</strong>-la jackpot adichudalam'.",
-          "reality": "Institutions-oda game: <strong>Black swan pricing</strong>-la retail traders-kitta premium-a vithu profit pannuvanga."
+          "myth": "Gold price drop aagum bodhu, idhu oru <strong>'cheap buying opportunity'</strong> nu retail investors nambuvanga.",
+          "reality": "Institutions idhai oru <strong>'liquidity exit strategy'</strong>-ah use panni, algorithmic rebalancing moolama profit edupanga."
         },
         "slide_index": 2,
         "title_lines": [
-          "முதலீட்டு மாயை",
-          "<span class='highlight-box'>& நிஜ</span>",
-          "உண்மை"
+          "Retail vs",
+          "<span class='highlight-box'>Institutional Gold</span>",
+          "Reality"
         ]
       },
       {
         "role": "value_2",
         "tag": "#MARKETDEBUNK",
-        "title": "Volatility-oda <span class='highlight-box'>Hidden Danger</span>",
+        "title": "Verified Market <span class='highlight-box'>Impact Data</span>",
         "stat_data": {
           "badge": "VERIFIED MARKET IMPACT",
-          "metric": "₹9,450 initial investment",
-          "label": "High-risk leverage trap",
-          "context": "PB Fintech 35% crash-a vechu, <strong>put options</strong>-la retail traders-a bait panni, institutions massive profit pannanga. Idhu repeatable strategy illa, luck mattum dhaan."
+          "metric": "₹3,351 decline per 10 grams",
+          "label": "Retail portfolio erosion",
+          "context": "US Treasury yields spike aagum bodhu, systematic funds gold-la irundhu veliyeeruvanga. Idhunaala <strong>₹3,351 per 10g</strong> varai price drop aagi, retail investors-oda capital-ah silent-ah erode pannudhu."
         },
         "slide_index": 3,
         "title_lines": [
-          "<span class='highlight-box'>Volatility-oda Hidden</span>",
-          "Danger"
+          "Verified Market",
+          "<span class='highlight-box'>Impact Data</span>"
         ]
       },
       {
         "role": "value_3",
         "tag": "#MARKETDEBUNK",
-        "title": "Liquidity-oda <span class='highlight-box'>Unmai Mugam</span>",
-        "card_text": "1. Market crash-a pathu retail traders panic-ah put options vanguvanga. 2. Institutions andha high-priced options-a vithu premium-a collect pannuvanga. 3. Retailers-oda loss dhaan institutions-oda profit-ah maarudhu. Vittutingala?",
+        "title": "Institutional Liquidity <span class='highlight-box'>Mechanism</span>",
+        "card_text": "1. US Fed signals-ah trigger-ah vachu algorithms sell order-ah execute pannum. 2. Treasury yields yerum bodhu, risk-parity models gold-ah deleverage pannum. 3. Retail investors 'dip' nu nambi buy pannum bodhu, institutions avanga liquidity-ah exit-ku use pannuvanga.",
         "slide_index": 4,
         "title_lines": [
-          "<span class='highlight-box'>Liquidity-oda Unmai</span>",
-          "Mugam"
+          "<span class='highlight-box'>Institutional Liquidity</span>",
+          "Mechanism"
         ]
       },
       {
         "role": "value_4",
         "tag": "#MARKETDEBUNK",
-        "title": "Capital-a <span class='highlight-box'>Kaapaatruvadhu</span> Eppadi?",
-        "card_text": "Institutions eppovum volatility-a sell pannuvanga, buy panna maattanga. Neenga options-la entry edukum pothu, 'Black Swan' event-ah predict panna mudiyadhu. Leverage-ah nambi irundha, <strong>capital</strong> mothamaa kaali aagidum.",
+        "title": "Capital Extraction <span class='highlight-box'>Logic</span>",
+        "card_text": "Retail investors gold-ah inflation hedge-nu nambi hold pannuvanga. Aana, institutional algorithms gold-oda intrinsic value-ah vida, <strong>Treasury yield correlation</strong>-ah mukkiyama paarkum. Indha gap-la dhan unga capital silent-ah extract aagudhu.",
         "slide_index": 5,
         "title_lines": [
-          "<span class='highlight-box'>Capital-a Kaapaatruvadhu</span>",
-          "Eppadi?"
+          "<span class='highlight-box'>Capital Extraction</span>",
+          "Logic"
         ]
       },
       {
         "role": "value_5",
         "tag": "#MARKETDEBUNK",
-        "title": "Golden Rule: <span class='highlight-box'>Risk Management</span>",
-        "card_text": "Event-based derivatives-la unga total capital-la <strong>2%-க்கு மேல்</strong> risk pannaadheenga. Neenga volatility-a sell panra aal illa na, neenga dhaan andha premium-a pay panra victim!",
+        "title": "The Golden Institutional <span class='highlight-box'>Rule</span>",
+        "card_text": "Treasury yields spike aagum bodhu, 'buy the dip' nu kooda ninaikadheenga. <strong>14-day RSI</strong> structural support-ah confirm pannum varai wait pannunga. Institutional deleveraging cycle volume exhaust aagum varai entry edukkaadheenga.",
         "slide_index": 6,
         "title_lines": [
-          "Golden Rule:",
-          "<span class='highlight-box'>Risk Management</span>"
+          "The Golden",
+          "<span class='highlight-box'>Institutional Rule</span>"
         ]
       },
       {
         "role": "value_6",
         "tag": "#MARKETDEBUNK",
-        "title": "Trade-ku mun <span class='highlight-box'>Checklist</span>",
+        "title": "Pre-Trade Risk <span class='highlight-box'>Checklist</span>",
         "checklist_data": [
           {
             "status": "fail",
-            "text": "Hype-ஐ பார்த்து blind-ஆ entry எடுப்பது"
+            "text": "Fed news-ah mattum paarthu blind-ah entry edukkaadheenga"
           },
           {
             "status": "pass",
-            "text": "Trade-க்கு முன்பே strict stop-loss முடிவு செய்வது"
+            "text": "14-day RSI support level-ah confirm pannunga"
           },
           {
             "status": "pass",
-            "text": "ஒரு trade-ல் 2%-க்கு மேல் risk செய்யாமல் இருப்பது"
+            "text": "Institutional volume exhaustion-a monitor pannunga"
           }
         ],
         "slide_index": 7,
         "title_lines": [
-          "<span class='highlight-box'>Trade-ku mun</span>",
+          "<span class='highlight-box'>Pre-Trade Risk</span>",
           "Checklist"
         ]
       },
@@ -244,58 +236,58 @@
     ],
     "fact_check_status": "verified_pass",
     "audio_recommendation": {
-      "title": "Master The Blaster (Instrumental Flow)",
-      "artist": "Anirudh Ravichander",
-      "bpm": 115,
-      "vibe": "High Energy Capital Momentum",
-      "reels_boost_tier": "Viral Regional",
-      "search_query": "Master The Blaster Instrumental Anirudh"
+      "title": "Time (Institutional Minimalist Mix)",
+      "artist": "Hans Zimmer",
+      "bpm": 124,
+      "vibe": "Deep Mathematical Compounding",
+      "reels_boost_tier": "Top Tier",
+      "search_query": "Hans Zimmer Time Inception"
     },
-    "hashtag_cluster_id": "tamil_cluster_4",
-    "hook_archetype_id": "tamil_angle_2"
+    "hashtag_cluster_id": "tamil_cluster_3",
+    "hook_archetype_id": "tamil_angle_4"
   },
   "audio": {
-    "title": "Master The Blaster (Instrumental Flow)",
-    "artist": "Anirudh Ravichander",
-    "bpm": 115,
-    "vibe": "High Energy Capital Momentum",
-    "reels_boost_tier": "Viral Regional",
-    "search_query": "Master The Blaster Instrumental Anirudh"
+    "title": "Time (Institutional Minimalist Mix)",
+    "artist": "Hans Zimmer",
+    "bpm": 124,
+    "vibe": "Deep Mathematical Compounding",
+    "reels_boost_tier": "Top Tier",
+    "search_query": "Hans Zimmer Time Inception"
   },
-  "run_id": "20260925_085642",
+  "run_id": "20260925_183513",
   "slide_count": 8,
   "darwin_result": {
     "winning_candidate": {
       "id": "B",
       "archetype": "MATH_BREAKDOWN",
-      "headline_hook": "₹9,450 to ₹1.30 Lakhs in 24 hours? PB Fintech-la unga pocket-a yaar thirudunaanga?",
-      "highlight_word": "₹1.30 Lakhs",
+      "headline_hook": "Fed rate hike-ala unga 10g gold investment-la ₹2,500 loss! Unga pocket-ah check pannunga.",
+      "highlight_word": "₹2,500 loss",
       "scores": {
-        "curiosity_gap": 10,
-        "viral_potential": 10,
+        "curiosity_gap": 9,
+        "viral_potential": 9,
         "retail_actionability": 9,
         "friction_quotient": 9,
-        "total": 38.0
+        "total": 36
       },
-      "critic_critique": "The absolute 'gold standard' for Tamil retail. By juxtaposing a massive profit against the 35% crash, you force the reader to do mental math. It creates an immediate 'I missed out' sting that drives shares."
+      "critic_critique": "Perfectly weaponizes loss aversion. The math breakdown makes the abstract Fed news feel like a personal financial injury, forcing a swipe."
     },
-    "critic_score": 9.5,
+    "critic_score": 9.0,
     "archetype": "MATH_BREAKDOWN",
-    "selection_rationale": "Candidate B is the winner because it weaponizes 'Loss Aversion' and 'Greed' simultaneously. In the Tamil market, showing a specific, quantifiable transformation (9k to 1.3L) makes the abstract market crash feel like a personal financial tragedy for the reader.",
-    "final_editorial_directive": "Use colloquial Tanglish like 'Vittutingala?' and 'Yosichu paarunga'. Prioritize high-contrast visuals for the numbers. Ensure the math breakdown slide is simple enough for a 10-second read. Avoid heavy jargon; speak like a friend explaining a scam at a tea stall."
+    "selection_rationale": "Candidate B wins because it weaponizes the 'Math Breakdown' archetype. It transforms an abstract global economic shift into a tangible rupee loss for the average Tamil retail investor, creating immediate urgency and actionability.",
+    "final_editorial_directive": "Use high-contrast visual elements showing rupee coins falling. Keep the Tanglish conversational, direct, and aggressive. Focus on the 'hidden' nature of the loss to trigger immediate fear and curiosity."
   },
   "visual_audit": {
     "passed": true,
-    "average_score": 9.5,
+    "average_score": 8.5,
     "slide_1_report": {
-      "overall_score": 9.5,
+      "overall_score": 8.5,
       "passed": true,
-      "critique_summary": "The typography is excellent, utilizing a high-legibility bold sans-serif typeface that complements the Tamil script perfectly. The rendering of the Tamil glyphs (especially the conjuncts in 'உண்மை என்ன') is clean and free of overlapping or broken components. The color contrast between the white text/green highlight box and the off-white background is optimal for mobile consumption. The visual hierarchy effectively guides the reader from the numeric premise to the questioning phrase.",
+      "critique_summary": "The slide effectively uses a high-contrast design. The headline 'Fed rate hike-ala unga Gold investment-la' is highly legible. However, the use of a hybrid 'Tanglish' (Tamil mixed with English words) is standard for this niche, but the 'Gold investment-la' green highlight box is slightly tight vertically, making the descenders of the Tamil text feel a bit cramped. Otherwise, the typography is clean and professional.",
       "suggested_css_adjustments": {
-        "notes": "No structural changes needed. To further refine the visual balance, one could slightly increase the letter-spacing (tracking) of the Tamil characters by 0.02em to improve breathability on high-density displays."
+        "notes": "Increase the 'padding-top' and 'padding-bottom' of the green highlight box by 4-8px to allow more breathing room for the text glyphs."
       }
     },
     "slide_count_audited": 2
   },
-  "exported_at": "2026-09-25T08:56:53.753278+00:00"
+  "exported_at": "2026-09-25T18:35:24.158997+00:00"
 }
