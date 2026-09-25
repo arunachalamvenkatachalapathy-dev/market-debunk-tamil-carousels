@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-09-24T18:29:03.891198+00:00",
+  "timestamp": "2026-09-25T08:57:39.974162+00:00",
   "phase": "PUBLISHING",
   "platform": "Instagram",
   "severity": "CRITICAL",
   "error_code": "ERR_IMAGE_NOT_ACCESSIBLE",
-  "root_cause_analysis": "The Instagram Graph API failed to fetch the image from the provided GitHub raw URL. This is typically caused by the Meta server being unable to resolve the URL, a restrictive firewall, or the image format/size not meeting Instagram's strict technical requirements (e.g., aspect ratio or file size limits).",
+  "root_cause_analysis": "The Instagram Graph API failed to fetch the image from the provided GitHub raw URL. This is typically caused by the Meta crawler being unable to resolve the URI, incorrect MIME type headers, or the image dimensions/file size exceeding Instagram's strict requirements for carousel containers.",
   "reproducibility": "URL_UNAVAILABLE",
   "automated_remediation": {
     "action": "ABORT",
@@ -13,8 +13,8 @@
   "operator_action_required": true,
   "actionable_instructions": [
     "Verify that the GitHub repository is public and the raw URLs are directly accessible without authentication.",
-    "Ensure the images meet Instagram's aspect ratio requirements (between 4:5 and 1.91:1).",
-    "Consider hosting images on a CDN or a more reliable public storage service that supports direct binary streaming to Meta's servers.",
-    "Check if the image file size exceeds the maximum allowed limit for the Instagram Graph API."
+    "Ensure images are in JPEG format, under 8MB, and maintain an aspect ratio between 4:5 and 1.91:1.",
+    "Check if the GitHub raw server is returning a 403 or 404 status code when accessed by Meta's user-agent.",
+    "Consider hosting images on a CDN or a public S3 bucket with proper CORS headers if GitHub raw continues to fail."
   ]
 }
