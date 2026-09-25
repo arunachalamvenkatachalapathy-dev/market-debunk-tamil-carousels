@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-09-25T08:57:39.974162+00:00",
+  "timestamp": "2026-09-25T18:36:11.238938+00:00",
   "phase": "PUBLISHING",
   "platform": "Instagram",
   "severity": "CRITICAL",
   "error_code": "ERR_IMAGE_NOT_ACCESSIBLE",
-  "root_cause_analysis": "The Instagram Graph API failed to fetch the image from the provided GitHub raw URL. This is typically caused by the Meta crawler being unable to resolve the URI, incorrect MIME type headers, or the image dimensions/file size exceeding Instagram's strict requirements for carousel containers.",
+  "root_cause_analysis": "Meta Graph API failed to fetch the image from the provided GitHub raw URL. The error code 9004 with subcode 2207052 indicates that the Instagram server could not process the media URI, likely due to strict content-type validation, firewall restrictions, or the image format not meeting Instagram's specific aspect ratio/size requirements.",
   "reproducibility": "URL_UNAVAILABLE",
   "automated_remediation": {
     "action": "ABORT",
@@ -12,9 +12,9 @@
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Verify that the GitHub repository is public and the raw URLs are directly accessible without authentication.",
-    "Ensure images are in JPEG format, under 8MB, and maintain an aspect ratio between 4:5 and 1.91:1.",
-    "Check if the GitHub raw server is returning a 403 or 404 status code when accessed by Meta's user-agent.",
-    "Consider hosting images on a CDN or a public S3 bucket with proper CORS headers if GitHub raw continues to fail."
+    "Verify that the GitHub raw URLs are publicly accessible and return a 'Content-Type: image/jpeg' or 'image/png' header.",
+    "Ensure the images meet Instagram's aspect ratio requirements (between 4:5 and 1.91:1).",
+    "Consider hosting images on a CDN or a platform with more permissive CORS/header policies if GitHub continues to block Meta's crawler.",
+    "Check if the image file size exceeds the maximum allowed limit for the Instagram Graph API."
   ]
 }
