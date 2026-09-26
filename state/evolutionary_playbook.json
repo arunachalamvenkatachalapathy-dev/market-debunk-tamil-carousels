@@ -1,13 +1,12 @@
 {
   "version": "2.0.0",
-  "total_cycles_recorded": 13,
+  "total_cycles_recorded": 14,
   "archetype_weights": {
     "SHOCKING_MYTH": 1.35,
-    "MATH_BREAKDOWN": 1.87,
+    "MATH_BREAKDOWN": 1.92,
     "INSTITUTIONAL_SECRET": 1.1
   },
   "learned_rules": [
-    "Candidate B hits the MATH_BREAKDOWN archetype perfectly by quantifying risk with exact figures ('₹3.5 லட்சம் இழப்பு'). F",
     "Candidate B dominates on data density and retail actionability. By taking the headline earnings surge of 78.86% and grou",
     "Candidate B dominates by combining the strict 6-word punchy Tanglish hook constraint with quantified risk ('₹1.5 லட்சம் ",
     "Candidate B hits the MATH_BREAKDOWN archetype perfectly with a heavy 1.5 archetype weight. By leading with '₹14 Cr Loss!",
@@ -18,7 +17,8 @@
     "Candidate B is the clear winner because it forces the reader to calculate their own loss. By linking macro-economic fact",
     "Candidate B wins because it transforms a abstract macro-economic event into a personal financial crisis. In the Tamil re",
     "Candidate B is the winner because it weaponizes 'Loss Aversion' and 'Greed' simultaneously. In the Tamil market, showing",
-    "Candidate B wins because it weaponizes the 'Math Breakdown' archetype. It transforms an abstract global economic shift i"
+    "Candidate B wins because it weaponizes the 'Math Breakdown' archetype. It transforms an abstract global economic shift i",
+    "Candidate B wins because it weaponizes 'Loss Aversion'. In the Tamil retail market, showing exactly how money is evapora"
   ],
   "cycle_history": [
     {
@@ -137,6 +137,15 @@
       "critic_score": 9.0,
       "visual_score": 8.5,
       "key_learning": "Candidate B wins because it weaponizes the 'Math Breakdown' archetype. It transforms an abstract global economic shift i"
+    },
+    {
+      "cycle": 14,
+      "timestamp": "2026-09-26T08:43:56.826725+00:00",
+      "topic": "Four-day upper circuit streak drives this small-cap stock up 74%; here’s the key",
+      "winning_archetype": "MATH_BREAKDOWN",
+      "critic_score": 8.5,
+      "visual_score": 8.5,
+      "key_learning": "Candidate B wins because it weaponizes 'Loss Aversion'. In the Tamil retail market, showing exactly how money is evapora"
     }
   ]
 }
