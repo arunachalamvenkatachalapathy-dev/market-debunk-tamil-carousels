@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-09-25T18:36:11.238938+00:00",
+  "timestamp": "2026-09-26T08:44:47.355539+00:00",
   "phase": "PUBLISHING",
   "platform": "Instagram",
   "severity": "CRITICAL",
   "error_code": "ERR_IMAGE_NOT_ACCESSIBLE",
-  "root_cause_analysis": "Meta Graph API failed to fetch the image from the provided GitHub raw URL. The error code 9004 with subcode 2207052 indicates that the Instagram server could not process the media URI, likely due to strict content-type validation, firewall restrictions, or the image format not meeting Instagram's specific aspect ratio/size requirements.",
+  "root_cause_analysis": "Instagram Graph API media download failed (error subcode 2207052). Meta servers were unable to fetch the media file from the provided GitHub raw URI (https://raw.githubusercontent.com/.../slide_1_20260926_084346.png). GitHub raw URLs often lack appropriate HTTP headers (such as Content-Type or Content-Length) or enforce rate-limiting/redirects incompatible with Meta's media crawler requirements.",
   "reproducibility": "URL_UNAVAILABLE",
   "automated_remediation": {
     "action": "ABORT",
@@ -12,9 +12,8 @@
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Verify that the GitHub raw URLs are publicly accessible and return a 'Content-Type: image/jpeg' or 'image/png' header.",
-    "Ensure the images meet Instagram's aspect ratio requirements (between 4:5 and 1.91:1).",
-    "Consider hosting images on a CDN or a platform with more permissive CORS/header policies if GitHub continues to block Meta's crawler.",
-    "Check if the image file size exceeds the maximum allowed limit for the Instagram Graph API."
+    "Migrate image hosting from raw.githubusercontent.com to a standard public storage bucket or CDN (e.g., AWS S3, Cloudflare R2, or Cloudinary).",
+    "Ensure image URIs are directly accessible via public GET requests and return explicit 'image/png' or 'image/jpeg' Content-Type headers.",
+    "Verify image URLs are publicly reachable without requiring authentication or encountering HTTP redirects."
   ]
 }
