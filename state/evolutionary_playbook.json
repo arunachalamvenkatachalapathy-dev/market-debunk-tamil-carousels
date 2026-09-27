@@ -1,13 +1,12 @@
 {
   "version": "2.0.0",
-  "total_cycles_recorded": 15,
+  "total_cycles_recorded": 16,
   "archetype_weights": {
     "SHOCKING_MYTH": 1.35,
-    "MATH_BREAKDOWN": 1.97,
+    "MATH_BREAKDOWN": 2.02,
     "INSTITUTIONAL_SECRET": 1.1
   },
   "learned_rules": [
-    "Candidate B dominates by combining the strict 6-word punchy Tanglish hook constraint with quantified risk ('₹1.5 லட்சம் ",
     "Candidate B hits the MATH_BREAKDOWN archetype perfectly with a heavy 1.5 archetype weight. By leading with '₹14 Cr Loss!",
     "Candidate B scored the highest total (37.5/40) by converting $250M into a hard-hitting ₹2,075 Crores figure. With the MA",
     "Candidate B wins because it transforms an abstract market trend into a personal financial threat. In the Tamil retail ma",
@@ -18,7 +17,8 @@
     "Candidate B is the winner because it weaponizes 'Loss Aversion' and 'Greed' simultaneously. In the Tamil market, showing",
     "Candidate B wins because it weaponizes the 'Math Breakdown' archetype. It transforms an abstract global economic shift i",
     "Candidate B wins because it weaponizes 'Loss Aversion'. In the Tamil retail market, showing exactly how money is evapora",
-    "Candidate B wins because it transforms an abstract news report into a personal financial and legal trap. By contrasting "
+    "Candidate B wins because it transforms an abstract news report into a personal financial and legal trap. By contrasting ",
+    "Candidate B wins because it weaponizes the 'MATH_BREAKDOWN' archetype with a high Archetype Weight (2.0). It transforms "
   ],
   "cycle_history": [
     {
@@ -155,6 +155,15 @@
       "critic_score": 9.4,
       "visual_score": 8.5,
       "key_learning": "Candidate B wins because it transforms an abstract news report into a personal financial and legal trap. By contrasting "
+    },
+    {
+      "cycle": 16,
+      "timestamp": "2026-09-27T09:23:56.062977+00:00",
+      "topic": "Hyderabad 90-year-old loses ₹18 lakh in digital arrest scam - hyderabadmail.com",
+      "winning_archetype": "MATH_BREAKDOWN",
+      "critic_score": 9.2,
+      "visual_score": 8.9,
+      "key_learning": "Candidate B wins because it weaponizes the 'MATH_BREAKDOWN' archetype with a high Archetype Weight (2.0). It transforms "
     }
   ]
 }
