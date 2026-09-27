@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-09-27T09:24:45.484283+00:00",
+  "timestamp": "2026-09-27T18:23:27.871094+00:00",
   "phase": "PUBLISHING",
   "platform": "Instagram",
   "severity": "CRITICAL",
   "error_code": "ERR_IMAGE_NOT_ACCESSIBLE",
-  "root_cause_analysis": "The Instagram Graph API failed to fetch the image from the provided GitHub raw URL. This is typically caused by the Meta server being unable to resolve the URL, restrictive headers (e.g., User-Agent blocking), or the image failing to meet strict aspect ratio/file size requirements defined by the Instagram Graph API.",
+  "root_cause_analysis": "Instagram Graph API failed to download media from raw.githubusercontent.com (Subcode 2207052 / Code 9004). Meta's crawler could not retrieve the image due to URL host limitations, missing/unsupported headers, or network restrictions on raw GitHub content links.",
   "reproducibility": "URL_UNAVAILABLE",
   "automated_remediation": {
     "action": "ABORT",
@@ -12,9 +12,7 @@
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Verify the image URLs are publicly accessible and not behind any authentication or bot-blocking headers.",
-    "Ensure the images meet Instagram's aspect ratio requirements (between 4:5 and 1.91:1).",
-    "Consider hosting images on a CDN or a platform with more permissive headers if GitHub raw continues to return 403 or 404 errors during Meta's fetch process.",
-    "Check if the file size exceeds the 8MB limit per image."
+    "Migrate image hosting from raw.githubusercontent.com to a supported public CDN or S3/GCS bucket.",
+    "Ensure the hosting provider returns strict HTTP 200 responses with valid 'image/png' Content-Type headers accessible to Meta IP ranges."
   ]
 }
