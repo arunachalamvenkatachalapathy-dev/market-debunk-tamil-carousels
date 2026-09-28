@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-09-27T18:23:27.871094+00:00",
+  "timestamp": "2026-09-28T10:02:14.228862+00:00",
   "phase": "PUBLISHING",
   "platform": "Instagram",
   "severity": "CRITICAL",
   "error_code": "ERR_IMAGE_NOT_ACCESSIBLE",
-  "root_cause_analysis": "Instagram Graph API failed to download media from raw.githubusercontent.com (Subcode 2207052 / Code 9004). Meta's crawler could not retrieve the image due to URL host limitations, missing/unsupported headers, or network restrictions on raw GitHub content links.",
+  "root_cause_analysis": "The Instagram Graph API failed to fetch the image from the provided GitHub raw URL. The error subcode 2207052 indicates that the media URI is either unreachable, blocked by Meta's crawler, or fails to meet the specific content-type/format requirements mandated by the Instagram platform.",
   "reproducibility": "URL_UNAVAILABLE",
   "automated_remediation": {
     "action": "ABORT",
@@ -12,7 +12,9 @@
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Migrate image hosting from raw.githubusercontent.com to a supported public CDN or S3/GCS bucket.",
-    "Ensure the hosting provider returns strict HTTP 200 responses with valid 'image/png' Content-Type headers accessible to Meta IP ranges."
+    "Verify that the GitHub repository is public and the raw URLs are directly accessible without authentication.",
+    "Ensure the images meet Instagram's aspect ratio (between 4:5 and 1.91:1) and file size requirements.",
+    "Consider hosting images on a CDN or a service with more reliable uptime and headers compatible with Meta's media crawler.",
+    "Test the image URLs using the Facebook Sharing Debugger to ensure Meta's servers can successfully scrape the content."
   ]
 }
