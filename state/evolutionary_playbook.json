@@ -1,13 +1,12 @@
 {
   "version": "2.0.0",
-  "total_cycles_recorded": 17,
+  "total_cycles_recorded": 18,
   "archetype_weights": {
     "SHOCKING_MYTH": 1.35,
-    "MATH_BREAKDOWN": 2.07,
+    "MATH_BREAKDOWN": 2.12,
     "INSTITUTIONAL_SECRET": 1.1
   },
   "learned_rules": [
-    "Candidate B scored the highest total (37.5/40) by converting $250M into a hard-hitting ₹2,075 Crores figure. With the MA",
     "Candidate B wins because it transforms an abstract market trend into a personal financial threat. In the Tamil retail ma",
     "Candidate B wins because it weaponizes the 'Math Breakdown' archetype. In the Tamil retail market, showing exactly how m",
     "Fallback Tanglish anchor.",
@@ -18,7 +17,8 @@
     "Candidate B wins because it weaponizes 'Loss Aversion'. In the Tamil retail market, showing exactly how money is evapora",
     "Candidate B wins because it transforms an abstract news report into a personal financial and legal trap. By contrasting ",
     "Candidate B wins because it weaponizes the 'MATH_BREAKDOWN' archetype with a high Archetype Weight (2.0). It transforms ",
-    "Candidate B wins conclusively because it leverages the MATH_BREAKDOWN archetype (weight 2.0). It transforms a macro glob"
+    "Candidate B wins conclusively because it leverages the MATH_BREAKDOWN archetype (weight 2.0). It transforms a macro glob",
+    "Candidate B is the definitive winner because it weaponizes the 'Math Breakdown' archetype. In the Tamil retail market, s"
   ],
   "cycle_history": [
     {
@@ -173,6 +173,15 @@
       "critic_score": 9.4,
       "visual_score": 9.0,
       "key_learning": "Candidate B wins conclusively because it leverages the MATH_BREAKDOWN archetype (weight 2.0). It transforms a macro glob"
+    },
+    {
+      "cycle": 18,
+      "timestamp": "2026-09-28T10:01:24.760499+00:00",
+      "topic": "Stock Market Crash: Key factors behind Sensex falling 1,000 points and Nifty dro",
+      "winning_archetype": "MATH_BREAKDOWN",
+      "critic_score": 8.8,
+      "visual_score": 9.0,
+      "key_learning": "Candidate B is the definitive winner because it weaponizes the 'Math Breakdown' archetype. In the Tamil retail market, s"
     }
   ]
 }
