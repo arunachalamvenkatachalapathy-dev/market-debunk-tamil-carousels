@@ -268,86 +268,14 @@ Return JSON ONLY:
         4. Organic community debate question (drives genuine comments instead of ghost DMs)
         5. Rotating non-repetitive hashtag cluster (anti-spam diversity)
         """
-        title = topic_data.get("title", "")
-        slides = deck.get("slides", [])
-        hook_text = slides[0].get("title", title) if slides else title
-        clean_hook = re.sub(r"<[^>]+>", "", hook_text).strip()
-        clean_hook = re.sub(r"\s*[-|]\s*(Bloomberg(\.com)?|Reuters|Mint|Moneycontrol|The Economic Times|NDTV Profit|CNBC-TV18|Business Standard|Financial Express).*", "", clean_hook, flags=re.IGNORECASE).strip()
-
-        bullets = []
-        for s in slides[1:4]:
-            t = s.get("title") or ""
-            t_clean = re.sub(r"<[^>]+>", "", t).strip()
-            if t_clean:
-                bullets.append(f"📌 {t_clean}")
-        if not bullets:
-            bullets = [
-                "📌 செய்திகளுக்கு பின்னால் உள்ள Institutional எதார்த்தம்",
-                "📌 Institutional vs Retail அணுகுமுறை",
-                "📌 உங்கள் முதலீட்டை பாதுகாக்கும் முக்கிய விதி"
-            ]
-
-        # ── 1. Rotate Dynamic Curiosity-Driven Opening Hooks (Tanglish) ───────
-        opening_angles = [
-            "சந்தையில் வரும் செய்திகளை மட்டும் நம்பி முதலீடு செய்வது எப்படி institutional trap-ல் சிக்க வைக்கும் என்பதை பாருங்கள்.",
-            "இந்த நகர்வின் பின்னணியில் உள்ள உண்மை நிதி கணக்கீடுகள், டிவி செய்திகள் சொல்வதை விட முற்றிலும் மாறுபட்டவை.",
-            "அடுத்த trade எடுக்கும் முன், Smart Money மற்றும் நிறுவனங்கள் உண்மையில் என்ன செய்கிறார்கள் என்பதை கவனியுங்கள்.",
-            "சாதாரண முதலீட்டாளர்கள் இந்த breakout-ஐ துரத்தும் போது, பெரிய நிறுவனங்கள் தங்கள் ரிஸ்க்கை அமைதியாக hedge செய்கின்றன.",
-            "FOMO அவசரம் உங்கள் முதலீட்டு வளர்ச்சியை எப்படி பாதிக்கிறது? இந்த முக்கிய data-வை உடனே audit செய்யுங்கள்."
-        ]
-
-        # ── 2. Rotate Across 5 Diverse Tamil Thematic Hashtag Clusters ────────
-        hashtag_clusters = [
-            ["#TamilFinance", "#StockMarketTamil", "#TamilTrading", "#TamilInvestors", "#MarketDebunk"],
-            ["#TamilShareMarket", "#NiftyTamil", "#InvestmentTamil", "#TradingTamil", "#ShareMarketTamil"],
-            ["#TamilWealth", "#PersonalFinanceTamil", "#TamilBusiness", "#MoneyTamil", "#TamilSavings"],
-            ["#MarketDebunkTamil", "#StockTipsTamil", "#TradingStrategyTamil", "#RiskTamil", "#TamilKnowledge"],
-            ["#TamilStockMarket", "#IndianEconomyTamil", "#WealthBuildingTamil", "#FinancialLiteracyTamil", "#Tamil"]
-        ]
-
-        # Inspect last upload history to guarantee zero back-to-back cluster or angle repetition
-        last_cluster_id = None
-        last_angle_id = None
-        try:
-            from src.config import STATE_DIR
-            history_file = STATE_DIR / "upload_history.json"
-            if history_file.exists():
-                with open(history_file, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-                    uploads = data.get("uploads", []) if isinstance(data, dict) else data
-                    if uploads:
-                        last_cluster_id = uploads[-1].get("hashtag_cluster")
-                        last_angle_id = uploads[-1].get("hook_archetype")
-        except Exception:
-            pass
-
-        available_angle_indices = [i for i in range(len(opening_angles)) if f"tamil_angle_{i+1}" != last_angle_id]
-        angle_idx = random.choice(available_angle_indices) if available_angle_indices else random.randint(0, len(opening_angles) - 1)
-        chosen_opening = opening_angles[angle_idx]
-
-        available_cluster_indices = [i for i in range(len(hashtag_clusters)) if f"tamil_cluster_{i+1}" != last_cluster_id]
-        cluster_idx = random.choice(available_cluster_indices) if available_cluster_indices else random.randint(0, len(hashtag_clusters) - 1)
-        chosen_hashtags = " ".join(hashtag_clusters[cluster_idx])
-
-        deck["hashtag_cluster_id"] = f"tamil_cluster_{cluster_idx + 1}"
-        deck["hook_archetype_id"] = f"tamil_angle_{angle_idx + 1}"
-
-        debate_questions = [
-            "சந்தையில் திடீர் breakout வரும் போது உங்களுடைய முக்கிய rule என்ன? கமெண்ட்ல சொல்லுங்க 👇",
-            "நீங்க இந்த மாதிரி headline hype-ல் மாட்டிக்கிட்டு நஷ்டமடைஞ்சது உண்டா? உங்க அனுபவத்தை பகிருங்க 👇",
-            "Trade எடுக்கும் போது stop-loss வச்சு trade செய்வீங்களா அல்லது news மட்டும் நம்புவீங்களா? கமெண்ட்ல சொல்லுங்க 👇",
-            "Retail investors செய்யும் மிகப்பெரிய தவறு என்னன்னு நினைக்கிறீங்க? கமெண்ட்ல விவாதிப்போம் 👇"
-        ]
-        debate_q = random.choice(debate_questions)
-
-        caption = (
-            f"🚨 {clean_hook}\n\n"
-            f"{chosen_opening}\n\n"
-            f"முழு 8-slide Tanglish breakdown-ஐ படிக்க swipe செய்யுங்கள். 👉\n"
-            f"{chr(10).join(bullets)}\n\n"
-            f"📌 உங்கள் அடுத்த trade-க்கு முன் பார்க்க இந்த பதிவை Save செய்து கொள்ளுங்கள்.\n"
-            f"✈️ உங்கள் முதலீட்டாளர் நண்பர்களுக்கு Share செய்து அவர்களின் Capital-ஐ பாதுகாக்கவும்.\n\n"
-            f"💬 {debate_q}\n\n"
-            f"{chosen_hashtags}"
-        )
+        # Preserve the topic-specific editorial caption instead of imposing a fixed
+        # institutional-trap script on every market story.
+        caption = (deck.get("caption") or "").strip()
+        if not caption:
+            hook = deck.get("slides", [{}])[0].get("title", topic_data.get("title", ""))
+            highlights = [re.sub(r"<[^>]+>", "", s.get("title", "")).strip()
+                          for s in deck.get("slides", [])[1:4]]
+            caption = "\n".join([re.sub(r"<[^>]+>", "", hook), *[f"• {t}" for t in highlights if t]])
+        if not caption:
+            raise ValueError("Tamil caption is empty")
         return caption
