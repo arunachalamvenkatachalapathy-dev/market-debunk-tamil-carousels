@@ -45,7 +45,7 @@ class EditorialEngine:
         numbers = topic.get("numbers_detected", [])
         core_thesis = plan.get("hidden_reality") or plan.get("core_thesis", "")
         retail_trap = plan.get("core_illusion") or plan.get("retail_trap", "")
-        citable_metric = plan.get("citable_metric") or (numbers[0] if numbers else "₹34 Lakhs")
+        citable_metric = plan.get("citable_metric") or (numbers[0] if numbers else "")
         actionable_rule = plan.get("actionable_rule", "")
         lead_magnet = plan.get("lead_magnet", {})
         trigger = lead_magnet.get("trigger_word", "DEBUNK")
@@ -67,90 +67,20 @@ FINANCIAL CONCEPT & EVIDENCE:
 - Editorial Directive: {editorial_directive or 'N/A'}
 - The Retail Illusion / Trap: {retail_trap}
 - The Institutional Reality / Thesis: {core_thesis}
-- Mandatory Verified Metric: {citable_metric}
+- Available verified metric, if source-supported: {citable_metric}
 - Golden Actionable Rule: {actionable_rule}
 
-STRICT 8-SLIDE ARCHITECTURAL CONTRACT:
-Every carousel has EXACTLY 8 slides featuring dynamic, high-contrast visual archetypes:
-- Slide 1 (role: "hook"): 4-8 words maximum. Bold Tanglish curiosity gap with exactly ONE key word/phrase in <span class='highlight-box'>...</span>. tag: "#MARKETDEBUNK".
-- Slide 2 (role: "value_1"): Comparison Table. title: 2-3 lines with highlight box. comparison_data: {{"myth": "Retail belief in Tanglish...", "reality": "Institutional truth with exact data..."}}.
-- Slide 3 (role: "value_2"): Hard Data Stat Callout. title: 2-3 lines with highlight box. stat_data: {{"badge": "VERIFIED MARKET IMPACT", "metric": "{citable_metric}", "label": "compounding loss / risk in Tanglish", "context": "30-40 words Tanglish explaining mathematical friction."}}.
-- Slide 4 (role: "value_3"): Distribution / Liquidity Mechanism. title: 2-3 lines with highlight box. card_text: 35-50 words Tanglish detailing order flow or flowchart_data: list of 3 numbered steps.
-- Slide 5 (role: "value_4"): Mathematical Drag / Loss. title: 2-3 lines with highlight box. card_text: 35-50 words Tanglish explaining how capital is quietly extracted.
-- Slide 6 (role: "value_5"): The Non-Negotiable Institutional Rule. title: 2-3 lines with highlight box. card_text: 35-50 words Tanglish presenting the golden execution rule.
-- Slide 7 (role: "value_6"): Pre-Trade Risk Checklist. title: 2-3 lines with highlight box. checklist_data: list of 3 checklist items with "status": "pass" or "fail" and "text": "... in Tanglish".
-- Slide 8 (role: "bookmark_save"): Peer DM-Share & Save Trigger. title_lines: ["இந்த பதிவை உங்க", "<span class='highlight-box'>F&O நண்பருக்கு</span>", "இப்போவே Share", "பண்ணுங்க!"]. cta_detail: "இந்த institutional checkpoints-ஐ உங்கள் அடுத்த trade-க்கு முன் review செய்ய Bookmark செய்யுங்கள்." tag: "#MARKETDEBUNK".
+ADAPTIVE 8-SLIDE STORY:
+Keep exactly 8 slides for the publishing layout, but choose the story flow from THIS source. Hook, then six distinct topic-specific insights in a natural order, then a meaningful save/share CTA. Do not force every story into a myth, penalty, institutional trap, stat, or checklist. A news development may need timeline -> why it happened -> who is affected -> what is uncertain -> practical takeaway. A fee comparison may need real comparable costs and caveats. Use an exact stat_data metric only when it exists in the source. Never invent a number, implied return, or trading rule. Give each slide a distinct fact or clear inference tied to the article.
+Supported visual structures for slides 2-7: comparison_data {"myth":"...", "reality":"..."}, stat_data {"metric":"...", "label":"...", "context":"..."}, flowchart_data [{"text":"..."}], checklist_data [{"status":"pass", "text":"..."}], or card_text. Select what best fits each point and vary the layouts; no required sequence of archetypes. role is value_1 through value_6 by position. For every slide use a topic-specific title and concise Tanglish copy. Preserve Tamil glyphs and conversational tone. The final slide has role bookmark_save and a topic-specific CTA.
 
 RULES FOR CONTENT:
 - Concise, high-velocity reading: 2 to 3 sentences max for card texts or contexts.
 - Bold essential numbers and key phrases using <strong>...</strong> (e.g. <strong>{citable_metric}</strong>).
 - Conversational, engaging Tanglish (colloquial Tamil blended with financial terms).
 
-Return JSON ONLY matching this 8-slide schema:
-{{
-  "caption": "High-converting Tanglish caption with hook, 3 bullet points, Save & Share prompt ('📌 Save this post for your next trade review / 📤 Share this with a friend'), comment debate question ('நீங்க இந்த சூழ்நிலையை சந்திச்சிருக்கீங்களா? கமெண்ட்ல சொல்லுங்க 👇'), and hashtags",
-  "slides": [
-    {{
-      "role": "hook",
-      "tag": "#MARKETDEBUNK",
-      "title": "Short Tanglish Hook with <span class='highlight-box'>...</span>"
-    }},
-    {{
-      "role": "value_1",
-      "tag": "#MARKETDEBUNK",
-      "title": "Title with <span class='highlight-box'>...</span>",
-      "comparison_data": {{
-        "myth": "Retail belief in Tanglish with <strong>key terms</strong>",
-        "reality": "Institutional reality in Tanglish with <strong>data</strong>"
-      }}
-    }},
-    {{
-      "role": "value_2",
-      "tag": "#MARKETDEBUNK",
-      "title": "Title with <span class='highlight-box'>...</span>",
-      "stat_data": {{
-        "badge": "VERIFIED MARKET IMPACT",
-        "metric": "{citable_metric}",
-        "label": "compounding loss / risk in Tanglish",
-        "context": "Tanglish explanation with <strong>key metrics</strong>"
-      }}
-    }},
-    {{
-      "role": "value_3",
-      "tag": "#MARKETDEBUNK",
-      "title": "Title with <span class='highlight-box'>...</span>",
-      "card_text": "Compounding drag or order flow explanation in Tanglish."
-    }},
-    {{
-      "role": "value_4",
-      "tag": "#MARKETDEBUNK",
-      "title": "Title with <span class='highlight-box'>...</span>",
-      "card_text": "What institutions do differently in Tanglish."
-    }},
-    {{
-      "role": "value_5",
-      "tag": "#MARKETDEBUNK",
-      "title": "Title with <span class='highlight-box'>...</span>",
-      "card_text": "The golden rule to protect capital in Tanglish."
-    }},
-    {{
-      "role": "value_6",
-      "tag": "#MARKETDEBUNK",
-      "title": "Title with <span class='highlight-box'>...</span>",
-      "checklist_data": [
-        {{"status": "fail", "text": "Hype-ஐ பார்த்து blind-ஆ entry எடுப்பது"}},
-        {{"status": "pass", "text": "Trade-க்கு முன்பே strict stop-loss முடிவு செய்வது"}},
-        {{"status": "pass", "text": "ஒரு trade-ல் 2%-க்கு மேல் risk செய்யாமல் இருப்பது"}}
-      ]
-    }},
-    {{
-      "role": "bookmark_save",
-      "tag": "#MARKETDEBUNK",
-      "title_lines": ["இந்த பதிவை உங்க", "<span class='highlight-box'>F&O நண்பருக்கு</span>", "இப்போவே Share", "பண்ணுங்க!"],
-      "cta_detail": "இந்த institutional checkpoints-ஐ உங்கள் அடுத்த trade-க்கு முன் review செய்ய Bookmark செய்யுங்கள்."
-    }}
-  ]
-}}"""
+Return valid JSON only with "caption" and "slides" (exactly 8 slide objects). Each slide has role, title, and one supported body structure; the hook needs title, and last slide needs title and cta_detail. Use real topic content, not the template examples.
+"""
 
         models_to_try = [
             settings.GEMINI_MODEL,
@@ -182,7 +112,7 @@ Return JSON ONLY matching this 8-slide schema:
                         if clean_text.endswith("```"):
                             clean_text = clean_text[:-3]
                         parsed = json.loads(clean_text.strip())
-                        if len(parsed.get("slides", [])) >= 6:
+                        if len(parsed.get("slides", [])) == settings.EXPECTED_SLIDE_COUNT:
                             deck = parsed
                             logger.info("✓ Model %s successfully generated Tanglish draft with %d slides.", model_name, len(deck.get("slides", [])))
                             break
@@ -195,8 +125,10 @@ Return JSON ONLY matching this 8-slide schema:
 
         if not deck:
             logger.warning("Primary Tanglish drafting unverified; falling back to evergreen topic deck.")
-            deck = self._generate_fallback_tanglish_deck(topic, plan=plan)
+            raise ValueError("Tamil draft unavailable; refusing generic fallback carousel")
 
+        if len(deck.get("slides", [])) != settings.EXPECTED_SLIDE_COUNT:
+            raise ValueError("Tamil draft needs exactly eight topic-specific slides")
         # Normalize to strictly 8 slides
         deck["slides"] = self._normalize_slides(deck.get("slides", []), topic)
 
@@ -206,45 +138,26 @@ Return JSON ONLY matching this 8-slide schema:
             logger.info("✅ Tanglish Fact-Checking Gate passed: %s", report)
             deck["fact_check_status"] = "verified_pass"
         else:
-            logger.warning("Tanglish Fact-Checking notice: %s", report)
-            deck["fact_check_status"] = "qualitative_pass"
+            raise ValueError(f"Tamil numeric fact check failed: {report}")
 
         return deck
 
     def _verify_numeric_facts(self, deck: dict, topic_data: dict) -> Tuple[bool, str]:
-        source_text = f"{topic_data.get('raw_text', '')} {topic_data.get('title', '')} {topic_data.get('source_snippet', '')}"
-        slides = deck.get("slides", [])
+        """Reject financial metrics in the deck that are absent from source evidence.
 
-        all_slide_text = ""
-        for s in slides:
-            all_slide_text += f" {s.get('title', '')} {s.get('card_text', '')} "
-            for tl in s.get("title_lines", []):
-                all_slide_text += f" {tl} "
+        Exclude layout counters and hashtags; compare whole metric tokens, including
+        currency and units, to avoid treating 15% as evidence for 15 crore.
+        """
+        from src.numeric_evidence import extract_metrics, collect_slide_copy
 
-        pattern = r"(?:₹|\$)\s?\d+(?:[,\.]\d+)?(?:\s?(?:Cr|Lakh|Lakhs|Crore|Crores|k|M|B))?|\d+(?:[,\.]\d+)?\s?%|\d+\s?(?:Lakh|Lakhs|Crore|Crores|Cr|bps|years|months)"
-        raw_source_matches = re.findall(pattern, source_text, flags=re.IGNORECASE)
-        clean_source_nums = set()
-        for m in raw_source_matches:
-            cleaned = m.strip()
-            if not re.search(r"\.\d{4,}", cleaned):
-                clean_source_nums.add(cleaned)
-
-        if not clean_source_nums:
-            return True, "Source context has no specific financial metrics; qualitative validation passed."
-
-        anchor_match = []
-        for src_num in clean_source_nums:
-            digits_match = re.search(r"\d+(?:[,\.]\d+)?", src_num)
-            if digits_match:
-                d = digits_match.group(0)
-                if d in all_slide_text:
-                    anchor_match.append(src_num)
-
-        if not anchor_match and clean_source_nums:
-            logger.warning("Tamil metric exact match not found for %s, passing qualitatively to preserve on-topic deck.", clean_source_nums)
-            return True, f"QUALITATIVE PASS: Slide deck covers core concept without exact numeral repetition of {list(clean_source_nums)[:3]}."
-
-        return True, f"FACT CHECK PASSED: Verified anchor metric(s) {list(anchor_match)} preserved across slide deck."
+        source = " ".join(str(topic_data.get(k) or "") for k in
+                          ("raw_text", "title", "source_snippet", "evidence_snapshot"))
+        source_metrics = extract_metrics(source)
+        deck_metrics = extract_metrics(collect_slide_copy(deck.get("slides", [])) + " " + str(deck.get("caption", "")))
+        unsupported = deck_metrics - source_metrics
+        if unsupported:
+            return False, f"Unsupported deck metrics: {sorted(unsupported)}; source metrics: {sorted(source_metrics)}"
+        return True, f"Verified {len(deck_metrics)} deck metrics against source text."
 
     def _normalize_slides(self, slides: list, topic_data: dict) -> list:
         normalized = []
@@ -280,15 +193,7 @@ Return JSON ONLY matching this 8-slide schema:
                 s["role"] = s.get("role") or f"value_{idx}"
                 raw_title = s.get("title") or s.get("headline")
                 if not raw_title or "Institutional Reality" in str(raw_title):
-                    defaults = [
-                        "முதலீட்டு மாயை <span class='highlight-box'>& நிஜ உண்மை</span>",
-                        "ரகசிய கசிவு <span class='highlight-box'>எப்படி நடக்கிறது?</span>",
-                        "சட்டரீதியான <span class='highlight-box'>Capital சிக்கல்</span>",
-                        "Compounding இழப்பின் <span class='highlight-box'>உண்மை தாக்கம்</span>",
-                        "முதலீட்டை காக்கும் <span class='highlight-box'>முக்கிய விதி</span>",
-                        "Pre-Trade <span class='highlight-box'>Capital தணிக்கை</span>",
-                    ]
-                    raw_title = defaults[(idx - 1) % len(defaults)]
+                    raise ValueError(f"Tamil slide {idx + 1} needs a topic-specific headline")
                 # Strip trailing numbers like #1, #2
                 raw_title = re.sub(r"\s*#\d+\b", "", str(raw_title)).strip()
                 s["title_lines"] = self._format_title_lines(raw_title, is_hook=False, slide_index=idx + 1)
@@ -314,7 +219,7 @@ Return JSON ONLY matching this 8-slide schema:
                 else:
                     card_text = s.get("card_text") or s.get("card_b_text") or s.get("takeaway") or ""
                     if not card_text:
-                        card_text = "Institutions எப்போதும் verified balance sheet மற்றும் data-வை மட்டுமே நம்புகிறார்கள். Hype-ஐ நம்பி ஏமாறாதீர்கள்."
+                        raise ValueError(f"Tamil slide {idx + 1} has no topic-specific body")
                     card_text = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", card_text)
                     s["card_text"] = card_text
 
