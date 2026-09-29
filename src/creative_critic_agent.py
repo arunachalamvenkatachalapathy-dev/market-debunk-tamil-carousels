@@ -57,15 +57,16 @@ Make a Tamil-speaking household's real money choice visible on slide 1: an EMI, 
 SIP, chit fund, card bill, or other situation ONLY if this source actually covers it.
 Use everyday spoken Tamil with familiar English money words, not translated formal Tamil.
 No fabricated anecdote, rupee calculation, institutional conspiracy, or fear-bait.
-1. Generate THREE distinct conversational Spoken Tanglish carousel angles fitting THIS source:
-   - Candidate A (Archetype: SHOCKING_MYTH): Expose a dangerous misconception retail investors blindly believe.
-   - Candidate B (Archetype: MATH_BREAKDOWN): Explain an exact source-supported number, or a clear nonnumeric tradeoff if none exists.
-   - Candidate C (Archetype: INSTITUTIONAL_SECRET): Explain who is affected and what a reader can check; mention institutions only when evidenced.
+1. Offer three DISTINCT source-supported spoken-Tanglish lenses, not fixed myths or institutional secrets:
+   - A: an actual named person/founder decision and exact surprising number ONLY if both occur in the source and matter; never imply an interview or personal encounter.
+   - B: a familiar belief versus a documented counter-thesis ONLY if the evidence supports the contrast; do not invent a reversal.
+   - C: an everyday Indian money decision, its plain-language mechanics, real consequence and useful check. If A or B lacks evidence, use another grounded lens (timeline, comparison, caveat). Rotate formats rather than repeating one template.
+No invented families, personal experiences, names, numbers, guarantees, hype or investment advice.
 
 2. Act as a harsh editorial critic. Evaluate each candidate on a 0-10 scale:
    - curiosity_gap (0-10): Will a user immediately swipe slide 1?
-   - viral_potential (0-10): Does this trigger FOMO, outrage, or extreme greed?
-   - retail_actionability (0-10): Does it deliver concrete pre-trade defense?
+   - evidence_integrity (0-10): Is every person, number and contrast supported by the source? Score unsupported claims ZERO.
+   - retail_actionability (0-10): Does it explain a real money consequence and check?
    - friction_quotient (0-10): Does it challenge comfortable assumptions?
 
 3. Calculate total_score (sum of 4 criteria, max 40) and pick the definitive winning candidate.
@@ -109,8 +110,8 @@ Return JSON strictly:
                 "winning_candidate": {
                     "id": "A",
                     "archetype": "SHOCKING_MYTH",
-                    "headline_hook": f"{title[:40]} - நீங்கள் அறியாத உண்மை",
-                    "highlight_word": "அறியாத உண்மை",
+                    "headline_hook": title[:70],
+                    "highlight_word": "",
                     "scores": {"total": 34.0}
                 },
                 "critic_score": 8.5,
