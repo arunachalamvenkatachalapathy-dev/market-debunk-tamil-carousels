@@ -71,15 +71,18 @@ FINANCIAL CONCEPT & EVIDENCE:
 - Golden Actionable Rule: {actionable_rule}
 
 ADAPTIVE 8-SLIDE STORY:
-Slide 1 is a two-second stop-scroll question or sharp observation about the real
-money decision in THIS source, not "உண்மை என்ன?" or a vague "secret". Use natural
+Slide 1 starts with no warm-up: choose an actual named person + exact surprising
+number ONLY when both are in this source and relevant; otherwise a documented
+familiar assumption versus reality, or a concrete money-decision question.
+These are alternative hooks, not one formula. Never imply Arun interviewed the
+person or lived the story. Do not invent a name, number or counter-thesis. Use natural
 spoken Tanglish as a Tamil friend would explain it to a first-time investor.
 For example an EMI or chit-fund situation ONLY if the source actually covers it.
 Slides 2-7 build a clear before/after, consequence, caveat, or practical choice
 based on this story. Give the reader a specific check they can use or screenshot;
 no fabricated calculations or characters. Last slide's cta_detail must summarize
 that useful check before inviting a save/share, not a generic pre-trade audit.
-Caption: name the money dilemma, offer the main takeaway, ask one real question,
+Caption: name the money dilemma, offer the main takeaway, end with one specific question about THIS money decision (not a generic கருத்து என்ன?),
 use 3-5 topic-specific Tamil/English hashtags, and do not promise a guide or DM
 resource that this pipeline cannot deliver. No repeated broad hashtag padding.
 Keep exactly 8 slides for the publishing layout, but choose the story flow from THIS source. Hook, then six distinct topic-specific insights in a natural order, then a meaningful save/share CTA. Do not force every story into a myth, penalty, institutional trap, stat, or checklist. A news development may need timeline -> why it happened -> who is affected -> what is uncertain -> practical takeaway. A fee comparison may need real comparable costs and caveats. Use an exact stat_data metric only when it exists in the source. Never invent a number, implied return, or trading rule. Give each slide a distinct fact or clear inference tied to the article.
