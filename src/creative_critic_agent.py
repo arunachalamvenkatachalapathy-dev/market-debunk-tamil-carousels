@@ -44,7 +44,7 @@ class TamilCreativeCriticAgent:
 
     def generate_and_evaluate(self, topic_data: Dict[str, Any], evolutionary_directives: str = "") -> Dict[str, Any]:
         title = topic_data.get("title", "")
-        summary = topic_data.get("summary", "") or topic_data.get("context", "")
+        summary = topic_data.get("raw_text", "") or topic_data.get("source_snippet", "")
 
         prompt = f"""You are an elite Tamil Financial Analyst and Viral Carousel Critic.
 Topic: "{title}"
@@ -53,10 +53,14 @@ Context: {summary[:1200]}
 {evolutionary_directives}
 
 TASK:
-1. Generate THREE distinct conversational Spoken Tanglish carousel angles:
+Make a Tamil-speaking household's real money choice visible on slide 1: an EMI, FD,
+SIP, chit fund, card bill, or other situation ONLY if this source actually covers it.
+Use everyday spoken Tamil with familiar English money words, not translated formal Tamil.
+No fabricated anecdote, rupee calculation, institutional conspiracy, or fear-bait.
+1. Generate THREE distinct conversational Spoken Tanglish carousel angles fitting THIS source:
    - Candidate A (Archetype: SHOCKING_MYTH): Expose a dangerous misconception retail investors blindly believe.
-   - Candidate B (Archetype: MATH_BREAKDOWN): Break down the exact rupee loss caused by hidden costs/fees.
-   - Candidate C (Archetype: INSTITUTIONAL_SECRET): Expose what smart money institutions do while retail traders panic.
+   - Candidate B (Archetype: MATH_BREAKDOWN): Explain an exact source-supported number, or a clear nonnumeric tradeoff if none exists.
+   - Candidate C (Archetype: INSTITUTIONAL_SECRET): Explain who is affected and what a reader can check; mention institutions only when evidenced.
 
 2. Act as a harsh editorial critic. Evaluate each candidate on a 0-10 scale:
    - curiosity_gap (0-10): Will a user immediately swipe slide 1?

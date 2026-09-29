@@ -71,6 +71,17 @@ FINANCIAL CONCEPT & EVIDENCE:
 - Golden Actionable Rule: {actionable_rule}
 
 ADAPTIVE 8-SLIDE STORY:
+Slide 1 is a two-second stop-scroll question or sharp observation about the real
+money decision in THIS source, not "உண்மை என்ன?" or a vague "secret". Use natural
+spoken Tanglish as a Tamil friend would explain it to a first-time investor.
+For example an EMI or chit-fund situation ONLY if the source actually covers it.
+Slides 2-7 build a clear before/after, consequence, caveat, or practical choice
+based on this story. Give the reader a specific check they can use or screenshot;
+no fabricated calculations or characters. Last slide's cta_detail must summarize
+that useful check before inviting a save/share, not a generic pre-trade audit.
+Caption: name the money dilemma, offer the main takeaway, ask one real question,
+use 3-5 topic-specific Tamil/English hashtags, and do not promise a guide or DM
+resource that this pipeline cannot deliver. No repeated broad hashtag padding.
 Keep exactly 8 slides for the publishing layout, but choose the story flow from THIS source. Hook, then six distinct topic-specific insights in a natural order, then a meaningful save/share CTA. Do not force every story into a myth, penalty, institutional trap, stat, or checklist. A news development may need timeline -> why it happened -> who is affected -> what is uncertain -> practical takeaway. A fee comparison may need real comparable costs and caveats. Use an exact stat_data metric only when it exists in the source. Never invent a number, implied return, or trading rule. Give each slide a distinct fact or clear inference tied to the article.
 Supported visual structures for slides 2-7: comparison_data {"myth":"...", "reality":"..."}, stat_data {"metric":"...", "label":"...", "context":"..."}, flowchart_data [{"text":"..."}], checklist_data [{"status":"pass", "text":"..."}], or card_text. Select what best fits each point and vary the layouts; no required sequence of archetypes. role is value_1 through value_6 by position. For every slide use a topic-specific title and concise Tanglish copy. Preserve Tamil glyphs and conversational tone. The final slide has role bookmark_save and a topic-specific CTA.
 
@@ -185,10 +196,11 @@ Return valid JSON only with "caption" and "slides" (exactly 8 slide objects). Ea
                 s["card_text"] = ""
             elif idx == expected_count - 1:
                 s["role"] = "bookmark_save"
-                s["title_lines"] = ["பிற்காலத்திற்கு", "இந்த பதிவை", "<span class='highlight-box'>Save & Share</span>", "செய்யுங்கள்"]
+                raw_title = s.get("title") or "இந்த money முடிவுக்கு முன் check பண்ணுங்க"
+                s["title_lines"] = self._format_title_lines(str(raw_title), slide_index=idx + 1)
                 s["card_text"] = ""
                 if not s.get("cta_detail"):
-                    s["cta_detail"] = "இந்த institutional risk checkpoints-ஐ உங்கள் அடுத்த trade-க்கு முன் review செய்ய Save செய்யுங்கள். உங்கள் நண்பர்களுக்கும் Share செய்து உதவுங்கள்."
+                    raise ValueError("Tamil final slide needs a topic-specific, useful takeaway")
             else:
                 s["role"] = s.get("role") or f"value_{idx}"
                 raw_title = s.get("title") or s.get("headline")
