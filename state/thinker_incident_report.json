@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-09-28T20:34:36.693335+00:00",
+  "timestamp": "2026-09-29T10:00:04.682728+00:00",
   "phase": "PUBLISHING",
   "platform": "Instagram",
   "severity": "CRITICAL",
   "error_code": "ERR_IMAGE_NOT_ACCESSIBLE",
-  "root_cause_analysis": "Instagram Graph API failed to download media from the provided GitHub raw URL (Subcode: 2207052 / Code: 9004). The media URI is either returning a non-image content-type (e.g. 404 text/html response or blocked by rate-limiting/hotlinking restrictions), unresolvable by Meta's crawler, or not publicly accessible.",
+  "root_cause_analysis": "The Instagram Graph API failed to fetch the image from the provided GitHub raw URL. This is typically caused by the Meta crawler being unable to resolve the URI, incorrect MIME type headers, or the image dimensions/file size exceeding Instagram's strict requirements for carousel containers.",
   "reproducibility": "URL_UNAVAILABLE",
   "automated_remediation": {
     "action": "ABORT",
@@ -12,8 +12,9 @@
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Verify that 'https://raw.githubusercontent.com/arunachalamvenkatachalapathy-dev/market-debunk-tamil-carousels/master/state/carousel_slides/slide_1_20260928_203336.png' is publicly accessible without authentication.",
-    "Ensure GitHub repository 'market-debunk-tamil-carousels' is public or host carousel images on an accessible public CDN/storage bucket (e.g., S3, Cloudinary) that serves valid 'image/png' or 'image/jpeg' MIME headers.",
-    "Verify the file has fully synced/committed to the branch before triggering the Instagram publishing call."
+    "Verify that the GitHub repository is public and the raw URLs are directly accessible without authentication.",
+    "Ensure the images are in JPEG format with an aspect ratio between 4:5 and 1.91:1.",
+    "Check if the file size is under 8MB per image.",
+    "Consider hosting images on a CDN or a platform with more stable headers if the issue persists."
   ]
 }
