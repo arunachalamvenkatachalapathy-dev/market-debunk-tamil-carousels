@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-09-30T03:35:50.037528+00:00",
+  "timestamp": "2026-09-30T09:50:13.629905+00:00",
   "phase": "TAMIL_PIPELINE_ORCHESTRATION",
   "severity": "CRITICAL",
   "error_code": "ERR_PIPELINE_HALT",
-  "root_cause_analysis": "The f-string in editorial_engine.py line 58 contains unescaped curly braces or malformed interpolation syntax. The Python interpreter is attempting to parse the string content as a format specifier, causing a ValueError due to the presence of double quotes and colons within the f-string structure.",
+  "root_cause_analysis": "The f-string in editorial_engine.py at line 58 contains unescaped curly braces or malformed interpolation syntax. The Python interpreter is misinterpreting the internal JSON-like structure within the prompt string as a format specifier, causing a ValueError during string formatting.",
   "reproducibility": "DETERMINISTIC",
   "automated_remediation": {
     "action": "SAFE_SHUTDOWN",
@@ -11,8 +11,8 @@
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Escape the curly braces in the f-string by doubling them ({{ and }}) or switch to a standard string concatenation method.",
-    "Verify that no JSON-like structures inside the f-string are being misinterpreted by the Python f-string parser.",
-    "Run a syntax check on src/editorial_engine.py using 'python -m py_compile' to identify further formatting errors."
+    "Escape all curly braces within the f-string in src/editorial_engine.py by doubling them (e.g., {{ and }}).",
+    "Verify that no JSON-like structures inside the f-string are being parsed as Python format expressions.",
+    "Run a syntax check on the affected module using 'python -m py_compile src/editorial_engine.py' before restarting the pipeline."
   ]
 }
