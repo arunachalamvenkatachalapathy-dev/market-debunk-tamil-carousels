@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-10-02T09:54:23.466139+00:00",
+  "timestamp": "2026-10-02T19:17:26.381881+00:00",
   "phase": "TAMIL_PIPELINE_ORCHESTRATION",
   "severity": "CRITICAL",
   "error_code": "ERR_PIPELINE_HALT",
-  "root_cause_analysis": "A ValueError occurred due to an invalid format specifier inside an f-string in 'src/editorial_engine.py' at line 58. The template string attempted to evaluate expressions containing double quotes or JSON-like syntax without proper escaping or variable separation, causing the Python interpreter to misinterpret it as a format specifier.",
+  "root_cause_analysis": "Python ValueError encountered in 'src/editorial_engine.py' at line 58 within 'compose_from_master'. An f-string prompt template contains unescaped curly braces surrounding literal JSON schema examples (e.g., '\"...\", \"reality\":\"...\"'). Python's f-string parser attempted to evaluate the JSON structural braces as string interpolation expressions with invalid format specifiers.",
   "reproducibility": "DETERMINISTIC",
   "automated_remediation": {
     "action": "SAFE_SHUTDOWN",
@@ -11,8 +11,8 @@
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Inspect 'src/editorial_engine.py' around line 58 and fix the malformed f-string syntax.",
-    "Escape internal curly braces or separate the prompt template into a standard multi-line string instead of using an f-string if no dynamic variables are being interpolated at that definition point.",
-    "Run unit tests for the editorial engine to verify proper prompt composition before restarting the Tamil pipeline."
+    "Open 'src/editorial_engine.py' and locate line 58 where the multiline f-string prompt is declared.",
+    "Escape all literal curly braces in the prompt schema example by doubling them ('{{' and '}}'), preserving single braces only for actual variable interpolations.",
+    "Execute pipeline verification with 'python engine.py' using dry_run=true to confirm clean string template parsing."
   ]
 }
