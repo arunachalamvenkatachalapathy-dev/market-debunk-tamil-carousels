@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-10-01T19:31:35.873988+00:00",
+  "timestamp": "2026-10-02T09:54:23.466139+00:00",
   "phase": "TAMIL_PIPELINE_ORCHESTRATION",
   "severity": "CRITICAL",
   "error_code": "ERR_PIPELINE_HALT",
-  "root_cause_analysis": "Python f-string parsing failure in 'src/editorial_engine.py' at line 58. The prompt template contains unescaped single curly braces surrounding an example JSON schema or key-value pair ('\"...\", \"reality\":\"...\"'). Python interprets everything after a colon inside single braces as a format specifier, triggering a ValueError when parsing string literals.",
+  "root_cause_analysis": "A ValueError occurred due to an invalid format specifier inside an f-string in 'src/editorial_engine.py' at line 58. The template string attempted to evaluate expressions containing double quotes or JSON-like syntax without proper escaping or variable separation, causing the Python interpreter to misinterpret it as a format specifier.",
   "reproducibility": "DETERMINISTIC",
   "automated_remediation": {
     "action": "SAFE_SHUTDOWN",
@@ -11,8 +11,8 @@
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Locate line 58 in 'src/editorial_engine.py' inside the 'compose_from_master' function.",
-    "Escape all literal curly braces in the multiline f-string by replacing single braces '{' and '}' with double braces '{{' and '}}', or convert the multi-line prompt string into a raw non-formatted string if string interpolation is not required.",
-    "Rerun the pipeline orchestration engine with '--dry-run' to verify prompt template evaluation."
+    "Inspect 'src/editorial_engine.py' around line 58 and fix the malformed f-string syntax.",
+    "Escape internal curly braces or separate the prompt template into a standard multi-line string instead of using an f-string if no dynamic variables are being interpolated at that definition point.",
+    "Run unit tests for the editorial engine to verify proper prompt composition before restarting the Tamil pipeline."
   ]
 }
