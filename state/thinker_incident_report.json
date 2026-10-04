@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-10-04T09:55:23.701998+00:00",
+  "timestamp": "2026-10-04T18:08:41.045100+00:00",
   "phase": "TAMIL_PIPELINE_ORCHESTRATION",
   "severity": "CRITICAL",
   "error_code": "ERR_PIPELINE_HALT",
-  "root_cause_analysis": "Python f-string syntax error in src/editorial_engine.py (line 58). Unescaped curly braces within an f-string prompt template were parsed as string format specifiers. Specifically, the JSON structure example inside the prompt containing '\"...\", \"reality\":\"...\"' caused the string parser to evaluate ':' as a format specifier for a str object, throwing a ValueError.",
+  "root_cause_analysis": "Python f-string evaluation failure in 'src/editorial_engine.py' at line 58. The prompt template contains unescaped JSON structural braces (e.g., '{\"...\": \"...\", \"reality\":\"...\"}'). Python interprets these literal braces as expression placeholders and format specifiers, resulting in ValueError: Invalid format specifier.",
   "reproducibility": "DETERMINISTIC",
   "automated_remediation": {
     "action": "SAFE_SHUTDOWN",
@@ -11,8 +11,8 @@
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Escape all literal curly braces in the prompt string in src/editorial_engine.py by doubling them ('{{' and '}}').",
-    "Refactor prompt template definitions out of Python f-strings into standalone template files or raw multiline strings to prevent format string parsing errors.",
-    "Execute local test suite using 'pytest tests/test_editorial_engine.py' to ensure prompt compilation succeeds prior to pipeline restart."
+    "Navigate to 'src/editorial_engine.py' around line 58.",
+    "Escape all literal curly braces intended for JSON schema or structural text in the multi-line f-string by doubling them ('{{' and '}}').",
+    "Alternatively, refactor the prompt template to use standard string concatenation, 'str.format()', or load the prompt template from an external static file/jinja2 template."
   ]
 }
