@@ -110,7 +110,17 @@ def run_pipeline(dry_run: bool = False, override_query: str = None, edition: str
         planner = PlannerAgent(llm_client=editorial_engine.client)
         plan = planner.plan(topic_data)
         mock_master = {"topic": topic_data, "plan": plan}
-        deck = editorial_engine.compose_from_master(mock_master)
+        deck = None
+        last_compose_err = None
+        for _attempt in range(3):
+            try:
+                deck = editorial_engine.compose_from_master(mock_master)
+                break
+            except ValueError as compose_err:
+                last_compose_err = compose_err
+                logger.warning("Compose attempt %d/3 failed the source gate: %s", _attempt + 1, compose_err)
+        if deck is None:
+            raise last_compose_err
 
         slides = deck.get("slides", [])
         is_valid, content_report = CarouselValidator.validate_content(deck)
