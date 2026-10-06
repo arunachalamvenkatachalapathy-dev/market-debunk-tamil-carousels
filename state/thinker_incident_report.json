@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-10-05T21:30:39.355198+00:00",
+  "timestamp": "2026-10-06T10:30:05.531214+00:00",
   "phase": "TAMIL_PIPELINE_ORCHESTRATION",
   "severity": "CRITICAL",
   "error_code": "ERR_PIPELINE_HALT",
-  "root_cause_analysis": "The f-string in editorial_engine.py at line 58 contains unescaped curly braces or invalid interpolation syntax that the Python interpreter is misinterpreting as a format specifier. Specifically, the presence of double quotes inside the f-string block is causing a syntax collision with the string literal delimiters.",
+  "root_cause_analysis": "Line 58 in 'src/editorial_engine.py' attempts to construct a prompt using a Python f-string (f\"\"\") containing unescaped literal curly braces used for JSON structure examples (e.g. '\"reality\":\"...\"'). Python's f-string parser interprets the text after the colon as a formatting specifier rather than raw JSON string content, resulting in a ValueError.",
   "reproducibility": "DETERMINISTIC",
   "automated_remediation": {
     "action": "SAFE_SHUTDOWN",
@@ -11,8 +11,8 @@
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Escape the curly braces in the f-string by doubling them ({{ or }}) if they are intended as literal text.",
-    "Refactor the prompt template to use a raw string or a separate template file to avoid f-string interpolation conflicts with JSON-like structures.",
-    "Verify the integrity of the string literal delimiters in src/editorial_engine.py at line 58."
+    "Escape all literal syntax curly braces in the prompt template in 'src/editorial_engine.py' by doubling them ('{{' and '}}').",
+    "Alternatively, move the static LLM prompt template out of an f-string and use standard string formatting or external template files (e.g., Jinja2/text files).",
+    "Run unit tests for 'editorial_engine.py' or re-run 'engine.py' with dry_run=true to confirm resolution before restarting production."
   ]
 }
