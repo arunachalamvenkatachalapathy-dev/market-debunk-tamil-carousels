@@ -114,7 +114,7 @@ def run_pipeline(dry_run: bool = False, override_query: str = None, edition: str
         last_compose_err = None
         for _attempt in range(3):
             try:
-                deck = editorial_engine.compose_from_master(mock_master)
+                deck = editorial_engine.compose_from_master(mock_master, repair_note=str(last_compose_err or ""))
                 break
             except ValueError as compose_err:
                 last_compose_err = compose_err
