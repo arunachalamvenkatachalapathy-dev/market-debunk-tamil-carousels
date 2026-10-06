@@ -54,3 +54,13 @@ def test_normalize_rejects_slide_without_any_body():
     slides[1] = {"role": "value_1", "title": "Check the actual term 1"}
     with pytest.raises(ValueError):
         ed._normalize_slides(slides, TOPIC)
+
+
+def test_repair_note_reaches_prompt_and_second_attempt_can_pass():
+    bad = good_deck(extra_text="You will earn ₹99,999")
+    ed = make([bad, good_deck()])
+    with pytest.raises(ValueError):
+        ed.compose_from_master(MASTER)
+    deck = ed.compose_from_master(MASTER, repair_note="Unsupported deck metrics: ['₹99999']")
+    assert deck["fact_check_status"] == "verified_pass"
+    assert "STRICT FACT-CHECK REPAIR" in ed.client.models.prompts[-1]
