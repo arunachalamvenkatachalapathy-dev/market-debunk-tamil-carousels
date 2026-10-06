@@ -30,7 +30,7 @@ class EditorialEngine:
         self.client = genai.Client(api_key=self.api_key) if self.api_key else None
         self.thinker = ThinkerEngine(api_key=self.api_key)
 
-    def compose_from_master(self, master_pkg: dict) -> dict:
+    def compose_from_master(self, master_pkg: dict, repair_note: str = "") -> dict:
         """
         Independently scripts and structures a complete 8-slide Tanglish carousel
         from the underlying market topic and financial plan.
@@ -95,6 +95,11 @@ RULES FOR CONTENT:
 
 Return valid JSON only with "caption" and "slides" (exactly 8 slide objects). Each slide has role, title, and one supported body structure; the hook needs title, and last slide needs title and cta_detail. Use real topic content, not the template examples.
 """
+        if repair_note:
+            prompt += (
+                "\n\nSTRICT FACT-CHECK REPAIR: your previous draft was rejected: " + str(repair_note)[:600] +
+                "\nRewrite the carousel using ONLY numbers that appear in the source text above; remove any other percentage, amount or year."
+            )
 
         models_to_try = [
             settings.GEMINI_MODEL,
