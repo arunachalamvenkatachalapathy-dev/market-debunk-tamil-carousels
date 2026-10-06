@@ -38,3 +38,19 @@ def test_compose_from_master_fails_closed_without_model():
     ed = make([RuntimeError("503 UNAVAILABLE")])
     with pytest.raises(ValueError):
         ed.compose_from_master(MASTER)
+
+
+def test_normalize_accepts_alternate_body_key():
+    ed = make([good_deck()])
+    slides = good_deck()["slides"]
+    slides[1] = {"role": "value_1", "title": "Check the actual term 1", "body": "Read the lender notice first"}
+    out = ed._normalize_slides(slides, TOPIC)
+    assert out[1]["card_text"].startswith("Read the lender notice")
+
+
+def test_normalize_rejects_slide_without_any_body():
+    ed = make([good_deck()])
+    slides = good_deck()["slides"]
+    slides[1] = {"role": "value_1", "title": "Check the actual term 1"}
+    with pytest.raises(ValueError):
+        ed._normalize_slides(slides, TOPIC)
