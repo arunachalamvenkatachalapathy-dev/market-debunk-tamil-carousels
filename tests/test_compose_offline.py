@@ -1,0 +1,40 @@
+"""Tamil composition against a fake model: no network, no keys."""
+import pytest
+
+from conftest import FakeClient, good_deck
+from src.editorial_engine import EditorialEngine
+
+TOPIC = {"title": "Bank changes loan terms", "raw_text": "Bank changes loan terms. EMI stays ₹10,000.",
+         "source": "Test Wire", "numbers_detected": ["₹10,000"]}
+MASTER = {"topic": TOPIC, "plan": {"hidden_reality": "Terms changed", "core_illusion": "EMI is fixed",
+                                    "citable_metric": "₹10,000", "lead_magnet": {}}}
+
+
+def make(replies):
+    ed = EditorialEngine(api_key="")
+    ed.client = FakeClient(replies)
+    ed.thinker.client = None
+    return ed
+
+
+def test_compose_from_master_renders_prompt_and_returns_deck():
+    """Guards the f-string crash that broke every Tamil run (Invalid format specifier)."""
+    ed = make([good_deck()])
+    deck = ed.compose_from_master(MASTER)
+    assert len(deck["slides"]) == 8
+    assert deck["fact_check_status"] == "verified_pass"
+    prompt = ed.client.models.prompts[0]
+    assert "Bank changes loan terms" in prompt
+    assert '"myth"' in prompt and '"reality"' in prompt  # literal JSON examples survive formatting
+
+
+def test_compose_from_master_fails_closed_on_invented_numbers():
+    ed = make([good_deck(extra_text="You will earn ₹99,999 in 10 years")])
+    with pytest.raises(ValueError):
+        ed.compose_from_master(MASTER)
+
+
+def test_compose_from_master_fails_closed_without_model():
+    ed = make([RuntimeError("503 UNAVAILABLE")])
+    with pytest.raises(ValueError):
+        ed.compose_from_master(MASTER)
