@@ -1,13 +1,12 @@
 {
   "version": "2.0.0",
-  "total_cycles_recorded": 21,
+  "total_cycles_recorded": 22,
   "archetype_weights": {
     "SHOCKING_MYTH": 1.4,
-    "MATH_BREAKDOWN": 2.22,
+    "MATH_BREAKDOWN": 2.27,
     "INSTITUTIONAL_SECRET": 1.1
   },
   "learned_rules": [
-    "Fallback Tanglish anchor.",
     "Candidate B is the clear winner because it forces the reader to calculate their own loss. By linking macro-economic fact",
     "Candidate B wins because it transforms a abstract macro-economic event into a personal financial crisis. In the Tamil re",
     "Candidate B is the winner because it weaponizes 'Loss Aversion' and 'Greed' simultaneously. In the Tamil market, showing",
@@ -18,7 +17,8 @@
     "Candidate B wins conclusively because it leverages the MATH_BREAKDOWN archetype (weight 2.0). It transforms a macro glob",
     "Candidate B is the definitive winner because it weaponizes the 'Math Breakdown' archetype. In the Tamil retail market, s",
     "Candidate B weaponizes the Math Breakdown archetype by focusing on the 'time-to-loss' ratio. In Tamil retail culture, th",
-    "Candidate B wins because it weaponizes 'Loss Aversion'. In the Tamil retail market, showing exactly how money is lost se"
+    "Candidate B wins because it weaponizes 'Loss Aversion'. In the Tamil retail market, showing exactly how money is lost se",
+    "Candidate B is the winner because it successfully bridges the gap between a macro UK news story and the tangible, everyd"
   ],
   "cycle_history": [
     {
@@ -209,6 +209,15 @@
       "critic_score": 8.5,
       "visual_score": 9.4,
       "key_learning": "Fallback Tanglish anchor."
+    },
+    {
+      "cycle": 22,
+      "timestamp": "2026-10-06T15:26:11.593280+00:00",
+      "topic": "Jailed Lego collector’s insurance scam highlights UK’s £1.3bn fraud problem - th",
+      "winning_archetype": "MATH_BREAKDOWN",
+      "critic_score": 9.2,
+      "visual_score": 9.0,
+      "key_learning": "Candidate B is the winner because it successfully bridges the gap between a macro UK news story and the tangible, everyd"
     }
   ]
 }
