@@ -1,50 +1,50 @@
 {
   "topic": {
-    "title": "Jailed Lego collector’s insurance scam highlights UK’s £1.3bn fraud problem - theguardian.com",
+    "title": "RBI MPC Repo Rate Hike Highlights: GDP forecast up 40 bps to 7.1%, home loan EMI to rise | US Fed minutes in focus",
     "archetype": "market_breaking_news",
     "archetype_name": "Breaking Financial News Debunk",
-    "topic_category": "MARKET_TRAP",
-    "viral_demand_score": 64.5,
-    "source": "theguardian.com",
-    "source_snippet": "Jailed Lego collector’s insurance scam highlights UK’s £1.3bn fraud problem&nbsp;&nbsp;theguardian.com",
-    "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPNFYwZ0lrT08yZndpcmhtenlTV1FCNjNMOGJxUnA1RVpva0NJLVdwLVZzSlBNa1JfN3FvaWdPVVlfdjl6dzhCT0JkRFYzRjdvdFdWT21hNWpuYVJLeWpJV1ZkWmx3bVBWeEk5MFZkbm5oYU4xM0wwcVh0MlRDV0tlNVhDX05LMjZwblBjd1NNVVdqUQ?oc=5",
-    "raw_text": "Jailed Lego collector’s insurance scam highlights UK’s £1.3bn fraud problem - theguardian.com. Jailed Lego collector’s insurance scam highlights UK’s £1.3bn fraud problem&nbsp;&nbsp;theguardian.com",
+    "topic_category": "WEALTH_LEAK",
+    "viral_demand_score": 100.0,
+    "source": "Livemint Markets",
+    "source_snippet": "RBI MPC Repo Rate Hike LIVE: The Indian Central Bank raised the repo rate by 25 bps to 5.50% after a gap of nearly three years",
+    "source_url": "https://www.livemint.com/market/stock-market-news/rbi-mpc-meeting-live-repo-rate-crr-slr-reverse-rr-in-focus-as-governor-sanjay-malhotra-to-declare-outcome-today-11791306808901.html",
+    "raw_text": "RBI MPC Repo Rate Hike Highlights: GDP forecast up 40 bps to 7.1%, home loan EMI to rise | US Fed minutes in focus. RBI MPC Repo Rate Hike LIVE: The Indian Central Bank raised the repo rate by 25 bps to 5.50% after a gap of nearly three years",
     "numbers_detected": [
-      "1.3",
-      "1.3"
+      "40 bps",
+      "7.1%",
+      "25 bps",
+      "5.50%"
     ],
-    "published_at": "2026-10-06T13:19:00+00:00",
-    "age_hours": 2.1,
-    "retrieved_at": "2026-10-06T15:24:59.259648+00:00",
-    "date": "06 Oct 2026",
+    "published_at": "2026-10-07T06:37:24+05:30",
+    "age_hours": 9.3,
+    "retrieved_at": "2026-10-07T10:23:40.064876+00:00",
+    "date": "07 Oct 2026",
     "from_live_api": true,
-    "evidence_snapshot": "Source: theguardian.com | Published: 2026-10-06T13:19:00+00:00 (2.1h ago) | Headline: Jailed Lego collector’s insurance scam highlights UK’s £1.3bn fraud problem - theguardian.com | Context: Jailed Lego collector’s insurance scam highlights UK’s £1.3bn fraud problem - theguardian.com. Jailed Lego collector’s insurance scam highlights UK’s £1.3bn fraud problem&nbsp;&nbsp;theguardian.com",
+    "evidence_snapshot": "Source: Livemint Markets | Published: 2026-10-07T06:37:24+05:30 (9.3h ago) | Headline: RBI MPC Repo Rate Hike Highlights: GDP forecast up 40 bps to 7.1%, home loan EMI to rise | US Fed minutes in focus | Context: RBI MPC Repo Rate Hike Highlights: GDP forecast up 40 bps to 7.1%, home loan EMI to rise | US Fed minutes in focus. RBI MPC Repo Rate Hike LIVE: The Indian Central Bank raised the repo rate by 25 bps to 5.50% after a gap of nearly three years",
     "news_analysis": {
-      "headline_hook": "Insurance-la 'Small Fraud' nu nenaikradhu, unga Credit Score-a epdi destroy pannum?",
-      "breaking_event_summary": "A UK-based individual was jailed for orchestrating an insurance fraud scheme involving a Lego collection, drawing attention to the broader £1.3bn fraud problem in the UK insurance sector.",
-      "retail_illusion": "Does insuring high-value collectibles guarantee a payout regardless of documentation?",
-      "institutional_reality": "Insurance providers utilize rigorous forensic verification for non-standard assets, and fraudulent claims contribute to higher premiums for all policyholders.",
+      "headline_hook": "Repo rate 25 bps hike: How your home loan math changes overnight",
+      "breaking_event_summary": "The Reserve Bank of India raised the repo rate by 25 bps to 5.50% after nearly three years, while upgrading the national GDP forecast by 40 bps to 7.1%.",
+      "retail_illusion": "Borrowers may assume home loan interest rates will remain unchanged due to a strong economic GDP growth outlook.",
+      "institutional_reality": "A repo rate hike increases the cost of funds for commercial banks, which directly leads to an upward revision in floating loan rates and higher monthly EMIs for retail borrowers.",
       "citable_metrics": [
-        "£1.3bn"
+        "40 bps",
+        "7.1%",
+        "25 bps",
+        "5.50%"
       ],
-      "debunk_category": "VALUATION_MYTH",
-      "actionable_retail_rule": "Verify that your insurance policy explicitly covers niche collectibles and maintain detailed, dated photographic evidence and purchase receipts to ensure claims are valid.",
+      "debunk_category": "REGULATORY_SHIFT",
+      "actionable_retail_rule": "Review your home loan reset clause and check if your interest rate is linked to the External Benchmark Lending Rate (EBLR) to anticipate EMI or tenure changes.",
       "lead_magnet": {},
-      "carousel_outline": [
-        "The rise of alternative asset insurance",
-        "How insurers verify non-traditional collections",
-        "Why fraud impacts your annual premium costs",
-        "Checklist for insuring high-value personal assets"
-      ],
-      "highlight_word": "Credit Score",
-      "editorial_directive": "Use conversational Tanglish. Keep sentences short. Use 'Enna aagum?' (What will happen?) as a recurring motif. Avoid jargon; instead of 'Insurance underwriting,' use 'Insurance company check pannum podhu'."
+      "carousel_outline": [],
+      "highlight_word": "25 bps",
+      "editorial_directive": "Use crisp, punchy Tanglish. Avoid formal Tamil terms like 'vattividham' where 'interest rate' is understood. Focus on the direct impact: 'EMI math' and 'loan tenure'. Ensure the tone remains professional yet urgent, emphasizing that policy changes aren't just headlines, but adjustments to the user's monthly budget."
     },
     "darwin_result": {
       "winning_candidate": {
         "id": "B",
         "archetype": "MATH_BREAKDOWN",
-        "headline_hook": "Insurance-la 'Small Fraud' nu nenaikradhu, unga Credit Score-a epdi destroy pannum?",
-        "highlight_word": "Credit Score",
+        "headline_hook": "Repo rate 25 bps hike: How your home loan math changes overnight",
+        "highlight_word": "25 bps",
         "scores": {
           "curiosity_gap": 9,
           "evidence_integrity": 10,
@@ -52,27 +52,30 @@
           "friction_quotient": 9,
           "total": 37.0
         },
-        "critic_critique": "Strongest candidate. It connects the UK fraud data to the universal fear of credit score damage, making the 'math' of the consequence immediate and relevant."
+        "critic_critique": "Excellent breakdown of the 25 bps impact. It forces the user to look at their loan tenure, which is the most critical retail friction point."
       },
       "critic_score": 9.2,
       "archetype": "MATH_BREAKDOWN",
-      "selection_rationale": "Candidate B is the winner because it successfully bridges the gap between a macro UK news story and the tangible, everyday anxiety of maintaining a clean credit report. By framing insurance fraud as a 'math' problem where the long-term loss (credit score/future borrowing ability) outweighs any short-term gain, it creates high retail actionability.",
-      "final_editorial_directive": "Use conversational Tanglish. Keep sentences short. Use 'Enna aagum?' (What will happen?) as a recurring motif. Avoid jargon; instead of 'Insurance underwriting,' use 'Insurance company check pannum podhu'."
+      "selection_rationale": "Candidate B wins because it weaponizes the 'MATH_BREAKDOWN' archetype. By focusing on the 25 bps hike, it translates complex central bank policy into a concrete 'time-to-loss' calculation for the retail borrower, which is the most effective way to drive engagement in the Tamil financial context.",
+      "final_editorial_directive": "Use crisp, punchy Tanglish. Avoid formal Tamil terms like 'vattividham' where 'interest rate' is understood. Focus on the direct impact: 'EMI math' and 'loan tenure'. Ensure the tone remains professional yet urgent, emphasizing that policy changes aren't just headlines, but adjustments to the user's monthly budget."
     },
-    "headline_hook": "Insurance-la 'Small Fraud' nu nenaikradhu, unga Credit Score-a epdi destroy pannum?",
-    "highlight_word": "Credit Score",
-    "editorial_directive": "Use conversational Tanglish. Keep sentences short. Use 'Enna aagum?' (What will happen?) as a recurring motif. Avoid jargon; instead of 'Insurance underwriting,' use 'Insurance company check pannum podhu'."
+    "headline_hook": "Repo rate 25 bps hike: How your home loan math changes overnight",
+    "highlight_word": "25 bps",
+    "editorial_directive": "Use crisp, punchy Tanglish. Avoid formal Tamil terms like 'vattividham' where 'interest rate' is understood. Focus on the direct impact: 'EMI math' and 'loan tenure'. Ensure the tone remains professional yet urgent, emphasizing that policy changes aren't just headlines, but adjustments to the user's monthly budget."
   },
   "plan": {
-    "hook_headline": "Insurance-la 'Small Fraud' nu nenaikradhu, unga Credit Score-a epdi destroy pannum?",
-    "core_illusion": "Does insuring high-value collectibles guarantee a payout regardless of documentation?",
-    "hidden_reality": "Insurance providers utilize rigorous forensic verification for non-standard assets, and fraudulent claims contribute to higher premiums for all policyholders.",
-    "citable_metric": "£1.3bn",
+    "hook_headline": "Repo rate 25 bps hike: How your home loan math changes overnight",
+    "core_illusion": "Borrowers may assume home loan interest rates will remain unchanged due to a strong economic GDP growth outlook.",
+    "hidden_reality": "A repo rate hike increases the cost of funds for commercial banks, which directly leads to an upward revision in floating loan rates and higher monthly EMIs for retail borrowers.",
+    "citable_metric": "40 bps",
     "all_metrics": [
-      "£1.3bn"
+      "40 bps",
+      "7.1%",
+      "25 bps",
+      "5.50%"
     ],
-    "actionable_rule": "Verify that your insurance policy explicitly covers niche collectibles and maintain detailed, dated photographic evidence and purchase receipts to ensure claims are valid.",
-    "breaking_event": "A UK-based individual was jailed for orchestrating an insurance fraud scheme involving a Lego collection, drawing attention to the broader £1.3bn fraud problem in the UK insurance sector.",
+    "actionable_rule": "Review your home loan reset clause and check if your interest rate is linked to the External Benchmark Lending Rate (EBLR) to anticipate EMI or tenure changes.",
+    "breaking_event": "The Reserve Bank of India raised the repo rate by 25 bps to 5.50% after nearly three years, while upgrading the national GDP forecast by 40 bps to 7.1%.",
     "lead_magnet": {},
     "banned_phrases": [
       "guaranteed wealth",
@@ -82,42 +85,55 @@
     ]
   },
   "deck": {
-    "caption": "Insurance-la 'Small Fraud' nu nenaikradhu, unga financial future-a epdi destroy pannum? UK-la nadandha oru Lego scam, namakku enna lesson kudukudhu? Insurance claim pannum podhu documentation evlo mukkiyam nu therinjukonga. Neenga unga high-value assets-ku insurance eduthirukingala? #InsuranceFraud #FinancialLiteracy #MarketDebunk #AssetProtection",
+    "caption": "Home loan irukara ellarukkum oru urgent update! RBI repo rate hike pannirukanga, idhu unga monthly budget-ah epdi affect pannum nu theriyuma? Repo rate 25 bps hike aana, unga EMI math epdi change aagum nu indha carousel-la pakalam. Unga bank-kitta interest rate reset pathi ketrukingala? #MarketDebunkTamil #RepoRate #HomeLoan #PersonalFinanceTamil #RBIUpdate",
     "slides": [
       {
         "role": "hook",
-        "title": "Lego collector-oda 'Insurance Scam'!",
+        "title": "Home Loan EMI-ah? Ready-ah irunga!",
         "card_text": "",
         "slide_index": 1,
         "tag": "#MARKETDEBUNK",
         "title_lines": [
-          "Lego collector-oda",
-          "<span class='highlight-box'>'Insurance Scam'!</span>"
+          "Home Loan",
+          "<span class='highlight-box'>EMI-ah? Ready-ah</span>",
+          "irunga!"
         ]
       },
       {
         "role": "value_1",
-        "title": "The £1.3bn Problem",
+        "title": "GDP Growth-um, Repo Rate-um",
         "stat_data": {
-          "metric": "£1.3bn",
-          "label": "Annual Insurance Fraud in UK",
-          "context": "UK-la mattum varusham <strong>£1.3bn</strong> alavukku insurance fraud nadakkudhu. Idhunaala, nallavangaloda premium kooda increase aagudhu."
+          "metric": "7.1%",
+          "label": "GDP Forecast",
+          "context": "India-voda GDP forecast <strong>40 bps</strong> increase aagi <strong>7.1%</strong>-ah iruku. Economic growth nalla irundhalum, inflation-ah control panna RBI repo rate-ah hike pannirukanga."
         },
         "slide_index": 2,
         "tag": "#MARKETDEBUNK",
         "title_lines": [
-          "<span class='highlight-box'>The £1.3bn</span>",
-          "Problem"
+          "GDP Growth-um,",
+          "<span class='highlight-box'>Repo Rate-um</span>"
         ]
       },
       {
         "role": "value_2",
+        "title": "Repo Rate Hike: The Reality",
+        "card_text": "Repo rate <strong>5.50%</strong>-ku uyarthirukanga. Idhu bank-ku funds borrow panna cost-ah increase pannum. So, banks unga floating interest rate-ah upward revision panna chance iruku.",
+        "slide_index": 3,
+        "tag": "#MARKETDEBUNK",
+        "title_lines": [
+          "Repo Rate",
+          "<span class='highlight-box'>Hike: The</span>",
+          "Reality"
+        ]
+      },
+      {
+        "role": "value_3",
         "title": "Myth vs Reality",
         "comparison_data": {
-          "myth": "High-value collectibles-a insurance-la add pannita, claim easy-ah kedaichudum.",
-          "reality": "Insurance company forensic team, unga asset-oda authenticity-a romba strict-ah check pannuvanga."
+          "myth": "Strong GDP growth irundha, interest rate change aagathu.",
+          "reality": "GDP growth-um inflation-um balance panna RBI repo rate-ah hike pannuvanga, idhu direct-ah unga EMI-ah affect pannum."
         },
-        "slide_index": 3,
+        "slide_index": 4,
         "tag": "#MARKETDEBUNK",
         "title_lines": [
           "<span class='highlight-box'>Myth vs</span>",
@@ -125,109 +141,101 @@
         ]
       },
       {
-        "role": "value_3",
-        "title": "Enna Aagum?",
+        "role": "value_4",
+        "title": "Unga Loan-ku Enna Aagum?",
         "flowchart_data": [
           {
-            "text": "Fraudulent claim pannuvanga."
+            "text": "Repo rate hike"
           },
           {
-            "text": "Insurance company forensic check pannum."
+            "text": "Bank cost of funds increase"
           },
           {
-            "text": "Claim reject aagi, police case aagum."
+            "text": "Floating interest rate hike"
           },
           {
-            "text": "Future-la insurance kedaikradhu kashtam."
+            "text": "EMI increase or Tenure extension"
           }
         ],
-        "slide_index": 4,
+        "slide_index": 5,
         "tag": "#MARKETDEBUNK",
         "title_lines": [
+          "Unga Loan-ku",
           "<span class='highlight-box'>Enna Aagum?</span>"
         ]
       },
       {
-        "role": "value_4",
-        "title": "Insurance Company Check",
-        "card_text": "Insurance company unga claim-a process pannum podhu, purchase receipts, photos, and valuation reports-a deep-ah scan pannuvanga. Documentation-la chinna gap irundhalum, claim reject aagum.",
-        "slide_index": 5,
-        "tag": "#MARKETDEBUNK",
-        "title_lines": [
-          "<span class='highlight-box'>Insurance Company</span>",
-          "Check"
-        ]
-      },
-      {
         "role": "value_5",
-        "title": "Golden Rule for Assets",
+        "title": "Checklist for Borrowers",
         "checklist_data": [
           {
             "status": "pass",
-            "text": "Policy-la niche collectibles cover aagudha nu check pannunga."
+            "text": "Check if your loan is linked to EBLR."
           },
           {
             "status": "pass",
-            "text": "Dated photos and original bills-a safe-ah vaichukonga."
+            "text": "Review your loan reset clause."
+          },
+          {
+            "status": "pass",
+            "text": "Check your bank's latest interest rate update."
           }
         ],
         "slide_index": 6,
         "tag": "#MARKETDEBUNK",
         "title_lines": [
-          "Golden Rule",
-          "<span class='highlight-box'>for Assets</span>"
+          "<span class='highlight-box'>Checklist for</span>",
+          "Borrowers"
         ]
       },
       {
         "role": "value_6",
-        "title": "Why It Matters",
-        "card_text": "Fraudulent claims-naala insurance companies premium-a hike pannuvanga. Idhu unga pocket-a dhaan affect pannum. Always be transparent with your insurer.",
+        "title": "EBLR-na Enna?",
+        "card_text": "External Benchmark Lending Rate (EBLR) linked loans-la, RBI repo rate change aana, unga interest rate-um fast-ah change aagum. Idhu transparent-ana method.",
         "slide_index": 7,
         "tag": "#MARKETDEBUNK",
         "title_lines": [
-          "<span class='highlight-box'>Why It</span>",
-          "Matters"
+          "<span class='highlight-box'>EBLR-na Enna?</span>"
         ]
       },
       {
         "role": "bookmark_save",
-        "title": "Checklist before you claim!",
-        "cta_detail": "Claim pannum munnadi: 1. Policy document-a read pannunga. 2. Asset-oda proof-a digital-ah store pannunga. Save this post to remember these steps!",
+        "title": "Action Plan",
+        "cta_detail": "Check your loan agreement today. Is your interest rate linked to EBLR? Save this post to remember to check your bank's latest rate revision notice!",
         "slide_index": 8,
         "tag": "#MARKETDEBUNK",
         "title_lines": [
-          "Checklist before",
-          "<span class='highlight-box'>you claim!</span>"
+          "<span class='highlight-box'>Action Plan</span>"
         ],
         "card_text": ""
       }
     ],
     "fact_check_status": "verified_pass",
     "audio_recommendation": {
-      "title": "Experience (Ludovico Instrumental)",
-      "artist": "Ludovico Einaudi",
-      "bpm": 95,
-      "vibe": "Compounding Breakthrough",
+      "title": "Time (Institutional Minimalist Mix)",
+      "artist": "Hans Zimmer",
+      "bpm": 124,
+      "vibe": "Deep Mathematical Compounding",
       "reels_boost_tier": "Top Tier",
-      "search_query": "Ludovico Einaudi Experience"
+      "search_query": "Hans Zimmer Time Inception"
     }
   },
   "audio": {
-    "title": "Experience (Ludovico Instrumental)",
-    "artist": "Ludovico Einaudi",
-    "bpm": 95,
-    "vibe": "Compounding Breakthrough",
+    "title": "Time (Institutional Minimalist Mix)",
+    "artist": "Hans Zimmer",
+    "bpm": 124,
+    "vibe": "Deep Mathematical Compounding",
     "reels_boost_tier": "Top Tier",
-    "search_query": "Ludovico Einaudi Experience"
+    "search_query": "Hans Zimmer Time Inception"
   },
-  "run_id": "20261006_152555",
+  "run_id": "20261007_102445",
   "slide_count": 8,
   "darwin_result": {
     "winning_candidate": {
       "id": "B",
       "archetype": "MATH_BREAKDOWN",
-      "headline_hook": "Insurance-la 'Small Fraud' nu nenaikradhu, unga Credit Score-a epdi destroy pannum?",
-      "highlight_word": "Credit Score",
+      "headline_hook": "Repo rate 25 bps hike: How your home loan math changes overnight",
+      "highlight_word": "25 bps",
       "scores": {
         "curiosity_gap": 9,
         "evidence_integrity": 10,
@@ -235,25 +243,25 @@
         "friction_quotient": 9,
         "total": 37.0
       },
-      "critic_critique": "Strongest candidate. It connects the UK fraud data to the universal fear of credit score damage, making the 'math' of the consequence immediate and relevant."
+      "critic_critique": "Excellent breakdown of the 25 bps impact. It forces the user to look at their loan tenure, which is the most critical retail friction point."
     },
     "critic_score": 9.2,
     "archetype": "MATH_BREAKDOWN",
-    "selection_rationale": "Candidate B is the winner because it successfully bridges the gap between a macro UK news story and the tangible, everyday anxiety of maintaining a clean credit report. By framing insurance fraud as a 'math' problem where the long-term loss (credit score/future borrowing ability) outweighs any short-term gain, it creates high retail actionability.",
-    "final_editorial_directive": "Use conversational Tanglish. Keep sentences short. Use 'Enna aagum?' (What will happen?) as a recurring motif. Avoid jargon; instead of 'Insurance underwriting,' use 'Insurance company check pannum podhu'."
+    "selection_rationale": "Candidate B wins because it weaponizes the 'MATH_BREAKDOWN' archetype. By focusing on the 25 bps hike, it translates complex central bank policy into a concrete 'time-to-loss' calculation for the retail borrower, which is the most effective way to drive engagement in the Tamil financial context.",
+    "final_editorial_directive": "Use crisp, punchy Tanglish. Avoid formal Tamil terms like 'vattividham' where 'interest rate' is understood. Focus on the direct impact: 'EMI math' and 'loan tenure'. Ensure the tone remains professional yet urgent, emphasizing that policy changes aren't just headlines, but adjustments to the user's monthly budget."
   },
   "visual_audit": {
     "passed": true,
-    "average_score": 9.0,
+    "average_score": 8.2,
     "slide_1_report": {
-      "overall_score": 8.5,
+      "overall_score": 8.0,
       "passed": true,
-      "critique_summary": "The typography effectively utilizes a high-contrast weight for the main headline. The mixture of English and Tanglish (Tamil-English transliteration) is handled well, though the use of 'oda' (possessive suffix) in the headline creates a slightly informal tone. The highlighted green box provides excellent readability. The hierarchy is clear, and the branding elements are properly positioned.",
+      "critique_summary": "The slide features a high-contrast design with excellent legibility. However, the copy is primarily in English, using 'Tanglish' (Tamil written in Latin script), which limits the assessment of actual Tamil Unicode rendering. The green highlight box provides a strong focal point, although the horizontal padding around the text feels slightly uneven. The hierarchy between the brand, main headline, and footer is well-balanced for mobile consumption.",
       "suggested_css_adjustments": {
-        "notes": "The green highlight box could benefit from a slight increase in internal horizontal padding (padding-inline) to prevent the text from feeling too cramped at the edges. Additionally, ensure the font family for the Tamil script has strong character weights to match the bold English typeface."
+        "notes": "To improve the highlight box, apply consistent horizontal padding (e.g., padding: 0 10px) to ensure the text doesn't feel cramped. Increase the letter spacing slightly for the 'Market Debunk Tamil' header to improve readability at smaller mobile resolutions."
       }
     },
     "slide_count_audited": 2
   },
-  "exported_at": "2026-10-06T15:26:11.594167+00:00"
+  "exported_at": "2026-10-07T10:25:13.477123+00:00"
 }

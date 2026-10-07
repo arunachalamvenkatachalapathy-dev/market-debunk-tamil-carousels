@@ -1139,6 +1139,36 @@
         "status": "success"
       },
       "age_at_audit_hours": 48.3
+    },
+    {
+      "title": "RBI MPC Repo Rate Hike Highlights: GDP forecast up 40 bps to 7.1%, home loan EMI to rise | US Fed minutes in focus",
+      "media_id": "17994604593044798",
+      "timestamp": "2026-10-07T10:26:32.282782+00:00",
+      "topic_category": "REGULATORY_SHIFT",
+      "hook_archetype": "MATH_BREAKDOWN",
+      "hashtag_cluster": "default",
+      "publish_results": {
+        "instagram": {
+          "success": true,
+          "media_id": "17994604593044798",
+          "permalink": "https://www.instagram.com/p/DeMJARUDAF3/"
+        },
+        "facebook": {
+          "success": true,
+          "post_id": "1297757220087165_122117433699463457",
+          "url": "https://www.facebook.com/1297757220087165_122117433699463457"
+        },
+        "telegram": {
+          "success": false,
+          "status": "skipped"
+        },
+        "linkedin": {
+          "success": false,
+          "status": "skipped"
+        }
+      },
+      "insights_fetched_48h": false,
+      "insights": {}
     }
   ]
 }
