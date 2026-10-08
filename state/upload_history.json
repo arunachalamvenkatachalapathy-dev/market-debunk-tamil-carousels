@@ -1199,6 +1199,36 @@
       },
       "insights_fetched_48h": false,
       "insights": {}
+    },
+    {
+      "title": "FD interest calculator: Extra amount you can get on Rs 1 lakh-Rs 10 lakh deposits at 5-25 bps interest rate hike",
+      "media_id": "18114214094111606",
+      "timestamp": "2026-10-08T19:59:35.994297+00:00",
+      "topic_category": "REGULATORY_SHIFT",
+      "hook_archetype": "MATH_BREAKDOWN",
+      "hashtag_cluster": "default",
+      "publish_results": {
+        "instagram": {
+          "success": true,
+          "media_id": "18114214094111606",
+          "permalink": "https://www.instagram.com/p/DePvXaBgSxv/"
+        },
+        "facebook": {
+          "success": true,
+          "post_id": "1297757220087165_122117911473463457",
+          "url": "https://www.facebook.com/1297757220087165_122117911473463457"
+        },
+        "telegram": {
+          "success": false,
+          "status": "skipped"
+        },
+        "linkedin": {
+          "success": false,
+          "status": "skipped"
+        }
+      },
+      "insights_fetched_48h": false,
+      "insights": {}
     }
   ]
 }
