@@ -1,82 +1,90 @@
 {
   "topic": {
-    "title": "RBI MPC Repo Rate Hike Highlights: GDP forecast up 40 bps to 7.1%, home loan EMI to rise | US Fed minutes in focus",
+    "title": "Stock market crash: Terrible Thursday for Sensex, Nifty as over  ₹7 lakh cr investors' wealth eroded - what went wrong?",
     "archetype": "market_breaking_news",
     "archetype_name": "Breaking Financial News Debunk",
     "topic_category": "WEALTH_LEAK",
     "viral_demand_score": 100.0,
     "source": "Livemint Markets",
-    "source_snippet": "RBI MPC Repo Rate Hike LIVE: The Indian Central Bank raised the repo rate by 25 bps to 5.50% after a gap of nearly three years",
-    "source_url": "https://www.livemint.com/market/stock-market-news/rbi-mpc-meeting-live-repo-rate-crr-slr-reverse-rr-in-focus-as-governor-sanjay-malhotra-to-declare-outcome-today-11791306808901.html",
-    "raw_text": "RBI MPC Repo Rate Hike Highlights: GDP forecast up 40 bps to 7.1%, home loan EMI to rise | US Fed minutes in focus. RBI MPC Repo Rate Hike LIVE: The Indian Central Bank raised the repo rate by 25 bps to 5.50% after a gap of nearly three years",
+    "source_snippet": "The Indian stock market plunged on October 8, with Nifty down 1.11% and Sensex falling nearly 700 points. Factors include rising repo rates, foreign selling, and inflation concerns, resulting in over 7 lakh crore loss in market capitalisation.",
+    "source_url": "https://www.livemint.com/market/stock-market-news/stock-market-crash-terrible-thursday-for-sensex-nifty-as-over-rs-7-lakh-cr-investors-wealth-eroded-what-went-wrong-11791442321941.html",
+    "raw_text": "Stock market crash: Terrible Thursday for Sensex, Nifty as over  ₹7 lakh cr investors' wealth eroded - what went wrong?. The Indian stock market plunged on October 8, with Nifty down 1.11% and Sensex falling nearly 700 points. Factors include rising repo rates, foreign selling, and inflation concerns, resulting in over 7 lakh crore loss in market capitalisation.",
     "numbers_detected": [
-      "40 bps",
-      "7.1%",
-      "25 bps",
-      "5.50%"
+      "₹7",
+      "1.11%",
+      "700 points"
     ],
-    "published_at": "2026-10-07T06:37:24+05:30",
-    "age_hours": 9.3,
-    "retrieved_at": "2026-10-07T10:23:40.064876+00:00",
-    "date": "07 Oct 2026",
+    "published_at": "2026-10-08T12:23:40+05:30",
+    "age_hours": 3.8,
+    "retrieved_at": "2026-10-08T10:43:33.107935+00:00",
+    "date": "08 Oct 2026",
     "from_live_api": true,
-    "evidence_snapshot": "Source: Livemint Markets | Published: 2026-10-07T06:37:24+05:30 (9.3h ago) | Headline: RBI MPC Repo Rate Hike Highlights: GDP forecast up 40 bps to 7.1%, home loan EMI to rise | US Fed minutes in focus | Context: RBI MPC Repo Rate Hike Highlights: GDP forecast up 40 bps to 7.1%, home loan EMI to rise | US Fed minutes in focus. RBI MPC Repo Rate Hike LIVE: The Indian Central Bank raised the repo rate by 25 bps to 5.50% after a gap of nearly three years",
+    "evidence_snapshot": "Source: Livemint Markets | Published: 2026-10-08T12:23:40+05:30 (3.8h ago) | Headline: Stock market crash: Terrible Thursday for Sensex, Nifty as over  ₹7 lakh cr investors' wealth eroded - what went wrong? | Context: Stock market crash: Terrible Thursday for Sensex, Nifty as over  ₹7 lakh cr investors' wealth eroded - what went wrong?. The Indian stock market plunged on October 8, with Nifty down 1.11% and Sensex falling nearly 700 points. Factors include rising repo rates, foreign selling, and inflation concerns, resulting in over 7 lakh crore loss in market capitalisation.",
     "news_analysis": {
-      "headline_hook": "Repo rate 25 bps hike: How your home loan math changes overnight",
-      "breaking_event_summary": "The Reserve Bank of India raised the repo rate by 25 bps to 5.50% after nearly three years, while upgrading the national GDP forecast by 40 bps to 7.1%.",
-      "retail_illusion": "Borrowers may assume home loan interest rates will remain unchanged due to a strong economic GDP growth outlook.",
-      "institutional_reality": "A repo rate hike increases the cost of funds for commercial banks, which directly leads to an upward revision in floating loan rates and higher monthly EMIs for retail borrowers.",
+      "headline_hook": "Sensex down 700 points: Why your SIP returns are looking different today",
+      "breaking_event_summary": "On October 8, the Indian stock market experienced a sharp decline, with the Nifty falling 1.11% and the Sensex dropping nearly 700 points.",
+      "retail_illusion": "Does a single-day market crash mean my long-term investment strategy is broken?",
+      "institutional_reality": "Market volatility is currently being driven by macroeconomic pressures including rising repo rates, persistent inflation concerns, and significant foreign institutional selling.",
       "citable_metrics": [
-        "40 bps",
-        "7.1%",
-        "25 bps",
-        "5.50%"
+        "7 lakh cr",
+        "1.11%",
+        "700 points"
       ],
-      "debunk_category": "REGULATORY_SHIFT",
-      "actionable_retail_rule": "Review your home loan reset clause and check if your interest rate is linked to the External Benchmark Lending Rate (EBLR) to anticipate EMI or tenure changes.",
-      "lead_magnet": {},
-      "carousel_outline": [],
-      "highlight_word": "25 bps",
-      "editorial_directive": "Use crisp, punchy Tanglish. Avoid formal Tamil terms like 'vattividham' where 'interest rate' is understood. Focus on the direct impact: 'EMI math' and 'loan tenure'. Ensure the tone remains professional yet urgent, emphasizing that policy changes aren't just headlines, but adjustments to the user's monthly budget."
+      "debunk_category": "VALUATION_MYTH",
+      "actionable_retail_rule": "Review your asset allocation against your original investment horizon rather than reacting to short-term market fluctuations caused by external macroeconomic factors.",
+      "lead_magnet": {
+        "title": "Market Volatility Survival Guide",
+        "description": "A checklist to assess if your portfolio needs rebalancing during high-volatility periods."
+      },
+      "carousel_outline": [
+        "What happened: The October 8 market dip explained.",
+        "The three drivers: Repo rates, inflation, and foreign selling.",
+        "Why your portfolio value changed: Understanding market capitalization erosion.",
+        "Action plan: How to check your risk exposure today."
+      ],
+      "highlight_word": "Market Drop",
+      "editorial_directive": "Use conversational Tanglish. Avoid jargon like 'macroeconomic headwinds'. Instead, say 'Market drop aagum bodhu, unga SIP value epdi adjust aagum nu theriyuma?'. Keep it direct, punchy, and focused on the user's wallet."
     },
     "darwin_result": {
       "winning_candidate": {
         "id": "B",
         "archetype": "MATH_BREAKDOWN",
-        "headline_hook": "Repo rate 25 bps hike: How your home loan math changes overnight",
-        "highlight_word": "25 bps",
+        "headline_hook": "Sensex down 700 points: Why your SIP returns are looking different today",
+        "highlight_word": "Market Drop",
         "scores": {
           "curiosity_gap": 9,
-          "evidence_integrity": 10,
+          "evidence_integrity": 9,
           "retail_actionability": 9,
-          "friction_quotient": 9,
-          "total": 37.0
+          "friction_quotient": 8,
+          "total": 35.0
         },
-        "critic_critique": "Excellent breakdown of the 25 bps impact. It forces the user to look at their loan tenure, which is the most critical retail friction point."
+        "critic_critique": "Strong performance. It successfully bridges macro market movements (Sensex 700-point drop) with the everyday reality of SIP investors. The math is clear and the actionability is high."
       },
-      "critic_score": 9.2,
+      "critic_score": 8.8,
       "archetype": "MATH_BREAKDOWN",
-      "selection_rationale": "Candidate B wins because it weaponizes the 'MATH_BREAKDOWN' archetype. By focusing on the 25 bps hike, it translates complex central bank policy into a concrete 'time-to-loss' calculation for the retail borrower, which is the most effective way to drive engagement in the Tamil financial context.",
-      "final_editorial_directive": "Use crisp, punchy Tanglish. Avoid formal Tamil terms like 'vattividham' where 'interest rate' is understood. Focus on the direct impact: 'EMI math' and 'loan tenure'. Ensure the tone remains professional yet urgent, emphasizing that policy changes aren't just headlines, but adjustments to the user's monthly budget."
+      "selection_rationale": "Candidate B wins because it directly connects the abstract '7 lakh crore' loss to a retail investor's SIP—the most common investment vehicle for the target demographic. It avoids fear-mongering while providing a clear link between market volatility and personal portfolio health.",
+      "final_editorial_directive": "Use conversational Tanglish. Avoid jargon like 'macroeconomic headwinds'. Instead, say 'Market drop aagum bodhu, unga SIP value epdi adjust aagum nu theriyuma?'. Keep it direct, punchy, and focused on the user's wallet."
     },
-    "headline_hook": "Repo rate 25 bps hike: How your home loan math changes overnight",
-    "highlight_word": "25 bps",
-    "editorial_directive": "Use crisp, punchy Tanglish. Avoid formal Tamil terms like 'vattividham' where 'interest rate' is understood. Focus on the direct impact: 'EMI math' and 'loan tenure'. Ensure the tone remains professional yet urgent, emphasizing that policy changes aren't just headlines, but adjustments to the user's monthly budget."
+    "headline_hook": "Sensex down 700 points: Why your SIP returns are looking different today",
+    "highlight_word": "Market Drop",
+    "editorial_directive": "Use conversational Tanglish. Avoid jargon like 'macroeconomic headwinds'. Instead, say 'Market drop aagum bodhu, unga SIP value epdi adjust aagum nu theriyuma?'. Keep it direct, punchy, and focused on the user's wallet."
   },
   "plan": {
-    "hook_headline": "Repo rate 25 bps hike: How your home loan math changes overnight",
-    "core_illusion": "Borrowers may assume home loan interest rates will remain unchanged due to a strong economic GDP growth outlook.",
-    "hidden_reality": "A repo rate hike increases the cost of funds for commercial banks, which directly leads to an upward revision in floating loan rates and higher monthly EMIs for retail borrowers.",
-    "citable_metric": "40 bps",
+    "hook_headline": "Sensex down 700 points: Why your SIP returns are looking different today",
+    "core_illusion": "Does a single-day market crash mean my long-term investment strategy is broken?",
+    "hidden_reality": "Market volatility is currently being driven by macroeconomic pressures including rising repo rates, persistent inflation concerns, and significant foreign institutional selling.",
+    "citable_metric": "7 lakh cr",
     "all_metrics": [
-      "40 bps",
-      "7.1%",
-      "25 bps",
-      "5.50%"
+      "7 lakh cr",
+      "1.11%",
+      "700 points"
     ],
-    "actionable_rule": "Review your home loan reset clause and check if your interest rate is linked to the External Benchmark Lending Rate (EBLR) to anticipate EMI or tenure changes.",
-    "breaking_event": "The Reserve Bank of India raised the repo rate by 25 bps to 5.50% after nearly three years, while upgrading the national GDP forecast by 40 bps to 7.1%.",
-    "lead_magnet": {},
+    "actionable_rule": "Review your asset allocation against your original investment horizon rather than reacting to short-term market fluctuations caused by external macroeconomic factors.",
+    "breaking_event": "On October 8, the Indian stock market experienced a sharp decline, with the Nifty falling 1.11% and the Sensex dropping nearly 700 points.",
+    "lead_magnet": {
+      "title": "Market Volatility Survival Guide",
+      "description": "A checklist to assess if your portfolio needs rebalancing during high-volatility periods."
+    },
     "banned_phrases": [
       "guaranteed wealth",
       "quick money",
@@ -85,183 +93,181 @@
     ]
   },
   "deck": {
-    "caption": "Home loan irukara ellarukkum oru urgent update! RBI repo rate hike pannirukanga, idhu unga monthly budget-ah epdi affect pannum nu theriyuma? Repo rate 25 bps hike aana, unga EMI math epdi change aagum nu indha carousel-la pakalam. Unga bank-kitta interest rate reset pathi ketrukingala? #MarketDebunkTamil #RepoRate #HomeLoan #PersonalFinanceTamil #RBIUpdate",
+    "caption": "Sensex 700 points drop aagum bodhu, unga SIP portfolio value epdi adjust aagum? Market crash aagum bodhu panic aagi sell panna vendama? Indha market volatility-oda real reason enna nu paarunga. Unga investment horizon-ku indha drop oru threat-a illai opportunity-a? #MarketCrash #Sensex #Nifty #TamilFinance #StockMarketIndia",
     "slides": [
       {
         "role": "hook",
-        "title": "Home Loan EMI-ah? Ready-ah irunga!",
+        "title": "Sensex 700 points down: Unga SIP returns-ku enna aachu?",
         "card_text": "",
         "slide_index": 1,
         "tag": "#MARKETDEBUNK",
         "title_lines": [
-          "Home Loan",
-          "<span class='highlight-box'>EMI-ah? Ready-ah</span>",
-          "irunga!"
+          "Sensex 700",
+          "<span class='highlight-box'>points down:</span>",
+          "Unga SIP"
         ]
       },
       {
         "role": "value_1",
-        "title": "GDP Growth-um, Repo Rate-um",
+        "title": "Enna nadanthathu?",
         "stat_data": {
-          "metric": "7.1%",
-          "label": "GDP Forecast",
-          "context": "India-voda GDP forecast <strong>40 bps</strong> increase aagi <strong>7.1%</strong>-ah iruku. Economic growth nalla irundhalum, inflation-ah control panna RBI repo rate-ah hike pannirukanga."
+          "metric": "7 lakh cr",
+          "label": "Wealth Erosion",
+          "context": "October 8-la market-oda total market capitalisation-la <strong>7 lakh cr</strong> varai loss aagiruku. Idhu oru single day-la nadantha periya impact."
         },
         "slide_index": 2,
         "tag": "#MARKETDEBUNK",
         "title_lines": [
-          "GDP Growth-um,",
-          "<span class='highlight-box'>Repo Rate-um</span>"
+          "<span class='highlight-box'>Enna nadanthathu?</span>"
         ]
       },
       {
         "role": "value_2",
-        "title": "Repo Rate Hike: The Reality",
-        "card_text": "Repo rate <strong>5.50%</strong>-ku uyarthirukanga. Idhu bank-ku funds borrow panna cost-ah increase pannum. So, banks unga floating interest rate-ah upward revision panna chance iruku.",
+        "title": "Market yen ivlo drop aachu?",
+        "flowchart_data": [
+          {
+            "text": "Rising Repo Rates: Interest rates high-a irukkurathu market-ku pressure."
+          },
+          {
+            "text": "Inflation Concerns: Prices yerurathu company profit margins-a affect pannuthu."
+          },
+          {
+            "text": "Foreign Selling: FIIs heavy-a sell pannurathu market-a down pannuthu."
+          }
+        ],
         "slide_index": 3,
         "tag": "#MARKETDEBUNK",
         "title_lines": [
-          "Repo Rate",
-          "<span class='highlight-box'>Hike: The</span>",
-          "Reality"
+          "Market yen",
+          "<span class='highlight-box'>ivlo drop</span>",
+          "aachu?"
         ]
       },
       {
         "role": "value_3",
         "title": "Myth vs Reality",
-        "comparison_data": {
-          "myth": "Strong GDP growth irundha, interest rate change aagathu.",
-          "reality": "GDP growth-um inflation-um balance panna RBI repo rate-ah hike pannuvanga, idhu direct-ah unga EMI-ah affect pannum."
-        },
+        "myth": "Market crash aagum bodhu ellam sell panni exit aagidalam.",
+        "reality": "Short-term volatility-a paathu panic aagi sell pannurathu, long-term wealth creation-a spoil pannidum.",
         "slide_index": 4,
         "tag": "#MARKETDEBUNK",
         "title_lines": [
           "<span class='highlight-box'>Myth vs</span>",
           "Reality"
-        ]
+        ],
+        "card_text": "Market crash aagum bodhu ellam sell panni exit aagidalam. Short-term volatility-a paathu panic aagi sell pannurathu, long-term wealth creation-a spoil pannidum."
       },
       {
         "role": "value_4",
-        "title": "Unga Loan-ku Enna Aagum?",
-        "flowchart_data": [
-          {
-            "text": "Repo rate hike"
-          },
-          {
-            "text": "Bank cost of funds increase"
-          },
-          {
-            "text": "Floating interest rate hike"
-          },
-          {
-            "text": "EMI increase or Tenure extension"
-          }
-        ],
+        "title": "SIP investors-ku idhu bad news-a?",
+        "card_text": "Illave illai! SIP-la market drop aagum bodhu, ungaluku adhigamaana units kidaikum. Idhu 'Rupee Cost Averaging' nu solluvanga, long-term-la idhu nallathu.",
         "slide_index": 5,
         "tag": "#MARKETDEBUNK",
         "title_lines": [
-          "Unga Loan-ku",
-          "<span class='highlight-box'>Enna Aagum?</span>"
+          "SIP investors-ku",
+          "<span class='highlight-box'>idhu bad</span>",
+          "news-a?"
         ]
       },
       {
         "role": "value_5",
-        "title": "Checklist for Borrowers",
+        "title": "Portfolio-va epdi handle panrathu?",
         "checklist_data": [
           {
             "status": "pass",
-            "text": "Check if your loan is linked to EBLR."
+            "text": "Check your asset allocation."
           },
           {
             "status": "pass",
-            "text": "Review your loan reset clause."
+            "text": "Stick to your original investment horizon."
           },
           {
             "status": "pass",
-            "text": "Check your bank's latest interest rate update."
+            "text": "Avoid reacting to short-term news."
           }
         ],
         "slide_index": 6,
         "tag": "#MARKETDEBUNK",
         "title_lines": [
-          "<span class='highlight-box'>Checklist for</span>",
-          "Borrowers"
+          "Portfolio-va epdi",
+          "<span class='highlight-box'>handle panrathu?</span>"
         ]
       },
       {
         "role": "value_6",
-        "title": "EBLR-na Enna?",
-        "card_text": "External Benchmark Lending Rate (EBLR) linked loans-la, RBI repo rate change aana, unga interest rate-um fast-ah change aagum. Idhu transparent-ana method.",
+        "title": "Golden Rule for Investors",
+        "card_text": "Market volatility-a paathu bayapadama, unga goals-ku ethamaari portfolio-va review pannunga. Macroeconomic factors-ala varura fluctuations temporary-nu purinjikonga.",
         "slide_index": 7,
         "tag": "#MARKETDEBUNK",
         "title_lines": [
-          "<span class='highlight-box'>EBLR-na Enna?</span>"
+          "Golden Rule",
+          "<span class='highlight-box'>for Investors</span>"
         ]
       },
       {
         "role": "bookmark_save",
-        "title": "Action Plan",
-        "cta_detail": "Check your loan agreement today. Is your interest rate linked to EBLR? Save this post to remember to check your bank's latest rate revision notice!",
+        "title": "Ippo enna pannanum?",
+        "cta_detail": "Ippo unga portfolio-va check panni, unga original investment goal-oda align aagi irukka nu paarunga. Save pannikonga, market volatility-la panic aagum bodhu idha marakkama read pannunga!",
         "slide_index": 8,
         "tag": "#MARKETDEBUNK",
         "title_lines": [
-          "<span class='highlight-box'>Action Plan</span>"
+          "<span class='highlight-box'>Ippo enna</span>",
+          "pannanum?"
         ],
         "card_text": ""
       }
     ],
     "fact_check_status": "verified_pass",
     "audio_recommendation": {
-      "title": "Time (Institutional Minimalist Mix)",
-      "artist": "Hans Zimmer",
-      "bpm": 124,
-      "vibe": "Deep Mathematical Compounding",
-      "reels_boost_tier": "Top Tier",
-      "search_query": "Hans Zimmer Time Inception"
+      "title": "Azhagiya Theeye (Acoustic Minimal)",
+      "artist": "Harris Jayaraj / Classical Touch",
+      "bpm": 108,
+      "vibe": "Calm Rational Thinking",
+      "reels_boost_tier": "High Retention",
+      "search_query": "Harris Jayaraj Instrumental Acoustic"
     }
   },
   "audio": {
-    "title": "Time (Institutional Minimalist Mix)",
-    "artist": "Hans Zimmer",
-    "bpm": 124,
-    "vibe": "Deep Mathematical Compounding",
-    "reels_boost_tier": "Top Tier",
-    "search_query": "Hans Zimmer Time Inception"
+    "title": "Azhagiya Theeye (Acoustic Minimal)",
+    "artist": "Harris Jayaraj / Classical Touch",
+    "bpm": 108,
+    "vibe": "Calm Rational Thinking",
+    "reels_boost_tier": "High Retention",
+    "search_query": "Harris Jayaraj Instrumental Acoustic"
   },
-  "run_id": "20261007_102445",
+  "run_id": "20261008_104633",
   "slide_count": 8,
   "darwin_result": {
     "winning_candidate": {
       "id": "B",
       "archetype": "MATH_BREAKDOWN",
-      "headline_hook": "Repo rate 25 bps hike: How your home loan math changes overnight",
-      "highlight_word": "25 bps",
+      "headline_hook": "Sensex down 700 points: Why your SIP returns are looking different today",
+      "highlight_word": "Market Drop",
       "scores": {
         "curiosity_gap": 9,
-        "evidence_integrity": 10,
+        "evidence_integrity": 9,
         "retail_actionability": 9,
-        "friction_quotient": 9,
-        "total": 37.0
+        "friction_quotient": 8,
+        "total": 35.0
       },
-      "critic_critique": "Excellent breakdown of the 25 bps impact. It forces the user to look at their loan tenure, which is the most critical retail friction point."
+      "critic_critique": "Strong performance. It successfully bridges macro market movements (Sensex 700-point drop) with the everyday reality of SIP investors. The math is clear and the actionability is high."
     },
-    "critic_score": 9.2,
+    "critic_score": 8.8,
     "archetype": "MATH_BREAKDOWN",
-    "selection_rationale": "Candidate B wins because it weaponizes the 'MATH_BREAKDOWN' archetype. By focusing on the 25 bps hike, it translates complex central bank policy into a concrete 'time-to-loss' calculation for the retail borrower, which is the most effective way to drive engagement in the Tamil financial context.",
-    "final_editorial_directive": "Use crisp, punchy Tanglish. Avoid formal Tamil terms like 'vattividham' where 'interest rate' is understood. Focus on the direct impact: 'EMI math' and 'loan tenure'. Ensure the tone remains professional yet urgent, emphasizing that policy changes aren't just headlines, but adjustments to the user's monthly budget."
+    "selection_rationale": "Candidate B wins because it directly connects the abstract '7 lakh crore' loss to a retail investor's SIP—the most common investment vehicle for the target demographic. It avoids fear-mongering while providing a clear link between market volatility and personal portfolio health.",
+    "final_editorial_directive": "Use conversational Tanglish. Avoid jargon like 'macroeconomic headwinds'. Instead, say 'Market drop aagum bodhu, unga SIP value epdi adjust aagum nu theriyuma?'. Keep it direct, punchy, and focused on the user's wallet."
   },
   "visual_audit": {
     "passed": true,
-    "average_score": 8.2,
+    "average_score": 8.5,
     "slide_1_report": {
-      "overall_score": 8.0,
+      "overall_score": 8.5,
       "passed": true,
-      "critique_summary": "The slide features a high-contrast design with excellent legibility. However, the copy is primarily in English, using 'Tanglish' (Tamil written in Latin script), which limits the assessment of actual Tamil Unicode rendering. The green highlight box provides a strong focal point, although the horizontal padding around the text feels slightly uneven. The hierarchy between the brand, main headline, and footer is well-balanced for mobile consumption.",
+      "critique_summary": "The slide effectively uses bold, high-contrast typography for immediate impact. The Tamil text 'Unga' (உங்க) is rendered clearly. The highlighted green box is well-proportioned, though the English word 'points down:' inside the green box could benefit from slightly increased letter-spacing to improve readability against the dense background color. The information hierarchy is strong.",
       "suggested_css_adjustments": {
-        "notes": "To improve the highlight box, apply consistent horizontal padding (e.g., padding: 0 10px) to ensure the text doesn't feel cramped. Increase the letter spacing slightly for the 'Market Debunk Tamil' header to improve readability at smaller mobile resolutions."
+        "notes": "Add 'letter-spacing: 0.02em' to the text within the green highlighted container. Ensure the line-height for the main headline is set to '1.1em' to maintain legibility for the two-line structure on smaller mobile viewports."
       }
     },
     "slide_count_audited": 2
   },
-  "exported_at": "2026-10-07T10:25:13.477123+00:00"
+  "exported_at": "2026-10-08T10:46:42.739915+00:00"
 }
