@@ -1,11 +1,6 @@
 {
   "topics": [
     {
-      "title": "Wall Street Week Ahead: US inflation data and Oracle earnings in focus",
-      "url": "https://www.livemint.com/market/wall-street-week-ahead-us-inflation-data-and-oracle-earnings-in-focus-11788715708966.html",
-      "timestamp": "2026-09-06T19:08:42.507661+00:00"
-    },
-    {
       "title": "NSE clarifies Ashishkumar Chauhan is not in Tata Sons chairman race - IndiaIPO",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQNDR1MTAwRVlOSEVqNjdmMGVZdUNYd0ZnUmgwdHJIVHVXcWIxN1R6QTlkSC1IOGp0dW5JS05iS1BGMzRJdkFwUEdUcmxGYU1pcGFMUmtQQW1kSVFnZEpBZjlsMjNsSXJLekszd3pyb3BqUUNSZFFNZzcycWhjd2xkcjg1QVpfN1lraUFFQmxrWW5aTy02R2xLX0JMbkF1UUhHbDJVM2dR?oc=5",
       "timestamp": "2026-09-06T19:11:00.676955+00:00"
@@ -299,6 +294,11 @@
       "title": "FD interest calculator: Extra amount you can get on Rs 1 lakh-Rs 10 lakh deposits at 5-25 bps interest rate hike",
       "url": "https://economictimes.indiatimes.com/wealth/invest/fd-interest-rate-return-maturity-calculator-extra-corpus-you-can-get-at-rs-1-lakh-10-lakh-investment-in-5-year-fixed-deposit/articleshow/134787504.cms",
       "timestamp": "2026-10-08T19:55:22.524158+00:00"
+    },
+    {
+      "title": "Rs 7 lakh investment in SCSS vs SBI senior citizen FD: How much quarterly amount can senior citizens get for 5 years in each scheme?",
+      "url": "https://economictimes.indiatimes.com/wealth/invest/rs-7-lakh-investment-in-scss-vs-sbi-senior-citizen-fd-how-much-quarterly-amount-can-senior-citizens-get-for-5-years-in-each-scheme/articleshow/134829709.cms",
+      "timestamp": "2026-10-09T10:42:44.282677+00:00"
     }
   ],
   "used_archetypes": [],
@@ -363,6 +363,7 @@
     "https://www.livemint.com/market/stock-market-news/rbi-mpc-meeting-live-repo-rate-crr-slr-reverse-rr-in-focus-as-governor-sanjay-malhotra-to-declare-outcome-today-11791306808901.html",
     "https://economictimes.indiatimes.com/wealth/invest/rbi-mpc-october-2026-repo-date-decision-25-bps-hike-can-banks-raise-fd-interest-rates-now-as-reserve-bank-increases-rate/articleshow/134746120.cms",
     "https://www.livemint.com/market/stock-market-news/stock-market-crash-terrible-thursday-for-sensex-nifty-as-over-rs-7-lakh-cr-investors-wealth-eroded-what-went-wrong-11791442321941.html",
-    "https://economictimes.indiatimes.com/wealth/invest/fd-interest-rate-return-maturity-calculator-extra-corpus-you-can-get-at-rs-1-lakh-10-lakh-investment-in-5-year-fixed-deposit/articleshow/134787504.cms"
+    "https://economictimes.indiatimes.com/wealth/invest/fd-interest-rate-return-maturity-calculator-extra-corpus-you-can-get-at-rs-1-lakh-10-lakh-investment-in-5-year-fixed-deposit/articleshow/134787504.cms",
+    "https://economictimes.indiatimes.com/wealth/invest/rs-7-lakh-investment-in-scss-vs-sbi-senior-citizen-fd-how-much-quarterly-amount-can-senior-citizens-get-for-5-years-in-each-scheme/articleshow/134829709.cms"
   ]
 }
