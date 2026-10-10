@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-10-07T19:59:04.534054+00:00",
+  "timestamp": "2026-10-10T10:06:24.482955+00:00",
   "phase": "TAMIL_PIPELINE_ORCHESTRATION",
   "severity": "CRITICAL",
   "error_code": "ERR_PIPELINE_HALT",
-  "root_cause_analysis": "The visual inspection engine failed the quality audit ('passed': False) despite slide 1 scoring 8.5/10. The audit highlighted a typography/hierarchy imbalance where the Tamil script ('Unga') lacked adequate font weight compared to the bold sans-serif English text, and only 1 slide report was detailed out of 2 audited slides, causing the visual inspection module to trigger a ValueError halt at engine.py:174.",
+  "root_cause_analysis": "The numeric fact-checking validator in editorial_engine.py failed due to currency symbol tokenization mismatch. The target deck extracted '₹164900' retaining the rupee symbol ('₹'), whereas the source metric baseline extracted raw digits ['164900']. The strict set difference comparison flagged '₹164900' as an unsupported metric rather than stripping standard currency prefixes during normalization.",
   "reproducibility": "DETERMINISTIC",
   "automated_remediation": {
     "action": "SAFE_SHUTDOWN",
@@ -11,8 +11,8 @@
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Update the carousel rendering CSS to load and apply a bold weight variant for Tamil typography (e.g., 'Noto Sans Tamil', font-weight: 700) to balance bilingual visual hierarchy.",
-    "Verify why slide 2 evaluation was either missing or triggered the overall audit failure flag despite slide 1 passing.",
-    "Review visual audit pass threshold settings and error-handling conditions in engine.py line 174 to allow soft warnings or automatic retry loops when average score meets baseline standards."
+    "Update regex tokenization in src/editorial_engine.py fact-checker to normalize currency symbols (strip '₹', '$', commas) before performing metric set validation.",
+    "Verify that mock_master and editorial composition metric extractors share identical numeric sanitization utilities.",
+    "Rerun the morning edition pipeline with dry_run set to true to validate the regex normalization against ['10', '164900', '18', '2026', '30']."
   ]
 }
