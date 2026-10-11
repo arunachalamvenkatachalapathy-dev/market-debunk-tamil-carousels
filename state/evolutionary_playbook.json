@@ -1,13 +1,12 @@
 {
   "version": "2.0.0",
-  "total_cycles_recorded": 27,
+  "total_cycles_recorded": 28,
   "archetype_weights": {
     "SHOCKING_MYTH": 1.4,
     "MATH_BREAKDOWN": 2.5,
     "INSTITUTIONAL_SECRET": 1.1
   },
   "learned_rules": [
-    "Candidate B wins because it transforms an abstract news report into a personal financial and legal trap. By contrasting ",
     "Candidate B wins because it weaponizes the 'MATH_BREAKDOWN' archetype with a high Archetype Weight (2.0). It transforms ",
     "Candidate B wins conclusively because it leverages the MATH_BREAKDOWN archetype (weight 2.0). It transforms a macro glob",
     "Candidate B is the definitive winner because it weaponizes the 'Math Breakdown' archetype. In the Tamil retail market, s",
@@ -18,7 +17,8 @@
     "Candidate B wins because it directly connects the abstract '7 lakh crore' loss to a retail investor's SIP—the most commo",
     "Candidate B is the clear winner because it translates the abstract 'bps' hike into a concrete, actionable calculation fo",
     "Candidate B wins because it weaponizes 'Loss Aversion'. In the Tamil retail market, showing exactly how much money is 'l",
-    "Candidate B is the winner because it targets the primary anxiety of the Tamil retail investor: the opportunity cost of k"
+    "Candidate B is the winner because it targets the primary anxiety of the Tamil retail investor: the opportunity cost of k",
+    "Candidate B uses the verified data point of '8-week losses' and addresses the immediate dilemma of a retail mutual fund/"
   ],
   "cycle_history": [
     {
@@ -263,6 +263,15 @@
       "critic_score": 8.8,
       "visual_score": 8.5,
       "key_learning": "Candidate B is the winner because it targets the primary anxiety of the Tamil retail investor: the opportunity cost of k"
+    },
+    {
+      "cycle": 28,
+      "timestamp": "2026-10-11T10:17:29.349155+00:00",
+      "topic": "Indian Stock Market Outlook Next Week, 12-16 Oct: Sensex, Nifty Likely to Extend",
+      "winning_archetype": "MATH_BREAKDOWN",
+      "critic_score": 8.8,
+      "visual_score": 9.5,
+      "key_learning": "Candidate B uses the verified data point of '8-week losses' and addresses the immediate dilemma of a retail mutual fund/"
     }
   ]
 }
