@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-10-10T10:06:24.482955+00:00",
+  "timestamp": "2026-10-11T18:54:32.161761+00:00",
   "phase": "TAMIL_PIPELINE_ORCHESTRATION",
   "severity": "CRITICAL",
   "error_code": "ERR_PIPELINE_HALT",
-  "root_cause_analysis": "The numeric fact-checking validator in editorial_engine.py failed due to currency symbol tokenization mismatch. The target deck extracted '₹164900' retaining the rupee symbol ('₹'), whereas the source metric baseline extracted raw digits ['164900']. The strict set difference comparison flagged '₹164900' as an unsupported metric rather than stripping standard currency prefixes during normalization.",
+  "root_cause_analysis": "The editorial engine's numeric validation failed during fact-checking in compose_from_master. The generated Tamil deck introduced hallucinated percentage metrics (['10%', '20%', '30%', '5%', '6%', '7%']) that were not present in the master source context metrics (['10', '2026', '24', '56.414201', '₹5lakh']). The subsequent automatic repair retry loop failed to ground the deck metrics to the source data, triggering a terminal ValueError.",
   "reproducibility": "DETERMINISTIC",
   "automated_remediation": {
     "action": "SAFE_SHUTDOWN",
@@ -11,8 +11,9 @@
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Update regex tokenization in src/editorial_engine.py fact-checker to normalize currency symbols (strip '₹', '$', commas) before performing metric set validation.",
-    "Verify that mock_master and editorial composition metric extractors share identical numeric sanitization utilities.",
-    "Rerun the morning edition pipeline with dry_run set to true to validate the regex normalization against ['10', '164900', '18', '2026', '30']."
+    "Inspect the master input context for the evening edition to verify whether the source factual metrics accurately reflect the input data.",
+    "Refine the system prompt in src/editorial_engine.py to strictly forbid introducing synthetic or explanatory percentages not found in the source metrics list.",
+    "Enhance the retry prompt mechanism with explicit guidance to remove ungrounded metric tokens when repair_note indicates numeric mismatch.",
+    "Re-run the pipeline with the target edition: 'python engine.py --edition evening' once prompt constraints or master context are corrected."
   ]
 }
