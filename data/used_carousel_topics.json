@@ -1,11 +1,6 @@
 {
   "topics": [
     {
-      "title": "Taiwan Stock Market Hits Record Trading Volume as TDCC Boosts System Capacity by 30% - India Infoline",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQTFUtNmhtamo1WGc3VTFBeU1SWjdLY2hMN2RXZV9lZlVZd1RaRlNiWGVpb2JrLW5ORFFJRkhYTHVLVTB6QWF3eFlUaERLVjVYWDhITG5SUWZIcWFnajBsdmRFQTk3X21qQ1JkN004cU1vQVR6ZXVoT2YyZ2pHLWphSl9QNFRqREVxTDJrOVdCMkZXSmFITHhtd0lRMGxxdmpILTlLTVVYUXp1TEMyc3l0aDA4Y0t1Z2hxbVRpc1hnVE1neDNUR2VuUU01RjA?oc=5",
-      "timestamp": "2026-09-09T07:33:41.485008+00:00"
-    },
-    {
       "title": "US Treasury triples bond buyback to $6 billion: Why markets saw the move as a disappointment",
       "url": "https://www.livemint.com/market/stock-market-news/us-treasury-triples-bond-buyback-to-6-billion-why-markets-saw-the-move-as-a-disappointment-11788973032057.html",
       "timestamp": "2026-09-09T18:10:23.343071+00:00"
@@ -299,6 +294,11 @@
       "title": "Mutual Fund SIP Hits Record High in September, Yet 10 Lakh More Stopped Than Started - NiftyTrader",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1Ya3hmWERFd2ZJQ1dhekhvVjFhdF9jbmMzX3RONlBvTDNPVkppWURsaENQaURlVHladG5mcHhSNXZpLTVvSnBJT3BzaHhZT1hWV3pMaTl0MmhyV0sxTkJUX3RBOVpDcGwtSzVrRlFVYVphcjhLel84?oc=5",
       "timestamp": "2026-10-12T22:05:46.982376+00:00"
+    },
+    {
+      "title": "Inflation is up again; should you invest in FDs now or wait for interest rates to rise further? Check what a 1% hike means for your Rs 2 lakh FD",
+      "url": "https://economictimes.indiatimes.com/wealth/invest/fd-interest-rate-hike-2026-inflation-is-up-again-should-you-invest-in-fds-now-or-wait-for-interest-rates-to-rise-further/articleshow/134913291.cms",
+      "timestamp": "2026-10-13T10:50:29.711998+00:00"
     }
   ],
   "used_archetypes": [],
@@ -370,6 +370,7 @@
     "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPdGg2TzBpb1F2d3NvQmI1LW5QODBFa2JkTWJTWHIzbGtGX0toSWhpVVgtaExWQlV2YzYwRmtMOW13TUlPY3RvTmxEM25XaVZpRXFDR0Z2SkFnWkU3aGplcmhiMmRJU1IyTTZYcnB6VGowQTZVaVVtQjhuQVY4QmVMdWFGekpqeENIT2JQN1d0S1BYUjUtNUpnVE9uOXZqcjlZOS1sNGd0SkF6Vml6TDlzaGhkWGg4bXJPZFpsd1ZONkZ4RTBoRWY3bnZRQ0ZfMVJhNDhzNTNjeURXa0hXNHc?oc=5",
     "https://www.livemint.com/money/personal-finance/bank-fd-rates-in-october-2026-how-pre-and-post-tax-fixed-deposit-returns-differ-across-hdfc-icici-sbi-and-pnb-11791729146868.html",
     "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQbVZYSjFnOEh5bG9ERWJVTDRKOWtYNUxPdmhLTnFVZ0ZWcFdPWERFTG81S2lSNlZSWTFkWGNSTWFaVGFtQTRIdWh5cHVGQTk2NGdKVGRVcVFYUS1SQ2luR0QtWk9TbksxVmhDTFVsRll1Y2VLS3RuRUpqc19IbjV0UmVpR0xRUjB0Q1gtUmZINmZNRXE4MDR0WGdyeTNLWkJoc0ltb1R6ZVJ3aFJGY2t3b1Bxb3NJWXh2ajZYV2NlSzdjMzkwaXc5RmUxVGNmZ0l6QWd1eklEY3k1cHlPd3k1a3I0M3VDQdIB6wFBVV95cUxNVHpKVndRTTVmaENXaXUzMDdGRkRmVEZrRDdhRDJyVGlXVHJDbzdEaEt4MURsQW5ka0ZOY3B3SGQwdFk5WTJ3RmNEYVhwdGwzVGdqRXZSWUdsNS1lRmR3eWltcmtsTklBTUx6eVJ4WW1uMldUNFE1YkRhYjJuSUtBZG9OME9uV1BzV3ljS21NX1FkY1ZseE5BRnhjYUFHU0xMa2p4TFg4d2d3bGliRnJJWkdiek1OeWIwUUFsS2pSbDhTeDdhMkZGd0tNNy1sMC1CUFV4RmVKbDdHUTRZZHBuUVJSaFllWU5TeEdR?oc=5",
-    "https://news.google.com/rss/articles/CBMid0FVX3lxTE1Ya3hmWERFd2ZJQ1dhekhvVjFhdF9jbmMzX3RONlBvTDNPVkppWURsaENQaURlVHladG5mcHhSNXZpLTVvSnBJT3BzaHhZT1hWV3pMaTl0MmhyV0sxTkJUX3RBOVpDcGwtSzVrRlFVYVphcjhLel84?oc=5"
+    "https://news.google.com/rss/articles/CBMid0FVX3lxTE1Ya3hmWERFd2ZJQ1dhekhvVjFhdF9jbmMzX3RONlBvTDNPVkppWURsaENQaURlVHladG5mcHhSNXZpLTVvSnBJT3BzaHhZT1hWV3pMaTl0MmhyV0sxTkJUX3RBOVpDcGwtSzVrRlFVYVphcjhLel84?oc=5",
+    "https://economictimes.indiatimes.com/wealth/invest/fd-interest-rate-hike-2026-inflation-is-up-again-should-you-invest-in-fds-now-or-wait-for-interest-rates-to-rise-further/articleshow/134913291.cms"
   ]
 }

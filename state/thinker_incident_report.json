@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-10-11T18:54:32.161761+00:00",
+  "timestamp": "2026-10-13T10:55:41.827569+00:00",
   "phase": "TAMIL_PIPELINE_ORCHESTRATION",
   "severity": "CRITICAL",
   "error_code": "ERR_PIPELINE_HALT",
-  "root_cause_analysis": "The editorial engine's numeric validation failed during fact-checking in compose_from_master. The generated Tamil deck introduced hallucinated percentage metrics (['10%', '20%', '30%', '5%', '6%', '7%']) that were not present in the master source context metrics (['10', '2026', '24', '56.414201', '₹5lakh']). The subsequent automatic repair retry loop failed to ground the deck metrics to the source data, triggering a terminal ValueError.",
+  "root_cause_analysis": "The editorial engine failed numeric fact-checking during Tamil deck composition. The generated carousel deck contained unsupported duration metrics ('1year', '3month') that could not be verified against the source metrics pool (['1%', '10', '2026', '2lakh', '30', '43', '5.54%']). This triggered a safety block to prevent metric hallucinations from publishing.",
   "reproducibility": "DETERMINISTIC",
   "automated_remediation": {
     "action": "SAFE_SHUTDOWN",
@@ -11,9 +11,8 @@
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Inspect the master input context for the evening edition to verify whether the source factual metrics accurately reflect the input data.",
-    "Refine the system prompt in src/editorial_engine.py to strictly forbid introducing synthetic or explanatory percentages not found in the source metrics list.",
-    "Enhance the retry prompt mechanism with explicit guidance to remove ungrounded metric tokens when repair_note indicates numeric mismatch.",
-    "Re-run the pipeline with the target edition: 'python engine.py --edition evening' once prompt constraints or master context are corrected."
+    "Inspect master source data to check if duration metrics ('1year', '3month') were omitted from source extraction or hallucinated during translation.",
+    "Update src/editorial_engine.py metric normalization or extraction rules if '1year' and '3month' are valid derived metrics.",
+    "Re-run the pipeline once source metrics and deck metrics are strictly aligned or properly normalized."
   ]
 }
