@@ -1,5 +1,5 @@
 from src.numeric_evidence import extract_metrics
-from src.editorial_engine import EditorialEngine
+from src.editorial_engine import EditorialEngine, FACT_CHECK_REPAIR_GUIDANCE
 
 
 def engine():
@@ -48,3 +48,20 @@ def test_unitless_currency_not_in_source_still_rejected():
     topic = {"raw_text": "thresholds of ₹1 crore and ₹5 crore"}
     ok, _ = ed._verify_numeric_facts({"slides": [{"title": "pay ₹7"}], "caption": ""}, topic)
     assert ok is False
+
+
+def test_repair_guidance_names_duration_tokens():
+    assert "1year" in FACT_CHECK_REPAIR_GUIDANCE
+    assert "3month" in FACT_CHECK_REPAIR_GUIDANCE
+
+
+def test_repair_guidance_requires_explicit_source_duration():
+    g = FACT_CHECK_REPAIR_GUIDANCE.lower()
+    assert "explicitly present in source evidence" in g
+    assert "same number and duration unit" in g
+
+
+def test_repair_guidance_disallows_inference_and_keeps_gate():
+    g = FACT_CHECK_REPAIR_GUIDANCE.lower()
+    assert "do not infer" in g
+    assert "do not weaken or bypass the numeric fact-check gate" in g
