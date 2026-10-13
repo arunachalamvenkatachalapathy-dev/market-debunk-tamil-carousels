@@ -17,6 +17,8 @@ from src.thinker_engine import ThinkerEngine
 
 logger = logging.getLogger(__name__)
 
+FACT_CHECK_REPAIR_GUIDANCE = "Use only source-supported metric tokens. Keep each number paired with its source unit; do not infer durations like 1year or 3month from a year, trend, or context. Include a year/month duration only when that same number and duration unit are explicitly present in source evidence; otherwise remove it. Do not weaken or bypass the numeric fact-check gate."
+
 
 class EditorialEngine:
     """
@@ -99,6 +101,7 @@ Return valid JSON only with "caption" and "slides" (exactly 8 slide objects). Ea
             prompt += (
                 "\n\nSTRICT FACT-CHECK REPAIR: your previous draft was rejected: " + str(repair_note)[:600] +
                 "\nRewrite the carousel using ONLY numbers that appear in the source text above; remove any other percentage, amount or year."
+                + " " + FACT_CHECK_REPAIR_GUIDANCE
             )
 
         models_to_try = [
