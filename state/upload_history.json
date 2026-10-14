@@ -1445,6 +1445,36 @@
       },
       "insights_fetched_48h": false,
       "insights": {}
+    },
+    {
+      "title": "US Swaps Bets Backfire, Wiping Out Billions From Funds in Chile",
+      "media_id": "17986068057086439",
+      "timestamp": "2026-10-14T05:12:12.342482+00:00",
+      "topic_category": "VALUATION_MYTH",
+      "hook_archetype": "MATH_BREAKDOWN",
+      "hashtag_cluster": "default",
+      "publish_results": {
+        "instagram": {
+          "success": true,
+          "media_id": "17986068057086439",
+          "permalink": "https://www.instagram.com/p/Dedmmg8lAfm/"
+        },
+        "facebook": {
+          "success": true,
+          "post_id": "1297757220087165_122119478379463457",
+          "url": "https://www.facebook.com/1297757220087165_122119478379463457"
+        },
+        "telegram": {
+          "success": false,
+          "status": "skipped"
+        },
+        "linkedin": {
+          "success": false,
+          "status": "skipped"
+        }
+      },
+      "insights_fetched_48h": false,
+      "insights": {}
     }
   ]
 }
