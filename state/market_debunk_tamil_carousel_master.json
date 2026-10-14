@@ -1,78 +1,79 @@
 {
   "topic": {
-    "title": "US Swaps Bets Backfire, Wiping Out Billions From Funds in Chile",
+    "title": "Senior citizen loses Rs 2.20 crore in fake CBI call scam - Telangana Today",
     "archetype": "market_breaking_news",
     "archetype_name": "Breaking Financial News Debunk",
-    "topic_category": "WEALTH_LEAK",
-    "viral_demand_score": 88.6,
-    "source": "Livemint Markets",
-    "source_snippet": "The pension funds used by millions of Chileans are racing to close out bets on US interest rates that backfired after the Iran war unleashed a global inflation shock, exposing them to billions of dollars of losses.",
-    "source_url": "https://www.livemint.com/market/us-swaps-bets-backfire-wiping-out-billions-from-funds-in-chile-11791918231220.html",
-    "raw_text": "US Swaps Bets Backfire, Wiping Out Billions From Funds in Chile. The pension funds used by millions of Chileans are racing to close out bets on US interest rates that backfired after the Iran war unleashed a global inflation shock, exposing them to billions of dollars of losses.",
-    "numbers_detected": [],
-    "published_at": "2026-10-14T00:33:50+05:30",
-    "age_hours": 10.1,
-    "retrieved_at": "2026-10-14T05:09:52.941947+00:00",
+    "topic_category": "MARKET_TRAP",
+    "viral_demand_score": 77.4,
+    "source": "Telangana Today",
+    "source_snippet": "Senior citizen loses Rs 2.20 crore in fake CBI call scam&nbsp;&nbsp;Telangana Today",
+    "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPSDc0MFFlbnhyTTFlYzhJNUxOYWh5ZFZobkRaTzljNHBlbVVyOUZ0UlZRUUhNZ0xPUlMwaFN0cE9MNlBmVGpXZ2VmU01UZjBOZWctS2hIQXFHdHE0QWk5ZTB6M3Ntb1hQMlUwa08xb01vbHp4WnZmWElOYjIzWThOYy1MRGVCanpjQTJz?oc=5",
+    "raw_text": "Senior citizen loses Rs 2.20 crore in fake CBI call scam - Telangana Today. Senior citizen loses Rs 2.20 crore in fake CBI call scam&nbsp;&nbsp;Telangana Today",
+    "numbers_detected": [
+      "2.20",
+      "2.20"
+    ],
+    "published_at": "2026-10-14T11:30:23+00:00",
+    "age_hours": 0.2,
+    "retrieved_at": "2026-10-14T11:40:39.881065+00:00",
     "date": "14 Oct 2026",
     "from_live_api": true,
-    "evidence_snapshot": "Source: Livemint Markets | Published: 2026-10-14T00:33:50+05:30 (10.1h ago) | Headline: US Swaps Bets Backfire, Wiping Out Billions From Funds in Chile | Context: US Swaps Bets Backfire, Wiping Out Billions From Funds in Chile. The pension funds used by millions of Chileans are racing to close out bets on US interest rates that backfired after the Iran war unleashed a global inflation shock, exposing them to billions of dollars of losses.",
+    "evidence_snapshot": "Source: Telangana Today | Published: 2026-10-14T11:30:23+00:00 (0.2h ago) | Headline: Senior citizen loses Rs 2.20 crore in fake CBI call scam - Telangana Today | Context: Senior citizen loses Rs 2.20 crore in fake CBI call scam - Telangana Today. Senior citizen loses Rs 2.20 crore in fake CBI call scam&nbsp;&nbsp;Telangana Today",
     "news_analysis": {
-      "headline_hook": "Iran war தந்த Inflation Shock... US Rate Bets தப்பாய் முடிஞ்சு Billions Loss ஆன Chilean Pension Funds கத!",
-      "breaking_event_summary": "Chilean pension funds are liquidating positions in US interest rate swaps after a global inflation shock triggered by the Iran war caused significant financial losses.",
-      "retail_illusion": "Are international interest rate bets too complex for my local pension or mutual fund to be involved in?",
-      "institutional_reality": "Large institutional funds often use complex derivatives like interest rate swaps to hedge or speculate, meaning local retail investors can be indirectly exposed to global geopolitical volatility through their fund's asset allocation.",
-      "citable_metrics": [],
-      "debunk_category": "VALUATION_MYTH",
-      "actionable_retail_rule": "Review your mutual fund or pension scheme's latest portfolio disclosure to identify if they hold foreign derivatives or interest rate-sensitive instruments.",
-      "lead_magnet": {
-        "title": "The Global Contagion Checklist",
-        "description": "A guide to understanding how foreign market volatility impacts your domestic savings."
-      },
-      "carousel_outline": [
-        "What happened in Chile: A breakdown of the interest rate swap failure.",
-        "The Iran war connection: How geopolitical shocks trigger global inflation.",
-        "Why your fund manager might be taking international risks.",
-        "Three steps to check your fund's exposure to global derivatives."
+      "headline_hook": "கஷ்டப்பட்டு சேர்த்த சேமிப்பு காலியான நிமிடம்: ₹2.20 கோடி எப்படி காணாமல் போனது?",
+      "breaking_event_summary": "A senior citizen in Telangana reported a loss of Rs 2.20 crore after being targeted by individuals posing as CBI officials.",
+      "retail_illusion": "Is my life savings safe if I only interact with official-sounding authorities over the phone?",
+      "institutional_reality": "Law enforcement agencies do not conduct investigations or demand financial transfers via phone calls or digital messaging platforms.",
+      "citable_metrics": [
+        "Rs 2.20 crore"
       ],
-      "highlight_word": "Inflation Shock",
-      "editorial_directive": "Use everyday spoken Tanglish terms like 'Inflation Shock' and 'Swap Bets'. Maintain strict adherence to the source facts without adding fabricated numbers or speculative localized advice."
+      "debunk_category": "LIQUIDITY_TRAP",
+      "actionable_retail_rule": "Verify the identity of any official caller by visiting the department's verified physical office or official government website before sharing financial details or initiating transfers.",
+      "lead_magnet": {},
+      "carousel_outline": [
+        "The anatomy of a fake authority scam",
+        "Why digital transfers are often irreversible",
+        "Steps to verify official government communication",
+        "Protecting senior citizens from financial exploitation"
+      ],
+      "highlight_word": "சேமிப்பு",
+      "editorial_directive": "Tanglish-ல் எழுதும்போது, 'Digital Arrest' மற்றும் 'KYC Fraud' போன்ற வார்த்தைகளை ஆங்கிலத்திலேயே பயன்படுத்துங்கள். வாக்கியங்கள் குட்டையாகவும், அதிகப்படியான எமோஜிகளை தவிர்த்தும், நேரடியாக வாசகனின் பணப்பையை (Wallet) பாதிக்கும் விதமாக இருக்க வேண்டும்."
     },
     "darwin_result": {
       "winning_candidate": {
         "id": "B",
         "archetype": "MATH_BREAKDOWN",
-        "headline_hook": "Iran war தந்த Inflation Shock... US Rate Bets தப்பாய் முடிஞ்சு Billions Loss ஆன Chilean Pension Funds கத!",
-        "highlight_word": "Inflation Shock",
+        "headline_hook": "கஷ்டப்பட்டு சேர்த்த சேமிப்பு காலியான நிமிடம்: ₹2.20 கோடி எப்படி காணாமல் போனது?",
+        "highlight_word": "சேமிப்பு",
         "scores": {
-          "curiosity_gap": 9.0,
-          "evidence_integrity": 10.0,
-          "retail_actionability": 8.0,
-          "friction_quotient": 9.0,
-          "total": 36.0
+          "curiosity_gap": 8,
+          "evidence_integrity": 10,
+          "retail_actionability": 9,
+          "friction_quotient": 9,
+          "total": 36
         },
-        "critic_critique": "Directly ties cause (Iran war inflation shock) to macro financial breakdown (US swap bets failing), sticking 100% to source facts."
+        "critic_critique": "இது ஒரு சாதாரண முதலீட்டாளரின் மிகப்பெரிய பயத்தை தொடுகிறது. பணத்தை இழந்த பின் வருந்துவதை விட, முன் எச்சரிக்கையாக இருக்க வேண்டிய அவசியத்தை இது தெளிவாக விளக்குகிறது."
       },
       "critic_score": 9.0,
       "archetype": "MATH_BREAKDOWN",
-      "selection_rationale": "Candidate B effectively captures the cause-and-effect chain (Iran war -> Inflation Shock -> US Swap bets backfire -> Pension fund losses) using verified source data, maintaining 100% evidence integrity while delivering strong curiosity for retail readers.",
-      "final_editorial_directive": "Use everyday spoken Tanglish terms like 'Inflation Shock' and 'Swap Bets'. Maintain strict adherence to the source facts without adding fabricated numbers or speculative localized advice."
+      "selection_rationale": "Candidate B மிகச்சிறந்த சமநிலையை கொண்டுள்ளது. இது வெறும் குற்றத்தைப் பற்றி பேசாமல், அந்த இழப்பு ஒரு சாதாரண மனிதனின் வாழ்க்கை சேமிப்பை எப்படி பாதிக்கிறது என்பதை சுட்டிக்காட்டி, வாசகனை சிந்திக்க வைக்கிறது.",
+      "final_editorial_directive": "Tanglish-ல் எழுதும்போது, 'Digital Arrest' மற்றும் 'KYC Fraud' போன்ற வார்த்தைகளை ஆங்கிலத்திலேயே பயன்படுத்துங்கள். வாக்கியங்கள் குட்டையாகவும், அதிகப்படியான எமோஜிகளை தவிர்த்தும், நேரடியாக வாசகனின் பணப்பையை (Wallet) பாதிக்கும் விதமாக இருக்க வேண்டும்."
     },
-    "headline_hook": "Iran war தந்த Inflation Shock... US Rate Bets தப்பாய் முடிஞ்சு Billions Loss ஆன Chilean Pension Funds கத!",
-    "highlight_word": "Inflation Shock",
-    "editorial_directive": "Use everyday spoken Tanglish terms like 'Inflation Shock' and 'Swap Bets'. Maintain strict adherence to the source facts without adding fabricated numbers or speculative localized advice."
+    "headline_hook": "கஷ்டப்பட்டு சேர்த்த சேமிப்பு காலியான நிமிடம்: ₹2.20 கோடி எப்படி காணாமல் போனது?",
+    "highlight_word": "சேமிப்பு",
+    "editorial_directive": "Tanglish-ல் எழுதும்போது, 'Digital Arrest' மற்றும் 'KYC Fraud' போன்ற வார்த்தைகளை ஆங்கிலத்திலேயே பயன்படுத்துங்கள். வாக்கியங்கள் குட்டையாகவும், அதிகப்படியான எமோஜிகளை தவிர்த்தும், நேரடியாக வாசகனின் பணப்பையை (Wallet) பாதிக்கும் விதமாக இருக்க வேண்டும்."
   },
   "plan": {
-    "hook_headline": "Iran war தந்த Inflation Shock... US Rate Bets தப்பாய் முடிஞ்சு Billions Loss ஆன Chilean Pension Funds கத!",
-    "core_illusion": "Are international interest rate bets too complex for my local pension or mutual fund to be involved in?",
-    "hidden_reality": "Large institutional funds often use complex derivatives like interest rate swaps to hedge or speculate, meaning local retail investors can be indirectly exposed to global geopolitical volatility through their fund's asset allocation.",
-    "citable_metric": "",
-    "all_metrics": [],
-    "actionable_rule": "Review your mutual fund or pension scheme's latest portfolio disclosure to identify if they hold foreign derivatives or interest rate-sensitive instruments.",
-    "breaking_event": "Chilean pension funds are liquidating positions in US interest rate swaps after a global inflation shock triggered by the Iran war caused significant financial losses.",
-    "lead_magnet": {
-      "title": "The Global Contagion Checklist",
-      "description": "A guide to understanding how foreign market volatility impacts your domestic savings."
-    },
+    "hook_headline": "கஷ்டப்பட்டு சேர்த்த சேமிப்பு காலியான நிமிடம்: ₹2.20 கோடி எப்படி காணாமல் போனது?",
+    "core_illusion": "Is my life savings safe if I only interact with official-sounding authorities over the phone?",
+    "hidden_reality": "Law enforcement agencies do not conduct investigations or demand financial transfers via phone calls or digital messaging platforms.",
+    "citable_metric": "Rs 2.20 crore",
+    "all_metrics": [
+      "Rs 2.20 crore"
+    ],
+    "actionable_rule": "Verify the identity of any official caller by visiting the department's verified physical office or official government website before sharing financial details or initiating transfers.",
+    "breaking_event": "A senior citizen in Telangana reported a loss of Rs 2.20 crore after being targeted by individuals posing as CBI officials.",
+    "lead_magnet": {},
     "banned_phrases": [
       "guaranteed wealth",
       "quick money",
@@ -81,162 +82,182 @@
     ]
   },
   "deck": {
-    "caption": "Chile-oda Pension Funds-ku US Interest Rate bets-nala vandha periya loss pathu irukeengala? Global geopolitical events epdi nammala indirect-a affect pannum-nu therinjukonga. Unga portfolio-la foreign exposure iruka? Check panni paarunga! #MarketDebunk #ChilePensionCrisis #GlobalMarkets #InvestmentAwareness #MutualFundTips",
+    "caption": "Senior citizen ஒருவர் fake CBI call மற்றும் digital arrest பயத்தினால் Rs 2.20 crore பணத்தை இழந்துள்ளார். Official authority போல போனில் பேசி மிரட்டினால் உடனே பணத்தை transfer செய்ய வேண்டுமா? உங்கள் family members-க்கு இந்த digital arrest scam awareness இருக்கிறதா?\n\n#DigitalArrest #CyberCrimeAwareness #FakeCBICall #TamilFinance #MarketDebunk",
     "slides": [
       {
         "role": "hook",
-        "title": "Chile Pension Funds-ku vandha periya 'Loss'!",
+        "title": "Fake CBI Call Scam: Life Savings எப்படி காலி ஆச்சு?",
         "card_text": "",
         "slide_index": 1,
         "tag": "#MARKETDEBUNK",
         "title_lines": [
-          "Chile Pension",
-          "<span class='highlight-box'>Funds-ku vandha</span>",
-          "periya 'Loss'!"
+          "Fake CBI",
+          "<span class='highlight-box'>Call Scam:</span>",
+          "Life Savings"
         ]
       },
       {
         "role": "value_1",
-        "title": "Enna nadanthuchu?",
-        "card_text": "Chile pension funds, US interest rates mela 'Swaps' bets pannirunthanga. Aana, Iran war-nala global inflation shock vandhapo, US rates plan panna mathiri pogala. Idhu periya financial disaster-a mudinjuruku.",
+        "title": "The Trap: Digital Arrest Illusion",
+        "comparison_data": {
+          "myth": "CBI அல்லது Police வீடியோ காலில் வந்து கைது செய்ய முடியும், வழக்கை முடிக்க பணத்தை security deposit-ஆக அனுப்ப வேண்டும்.",
+          "reality": "இந்திய சட்டத்தில் Digital Arrest என்ற நடைமுறையே கிடையாது. எந்த investigation agency-யும் போன் காலில் பணம் கேட்காது."
+        },
         "slide_index": 2,
         "tag": "#MARKETDEBUNK",
         "title_lines": [
-          "<span class='highlight-box'>Enna nadanthuchu?</span>"
+          "The Trap:",
+          "<span class='highlight-box'>Digital Arrest</span>",
+          "Illusion"
         ]
       },
       {
         "role": "value_2",
-        "title": "Swap Bets-na enna?",
-        "card_text": "Idhu oru complex derivative instrument. Interest rate fluctuations-la irundhu profit panna illa hedge panna funds idhai use pannuvanga. Aana, market expect panna mathiri illana, idhu periya risk-a maaridum.",
+        "title": "Scam Modus Operandi",
+        "flowchart_data": [
+          {
+            "text": "Fake courier அல்லது Aadhaar misuse பற்றி சொல்லி போன் கால் வருது."
+          },
+          {
+            "text": "CBI அல்லது Police officer போல யூனிஃபார்ம் அணிந்து Video call பண்றாங்க."
+          },
+          {
+            "text": "Bank account verification என்று சொல்லி பணத்தை transfer செய்ய வைக்கிறாங்க."
+          }
+        ],
         "slide_index": 3,
         "tag": "#MARKETDEBUNK",
         "title_lines": [
-          "<span class='highlight-box'>Swap Bets-na</span>",
-          "enna?"
+          "<span class='highlight-box'>Scam Modus</span>",
+          "Operandi"
         ]
       },
       {
         "role": "value_3",
-        "title": "Retail Investor-ku idhula enna problem?",
-        "card_text": "Namma local mutual funds illa pension schemes-kooda global markets-la invest pannalam. Complex derivatives use pannum bodhu, namakku theriyama global volatility-oda impact nammala vandhu serudhu.",
+        "title": "Massive Life Savings Loss",
+        "stat_data": {
+          "metric": "Rs 2.20 crore",
+          "label": "Total Scam Amount",
+          "context": "முழு வாழ்நாள் சேமிப்பான <strong>Rs 2.20 crore</strong> பணத்தை பயமுறுத்தி scammer account-க்கு அனுப்ப வைத்துள்ளனர்."
+        },
         "slide_index": 4,
         "tag": "#MARKETDEBUNK",
         "title_lines": [
-          "Retail Investor-ku",
-          "<span class='highlight-box'>idhula enna</span>",
-          "problem?"
+          "Massive Life",
+          "<span class='highlight-box'>Savings Loss</span>"
         ]
       },
       {
         "role": "value_4",
-        "title": "Myth vs Reality",
-        "myth": "International bets ellam periya hedge funds-ku mattum dhaan.",
-        "reality": "Institutional funds-um complex derivatives use panni global bets pannuvanga, idhu indirect-a retail investors-oda portfolio-va affect pannum.",
+        "title": "Why Senior Citizens Are Targeted?",
+        "card_text": "Digital awareness குறைவாக இருப்பது மற்றும் சட்டத்தின் மீதான பயத்தை scammers exploit பண்றாங்க. Fear of arrest காட்டி நிதானமாக யோசிக்க விடாமல் immediate fund transfer செய்ய push பண்றாங்க.",
         "slide_index": 5,
         "tag": "#MARKETDEBUNK",
         "title_lines": [
-          "<span class='highlight-box'>Myth vs</span>",
-          "Reality"
-        ],
-        "card_text": "International bets ellam periya hedge funds-ku mattum dhaan. Institutional funds-um complex derivatives use panni global bets pannuvanga, idhu indirect-a retail investors-oda portfolio-va affect pannum."
+          "Why Senior",
+          "<span class='highlight-box'>Citizens Are</span>",
+          "Targeted?"
+        ]
       },
       {
         "role": "value_5",
-        "title": "Checklist: Unga Fund-a check pannunga",
+        "title": "Verification Checklist",
         "checklist_data": [
           {
-            "status": "pass",
-            "text": "Fund-oda latest 'Portfolio Disclosure' document-a download pannunga."
+            "status": "fail",
+            "text": "WhatsApp அல்லது Skype-ல் வரும் fake police video calls-ஐ நம்புவது."
           },
           {
             "status": "pass",
-            "text": "Foreign derivatives illa interest rate-sensitive instruments iruka-nu paarunga."
+            "text": "Official government website அல்லது physical police station சென்று நேரில் verify செய்வது."
+          },
+          {
+            "status": "pass",
+            "text": "அவசரப்பட்டு எந்த unknown third party bank account-க்கும் பணத்தை அனுப்பாமல் இருப்பது."
           }
         ],
         "slide_index": 6,
         "tag": "#MARKETDEBUNK",
         "title_lines": [
-          "Checklist: Unga",
-          "<span class='highlight-box'>Fund-a check</span>",
-          "pannunga"
+          "<span class='highlight-box'>Verification Checklist</span>"
         ]
       },
       {
         "role": "value_6",
-        "title": "Enna panna mudiyum?",
-        "card_text": "Ellam funds-um risk-aana bets pannuvanga-nu solla mudiyadhu. Aana, ungala suthi nadakura global events epdi ungala affect pannum-nu therinjukiradhu romba mukkiyam.",
+        "title": "Golden Rule of Safety",
+        "card_text": "CBI, ED, அல்லது Police எப்போதுமே digital messaging platforms வழியாக investigation நடத்த மாட்டாங்க. அதிகாரப்பூர்வ identity-யை நேரில் சரிபார்க்காமல் யாருக்கும் funds transfer செய்யாதீர்கள்.",
         "slide_index": 7,
         "tag": "#MARKETDEBUNK",
         "title_lines": [
-          "<span class='highlight-box'>Enna panna</span>",
-          "mudiyum?"
+          "Golden Rule",
+          "<span class='highlight-box'>of Safety</span>"
         ]
       },
       {
         "role": "bookmark_save",
-        "title": "Action Plan",
-        "cta_detail": "Ippo ve ungala fund-oda 'Fact Sheet' open panni, foreign exposure iruka-nu check pannunga. Indha info useful-a irundha, unga investor friends-kooda share pannunga!",
+        "title": "Protect Your Hard-Earned Wealth",
+        "cta_detail": "Save this post. உங்கள் வீட்டில் உள்ள senior citizens-க்கு இந்த scam பற்றி எச்சரித்து, official call வந்தால் நேரில் verify செய்ய சொல்லுங்கள்.",
         "slide_index": 8,
         "tag": "#MARKETDEBUNK",
         "title_lines": [
-          "<span class='highlight-box'>Action Plan</span>"
+          "Protect Your",
+          "<span class='highlight-box'>Hard-Earned Wealth</span>"
         ],
         "card_text": ""
       }
     ],
     "fact_check_status": "verified_pass",
     "audio_recommendation": {
-      "title": "Azhagiya Theeye (Acoustic Minimal)",
-      "artist": "Harris Jayaraj / Classical Touch",
-      "bpm": 108,
-      "vibe": "Calm Rational Thinking",
-      "reels_boost_tier": "High Retention",
-      "search_query": "Harris Jayaraj Instrumental Acoustic"
+      "title": "Time (Institutional Minimalist Mix)",
+      "artist": "Hans Zimmer",
+      "bpm": 124,
+      "vibe": "Deep Mathematical Compounding",
+      "reels_boost_tier": "Top Tier",
+      "search_query": "Hans Zimmer Time Inception"
     }
   },
   "audio": {
-    "title": "Azhagiya Theeye (Acoustic Minimal)",
-    "artist": "Harris Jayaraj / Classical Touch",
-    "bpm": 108,
-    "vibe": "Calm Rational Thinking",
-    "reels_boost_tier": "High Retention",
-    "search_query": "Harris Jayaraj Instrumental Acoustic"
+    "title": "Time (Institutional Minimalist Mix)",
+    "artist": "Hans Zimmer",
+    "bpm": 124,
+    "vibe": "Deep Mathematical Compounding",
+    "reels_boost_tier": "Top Tier",
+    "search_query": "Hans Zimmer Time Inception"
   },
-  "run_id": "20261014_051047",
+  "run_id": "20261014_114445",
   "slide_count": 8,
   "darwin_result": {
     "winning_candidate": {
       "id": "B",
       "archetype": "MATH_BREAKDOWN",
-      "headline_hook": "Iran war தந்த Inflation Shock... US Rate Bets தப்பாய் முடிஞ்சு Billions Loss ஆன Chilean Pension Funds கத!",
-      "highlight_word": "Inflation Shock",
+      "headline_hook": "கஷ்டப்பட்டு சேர்த்த சேமிப்பு காலியான நிமிடம்: ₹2.20 கோடி எப்படி காணாமல் போனது?",
+      "highlight_word": "சேமிப்பு",
       "scores": {
-        "curiosity_gap": 9.0,
-        "evidence_integrity": 10.0,
-        "retail_actionability": 8.0,
-        "friction_quotient": 9.0,
-        "total": 36.0
+        "curiosity_gap": 8,
+        "evidence_integrity": 10,
+        "retail_actionability": 9,
+        "friction_quotient": 9,
+        "total": 36
       },
-      "critic_critique": "Directly ties cause (Iran war inflation shock) to macro financial breakdown (US swap bets failing), sticking 100% to source facts."
+      "critic_critique": "இது ஒரு சாதாரண முதலீட்டாளரின் மிகப்பெரிய பயத்தை தொடுகிறது. பணத்தை இழந்த பின் வருந்துவதை விட, முன் எச்சரிக்கையாக இருக்க வேண்டிய அவசியத்தை இது தெளிவாக விளக்குகிறது."
     },
     "critic_score": 9.0,
     "archetype": "MATH_BREAKDOWN",
-    "selection_rationale": "Candidate B effectively captures the cause-and-effect chain (Iran war -> Inflation Shock -> US Swap bets backfire -> Pension fund losses) using verified source data, maintaining 100% evidence integrity while delivering strong curiosity for retail readers.",
-    "final_editorial_directive": "Use everyday spoken Tanglish terms like 'Inflation Shock' and 'Swap Bets'. Maintain strict adherence to the source facts without adding fabricated numbers or speculative localized advice."
+    "selection_rationale": "Candidate B மிகச்சிறந்த சமநிலையை கொண்டுள்ளது. இது வெறும் குற்றத்தைப் பற்றி பேசாமல், அந்த இழப்பு ஒரு சாதாரண மனிதனின் வாழ்க்கை சேமிப்பை எப்படி பாதிக்கிறது என்பதை சுட்டிக்காட்டி, வாசகனை சிந்திக்க வைக்கிறது.",
+    "final_editorial_directive": "Tanglish-ல் எழுதும்போது, 'Digital Arrest' மற்றும் 'KYC Fraud' போன்ற வார்த்தைகளை ஆங்கிலத்திலேயே பயன்படுத்துங்கள். வாக்கியங்கள் குட்டையாகவும், அதிகப்படியான எமோஜிகளை தவிர்த்தும், நேரடியாக வாசகனின் பணப்பையை (Wallet) பாதிக்கும் விதமாக இருக்க வேண்டும்."
   },
   "visual_audit": {
     "passed": true,
-    "average_score": 8.5,
+    "average_score": 9.0,
     "slide_1_report": {
       "overall_score": 8.5,
       "passed": true,
-      "critique_summary": "The Tamil text 'Funds-ku vandha' within the green highlight block is technically written in Transliterated Tamil (Tanglish) rather than pure Tamil script. While the visual contrast is excellent and the layout is clean, the linguistic choice of mixing Latin and Tamil script might alienate some readers looking for pure Tamil content. The typography is bold and legible for mobile consumption.",
+      "critique_summary": "The typography is clean, modern, and highly legible for a mobile-first carousel format. The use of a bold sans-serif typeface combined with the green highlight box effectively directs user focus. While the English typography is excellent, the lack of Tamil Unicode text on this specific slide makes criterion #1 non-applicable for this instance; the slide is currently purely in English.",
       "suggested_css_adjustments": {
-        "notes": "Ensure the green highlight block has slightly more vertical padding for better breathing room around the ascenders/descenders. Consider using pure Tamil script (e.g., 'நிதியத்திற்கு வந்த மிகப்பெரிய இழப்பு') for better cultural relevance and linguistic consistency."
+        "notes": "Ensure that if Tamil text is added to future slides, the line-height is increased (e.g., to 1.5) to prevent vertical overlapping of vowel signs and conjuncts, as Tamil typography requires more vertical clearance than Latin script."
       }
     },
     "slide_count_audited": 2
   },
-  "exported_at": "2026-10-14T05:10:56.267742+00:00"
+  "exported_at": "2026-10-14T11:44:51.917682+00:00"
 }
