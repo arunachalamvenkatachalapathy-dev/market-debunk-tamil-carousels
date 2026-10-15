@@ -20,7 +20,7 @@ class TamilVisualInspectorAgent:
     def __init__(self, api_key: Optional[str] = None):
         self.api_key = api_key or settings.GEMINI_API_KEY
         self.client = genai.Client(api_key=self.api_key) if self.api_key else None
-        self.models = ["gemini-3.1-flash-lite", "gemini-2.5-flash", "gemini-3.6-flash", "gemini-3.7-flash"]
+        self.models = ["gemini-3.8-flash", "gemini-3.1-flash-lite"]
 
     def audit_slide_image(self, slide_path: Any, slide_number: int = 1) -> Dict[str, Any]:
         slide_path = Path(slide_path)
