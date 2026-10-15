@@ -1527,6 +1527,36 @@
       },
       "insights_fetched_48h": false,
       "insights": {}
+    },
+    {
+      "title": "Sensex today | Stock Market Live Updates: Sensex jumps over 370 pts to 73,154, Nifty up 103 pts to 22,725 in early trade",
+      "media_id": "18108438257206203",
+      "timestamp": "2026-10-15T04:22:21.562106+00:00",
+      "topic_category": "VALUATION_MYTH",
+      "hook_archetype": "MATH_BREAKDOWN",
+      "hashtag_cluster": "default",
+      "publish_results": {
+        "instagram": {
+          "success": true,
+          "media_id": "18108438257206203",
+          "permalink": "https://www.instagram.com/p/DegFrY1GHsB/"
+        },
+        "facebook": {
+          "success": true,
+          "post_id": "1297757220087165_122119725699463457",
+          "url": "https://www.facebook.com/1297757220087165_122119725699463457"
+        },
+        "telegram": {
+          "success": false,
+          "status": "skipped"
+        },
+        "linkedin": {
+          "success": false,
+          "status": "skipped"
+        }
+      },
+      "insights_fetched_48h": false,
+      "insights": {}
     }
   ]
 }
