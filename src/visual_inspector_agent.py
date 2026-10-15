@@ -20,7 +20,48 @@ class TamilVisualInspectorAgent:
     def __init__(self, api_key: Optional[str] = None):
         self.api_key = api_key or settings.GEMINI_API_KEY
         self.client = genai.Client(api_key=self.api_key) if self.api_key else None
-        self.models = ["gemini-3.1-flash-lite", "gemini-2.5-flash", "gemini-3.6-flash", "gemini-3.7-flash"]
+        self.models = ["gemini-3.8-flash", "gemini-3.1-flash-lite"]
+
+    def audit_slide_image(self, slide_path: Any, slide_number: int = 1) -> Dict[str, Any]:
+        slide_path = Path(slide_path)
+        if not self.client or not slide_path.exists():
+            return {"passed": False, "overall_score": 0, "feedback": "Visual audit unavailable."}
+
+        try:
+            with open(slide_path, "rb") as f:
+                img_bytes = f.read()
+
+            part = types.Part.from_bytes(data=img_bytes, mime_type="image/png")
+            prompt = f"""You are a Master Visual Typographer inspecting Slide #{slide_number} of a Tamil financial carousel.
+CRITERIA:
+1. Tamil Unicode Script Clarity: Are Tamil glyphs and vowels rendered cleanly with zero overlapping or broken rendering?
+2. Mobile Headline Contrast: Is the headline high-contrast and legible at small scale?
+3. Highlight Box: Is the highlighted word balanced and visible?
+
+Return JSON strictly:
+{{
+Market Debunk Tamil - Multimodal Visual Inspector Agent
+Inspects rendered Tamil slide screenshots (Slide 1 Hook & Slide 2 Anchor) using Gemini Vision.
+Verifies Tamil Unicode font clarity, contrast, and layout balance.
+"""
+
+import json
+import logging
+from pathlib import Path
+from typing import Dict, Any, List, Optional
+from google import genai
+from google.genai import types
+
+from src.config import settings
+
+logger = logging.getLogger("TamilVisualInspectorAgent")
+
+
+class TamilVisualInspectorAgent:
+    def __init__(self, api_key: Optional[str] = None):
+        self.api_key = api_key or settings.GEMINI_API_KEY
+        self.client = genai.Client(api_key=self.api_key) if self.api_key else None
+        self.models = ["gemini-3.8-flash", "gemini-3.1-flash-lite"]
 
     def audit_slide_image(self, slide_path: Any, slide_number: int = 1) -> Dict[str, Any]:
         slide_path = Path(slide_path)
