@@ -5,6 +5,7 @@ Verifies Tamil Unicode font clarity, contrast, and layout balance.
 """
 
 import json
+import time
 import logging
 from pathlib import Path
 from typing import Dict, Any, List, Optional
@@ -46,25 +47,36 @@ Return JSON strictly:
   "suggested_css_adjustments": {{"notes": "None"}}
 }}"""
 
-            for m in self.models:
-                try:
-                    cfg = types.GenerateContentConfig(response_mime_type="application/json")
-                    res = self.client.models.generate_content(model=m, contents=[part, prompt], config=cfg)
-                    if res.text:
-                        clean = res.text.strip()
-                        if clean.startswith("```json"):
-                            clean = clean[7:]
-                        if clean.endswith("```"):
-                            clean = clean[:-3]
-                        audit = json.loads(clean.strip())
-                        audit["passed"] = audit.get("passed") is True and audit.get("overall_score", 0) >= 8.0
-                        logger.info("👁️ Tamil Visual Inspector (%s) Slide #%d Score: %.1f/10",
-                                    m, slide_number, audit.get("overall_score", 8.0))
-                        return audit
-                except Exception as model_err:
-                    logger.warning("Tamil Visual Inspector model %s failed: %s", m, model_err)
-                    continue
-
+            # Resilience only: if every model fails with a transient capacity error, wait and sweep again.
+            # The audit result itself is unchanged: it must still score >= 8.0 and pass to publish.
+            for _wait in (0, 20, 45, 90):
+                if _wait:
+                    logger.warning('Tamil Visual Inspector: all models transiently unavailable; waiting %ds before retry', _wait)
+                    time.sleep(_wait)
+                _all_transient = True
+                for m in self.models:
+                    try:
+                        cfg = types.GenerateContentConfig(response_mime_type="application/json")
+                        res = self.client.models.generate_content(model=m, contents=[part, prompt], config=cfg)
+                        if res.text:
+                            clean = res.text.strip()
+                            if clean.startswith("```json"):
+                                clean = clean[7:]
+                            if clean.endswith("```"):
+                                clean = clean[:-3]
+                            audit = json.loads(clean.strip())
+                            audit["passed"] = audit.get("passed") is True and audit.get("overall_score", 0) >= 8.0
+                            logger.info("👁️ Tamil Visual Inspector (%s) Slide #%d Score: %.1f/10",
+                                        m, slide_number, audit.get("overall_score", 8.0))
+                            return audit
+                    except Exception as model_err:
+                        logger.warning("Tamil Visual Inspector model %s failed: %s", m, model_err)
+                        _msg = str(model_err)
+                        if not any(t in _msg for t in ('503', 'UNAVAILABLE', '429', 'RESOURCE_EXHAUSTED', 'high demand', 'overloaded')):
+                            _all_transient = False
+                        continue
+                if not _all_transient:
+                    break
         except Exception as e:
             logger.warning("Tamil Visual Inspector exception: %s", e)
 
