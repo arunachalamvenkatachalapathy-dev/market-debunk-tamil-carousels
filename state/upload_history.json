@@ -1579,6 +1579,36 @@
       },
       "insights_fetched_48h": false,
       "insights": {}
+    },
+    {
+      "title": "Nifty, Sensex investors alert! US bond yields remain above 5% - 5 ways this could impact your investments, portfolio",
+      "media_id": "18115531463030940",
+      "timestamp": "2026-10-16T15:29:56.791272+00:00",
+      "topic_category": "GENERAL",
+      "hook_archetype": "MATH_BREAKDOWN",
+      "hashtag_cluster": "default",
+      "publish_results": {
+        "instagram": {
+          "success": true,
+          "media_id": "18115531463030940",
+          "permalink": "https://www.instagram.com/p/Dej24VzkRy6/"
+        },
+        "facebook": {
+          "success": true,
+          "post_id": "1297757220087165_122120065677463457",
+          "url": "https://www.facebook.com/1297757220087165_122120065677463457"
+        },
+        "telegram": {
+          "success": false,
+          "status": "skipped"
+        },
+        "linkedin": {
+          "success": false,
+          "status": "skipped"
+        }
+      },
+      "insights_fetched_48h": false,
+      "insights": {}
     }
   ]
 }
