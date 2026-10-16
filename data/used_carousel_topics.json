@@ -1,11 +1,6 @@
 {
   "topics": [
     {
-      "title": "10-year Treasury yield hits highest level since 2023 as US Federal Reserve decision looms",
-      "url": "https://www.livemint.com/market/stock-market-news/10year-treasury-yield-hits-highest-level-since-2023-as-us-federal-reserve-decision-looms-11789400968499.html",
-      "timestamp": "2026-09-14T17:14:07.036039+00:00"
-    },
-    {
       "title": "BHEL approves  ₹65 crore further investment in NTPC joint venture NBPPL",
       "url": "https://www.livemint.com/market/stock-market-news/bhel-approves-rs-65-crore-further-investment-in-ntpc-joint-venture-nbppl-11789408978841.html",
       "timestamp": "2026-09-14T19:20:49.418538+00:00"
@@ -299,6 +294,11 @@
       "title": "Snabbit's expansion push comes at a cost as FY26 losses hit ₹168 crore",
       "url": "https://www.livemint.com/companies/company-results/snabbits-expansion-fy26-losses-168-crore-home-helps-workers-professionals-11792155028989.html",
       "timestamp": "2026-10-16T14:30:46.758867+00:00"
+    },
+    {
+      "title": "Bank of America ignored warnings over scam risks with $6m client, SEB to pay $33m after AML review, how to move from AI pilots to implementation - LinkedIn",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPa3RLb05mdnNfMVpwc19ScDVEbmhGZlYwLVk3ZWpmRV9mMkxrRlFVWFhHYURkYnBaVnc0UGxRZ3pidjdzYlVGcHFhTXJnR1JJaUplTjhTWEZUaU5GSk93T25PejY2QUtxdW5hTjlzU09BQ0I1dEtNN1NBay1ZQW5IcWV1X0VxY3p0Z1RzZ1piLVlFMWpOYlhB?oc=5",
+      "timestamp": "2026-10-16T14:43:56.964247+00:00"
     }
   ],
   "used_archetypes": [],
@@ -381,6 +381,7 @@
     "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPcmhySzc2R3ZIeXZMWkc4aHlQWDZIWmVTcnBldFlnMkhVUG9YUm1DWG90YzA5T0V4cmpXV0xYXzMzZG05YW1DOGwyZzVyckRyNXFMSGRCeEdaNHRsaG9scTd2bi05VV9xelJvYjhVNjN0TTZrUUtiaGtTb1Vma2NvWmprVW1ZMlNjOS1mUGNuZy1adFpxMkJMN2tBVHlSeHZObDJvVVU1TWZIS2NIb0Y2Qm9PNUlqZ3JzcXZ3TnlfTm1GZmZKaUdwR3g3T1o5Nkx2dWZreC1rV09yM0x3T0tVSDNod0hCZ9IB6wFBVV95cUxQODRETlFnOTdsaTZmaUt3STlQZjdVc0k3c0wxS2NxaURxc3kyNUEteE5NN0FmQkE0MjZPcUNNc3dQWFpYZW5YM2xTbWo3RDdWWjFjR2JLSjhraDFLaUlCTkw3VzlqSms3QV9nTlpJbFlCOFBVUkhqVHJyYTJELTBkVEF3aHR1SUVVM1pPYy1DU1EtRFBlU1k4aElwWmFMR2RZS1VzblNNWk1JR1FfLWVvNDBoTHlaU1E4T0ZuSklPQWVoeWRXaEVqVkJFalpYa0RRWU9HYWtkUkl6Ny1jZWNtT0MydlcwcnM4a1Vr?oc=5",
     "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSmFGUWtMLWluS0U4akJqSHpLLUM2azNuMm9NbTBJbnpiUWxkRFN5WWxMT0I2LV9JY0N1T2hHWXBqNkpKenN4RjVWZ0lUS0lCZDd2OHFhcmYtTmhlaXc1WTBiNGoxQ3ZyZ1gxcFkzNEZzNW9INzBFUFVhSEEtX3k1eExsNXBiXzdtMVJPR3R5Rm1mdmxiM0FVV0hPa2l2ODdlMzlrTFlaaUZhVkdGMGExa3J0R1kwNFpaYW54d2ZxQUZlQ094S1HSAcsBQVVfeXFMT2hyaW96RDQ5MlRlWVg5UmZORjRqdUJGZ2RMcnZRdmdHalhEZ2pEMWpWTGpmWTZCZllqdU1EQldhQ3FXUlp6Q0tReE1CSjg4Rk0yNkhyWHJ2cUxUdVp2OXlRVGF4UVNFR1ktcjVQSTZoU1Rfb1hLSEJXM3RUck9JN0VqOS1aTTdPcUI3bnpsOGRNdVRpV2ZlRlpSNFdqQkZpMVdKVEY4VXhZbDJhZENYUk81RGpoTHduSnJFU0JEVkl2ZTVzdHBLZ1oyUXc?oc=5",
     "https://www.livemint.com/money/personal-finance/home-loan-emi-how-much-salary-do-you-need-for-a-50-lakh-75-lakh-or-1-crore-home-11792131700309.html",
-    "https://www.livemint.com/companies/company-results/snabbits-expansion-fy26-losses-168-crore-home-helps-workers-professionals-11792155028989.html"
+    "https://www.livemint.com/companies/company-results/snabbits-expansion-fy26-losses-168-crore-home-helps-workers-professionals-11792155028989.html",
+    "https://news.google.com/rss/articles/CBMilwFBVV95cUxPa3RLb05mdnNfMVpwc19ScDVEbmhGZlYwLVk3ZWpmRV9mMkxrRlFVWFhHYURkYnBaVnc0UGxRZ3pidjdzYlVGcHFhTXJnR1JJaUplTjhTWEZUaU5GSk93T25PejY2QUtxdW5hTjlzU09BQ0I1dEtNN1NBay1ZQW5IcWV1X0VxY3p0Z1RzZ1piLVlFMWpOYlhB?oc=5"
   ]
 }
