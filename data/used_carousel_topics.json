@@ -1,11 +1,6 @@
 {
   "topics": [
     {
-      "title": "Firmus Technologies sets sights on $5 billion investment in Australia - ET CIO",
-      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNR3MyXzdKVEg2TTlma1owTU9JdTg1QmNDQjcyZ0owcGhBVVdSUlF2VzVsVnZGcENKeFZpRV9Ta2N2TGt1Rk5yTnExOElBV3ZlOWRsbDMxUXdvNUVlMGxaRkhudUFReWROcG15WUVyOUIxWGg4Nmc0dEF2MDFTSVB0UjliNEJhc24tRTVLVXY2b1BiQk8yd0pyV3NTMktId0pyMXlQQTVoaXhlUF85VmhPV2RkNWJCLTl6VXpNZ2FwY0hOOW9oQzBJeWp6TXhiVlNCSUM4QkhWQS1ycTVtdF9RTV9BOXp4SUh2NU1KMHE4Y0ZVb3p5bjFmd0c2WlM0TEZQZ0t3MjNQVGhqRVdnOTdRVEsxZHVPa2FRMkHSAdcBQVVfeXFMUEJLeVFFZzd6QmduMWFybDFrWDYwMTR0U0xjVWRscTZWeVlOWFNpWjRNNDJORFMyVkpRbWRDWVlXVTBoR1F2cmhKN0hGZmQ4Y3VtNlFwTFJmNG4yVkF6TDhxSHFJX2lONnpwb0JMUjZ4N2VsVF9qWHZ0NmctczBIUXE3blZPdjJEdmNBdDJPZUJDRjU4Vmp6cFdBU3luWWtBdlFoYWh6UGpaVHczYU1wMlNLVDNTUXB4a0FweTF5cVJuLTk5NktDTjE1Y0hXN1lIYlNNN1Zkb1U?oc=5",
-      "timestamp": "2026-09-14T09:04:13.927459+00:00"
-    },
-    {
       "title": "10-year Treasury yield hits highest level since 2023 as US Federal Reserve decision looms",
       "url": "https://www.livemint.com/market/stock-market-news/10year-treasury-yield-hits-highest-level-since-2023-as-us-federal-reserve-decision-looms-11789400968499.html",
       "timestamp": "2026-09-14T17:14:07.036039+00:00"
@@ -299,6 +294,11 @@
       "title": "Home loan EMI: How much salary do you need for a ₹50 lakh, ₹75 lakh or ₹1 crore home?",
       "url": "https://www.livemint.com/money/personal-finance/home-loan-emi-how-much-salary-do-you-need-for-a-50-lakh-75-lakh-or-1-crore-home-11792131700309.html",
       "timestamp": "2026-10-16T08:21:30.528905+00:00"
+    },
+    {
+      "title": "Snabbit's expansion push comes at a cost as FY26 losses hit ₹168 crore",
+      "url": "https://www.livemint.com/companies/company-results/snabbits-expansion-fy26-losses-168-crore-home-helps-workers-professionals-11792155028989.html",
+      "timestamp": "2026-10-16T14:30:46.758867+00:00"
     }
   ],
   "used_archetypes": [],
@@ -380,6 +380,7 @@
     "https://www.thehindubusinessline.com/markets/sensex-nifty50-today-stock-market-live-updates-15-october-2026/article71583334.ece",
     "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPcmhySzc2R3ZIeXZMWkc4aHlQWDZIWmVTcnBldFlnMkhVUG9YUm1DWG90YzA5T0V4cmpXV0xYXzMzZG05YW1DOGwyZzVyckRyNXFMSGRCeEdaNHRsaG9scTd2bi05VV9xelJvYjhVNjN0TTZrUUtiaGtTb1Vma2NvWmprVW1ZMlNjOS1mUGNuZy1adFpxMkJMN2tBVHlSeHZObDJvVVU1TWZIS2NIb0Y2Qm9PNUlqZ3JzcXZ3TnlfTm1GZmZKaUdwR3g3T1o5Nkx2dWZreC1rV09yM0x3T0tVSDNod0hCZ9IB6wFBVV95cUxQODRETlFnOTdsaTZmaUt3STlQZjdVc0k3c0wxS2NxaURxc3kyNUEteE5NN0FmQkE0MjZPcUNNc3dQWFpYZW5YM2xTbWo3RDdWWjFjR2JLSjhraDFLaUlCTkw3VzlqSms3QV9nTlpJbFlCOFBVUkhqVHJyYTJELTBkVEF3aHR1SUVVM1pPYy1DU1EtRFBlU1k4aElwWmFMR2RZS1VzblNNWk1JR1FfLWVvNDBoTHlaU1E4T0ZuSklPQWVoeWRXaEVqVkJFalpYa0RRWU9HYWtkUkl6Ny1jZWNtT0MydlcwcnM4a1Vr?oc=5",
     "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSmFGUWtMLWluS0U4akJqSHpLLUM2azNuMm9NbTBJbnpiUWxkRFN5WWxMT0I2LV9JY0N1T2hHWXBqNkpKenN4RjVWZ0lUS0lCZDd2OHFhcmYtTmhlaXc1WTBiNGoxQ3ZyZ1gxcFkzNEZzNW9INzBFUFVhSEEtX3k1eExsNXBiXzdtMVJPR3R5Rm1mdmxiM0FVV0hPa2l2ODdlMzlrTFlaaUZhVkdGMGExa3J0R1kwNFpaYW54d2ZxQUZlQ094S1HSAcsBQVVfeXFMT2hyaW96RDQ5MlRlWVg5UmZORjRqdUJGZ2RMcnZRdmdHalhEZ2pEMWpWTGpmWTZCZllqdU1EQldhQ3FXUlp6Q0tReE1CSjg4Rk0yNkhyWHJ2cUxUdVp2OXlRVGF4UVNFR1ktcjVQSTZoU1Rfb1hLSEJXM3RUck9JN0VqOS1aTTdPcUI3bnpsOGRNdVRpV2ZlRlpSNFdqQkZpMVdKVEY4VXhZbDJhZENYUk81RGpoTHduSnJFU0JEVkl2ZTVzdHBLZ1oyUXc?oc=5",
-    "https://www.livemint.com/money/personal-finance/home-loan-emi-how-much-salary-do-you-need-for-a-50-lakh-75-lakh-or-1-crore-home-11792131700309.html"
+    "https://www.livemint.com/money/personal-finance/home-loan-emi-how-much-salary-do-you-need-for-a-50-lakh-75-lakh-or-1-crore-home-11792131700309.html",
+    "https://www.livemint.com/companies/company-results/snabbits-expansion-fy26-losses-168-crore-home-helps-workers-professionals-11792155028989.html"
   ]
 }
