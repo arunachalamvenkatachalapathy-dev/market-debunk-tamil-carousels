@@ -117,7 +117,13 @@ Return valid JSON only with "caption" and "slides" (exactly 8 slide objects). Ea
                 candidate_models.append(m)
 
         deck = None
-        if self.client:
+        # Resilience only: if every model fails with a transient capacity error (503/UNAVAILABLE/overloaded),
+        # wait and sweep the model list again. Content gates are untouched.
+        import time
+        outage_waits = [20, 45, 90, 150]
+        outage_round = 0
+        while self.client and not deck:
+            transient_failures = 0
             for model_name in candidate_models:
                 try:
                     logger.info("Attempting Tanglish drafting with model %s...", model_name)
@@ -140,10 +146,18 @@ Return valid JSON only with "caption" and "slides" (exactly 8 slide objects). Ea
                             break
                 except Exception as e:
                     logger.warning("Model %s Tanglish draft failed: %s", model_name, e)
-                    import time
                     if "429" in str(e) or "RESOURCE_EXHAUSTED" in str(e):
                         logger.info("Encountered 429 quota throttle on %s; cooling down 2.5s...", model_name)
                         time.sleep(2.5)
+                    if any(t in str(e) for t in ("503", "UNAVAILABLE", "overloaded", "high demand")):
+                        transient_failures += 1
+            if not deck and transient_failures == len(candidate_models) and outage_round < len(outage_waits):
+                wait = outage_waits[outage_round]
+                outage_round += 1
+                logger.warning("All Tanglish draft models unavailable (transient). Waiting %ss then retrying (round %d/%d).", wait, outage_round, len(outage_waits))
+                time.sleep(wait)
+                continue
+            break
 
         if not deck:
             logger.warning("Primary Tanglish drafting unverified; falling back to evergreen topic deck.")
