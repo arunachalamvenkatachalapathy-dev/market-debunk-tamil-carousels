@@ -1,16 +1,18 @@
 {
-  "timestamp": "2026-10-16T15:08:23.301077+00:00",
+  "timestamp": "2026-10-17T04:30:52.375934+00:00",
   "phase": "TAMIL_PIPELINE_ORCHESTRATION",
   "severity": "CRITICAL",
   "error_code": "ERR_PIPELINE_HALT",
-  "root_cause_analysis": "Unhandled exception in TAMIL_PIPELINE_ORCHESTRATION: Visual inspection failed or was unavailable: {'passed': False, 'average_score': 0.0, 'slide_1_report': {'passed': False, 'overall_score': 0, 'feedback': 'Visual audit unavailable.'}, 'slide_count_audited': 2}",
-  "reproducibility": "UNKNOWN",
+  "root_cause_analysis": "The editorial engine failed a numeric validation check because the deck generation process injected currency symbols (₹) into the numeric metrics. The validator expected raw integers (250, 844) as found in the source metrics, but encountered formatted strings ('₹250', '₹844'), triggering a type mismatch and pipeline halt.",
+  "reproducibility": "DETERMINISTIC",
   "automated_remediation": {
     "action": "SAFE_SHUTDOWN",
     "repaired_payload": null
   },
   "operator_action_required": true,
   "actionable_instructions": [
-    "Inspect log traceback for phase TAMIL_PIPELINE_ORCHESTRATION."
+    "Update the editorial_engine.py regex parser to strip currency symbols (₹) from numeric fields before validation.",
+    "Modify the deck composition schema to enforce integer-only types for metric fields to prevent future string-based injection.",
+    "Re-run the pipeline after applying the sanitization logic to the metric extraction layer."
   ]
 }
