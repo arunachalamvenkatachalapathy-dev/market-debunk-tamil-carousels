@@ -1,13 +1,12 @@
 {
   "version": "2.0.0",
-  "total_cycles_recorded": 36,
+  "total_cycles_recorded": 37,
   "archetype_weights": {
     "SHOCKING_MYTH": 1.4,
     "MATH_BREAKDOWN": 2.5,
     "INSTITUTIONAL_SECRET": 1.1
   },
   "learned_rules": [
-    "Candidate B is the clear winner because it translates the abstract 'bps' hike into a concrete, actionable calculation fo",
     "Candidate B wins because it weaponizes 'Loss Aversion'. In the Tamil retail market, showing exactly how much money is 'l",
     "Candidate B is the winner because it targets the primary anxiety of the Tamil retail investor: the opportunity cost of k",
     "Candidate B uses the verified data point of '8-week losses' and addresses the immediate dilemma of a retail mutual fund/",
@@ -18,7 +17,8 @@
     "Candidate B is the winner because it successfully bridges the gap between high-level macro volatility (Japan/Korea/US in",
     "Candidate B wins because it uses the exact data points mentioned in the source (5.33% to 5.086%) to provide a clear, rea",
     "Candidate B perfectly reflects the source metrics: the exact ₹230 current reference, ₹310 target, 35% upside projection ",
-    "Candidate B wins because it perfectly bridges the incident (₹1 Crore financial aid scam in Vijay Thalapathy's name targe"
+    "Candidate B wins because it perfectly bridges the incident (₹1 Crore financial aid scam in Vijay Thalapathy's name targe",
+    "Candidate B wins because it strikes the perfect balance between retail myth-busting ('sealed box means genuine') and str"
   ],
   "cycle_history": [
     {
@@ -344,6 +344,15 @@
       "critic_score": 8.9,
       "visual_score": 8.7,
       "key_learning": "Candidate B wins because it perfectly bridges the incident (₹1 Crore financial aid scam in Vijay Thalapathy's name targe"
+    },
+    {
+      "cycle": 37,
+      "timestamp": "2026-10-18T04:24:59.367816+00:00",
+      "topic": "Sealed-Box CPU Scam: Fake Ryzen 9 9950X3D2 Found With Intel Substrate - BigGo Fi",
+      "winning_archetype": "MATH_BREAKDOWN",
+      "critic_score": 9.0,
+      "visual_score": 9.3,
+      "key_learning": "Candidate B wins because it strikes the perfect balance between retail myth-busting ('sealed box means genuine') and str"
     }
   ]
 }
