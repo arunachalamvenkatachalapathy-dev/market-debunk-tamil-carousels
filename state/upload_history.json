@@ -1710,6 +1710,36 @@
       },
       "insights_fetched_48h": false,
       "insights": {}
+    },
+    {
+      "title": "RBI may need to raise repo rate to 6.25% as inflation risks persist: SBI Mutual Fund - https://www.indiagazette.com/",
+      "media_id": "18130434688765959",
+      "timestamp": "2026-10-18T14:39:17.345681+00:00",
+      "topic_category": "REGULATORY_SHIFT",
+      "hook_archetype": "MATH_BREAKDOWN",
+      "hashtag_cluster": "default",
+      "publish_results": {
+        "instagram": {
+          "success": true,
+          "media_id": "18130434688765959",
+          "permalink": "https://www.instagram.com/p/Deo6rCIHeif/"
+        },
+        "facebook": {
+          "success": true,
+          "post_id": "1297757220087165_122120510487463457",
+          "url": "https://www.facebook.com/1297757220087165_122120510487463457"
+        },
+        "telegram": {
+          "success": false,
+          "status": "skipped"
+        },
+        "linkedin": {
+          "success": false,
+          "status": "skipped"
+        }
+      },
+      "insights_fetched_48h": false,
+      "insights": {}
     }
   ]
 }
