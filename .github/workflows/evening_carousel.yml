@@ -95,6 +95,9 @@ jobs:
           ENABLE_TELEGRAM: ${{ secrets.ENABLE_TELEGRAM || 'true' }}
         run: |
           args=(--edition evening)
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            args+=(--no-jitter)
+          fi
           if [ "$DRY_RUN" = "true" ]; then
             args+=(--dry-run)
           fi
