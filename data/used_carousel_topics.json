@@ -1,11 +1,6 @@
 {
   "topics": [
     {
-      "title": "Gold price outlook: MCX gold slips for the week as US Fed rate hike bets rise; what’s next for the yellow metal?",
-      "url": "https://www.livemint.com/market/stock-market-news/gold-price-outlook-mcx-gold-slips-for-the-week-as-us-fed-rate-hike-bets-rise-what-s-next-for-the-yellow-metal-11790354545598.html",
-      "timestamp": "2026-09-25T18:34:05.472372+00:00"
-    },
-    {
       "title": "Four-day upper circuit streak drives this small-cap stock up 74%; here’s the key trigger behind the jump",
       "url": "https://www.livemint.com/market/stock-market-news/fourday-upper-circuit-streak-drives-this-small-cap-stock-up-74-here-s-the-key-trigger-behind-the-jump-11790331573614.html",
       "timestamp": "2026-09-26T08:42:33.078773+00:00"
@@ -299,6 +294,11 @@
       "title": "Nifty Sensex Today: Stock Market Crashes as Sensex Falls 876 Points, Nifty Drops 1.11%; Banking and IT Stocks Lead the Losses - India Infoline",
       "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQa1ZydU56V2ZLWkw1MTV6bW0zNThMcTRUVU44WFN4SHpfMHlmTndYMm9YZXJMVmE3V0w5S05ZU19Mc2F6Z1drT05NOG5vQzg3X0diWkh0eFV2dzhkMzV5WXVlbEYxaUtiY0RmT3B3bGVMWXVCTHRNdUloNzctX3d2eEdPRnlZaGp2eUhkQmhydkNwOEl4cFdiNklIYnc2ZjZUQ3BhZlZlY05Hb2dFVm1lS3B3M3dlb1NqM3BEQ0xtaWtfY0pNSlIyRkQ0MzR0ZGJLQkt5U3R5S3FDU01saE1NdGxwRXQyc1d2ZDRldE5wbDNRTjl4aXBv?oc=5",
       "timestamp": "2026-10-19T14:19:08.057491+00:00"
+    },
+    {
+      "title": "96 IPOs raise Rs 1.1 lakh crore in 2026 even as the Nifty corrects",
+      "url": "https://economictimes.indiatimes.com/wealth/invest/96-ipos-raise-rs-1-1-lakh-crore-in-2026-even-as-the-nifty-corrects/articleshow/135047923.cms",
+      "timestamp": "2026-10-19T14:52:55.283296+00:00"
     }
   ],
   "used_archetypes": [],
@@ -390,6 +390,7 @@
     "https://news.google.com/rss/articles/CBMidkFVX3lxTFBTMlpOX3M1dFA1QTlXaF9LVlY5cUNYZDR5RUVMRF9PQzhfYlVVVFB3SVNMVmtKNGVzUENtUXZIWWc5dXZyM1BSY0c5RU0xdGR5TjJxci1QTXhjcEk2eWxERGRRNHlXNVE5Ti1ZZWQ4WUZpR0lhZ2c?oc=5",
     "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQT210c182c1k5V051cGNua29CUGRnZUpTTWx3MVk4blVuaU9TY0lRdk0ybU4wVGRSU2JkN1NzUGdwZERSaTNKMUgxcTJVVWZmR0NsOG1LRjd6Qk03TUk4Q1BsZXAwVkV1WFZyZXdtc2hMUnUxYjNnMDNOQ0o3Zk9KeXQ5ZXdwMjVWS3lEUVJBTE9BNTY3WWMtLXAydmNsT0xGQ3hfck1vUWprcS1IQmZ6V083OHpoeEtKOU1SQVJpU0oxRjQ?oc=5",
     "https://www.livemint.com/companies/akasa-air-fy26-results-revenue-rises-loss-widens-11792338060164.html",
-    "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQa1ZydU56V2ZLWkw1MTV6bW0zNThMcTRUVU44WFN4SHpfMHlmTndYMm9YZXJMVmE3V0w5S05ZU19Mc2F6Z1drT05NOG5vQzg3X0diWkh0eFV2dzhkMzV5WXVlbEYxaUtiY0RmT3B3bGVMWXVCTHRNdUloNzctX3d2eEdPRnlZaGp2eUhkQmhydkNwOEl4cFdiNklIYnc2ZjZUQ3BhZlZlY05Hb2dFVm1lS3B3M3dlb1NqM3BEQ0xtaWtfY0pNSlIyRkQ0MzR0ZGJLQkt5U3R5S3FDU01saE1NdGxwRXQyc1d2ZDRldE5wbDNRTjl4aXBv?oc=5"
+    "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQa1ZydU56V2ZLWkw1MTV6bW0zNThMcTRUVU44WFN4SHpfMHlmTndYMm9YZXJMVmE3V0w5S05ZU19Mc2F6Z1drT05NOG5vQzg3X0diWkh0eFV2dzhkMzV5WXVlbEYxaUtiY0RmT3B3bGVMWXVCTHRNdUloNzctX3d2eEdPRnlZaGp2eUhkQmhydkNwOEl4cFdiNklIYnc2ZjZUQ3BhZlZlY05Hb2dFVm1lS3B3M3dlb1NqM3BEQ0xtaWtfY0pNSlIyRkQ0MzR0ZGJLQkt5U3R5S3FDU01saE1NdGxwRXQyc1d2ZDRldE5wbDNRTjl4aXBv?oc=5",
+    "https://economictimes.indiatimes.com/wealth/invest/96-ipos-raise-rs-1-1-lakh-crore-in-2026-even-as-the-nifty-corrects/articleshow/135047923.cms"
   ]
 }
