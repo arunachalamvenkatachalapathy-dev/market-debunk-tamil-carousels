@@ -1,11 +1,6 @@
 {
   "topics": [
     {
-      "title": "Sensex crashes over 1,200 points, Nifty falls 384 to 3-month low – what led to sharp decline? - The Statesman",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNamVWQ1BEaHRRVTMwT2c5aEVDaWhJdExxVkN6cE1RemozYUhrbzBSWHBaU2o2QWlCaXU5UFFLMXppTUlkeXZQRU5KOXVTYXg4dlVfRlpKWU52ZzRJbUQyOWNOVFh3OC1JbS1raXJtdDZQMEszZzJzZ29pdHN5ZFNEOHZCOFE3TG1lOVRjVmc1OXV3RWpQdUwzQmFQNlRPSExBVkVDUXpZUVpRQ1RaSlB1TW0wVmJaUlQ1R0kydlRmcERhRzB3TWh6OWliMzBWOFk0UEHSAdcBQVVfeXFMT3BDWlA4aGJrZHItZHJOOG9RNHdUSkFpbVhtZndyZ2FES25TSXRVS3laTTFIbXg3eFBKNVhtZk11QnJvaTQ0WFYzd3o0TXBfYTBMdFk3bkQyMHVrWVRkcWFIUmxnYVdscUljYVRUZktldjZFdWVkQi10UzM0bTJKdllMZG1MV0pVM0toeUxVY3o0YjNSTk9saXBmcExyVndDbzFtSzZiYW9aOEV2cDVtcFJlMFdVRUxLdTJoYU1ocXoxRHVGZ3ZxaTdnejZ0cXliNk1uN1JlV0U?oc=5",
-      "timestamp": "2026-09-24T18:25:19.624068+00:00"
-    },
-    {
       "title": "₹9,450 turns into over  ₹1.30 lakh in one day despite 35% fall in PB Fintech share price; here's how",
       "url": "https://www.livemint.com/market/stock-market-news/rs-9-450-turns-into-over-rs-1-30-lakh-in-one-day-despite-35-fall-in-pb-fintech-share-price-heres-how-11790304551027.html",
       "timestamp": "2026-09-25T08:56:13.097418+00:00"
@@ -299,6 +294,11 @@
       "title": "RBI may need to raise repo rate to 6.25% as inflation risks persist: SBI Mutual Fund - https://www.indiagazette.com/",
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQT210c182c1k5V051cGNua29CUGRnZUpTTWx3MVk4blVuaU9TY0lRdk0ybU4wVGRSU2JkN1NzUGdwZERSaTNKMUgxcTJVVWZmR0NsOG1LRjd6Qk03TUk4Q1BsZXAwVkV1WFZyZXdtc2hMUnUxYjNnMDNOQ0o3Zk9KeXQ5ZXdwMjVWS3lEUVJBTE9BNTY3WWMtLXAydmNsT0xGQ3hfck1vUWprcS1IQmZ6V083OHpoeEtKOU1SQVJpU0oxRjQ?oc=5",
       "timestamp": "2026-10-18T14:35:18.867188+00:00"
+    },
+    {
+      "title": "Akasa’s 35% revenue growth fails to arrest losses as aviation’s cost squeeze deepens",
+      "url": "https://www.livemint.com/companies/akasa-air-fy26-results-revenue-rises-loss-widens-11792338060164.html",
+      "timestamp": "2026-10-19T04:20:42.776051+00:00"
     }
   ],
   "used_archetypes": [],
@@ -388,6 +388,7 @@
     "https://www.livemint.com/market/stock-market-news/swiggy-share-price-down-50-in-1-year-can-food-delivery-stock-recover-should-you-buy-the-dip-check-target-stoploss-11792165643709.html",
     "https://news.google.com/rss/articles/CBMigAFBVV95cUxOV0NfbEt6b0paRlBFQkZuQmtMel9IZzU1bjRETXEwX0NWblpxdk0tbzRPaFM5QjdPTWo5SkZWS3NEbGtqTm81cVZ0eEVMQUpGWWxmcWxQTFpYcW5sdWtlbXJOb1R0dEJmazJ1eXo4RmkxMmJ2MnhqUDVMMHhFTkdXSg?oc=5",
     "https://news.google.com/rss/articles/CBMidkFVX3lxTFBTMlpOX3M1dFA1QTlXaF9LVlY5cUNYZDR5RUVMRF9PQzhfYlVVVFB3SVNMVmtKNGVzUENtUXZIWWc5dXZyM1BSY0c5RU0xdGR5TjJxci1QTXhjcEk2eWxERGRRNHlXNVE5Ti1ZZWQ4WUZpR0lhZ2c?oc=5",
-    "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQT210c182c1k5V051cGNua29CUGRnZUpTTWx3MVk4blVuaU9TY0lRdk0ybU4wVGRSU2JkN1NzUGdwZERSaTNKMUgxcTJVVWZmR0NsOG1LRjd6Qk03TUk4Q1BsZXAwVkV1WFZyZXdtc2hMUnUxYjNnMDNOQ0o3Zk9KeXQ5ZXdwMjVWS3lEUVJBTE9BNTY3WWMtLXAydmNsT0xGQ3hfck1vUWprcS1IQmZ6V083OHpoeEtKOU1SQVJpU0oxRjQ?oc=5"
+    "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQT210c182c1k5V051cGNua29CUGRnZUpTTWx3MVk4blVuaU9TY0lRdk0ybU4wVGRSU2JkN1NzUGdwZERSaTNKMUgxcTJVVWZmR0NsOG1LRjd6Qk03TUk4Q1BsZXAwVkV1WFZyZXdtc2hMUnUxYjNnMDNOQ0o3Zk9KeXQ5ZXdwMjVWS3lEUVJBTE9BNTY3WWMtLXAydmNsT0xGQ3hfck1vUWprcS1IQmZ6V083OHpoeEtKOU1SQVJpU0oxRjQ?oc=5",
+    "https://www.livemint.com/companies/akasa-air-fy26-results-revenue-rises-loss-widens-11792338060164.html"
   ]
 }
