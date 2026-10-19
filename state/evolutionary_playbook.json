@@ -1,13 +1,12 @@
 {
   "version": "2.0.0",
-  "total_cycles_recorded": 39,
+  "total_cycles_recorded": 40,
   "archetype_weights": {
-    "SHOCKING_MYTH": 1.4,
+    "SHOCKING_MYTH": 1.45,
     "MATH_BREAKDOWN": 2.5,
     "INSTITUTIONAL_SECRET": 1.1
   },
   "learned_rules": [
-    "Candidate B uses the verified data point of '8-week losses' and addresses the immediate dilemma of a retail mutual fund/",
     "Candidate B leverages the MATH_BREAKDOWN archetype, pairing the dual validated metrics from the report (₹32,490 crore SI",
     "Candidate B effectively bridges the gap between macro-level record-breaking inflows and the individual investor's tenden",
     "Candidate B effectively captures the cause-and-effect chain (Iran war -> Inflation Shock -> US Swap bets backfire -> Pen",
@@ -18,7 +17,8 @@
     "Candidate B wins because it perfectly bridges the incident (₹1 Crore financial aid scam in Vijay Thalapathy's name targe",
     "Candidate B wins because it strikes the perfect balance between retail myth-busting ('sealed box means genuine') and str",
     "Candidate B perfectly reflects the source metrics (6.25% repo rate prediction due to inflation risks flagged by SBI Mutu",
-    "Candidate B perfectly reflects the source metrics: exact 35% revenue growth against 37% widening net loss, highlighting "
+    "Candidate B perfectly reflects the source metrics: exact 35% revenue growth against 37% widening net loss, highlighting ",
+    "Fallback Tanglish anchor."
   ],
   "cycle_history": [
     {
@@ -371,6 +371,15 @@
       "critic_score": 9.1,
       "visual_score": 9.2,
       "key_learning": "Candidate B perfectly reflects the source metrics: exact 35% revenue growth against 37% widening net loss, highlighting "
+    },
+    {
+      "cycle": 40,
+      "timestamp": "2026-10-19T16:51:40.990094+00:00",
+      "topic": "Google Review scam: Over 20 people reportedly lose ₹1 crore in a month; 5 warnin",
+      "winning_archetype": "SHOCKING_MYTH",
+      "critic_score": 8.5,
+      "visual_score": 9.0,
+      "key_learning": "Fallback Tanglish anchor."
     }
   ]
 }
