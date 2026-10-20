@@ -1741,8 +1741,19 @@
           "status": "skipped"
         }
       },
-      "insights_fetched_48h": false,
-      "insights": {}
+      "insights_fetched_48h": true,
+      "insights": {
+        "saves": 0,
+        "shares": 0,
+        "impressions": 0,
+        "reach": 0,
+        "total_interactions": 0,
+        "fb_reach": 0,
+        "fb_engaged_users": 0,
+        "save_to_reach_pct": 0.0,
+        "status": "api_error: (#10) Application does not have permission for this action"
+      },
+      "age_at_audit_hours": 62.0
     },
     {
       "title": "RBI may need to raise repo rate to 6.25% as inflation risks persist: SBI Mutual Fund - https://www.indiagazette.com/",
@@ -1771,8 +1782,19 @@
           "status": "skipped"
         }
       },
-      "insights_fetched_48h": false,
-      "insights": {}
+      "insights_fetched_48h": true,
+      "insights": {
+        "saves": 0,
+        "shares": 0,
+        "impressions": 0,
+        "reach": 0,
+        "total_interactions": 0,
+        "fb_reach": 0,
+        "fb_engaged_users": 0,
+        "save_to_reach_pct": 0.0,
+        "status": "api_error: (#10) Application does not have permission for this action"
+      },
+      "age_at_audit_hours": 51.8
     },
     {
       "title": "Akasa’s 35% revenue growth fails to arrest losses as aviation’s cost squeeze deepens",
