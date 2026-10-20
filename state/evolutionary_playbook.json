@@ -1,8 +1,8 @@
 {
   "version": "2.0.0",
-  "total_cycles_recorded": 40,
+  "total_cycles_recorded": 41,
   "archetype_weights": {
-    "SHOCKING_MYTH": 1.45,
+    "SHOCKING_MYTH": 1.5,
     "MATH_BREAKDOWN": 2.5,
     "INSTITUTIONAL_SECRET": 1.1
   },
@@ -379,6 +379,15 @@
       "winning_archetype": "SHOCKING_MYTH",
       "critic_score": 8.5,
       "visual_score": 9.0,
+      "key_learning": "Fallback Tanglish anchor."
+    },
+    {
+      "cycle": 41,
+      "timestamp": "2026-10-20T03:54:06.749329+00:00",
+      "topic": "Retired Judge Loses ₹2.5 Crore in Digital Arrest Scam, Accused Held in Kerala - ",
+      "winning_archetype": "SHOCKING_MYTH",
+      "critic_score": 8.5,
+      "visual_score": 8.8,
       "key_learning": "Fallback Tanglish anchor."
     }
   ]
