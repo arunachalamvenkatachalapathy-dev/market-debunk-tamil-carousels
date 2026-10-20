@@ -49,7 +49,7 @@ Return JSON strictly:
 
             # Resilience only: if every model fails with a transient capacity error, wait and sweep again.
             # The audit result itself is unchanged: it must still score >= 8.0 and pass to publish.
-            for _wait in (0, 30, 60, 120, 180, 240):
+            for _wait in (0, 30):  # cap: one retry, then fail (approved 2026-10-20)
                 if _wait:
                     logger.warning('Tamil Visual Inspector: all models transiently unavailable; waiting %ds before retry', _wait)
                     time.sleep(_wait)

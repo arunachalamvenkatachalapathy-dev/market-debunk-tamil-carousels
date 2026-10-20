@@ -120,7 +120,7 @@ Return valid JSON only with "caption" and "slides" (exactly 8 slide objects). Ea
         # Resilience only: if every model fails with a transient capacity error (503/UNAVAILABLE/overloaded),
         # wait and sweep the model list again. Content gates are untouched.
         import time
-        outage_waits = [20, 45, 90, 150]
+        outage_waits = [20]  # cap: one retry round, then fail (approved 2026-10-20)
         outage_round = 0
         while self.client and not deck:
             transient_failures = 0
