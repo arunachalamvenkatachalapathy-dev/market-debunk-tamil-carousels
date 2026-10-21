@@ -1864,8 +1864,19 @@
           "status": "skipped"
         }
       },
-      "insights_fetched_48h": false,
-      "insights": {}
+      "insights_fetched_48h": true,
+      "insights": {
+        "saves": 0,
+        "shares": 0,
+        "impressions": 0,
+        "reach": 0,
+        "total_interactions": 0,
+        "fb_reach": 0,
+        "fb_engaged_users": 0,
+        "save_to_reach_pct": 0.0,
+        "status": "api_error: (#10) Application does not have permission for this action"
+      },
+      "age_at_audit_hours": 49.7
     },
     {
       "title": "Retired Judge Loses ₹2.5 Crore in Digital Arrest Scam, Accused Held in Kerala - The420.in",
@@ -1884,6 +1895,36 @@
           "success": true,
           "post_id": "1297757220087165_122120897337463457",
           "url": "https://www.facebook.com/1297757220087165_122120897337463457"
+        },
+        "telegram": {
+          "success": false,
+          "status": "skipped"
+        },
+        "linkedin": {
+          "success": false,
+          "status": "skipped"
+        }
+      },
+      "insights_fetched_48h": false,
+      "insights": {}
+    },
+    {
+      "title": "Sundaram Mutual Fund aims to raise Rs 350 cr in maiden SIF offering - CNBC TV18",
+      "media_id": "17952190176314388",
+      "timestamp": "2026-10-21T18:40:35.719815+00:00",
+      "topic_category": "VALUATION_MYTH",
+      "hook_archetype": "MATH_BREAKDOWN",
+      "hashtag_cluster": "default",
+      "publish_results": {
+        "instagram": {
+          "success": true,
+          "media_id": "17952190176314388",
+          "permalink": "https://www.instagram.com/p/DexEqnrF9YW/"
+        },
+        "facebook": {
+          "success": true,
+          "post_id": "1297757220087165_122121250251463457",
+          "url": "https://www.facebook.com/1297757220087165_122121250251463457"
         },
         "telegram": {
           "success": false,

@@ -1,13 +1,12 @@
 {
   "version": "2.0.0",
-  "total_cycles_recorded": 41,
+  "total_cycles_recorded": 42,
   "archetype_weights": {
     "SHOCKING_MYTH": 1.5,
     "MATH_BREAKDOWN": 2.5,
     "INSTITUTIONAL_SECRET": 1.1
   },
   "learned_rules": [
-    "Candidate B leverages the MATH_BREAKDOWN archetype, pairing the dual validated metrics from the report (₹32,490 crore SI",
     "Candidate B effectively bridges the gap between macro-level record-breaking inflows and the individual investor's tenden",
     "Candidate B effectively captures the cause-and-effect chain (Iran war -> Inflation Shock -> US Swap bets backfire -> Pen",
     "Candidate B மிகச்சிறந்த சமநிலையை கொண்டுள்ளது. இது வெறும் குற்றத்தைப் பற்றி பேசாமல், அந்த இழப்பு ஒரு சாதாரண மனிதனின் வாழ்",
@@ -18,7 +17,8 @@
     "Candidate B wins because it strikes the perfect balance between retail myth-busting ('sealed box means genuine') and str",
     "Candidate B perfectly reflects the source metrics (6.25% repo rate prediction due to inflation risks flagged by SBI Mutu",
     "Candidate B perfectly reflects the source metrics: exact 35% revenue growth against 37% widening net loss, highlighting ",
-    "Fallback Tanglish anchor."
+    "Fallback Tanglish anchor.",
+    "Candidate B strikes the perfect balance between reporting the news (the 350 Cr target) and providing immediate education"
   ],
   "cycle_history": [
     {
@@ -389,6 +389,15 @@
       "critic_score": 8.5,
       "visual_score": 8.8,
       "key_learning": "Fallback Tanglish anchor."
+    },
+    {
+      "cycle": 42,
+      "timestamp": "2026-10-21T18:39:10.685853+00:00",
+      "topic": "Sundaram Mutual Fund aims to raise Rs 350 cr in maiden SIF offering - CNBC TV18",
+      "winning_archetype": "MATH_BREAKDOWN",
+      "critic_score": 8.8,
+      "visual_score": 8.5,
+      "key_learning": "Candidate B strikes the perfect balance between reporting the news (the 350 Cr target) and providing immediate education"
     }
   ]
 }
