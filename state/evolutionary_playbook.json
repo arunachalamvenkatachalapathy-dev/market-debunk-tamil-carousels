@@ -1,13 +1,12 @@
 {
   "version": "2.0.0",
-  "total_cycles_recorded": 42,
+  "total_cycles_recorded": 43,
   "archetype_weights": {
     "SHOCKING_MYTH": 1.5,
     "MATH_BREAKDOWN": 2.5,
     "INSTITUTIONAL_SECRET": 1.1
   },
   "learned_rules": [
-    "Candidate B effectively bridges the gap between macro-level record-breaking inflows and the individual investor's tenden",
     "Candidate B effectively captures the cause-and-effect chain (Iran war -> Inflation Shock -> US Swap bets backfire -> Pen",
     "Candidate B மிகச்சிறந்த சமநிலையை கொண்டுள்ளது. இது வெறும் குற்றத்தைப் பற்றி பேசாமல், அந்த இழப்பு ஒரு சாதாரண மனிதனின் வாழ்",
     "Candidate B is the winner because it successfully bridges the gap between high-level macro volatility (Japan/Korea/US in",
@@ -18,7 +17,8 @@
     "Candidate B perfectly reflects the source metrics (6.25% repo rate prediction due to inflation risks flagged by SBI Mutu",
     "Candidate B perfectly reflects the source metrics: exact 35% revenue growth against 37% widening net loss, highlighting ",
     "Fallback Tanglish anchor.",
-    "Candidate B strikes the perfect balance between reporting the news (the 350 Cr target) and providing immediate education"
+    "Candidate B strikes the perfect balance between reporting the news (the 350 Cr target) and providing immediate education",
+    "Candidate B directly frames the exact financial shift—from 37% yearly penalty down to 1% per month under EPFO VISHWAS 20"
   ],
   "cycle_history": [
     {
@@ -398,6 +398,15 @@
       "critic_score": 8.8,
       "visual_score": 8.5,
       "key_learning": "Candidate B strikes the perfect balance between reporting the news (the 350 Cr target) and providing immediate education"
+    },
+    {
+      "cycle": 43,
+      "timestamp": "2026-10-23T03:49:58.636888+00:00",
+      "topic": "EPFO Vishwas 2026 scheme: How penalty on employer for late PF contributions can ",
+      "winning_archetype": "MATH_BREAKDOWN",
+      "critic_score": 9.1,
+      "visual_score": 9.5,
+      "key_learning": "Candidate B directly frames the exact financial shift—from 37% yearly penalty down to 1% per month under EPFO VISHWAS 20"
     }
   ]
 }
